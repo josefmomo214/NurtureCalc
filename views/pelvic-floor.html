@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="NurtureCalc">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <title>Pelvic Floor Recovery Estimator — NurtureCalc</title>
+    <meta name="description" content="A gentle quiz to estimate your pelvic floor recovery stage after birth. Get personalised guidance and know when to seek support.">
+    <link rel="canonical" href="https://www.nurturecalc.com/pelvic-floor">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .progress-bar-container { background: var(--bg-color); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 32px; }
+        .progress-bar { background: var(--primary-color); height: 100%; transition: width 0.3s; width: 25%; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">NurtureCalc</a>
+            <div class="nav-links">
+                <a href="/weight-loss">Weight Loss</a>
+                <a href="/calorie-needs">Calories</a>
+                <a href="/exercise-timeline">Exercise</a>
+                <a href="/pelvic-floor" style="color:var(--primary-color)">Pelvic Floor</a>
+                <a href="/baby-weight">Baby Weight</a>
+                <a href="/blog">Blog</a>
+            </div>
+            <button class="hamburger" aria-label="Menu">☰</button>
+        </div>
+    </nav>
+    <div class="mobile-menu-overlay">
+        <a href="/">Home</a>
+        <a href="/weight-loss">Weight Loss</a>
+        <a href="/calorie-needs">Calorie Needs</a>
+        <a href="/exercise-timeline">Exercise Timeline</a>
+        <a href="/pelvic-floor">Pelvic Floor</a>
+        <a href="/baby-weight">Baby Weight</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">About</a>
+    </div>
+
+    <main class="main-content container">
+        <div class="calculator-layout">
+            <div class="calculator-main">
+                <h1 class="mb-6">Pelvic Floor Recovery Estimator</h1>
+                <p class="mb-8" style="font-size: 1.125rem; opacity: 0.9;">
+                    Your pelvic floor acts like a hammock holding your pelvic organs. Pregnancy and childbirth—regardless of delivery type—stretch and weaken these muscles. Recovery is absolutely possible, but recognizing your current stage is the vital first step.<br><br>
+                    Take this gentle 4-question quiz to estimate your recovery stage and understand when it might be time to seek a specialist's support.
+                </p>
+
+                <div class="card mb-8">
+                    <div id="quizContainer">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="quizProgress"></div>
+                        </div>
+
+                        <form id="calcForm" data-calc-type="pelvicFloor">
+                            <!-- Q1 -->
+                            <div class="quiz-step" data-step="1">
+                                <h3 class="mb-4">1. How many weeks postpartum are you?</h3>
+                                <div class="radio-group">
+                                    <label class="radio-item"><input type="radio" name="q1" value="Under 6"> Under 6 weeks</label>
+                                    <label class="radio-item"><input type="radio" name="q1" value="6–12"> 6–12 weeks</label>
+                                    <label class="radio-item"><input type="radio" name="q1" value="12–24"> 12–24 weeks</label>
+                                    <label class="radio-item"><input type="radio" name="q1" value="Over 24"> Over 24 weeks</label>
+                                </div>
+                            </div>
+                            <!-- Q2 -->
+                            <div class="quiz-step hidden" data-step="2">
+                                <h3 class="mb-4">2. Do you leak urine when sneezing, coughing, or laughing?</h3>
+                                <div class="radio-group">
+                                    <label class="radio-item"><input type="radio" name="q2" value="0"> Never</label>
+                                    <label class="radio-item"><input type="radio" name="q2" value="1"> Occasionally</label>
+                                    <label class="radio-item"><input type="radio" name="q2" value="2"> Often</label>
+                                    <label class="radio-item"><input type="radio" name="q2" value="3"> Always</label>
+                                </div>
+                            </div>
+                            <!-- Q3 -->
+                            <div class="quiz-step hidden" data-step="3">
+                                <h3 class="mb-4">3. Can you clearly feel your pelvic floor lift when you squeeze it (do a Kegel)?</h3>
+                                <div class="radio-group">
+                                    <label class="radio-item"><input type="radio" name="q3" value="0"> Yes clearly</label>
+                                    <label class="radio-item"><input type="radio" name="q3" value="1"> Somewhat</label>
+                                    <label class="radio-item"><input type="radio" name="q3" value="2"> Barely</label>
+                                    <label class="radio-item"><input type="radio" name="q3" value="3"> Not at all</label>
+                                </div>
+                            </div>
+                            <!-- Q4 -->
+                            <div class="quiz-step hidden" data-step="4">
+                                <h3 class="mb-4">4. Do you experience a feeling of pressure or 'heaviness' in your vagina?</h3>
+                                <div class="radio-group">
+                                    <label class="radio-item"><input type="radio" name="q4" value="0"> Never</label>
+                                    <label class="radio-item"><input type="radio" name="q4" value="1"> Sometimes</label>
+                                    <label class="radio-item"><input type="radio" name="q4" value="2"> Often</label>
+                                    <label class="radio-item"><input type="radio" name="q4" value="3"> Always</label>
+                                </div>
+                            </div>
+
+                            <button type="button" id="quizNextBtn" class="btn btn-primary mt-8" style="width: 100%;">Next Question →</button>
+                        </form>
+                    </div>
+
+                    <div id="resultCard" class="hidden text-center" style="padding: 32px 0;">
+                        <h2 class="mb-4 text-center">Your Estimated Stage</h2>
+                        <div id="resultValue" class="mb-6" style="color: var(--primary-color); font-weight: bold;"></div>
+                        <button id="resetBtn" class="btn btn-secondary onClick="window.location.reload()"" style="margin-top:24px;">Retake Quiz</button>
+                    </div>
+                </div>
+
+                <div class="ad-inline">
+                    <p>Advertisement</p>
+                </div>
+            </div>
+            
+            <div class="calculator-sidebar">
+                <div class="ad-sidebar">
+                    <p>Advertisement</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/about">About</a>
+                <a href="/blog">Blog</a>
+                <a href="mailto:hello@nurturecalc.com">Contact</a>
+            </div>
+            <p style="opacity: 0.6; font-size: 0.875rem;">© 2026 NurtureCalc.com — made with care for new mothers</p>
+        </div>
+    </footer>
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p>We use cookies to serve relevant ads and improve your experience.</p>
+        </div>
+        <div class="cookie-buttons">
+            <a href="/privacy" class="btn btn-secondary" style="min-height: 48px; padding: 0 24px;">Learn more</a>
+            <button id="acceptCookies" class="btn btn-primary" style="background:#E8A0A8; min-height: 48px; padding: 0 24px;">Accept</button>
+        </div>
+    </div>
+    <script src="/js/calculators.js"></script>
+</body>
+</html>
