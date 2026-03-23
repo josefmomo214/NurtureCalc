@@ -349,6 +349,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (resetBtn) {
         resetBtn.addEventListener('click', () => {
+            if (calcForm && calcForm.dataset.calcType === 'pelvicFloor') {
+                window.location.reload();
+                return;
+            }
             resultCard.classList.add('hidden');
             calcForm.classList.remove('hidden');
             if (calcForm.dataset.calcType !== 'pelvicFloor') {
