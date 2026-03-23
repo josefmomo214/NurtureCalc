@@ -41,9 +41,9 @@ app.use(helmet({
     }
   },
   hsts: {
-    maxAge: 300,
+    maxAge: 31536000,
     includeSubDomains: true,
-    preload: false
+    preload: true
   },
   referrerPolicy: {
     policy: "strict-origin-when-cross-origin"
