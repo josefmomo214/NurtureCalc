@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
-      defaultSrc: ["'self'"],
+      defaultSrc: ["'none'"],
       scriptSrc: [
         "'self'",
         "https://pagead2.googlesyndication.com",
@@ -27,15 +27,15 @@ app.use(helmet({
       ],
       imgSrc: [
         "'self'",
-        "https:",
-        "data:"
+        "https://www.nurturecalc.com"
       ],
       frameSrc: [
         "https://googleads.g.doubleclick.net",
         "https://tpc.googlesyndication.com"
       ],
+      frameAncestors: ["'none'"],
       objectSrc: ["'none'"],
-      baseUri: ["'self'"],
+      baseUri: ["'none'"],
       formAction: ["'self'"],
       connectSrc: ["'self'"]
     }
