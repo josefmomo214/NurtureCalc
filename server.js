@@ -11,18 +11,42 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "https://pagead2.googlesyndication.com", "https://www.googletagmanager.com"],
-      styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-      fontSrc: ["'self'", "https://fonts.gstatic.com"],
-      imgSrc: ["'self'", "data:", "https:"],
-      frameSrc: ["https://googleads.g.doubleclick.net"],
+      scriptSrc: [
+        "'self'",
+        "https://pagead2.googlesyndication.com",
+        "https://www.googletagmanager.com",
+        "https://partner.googleadservices.com"
+      ],
+      styleSrc: [
+        "'self'",
+        "https://fonts.googleapis.com"
+      ],
+      fontSrc: [
+        "'self'",
+        "https://fonts.gstatic.com"
+      ],
+      imgSrc: [
+        "'self'",
+        "https:",
+        "data:"
+      ],
+      frameSrc: [
+        "https://googleads.g.doubleclick.net",
+        "https://tpc.googlesyndication.com"
+      ],
+      objectSrc: ["'none'"],
+      baseUri: ["'self'"],
+      formAction: ["'self'"],
       connectSrc: ["'self'"]
     }
   },
   hsts: {
-    maxAge: 31536000,
+    maxAge: 300,
     includeSubDomains: true,
-    preload: true
+    preload: false
+  },
+  referrerPolicy: {
+    policy: "strict-origin-when-cross-origin"
   }
 }));
 
