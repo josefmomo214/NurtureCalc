@@ -37,14 +37,23 @@ export default function Header() {
       {/* Mobile Nav Menu */}
       {isOpen && (
         <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-in slide-in-from-top-2 duration-300">
-          {["Home", "Calculators", "About"].map((link) => (
+          {[
+            { name: "Home", href: "/" },
+            { name: "Weight Loss", href: "/weight-loss" },
+            { name: "Calorie Needs", href: "/calorie-needs" },
+            { name: "Exercise Timeline", href: "/exercise-timeline" },
+            { name: "Pelvic Floor", href: "/pelvic-floor" },
+            { name: "Baby Weight", href: "/baby-weight" },
+            { name: "Blog", href: "/blog" },
+            { name: "About", href: "/about" }
+          ].map((link) => (
             <Link 
-              key={link} 
-              href={link === "Home" ? "/" : `#${link.toLowerCase()}`}
+              key={link.name} 
+              href={link.href}
               onClick={() => setIsOpen(false)}
               className="font-label text-sm font-bold text-[#3D2C2C] px-2 py-2 hover:bg-[#F9E4E8] rounded transition-colors"
             >
-              {link}
+              {link.name}
             </Link>
           ))}
         </nav>
