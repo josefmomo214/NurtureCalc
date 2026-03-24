@@ -1,12 +1,8 @@
-import express from 'express';
-import next from 'next';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import helmet from 'helmet';
-import rateLimit from 'express-rate-limit';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const express = require('express');
+const next = require('next');
+const path = require('path');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 
 const dev = process.env.NODE_ENV !== 'production';
 const hostname = 'localhost';
