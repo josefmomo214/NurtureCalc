@@ -33,7 +33,7 @@ export default function CookieBanner() {
         
         <div className="flex items-center gap-4 shrink-0">
           <Link href="/privacy-policy" className="text-xs font-label uppercase tracking-wider font-bold text-[#3D2C2C]/50 hover:text-[#E8A0A8] transition-colors">
-            Learn more
+            Read our Privacy Policy
           </Link>
           <Button 
             onClick={handleAccept}
