@@ -20,9 +20,22 @@ export default function BlogPost() {
         <article className="prose prose-rose lg:prose-lg max-w-none text-[#3D2C2C]/80 font-sans leading-relaxed">
           
           <header className="mb-12 not-prose border-b border-[#E8A0A8]/20 pb-10 text-center">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <span className="bg-[#F9E4E8] text-[#D58A92] px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase font-label">Baby Health</span>
-              <span className="text-xs text-[#3D2C2C]/50 font-label tracking-wide">5 min read</span>
+            <div className="space-y-4 mb-6">
+              <div className="flex items-center justify-center gap-3">
+                <span className="bg-[#F9E4E8] text-[#D58A92] px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase font-label">Baby Health</span>
+              </div>
+              <div className="space-y-1">
+                <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
+                  NurtureCalc Team
+                </Link>
+                <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase">
+                  Fact-checked against published medical guidelines —{" "}
+                  <Link href="/author/nurturecalc-team#sources" className="underline hover:text-[#E8A0A8]">
+                    see our sources
+                  </Link>
+                </p>
+                <span className="block text-xs text-[#3D2C2C]/50 font-label tracking-wide">5 min read</span>
+              </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-serif text-[#3D2C2C] leading-snug mb-6">
               Understanding Your Baby's Growth Chart
@@ -98,6 +111,13 @@ export default function BlogPost() {
           <div className="not-prose p-6 bg-[#F9E4E8]/50 rounded-xl mt-12 mb-16">
             <p className="text-sm text-[#3D2C2C]/60 italic">
               <strong>Disclaimer:</strong> Growth charts are one tool among many. Always discuss your baby's growth with your paediatrician or health visitor. The information here does not replace professional medical observation.
+            </p>
+          </div>
+
+          {/* Sources */}
+          <div className="mt-12 pt-8 border-t border-[#E8A0A8]/10">
+            <p className="text-[10px] text-[#3D2C2C]/40 leading-relaxed uppercase tracking-wider font-label">
+              Sources: WHO Multicentre Growth Reference Study Group (2006). WHO Child Growth Standards. Geneva: World Health Organization. American Academy of Pediatrics Bright Futures Guidelines.
             </p>
           </div>
 

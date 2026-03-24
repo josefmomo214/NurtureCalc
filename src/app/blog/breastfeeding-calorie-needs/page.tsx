@@ -20,9 +20,22 @@ export default function BlogPost() {
         <article className="prose prose-rose lg:prose-lg max-w-none text-[#3D2C2C]/80 font-sans leading-relaxed">
           
           <header className="mb-12 not-prose border-b border-[#E8A0A8]/20 pb-10 text-center">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <span className="bg-[#F9E4E8] text-[#D58A92] px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase font-label">Nutrition</span>
-              <span className="text-xs text-[#3D2C2C]/50 font-label tracking-wide">4 min read</span>
+            <div className="space-y-4 mb-6">
+              <div className="flex items-center justify-center gap-3">
+                <span className="bg-[#F9E4E8] text-[#D58A92] px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase font-label">Nutrition</span>
+              </div>
+              <div className="space-y-1">
+                <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
+                  NurtureCalc Team
+                </Link>
+                <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase">
+                  Fact-checked against published medical guidelines —{" "}
+                  <Link href="/author/nurturecalc-team#sources" className="underline hover:text-[#E8A0A8]">
+                    see our sources
+                  </Link>
+                </p>
+                <span className="block text-xs text-[#3D2C2C]/50 font-label tracking-wide">4 min read</span>
+              </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-serif text-[#3D2C2C] leading-snug mb-6">
               How Many Extra Calories Do You Need When Breastfeeding?
@@ -90,6 +103,13 @@ export default function BlogPost() {
           <div className="not-prose p-6 bg-[#F9E4E8]/50 rounded-xl mt-12 mb-16">
             <p className="text-sm text-[#3D2C2C]/60 italic">
               <strong>Disclaimer:</strong> This article is for informational purposes only. Speak to a registered dietitian or your midwife for personalised nutrition advice.
+            </p>
+          </div>
+
+          {/* Sources */}
+          <div className="mt-12 pt-8 border-t border-[#E8A0A8]/10">
+            <p className="text-[10px] text-[#3D2C2C]/40 leading-relaxed uppercase tracking-wider font-label">
+              Sources: Institute of Medicine. Dietary Reference Intakes for Energy. Mifflin MD et al. A new predictive equation for resting energy expenditure. Journal of the American Dietetic Association, 1990.
             </p>
           </div>
 

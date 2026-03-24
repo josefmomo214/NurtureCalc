@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Breastfeeding Calorie Needs Calculator — NurtureCalc',
-  description: 'Estimate how many calories you need each day while breastfeeding. Based on the Mifflin-St Jeor formula and WHO breastfeeding guidelines.',
+  title: 'Breastfeeding Calorie Calculator — How Much Do You Need? | NurtureCalc',
+  description: 'Discover exactly how many extra calories your body needs while breastfeeding. Personalised to your weight, height, activity level and feeding method. Free, no sign-up required.',
   alternates: {
     canonical: 'https://www.nurturecalc.com/breastfeeding-calories',
   },

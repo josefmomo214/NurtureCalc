@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Return to Exercise After Birth Calculator — NurtureCalc',
-  description: 'Find out when it\'s safe to return to exercise after giving birth. Personalised timeline based on delivery type, weeks postpartum, and symptoms.',
+  title: 'Postpartum Exercise Timeline Calculator | NurtureCalc',
+  description: 'Get a personalised exercise return timeline based on your delivery type and symptoms. Safe, science-backed guidance for returning to fitness after birth. Free, no sign-up required.',
   alternates: {
     canonical: 'https://www.nurturecalc.com/exercise-timeline',
   },

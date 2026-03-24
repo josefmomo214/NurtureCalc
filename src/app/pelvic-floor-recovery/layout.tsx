@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pelvic Floor Recovery Estimator — NurtureCalc',
-  description: 'A gentle quiz to estimate your pelvic floor recovery stage after birth. Get personalised guidance and know when to seek support.',
+  title: 'Postpartum Pelvic Floor Recovery Estimator | NurtureCalc',
+  description: 'Take our gentle pelvic floor quiz designed for new mothers. Understand where you are in your healing journey and what to focus on next. Free, no sign-up required.',
   alternates: {
     canonical: 'https://www.nurturecalc.com/pelvic-floor',
   },

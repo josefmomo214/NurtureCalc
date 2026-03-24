@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About NurtureCalc — Postpartum Health Tools for New Mothers',
-  description: 'Learn about NurtureCalc — who we are, how our calculators work, and our commitment to science-based, judgment-free postpartum health tools.',
+  title: 'About NurtureCalc — Our Mission & How Our Tools Work',
+  description: 'Learn how NurtureCalc\'s free postpartum calculators are built, what medical guidelines they use, and the team behind them.',
   alternates: {
     canonical: 'https://www.nurturecalc.com/about',
   },

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Baby Weight Percentile Calculator — NurtureCalc',
-  description: 'Check your baby\'s weight percentile using WHO growth standards. Enter age, weight, and sex for an instant result with a clear explanation.',
+  title: 'Baby Weight Percentile Calculator (WHO Charts) | NurtureCalc',
+  description: 'Instantly check your baby\'s weight against WHO growth charts. Free, no sign-up required. Works for boys and girls from 0 to 24 months.',
   alternates: {
     canonical: 'https://www.nurturecalc.com/baby-weight',
   },

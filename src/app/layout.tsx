@@ -22,8 +22,8 @@ import CookieBanner from "@/components/CookieBanner";
 import ClientProviders from "@/components/ClientProviders";
 
 export const metadata: Metadata = {
-  title: "NurtureCalc — Free Postpartum Health Calculators for New Mothers",
-  description: "Free science-based postpartum calculators for new mothers. Calculate safe weight loss rates, breastfeeding calorie needs, return-to-exercise timelines, and more.",
+  title: "Free Postpartum Health Calculators for New Mothers | NurtureCalc",
+  description: "Free, science-based postpartum calculators. Safe weight loss, breastfeeding calorie needs, exercise timelines, pelvic floor recovery & baby growth charts. No sign-up required.",
   keywords: "postpartum calculator, breastfeeding calories, return to exercise after birth, pelvic floor recovery, baby weight percentile",
   openGraph: {
     siteName: "NurtureCalc",

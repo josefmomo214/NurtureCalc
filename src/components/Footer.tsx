@@ -12,13 +12,18 @@ export default function Footer() {
 
           {/* Links */}
           <nav className="flex flex-wrap justify-center gap-8 md:gap-12">
-            {["Privacy Policy", "About", "Contact"].map((link) => (
+            {[
+              { label: "Privacy Policy", href: "/privacy-policy" },
+              { label: "About", href: "/about" },
+              { label: "NurtureCalc Team", href: "/author/nurturecalc-team" },
+              { label: "Contact", href: "/contact" }
+            ].map((link) => (
               <Link 
-                key={link} 
-                href={`/${link.toLowerCase().replace(" ", "-")}`}
+                key={link.label} 
+                href={link.href}
                 className="font-label text-xs font-bold tracking-widest uppercase hover:text-[#E8A0A8] transition-colors"
               >
-                {link}
+                {link.label}
               </Link>
             ))}
           </nav>
