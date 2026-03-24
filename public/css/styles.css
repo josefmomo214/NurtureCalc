@@ -5,6 +5,12 @@ css.ad-sidebar,
 .ad-inline,
 .ad-placeholder {
   display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
 }
 
 /* Extracted Inline Styles */
