@@ -76,3 +76,20 @@ css.ad-sidebar,
 .es-util-48 { max-width: 800px; margin: 0 auto; }
 .es-util-49 { position: relative; }
 .es-util-50 { font-size: 2rem; color: var(--primary-color); font-weight: bold; }
+
+/* WCAG AA Contrast Fixes */
+.btn-secondary,
+.btn,
+[class*="btn"] {
+  background-color: #B5525C !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  border-color: #B5525C !important;
+}
+
+.btn-secondary:hover,
+.btn:hover {
+  background-color: #8F3F47 !important;
+  border-color: #8F3F47 !important;
+  color: #FFFFFF !important;
+}
