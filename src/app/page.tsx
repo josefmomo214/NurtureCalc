@@ -17,6 +17,19 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "NurtureCalc",
+            "url": "https://nurturecalc.com",
+            "description": "Free postpartum health calculators for new mothers.",
+            "inLanguage": "en",
+          }),
+        }}
+      />
       <Header />
       <main className="flex-1">
         <Hero />
