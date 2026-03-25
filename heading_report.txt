@@ -1,0 +1,107 @@
+
+--- nurturecalc/views/calorie-needs.html ---
+h1: Breastfeeding Calorie Needs Calculator
+h2: Your Estimated Needs
+
+--- nurturecalc/views/index.html ---
+h1: Your gentle guide to postpartum recovery
+h3: Safe Weight Loss
+h3: Calorie Needs
+h3: Exercise Timeline
+h3: Pelvic Floor Estimator
+h3: Baby Weight Percentile
+
+--- nurturecalc/views/about.html ---
+h1: About NurtureCalc
+h2: Why we built this
+h2: How our calculators work
+h2: A note from us
+h2: Get in touch
+
+--- nurturecalc/views/weight-loss.html ---
+h1: Safe Postpartum Weight Loss Calculator
+h2: Your Safe Goal
+
+--- nurturecalc/views/404.html ---
+h1: 404
+h2: Oops — page not found
+
+--- nurturecalc/views/exercise-timeline.html ---
+h1: Return to Exercise After Birth Calculator
+h2: Your Timeline Status
+
+--- nurturecalc/views/baby-weight.html ---
+h1: Baby Weight Percentile Calculator
+h2: Your Baby is at the
+
+--- nurturecalc/views/privacy.html ---
+h1: Privacy Policy
+h3: 1. Data Collection & Storage
+h3: 2. Cookies & Analytics
+h3: 3. Your Rights Under GDPR
+h3: 4. Children's Privacy
+h3: 5. Contact Data Controller
+
+--- nurturecalc/views/pelvic-floor.html ---
+h1: Pelvic Floor Recovery Estimator
+h3: 1. How many weeks postpartum are you?
+h3: 2. Do you leak urine when sneezing, coughing, or laughing?
+h3: 3. Can you clearly feel your pelvic floor lift when you sque
+h3: 4. Do you experience a feeling of pressure or 'heaviness' in
+h2: Your Estimated Stage
+
+--- nurturecalc/views/blog/pelvic-floor-after-birth.html ---
+h1: What is the Pelvic Floor and Why Does it Matter After Birth?
+h2: Signs of a Weakened Pelvic Floor
+h2: Rebuilding the Foundation
+h3: Test Your Pelvic Floor Recovery
+h2: When to See a Professional
+h2: Summary
+h3: You might also like:
+
+--- nurturecalc/views/blog/understanding-baby-growth-chart.html ---
+h1: Understanding Your Baby's Growth Chart
+h2: What Does the Percentile Really Mean?
+h2: Following the Curve is What Matters
+h3: Calculate your baby's exact standing
+h2: Different Growth Patterns
+h2: Summary
+h3: You might also like:
+
+--- nurturecalc/views/blog/index.html ---
+h1: The NurtureCalc Blog
+h2: <a href="/blog/safe-weight-loss-breastfeeding" class="es-uti
+h2: <a href="/blog/breastfeeding-calorie-needs" class="es-util-3
+h2: <a href="/blog/returning-to-exercise-after-birth" class="es-
+h2: <a href="/blog/pelvic-floor-after-birth" class="es-util-30">
+h2: <a href="/blog/understanding-baby-growth-chart" class="es-ut
+
+--- nurturecalc/views/blog/returning-to-exercise-after-birth.html ---
+h1: A Gentle Guide to Returning to Exercise After Birth
+h2: The First Six Weeks: Focus on the Foundations
+h2: Weeks 6 to 12: The Clearance Phase
+h3: Get a Personalized Timeline
+h2: Cesarean Sections: Special Considerations
+h2: Red Flags to Watch For
+h2: Summary
+h3: You might also like:
+
+--- nurturecalc/views/blog/breastfeeding-calorie-needs.html ---
+h1: How Many Extra Calories Do You Need When Breastfeeding?
+h2: The Baseline: What Science Says
+h2: Dynamic Needs Based on Feeding Frequency
+h3: Quality Over Quantity
+h3: Calculate your personal baseline
+h2: Hydration: The Invisible Calorie Mover
+h2: Conclusion
+h3: You might also like:
+
+--- nurturecalc/views/blog/safe-weight-loss-breastfeeding.html ---
+h1: Is it Safe to Lose Weight While Breastfeeding?
+h2: Understanding the Caloric Demands of Lactation
+h2: When Is It Safe to Begin?
+h3: A Gradual Approach to Weight Loss
+h3: Curious about your specific targets?
+h2: Signs You Are Cutting Calories Too Drastically
+h2: Summary
+h3: You might also like:

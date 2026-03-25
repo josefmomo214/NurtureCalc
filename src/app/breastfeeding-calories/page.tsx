@@ -14,6 +14,28 @@ import UnitToggle from "@/components/UnitToggle";
 import { useEffect } from "react";
 
 export default function BreastfeedingCalories() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much weight can I safely lose per week while breastfeeding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most healthcare providers recommend no more than 0.5kg (1lb) per week while breastfeeding, to protect your milk supply and energy levels." }
+      },
+      {
+        "@type": "Question",
+        "name": "When can I start trying to lose weight after having a baby?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Medical guidelines recommend waiting at least 6 to 8 weeks postpartum before consciously restricting calories, to allow time to heal and establish milk supply." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does breastfeeding help you lose weight?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, breastfeeding burns approximately 500 extra calories per day, which can assist with postpartum weight loss, provided you are eating a balanced diet." }
+      }
+    ]
+  };
+
   const { system } = useUnitSystem();
   const [prevSystem, setPrevSystem] = useState(system);
 
@@ -91,29 +113,7 @@ export default function BreastfeedingCalories() {
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How many extra calories do I need while breastfeeding?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most breastfeeding mothers need an extra 300 to 500 calories per day above their pre-pregnancy intake, depending on how frequently they are feeding." }
-              },
-              {
-                "@type": "Question",
-                "name": "Will eating more calories increase my milk supply?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Eating enough calories is essential to maintaining milk supply, but eating significantly more than your body needs will not increase production beyond your baby's demand." }
-              },
-              {
-                "@type": "Question",
-                "name": "What happens if I don't eat enough calories while breastfeeding?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Under-eating while breastfeeding can lead to fatigue, dizziness, mood swings and in some cases a reduction in milk supply. Always prioritise adequate nutrition during this period." }
-              }
-            ]
-          })
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
       

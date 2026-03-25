@@ -75,6 +75,28 @@ export default function BlogPost() {
             Few things induce as much anxiety in new parents as the pediatrician's growth chart. At every well-baby visit, your infant is weighed, measured, and plotted onto a curving graph, yielding a "percentile" that can feel suspiciously like a grade. A low percentile can trigger fears of underfeeding, while a rapidly jumping percentile can cause unneeded worry about overgrowth. Understanding the actual mathematics and clinical intent behind these charts is the best way to quiet that anxiety and confidently track your child's innate developmental path.
           </p>
 
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">WHO vs CDC Charts — Which Should You Use?</h2>
+          <p>
+            If you have ever compared two different growth charts, you might have noticed they don't always align perfectly. In the world of pediatrics, two main sets of standards are used: those from the World Health Organization (WHO) and those from the Centers for Disease Control and Prevention (CDC).
+          </p>
+          <p>
+            The WHO charts are now considered the gold standard for infants from birth to age two. What makes them unique is that they are "normative" charts—they describe how children <i>should</i> grow under optimal health conditions. These standards were developed by tracking thousands of children across six different countries who were raised in environments favoring healthy growth, such as being exclusively breastfed for at least four months and being raised in smoke-free homes.
+          </p>
+          <p>
+            The CDC charts, by contrast, are "reference" charts. They describe how a specific population of children <i>did</i> grow during a certain period in the United States. Because fewer babies were exclusively breastfed during that era, the CDC charts tend to reflect a faster weight gain in the first year. Most pediatricians worldwide, including the American Academy of Pediatrics (AAP), now recommend using the WHO charts for all babies under two, as they offer a more biologically accurate baseline for development.
+          </p>
+
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What Percentile Is Normal?</h2>
+          <p>
+            One of the most persistent myths in parenting is that the 50th percentile is the "goal." We are conditioned to think of 50% as a passing grade or the average we should strive for, but growth doesn't work that way. In reality, any percentile from the 3rd to the 97th is considered perfectly normal and healthy.
+          </p>
+          <p>
+            Think of it like shoe sizes: being a size 7 is no "better" or "healthier" than being a size 10. They are simply different points on a spectrum of human diversity. A baby in the 5th percentile is just as likely to be thriving, meeting milestones, and developing a sharp little mind as a baby in the 95th percentile.
+          </p>
+          <p>
+            What truly matters to your healthcare provider is the <i>consistency</i> of the growth curve. If your baby starts at the 15th percentile and continues to track smoothly along that 15th percentile line month after month, that is a fantastic sign of health. It shows that your baby is receiving exactly the nutrition they need to fulfill their specific genetic potential. Every child has their own "lane" on the growth chart, and staying in that lane—regardless of which one it is—is the real indicator of success.
+          </p>
+
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What is a percentile and what does it actually mean?</h2>
           <p>
             A percentile simply represents how your baby's measurements compare to a generalized sample of thousands of other babies of the exact same age and sex. 
@@ -103,12 +125,69 @@ export default function BlogPost() {
             Every baby is born with a genetic predisposition to a certain size. A healthy growth pattern is one that roughly follows its established curve. A baby who is born at the 10th percentile and stays beautifully along the 10th percentile month after month is thriving perfectly. 
           </p>
 
-          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">When should a percentile change concern you?</h2>
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">When Should I Be Concerned About My Baby's Weight?</h2>
           <p>
-            Doctors look for dramatic shifts across multiple major percentile lines. This is known as "falling off the curve."
+            While most variations in growth are perfectly normal, the chart is designed to help catch potential issues early. There are three main "red flags" that pediatricians look for:
           </p>
+          <ul className="space-y-4 my-8 list-none p-0">
+            <li className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm flex items-start gap-4">
+              <span className="text-2xl">📉</span>
+              <div>
+                <h4 className="font-serif text-[#3D2C2C] mb-1">Crossing Major Percentile Lines</h4>
+                <p className="text-sm text-[#3D2C2C]/70 leading-relaxed italic">
+                  If your baby suddenly drops from the 80th down to the 25th or 10th percentile over a short period, this is known as "falling off the curve."
+                </p>
+              </div>
+            </li>
+            <li className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm flex items-start gap-4">
+              <span className="text-2xl">🍼</span>
+              <div>
+                <h4 className="font-serif text-[#3D2C2C] mb-1">Measuring Below the 3rd Percentile</h4>
+                <p className="text-sm text-[#3D2C2C]/70 leading-relaxed italic">
+                  Measuring below the 3rd percentile usually prompts a closer look at nutritional intake and overall health to ensure they are getting enough calories.
+                </p>
+              </div>
+            </li>
+            <li className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm flex items-start gap-4">
+              <span className="text-2xl">⏸️</span>
+              <div>
+                <h4 className="font-serif text-[#3D2C2C] mb-1">A Sudden Plateau</h4>
+                <p className="text-sm text-[#3D2C2C]/70 leading-relaxed italic">
+                  If a baby’s weight gain stops entirely (a flat line on the chart) for several consecutive weeks, it’s a signal to check in.
+                </p>
+              </div>
+            </li>
+          </ul>
           <p>
-            If a baby drops steeply—for instance, tumbling from the 75th percentile down to the 20th in a short period—it warrants investigation for feeding issues or underlying illness. Conversely, a sudden and massive jump across multiple lines might prompt a pediatrician to ensure there are no metabolic anomalies. However, slight dips and bumps are normal, often corresponding to growth spurts, recent illnesses, or newly acquired mobility (like crawling).
+            It is important to remember that these flags are not a reason to panic; they are simply prompts for a conversation. Often, the cause is simple, like a temporary dip after a stomach bug or a baby who has become so active (crawling or walking) that they are burning through calories faster.
+          </p>
+
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">Weight vs Length vs Head Circumference — The Full Picture</h2>
+          <p>
+            When you go to a well-baby visit, you'll notice the nurse takes three different measurements: weight, length (height), and head circumference. While parents often focus on the weight, doctors view these three numbers as a combined "story" of your baby's development.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+            <div className="p-6 bg-[#F9E4E8]/30 rounded-2xl border border-[#E8A0A8]/20">
+              <h4 className="font-label font-bold text-[#D58A92] uppercase tracking-wider text-[10px] mb-3">Weight</h4>
+              <p className="text-xs text-[#3D2C2C]/70 leading-relaxed">
+                The most sensitive indicator of short-term health. Can fluctuate based on illness, a growth spurt, or even a heavy diaper.
+              </p>
+            </div>
+            <div className="p-6 bg-[#F9E4E8]/30 rounded-2xl border border-[#E8A0A8]/20">
+              <h4 className="font-label font-bold text-[#D58A92] uppercase tracking-wider text-[10px] mb-3">Length</h4>
+              <p className="text-xs text-[#3D2C2C]/70 leading-relaxed">
+                A stable indicator of long-term growth and nutrition. Heavily influenced by genetics.
+              </p>
+            </div>
+            <div className="p-6 bg-[#F9E4E8]/30 rounded-2xl border border-[#E8A0A8]/20">
+              <h4 className="font-label font-bold text-[#D58A92] uppercase tracking-wider text-[10px] mb-3">Head Circumference</h4>
+              <p className="text-xs text-[#3D2C2C]/70 leading-relaxed">
+                Tracks brain development and skull growth. A steady, predictable increase is the best indicator of nervous system health.
+              </p>
+            </div>
+          </div>
+          <p>
+            By looking at all three together, the pediatrician can see if the baby is growing proportionately. A "discrepancy"—such as a baby in the 90th percentile for length but the 5th for weight—might simply mean you have a long, lean baby, but it gives the doctor a reason to ask more questions.
           </p>
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What affects your baby's weight and growth?</h2>
@@ -120,6 +199,34 @@ export default function BlogPost() {
           <p>
             If tracking provides peace of mind, ensure you use the exact same scale under the exact same conditions (preferably bare-skinned before a feed) each time. But resist the urge to weigh obsessively. Focus instead on the macroscopic signs of thriving: a steady output of wet and dirty diapers, bright and alert periods of wakefulness, outgrowing clothing, and meeting social and motor milestones.
           </p>
+
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-8 my-8">
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">My baby jumped from the 25th to the 60th percentile — is that ok?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                Yes, absolutely. In the first few months, many babies are still "finding their curve." Birth weight is often influenced by the environment in the womb, but over the first six months, a baby’s true genetic potential takes over.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">Does breastfeeding vs formula feeding affect growth chart results?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                Breastfed babies often gain weight more rapidly in the first 2-3 months and then slow down significantly. Formula-fed babies tend to gain weight at a more steady pace. The WHO charts are modeled on breastfed babies to account for this natural pattern.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">What is a growth spurt and how will I know when my baby is having one?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                A growth spurt is a short period (2-3 days) of rapid growth. Signs include increased hunger, more frequent night wakings, and being slightly more fussy or sleepy than usual. You might notice they outgrow sleepers overnight!
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">How often should my baby be weighed?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                For a healthy baby, weighing at standard well-baby checkups is perfectly sufficient. Weighing too often at home can lead to unnecessary anxiety, as weight varies naturally from day to day based on feeding and output.
+              </p>
+            </div>
+          </div>
 
           {/* CTA Box */}
           <div className="not-prose my-12 bg-white rounded-3xl p-8 border border-[#E8A0A8]/30 shadow-[0_4px_20px_rgba(232,160,168,0.1)] text-center space-y-4">

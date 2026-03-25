@@ -10,6 +10,28 @@ import { calculateExerciseTimeline } from "@/utils/calculators";
 import Link from "next/link";
 
 export default function ExerciseTimeline() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much weight can I safely lose per week while breastfeeding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most healthcare providers recommend no more than 0.5kg (1lb) per week while breastfeeding, to protect your milk supply and energy levels." }
+      },
+      {
+        "@type": "Question",
+        "name": "When can I start trying to lose weight after having a baby?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Medical guidelines recommend waiting at least 6 to 8 weeks postpartum before consciously restricting calories, to allow time to heal and establish milk supply." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does breastfeeding help you lose weight?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, breastfeeding burns approximately 500 extra calories per day, which can assist with postpartum weight loss, provided you are eating a balanced diet." }
+      }
+    ]
+  };
+
   const [weeks, setWeeks] = useState("");
   const [delivery, setDelivery] = useState<string | null>(null);
   const [symptoms, setSymptoms] = useState<string[]>([]);
@@ -42,29 +64,7 @@ export default function ExerciseTimeline() {
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "When can I start exercising after giving birth?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most mothers can begin gentle activity such as walking within days of a vaginal birth. More structured exercise is generally recommended after the 6-week postnatal check, and later for C-section deliveries." }
-              },
-              {
-                "@type": "Question",
-                "name": "How long should I wait to run after a C-section?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most guidelines recommend waiting at least 12 weeks after a C-section before returning to running, and only after rebuilding core and pelvic floor strength progressively." }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I do sit-ups or crunches after giving birth?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Traditional sit-ups and crunches are not recommended in early postpartum recovery as they can worsen diastasis recti. Focus on diaphragmatic breathing and gentle core reconnection first." }
-              }
-            ]
-          })
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
       

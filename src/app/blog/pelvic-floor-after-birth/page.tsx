@@ -75,6 +75,48 @@ export default function BlogPost() {
             It is one of the most hardworking muscle groups in the human body, yet many women don't truly think about their pelvic floor until after they have a baby. During postpartum recovery, discussions around torn ligaments and muscle fatigue usually focus on the visible body. But the deep, invisible architecture supporting your core is often what dictates your quality of life, comfort, and confidence in the months and years following childbirth.
           </p>
 
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">The Anatomy of the Pelvic Floor — Simply Explained</h2>
+          <p>
+            To understand why the pelvic floor is so important, it helps to visualize it. Rather than thinking of it as a single flat muscle, imagine it as a sophisticated, multi-layered hammock or a trampoline. This muscular structure sits at the very bottom of your torso, anchored securely to your pubic bone at the front and your tailbone at the back. It serves as the "floor" of your core, holding your internal organs—the bladder, uterus, and bowel—in their proper places against the constant pull of gravity.
+          </p>
+          <p>
+            We can break the pelvic floor down into three distinct layers, each with a specific job:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="font-label font-bold text-[#D58A92] uppercase tracking-wider text-[10px] mb-3">Layer 1: The Gates</h4>
+              <p className="text-xs text-[#3D2C2C]/70 leading-relaxed italic">
+                Responsible for the immediate "squeeze" — prevents leaking and plays a role in sexual sensation.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="font-label font-bold text-[#D58A92] uppercase tracking-wider text-[10px] mb-3">Layer 2: The Support Beam</h4>
+              <p className="text-xs text-[#3D2C2C]/70 leading-relaxed italic">
+                Structural integrity — manages pressure when you cough or lift. Like the canvas of a heavy-duty bag.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="font-label font-bold text-[#D58A92] uppercase tracking-wider text-[10px] mb-3">Layer 3: The Hammock</h4>
+              <p className="text-xs text-[#3D2C2C]/70 leading-relaxed italic">
+                A broad sheet that lifts and supports organs. Acts like a shock absorber for your entire body.
+              </p>
+            </div>
+          </div>
+          <p>
+            When these layers work together, they are dynamic and responsive. Just like a trampoline, they should be able to stretch down when you inhale and spring back up when you move. Problems arise when the "trampoline" becomes too loose (weakness) or too tight and rigid (hypertonicity), both of which can lead to discomfort and dysfunction.
+          </p>
+
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How Birth Affects the Pelvic Floor — Vaginal vs C-Section</h2>
+          <p>
+            A common misconception is that pelvic floor issues only happen to women who have had a vaginal delivery. While it is true that a vaginal birth involves a significant stretching of these muscles—stretching up to three times their resting length as the baby's head passes through—C-section mothers are by no means immune to pelvic floor challenges.
+          </p>
+          <p>
+            The reality is that your pelvic floor begins its "marathon" long before labor starts. For nine months, these muscles have been carrying the ever-increasing weight of your baby, the placenta, and the amniotic fluid. Additionally, the hormone relaxin, which prepares your body for birth by loosening ligaments, affects the entire pelvic basket, making the support structures more pliable and less stable.
+          </p>
+          <p>
+            For C-section mothers, the surgery itself is a major abdominal procedure. The core muscles and fascia are the synergistic partners of the pelvic floor; when the abdominal wall is compromised by surgery, the pelvic floor often has to work twice as hard to stabilize the pelvis. This can lead to overactivity and fatigue. Regardless of how your baby entered the world, your pelvic floor has performed an incredible feat of endurance, and both groups benefit equally from intentional, guided rehabilitation to restore balance and strength.
+          </p>
+
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What is the pelvic floor and what does it do?</h2>
           <p>
             Imagine a thick, muscular hammock stretching across the base of your pelvis, attaching from your tailbone at the back to your pubic bone at the front. This is your pelvic floor. 
@@ -106,23 +148,105 @@ export default function BlogPost() {
             <li><strong>Urgency:</strong> Struggling to reach the bathroom in time or feeling unable to empty your bladder completely.</li>
           </ul>
 
-          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How to do pelvic floor exercises correctly</h2>
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">Pelvic Floor Exercises — The Right Way to Do Them</h2>
           <p>
-            The standard advice is often just "do your Kegels," but poorly performed Kegels can actually make things worse. A true pelvic floor contraction involves both a tightening (like stopping the flow of urine) AND a lifting sensation (pulling up towards your belly button). 
+            Most of us have heard of "Kegels," but remarkably few of us are taught how to do them correctly. Simply "squeezing" isn't enough; you need a coordinated lift-and-release pattern. Here is a step-by-step guide to a high-quality pelvic floor contraction:
           </p>
-          <p>
-            Crucially, the <i>release</i> is just as important as the contraction. If you constantly clench your pelvic floor without relaxing it fully, the muscles become hypertonic (too tight), which can cause pain and ironically lead to leaking because the muscle is too exhausted to contract when you need it to.
+          <ol className="space-y-4 my-8 list-none pr-0">
+            <li className="p-4 bg-white rounded-xl border border-[#E8A0A8]/20 shadow-sm flex items-center gap-4">
+              <span className="w-8 h-8 rounded-full bg-[#E8A0A8] text-white flex items-center justify-center font-bold font-label">1</span>
+              <p className="text-sm text-[#3D2C2C]/70"><strong>Find your position:</strong> Sit tall on a firm chair or lie on your back with your knees bent.</p>
+            </li>
+            <li className="p-4 bg-white rounded-xl border border-[#E8A0A8]/20 shadow-sm flex items-center gap-4">
+              <span className="w-8 h-8 rounded-full bg-[#E8A0A8] text-white flex items-center justify-center font-bold font-label">2</span>
+              <p className="text-sm text-[#3D2C2C]/70"><strong>The 'Squeeze':</strong> Imagine stopping the flow of urine or prevent gas from escaping. Focus on the muscles around your openings.</p>
+            </li>
+            <li className="p-4 bg-white rounded-xl border border-[#E8A0A8]/20 shadow-sm flex items-center gap-4">
+              <span className="w-8 h-8 rounded-full bg-[#E8A0A8] text-white flex items-center justify-center font-bold font-label">3</span>
+              <p className="text-sm text-[#3D2C2C]/70"><strong>The 'Lift':</strong> Now, imagine pulling those same muscles upward, inside your body, as if lifting a marble with your vagina.</p>
+            </li>
+            <li className="p-4 bg-white rounded-xl border border-[#E8A0A8]/20 shadow-sm flex items-center gap-4">
+              <span className="w-8 h-8 rounded-full bg-[#E8A0A8] text-white flex items-center justify-center font-bold font-label">4</span>
+              <p className="text-sm text-[#3D2C2C]/70"><strong>The 'Hold':</strong> Try to maintain that lift for 3 to 5 seconds while continuing to breathe.</p>
+            </li>
+            <li className="p-4 bg-[#F9E4E8]/50 rounded-xl border border-[#E8A0A8]/20 shadow-sm flex items-center gap-4 font-bold border-dashed">
+              <span className="w-8 h-8 rounded-full bg-[#D58A92] text-white flex items-center justify-center font-bold font-label">5</span>
+              <p className="text-sm text-[#3D2C2C]"><strong>The 'Release' (Critical):</strong> Gently let the muscles descend back to their resting position.</p>
+            </li>
+          </ol>
+
+          <div className="p-6 bg-white rounded-2xl border-2 border-[#E8A0A8]/20 my-8 space-y-4">
+            <h4 className="text-[#3D2C2C] font-serif flex items-center gap-2">
+              <span className="text-[#E8A0A8]">⚠️</span> The Most Common Mistakes
+            </h4>
+            <ul className="text-sm text-[#3D2C2C]/70 space-y-2 mb-0">
+              <li><strong className="text-[#D58A92]">Holding your breath:</strong> This creates downward pressure that works against the lift. Keep breathing.</li>
+              <li><strong className="text-[#D58A92]">Squeezing glutes:</strong> Your butt should not be working. If you lift off the chair, you're using the wrong muscles.</li>
+              <li><strong className="text-[#D58A92]">Bearing down:</strong> Pushing outward works like a bowel movement and strains the tissues.</li>
+            </ul>
+          </div>
+
+          <p className="text-sm italic text-[#3D2C2C]/60 mb-8 border-l-2 border-[#E8A0A8]/30 pl-4 py-2 bg-[#F9E4E8]/20">
+            <strong>A Note on the 'Too-Tight' Pelvic Floor:</strong> If your muscles are hypertonic (too tight), more Kegels can make things worse. If sex is painful or you can't "find" the release, stop exercises and consult a PT first.
           </p>
 
-          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">When to see a pelvic floor physiotherapist</h2>
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">When to See a Pelvic Floor Physiotherapist</h2>
           <p>
-            Every postpartum woman should see a pelvic floor physical therapist at least once, roughly 6 weeks after delivery. However, it becomes urgent if you are experiencing any signs of dysfunction (leaking, heaviness, pain) entirely. A PT can assess internally whether your muscles are too weak, too tight, or uncoordinated, giving you a customized recovery plan rather than a generic internet pamphlet.
+            In many parts of the world, a visit to a pelvic floor physiotherapist is a standard part of postpartum care, provided to every mother regardless of her symptoms. We should view it no differently than seeing a dentist for a checkup or a mechanic after a long road trip. You don't need to wait until something is "broken" to seek help.
+          </p>
+          <p>
+            However, you should prioritize a visit if you experience any of the following:
+          </p>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 my-8 list-none p-0">
+            <li className="bg-[#FFFDF9] border border-[#E8A0A8]/10 p-3 rounded-lg text-sm text-[#3D2C2C]/80 font-bold flex items-center gap-2">
+              <span className="text-[#E8A0A8]">•</span> Leaking (urine, gas, or stool)
+            </li>
+            <li className="bg-[#FFFDF9] border border-[#E8A0A8]/10 p-3 rounded-lg text-sm text-[#3D2C2C]/80 font-bold flex items-center gap-2">
+              <span className="text-[#E8A0A8]">•</span> Prolapse symptoms (heaviness)
+            </li>
+            <li className="bg-[#FFFDF9] border border-[#E8A0A8]/10 p-3 rounded-lg text-sm text-[#3D2C2C]/80 font-bold flex items-center gap-2">
+              <span className="text-[#E8A0A8]">•</span> Pelvic or pubic bone pain
+            </li>
+            <li className="bg-[#FFFDF9] border border-[#E8A0A8]/10 p-3 rounded-lg text-sm text-[#3D2C2C]/80 font-bold flex items-center gap-2">
+              <span className="text-[#E8A0A8]">•</span> Painful intercourse
+            </li>
+          </ul>
+          <p>
+            Framing pelvic PT as a "last resort" only delays healing. These specialists provide hands-on assessment, biofeedback, and personalized exercise programs that go far beyond what a general pamphlet can offer. Seeking help is an act of self-care that protects your long-term mobility and confidence.
           </p>
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How long does pelvic floor recovery take?</h2>
           <p>
             Tissues take time to heal. Most women find that with dedicated, gradual rehabilitation, significant healing occurs between 3 and 6 months postpartum. However, for more severe tearing or prolapse, the recovery timeline can stretch to a year or more. Patience, consistency, and professional guidance are key.
           </p>
+
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-8 my-8">
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">Is leaking after birth normal?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                It is <i>common</i>, but it is not <i>normal</i>. While your body needs time to heal in the early weeks, persistent leaking is a sign that the pelvic floor is struggling to manage pressure. The good news is that it is highly treatable with the right exercises and support.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">How long does pelvic floor recovery take?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                Every body is different, but most women see significant improvement within 3 to 6 months of consistent rehabilitation. For those with more significant tears or prolapse, the recovery journey can take 12 months or longer. Consistency is more important than speed.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">What is diastasis recti and is it related to the pelvic floor?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                Diastasis recti is the separation of the abdominal muscles. Because the deep core and pelvic floor work together as a single unit, a gap in the abdominals often means the pelvic floor has to compensate for the lost stability. Healing one almost always involves working on the other.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">Can I do pelvic floor exercises too much?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                Yes. Like any other muscle, the pelvic floor can become over-fatigued. Over-exercising without proper relaxation can lead to a "tight" or hypertonic state, which is just as problematic as weakness. Quality and coordination are far more important than high repetitions.
+              </p>
+            </div>
+          </div>
 
           {/* CTA Box */}
           <div className="not-prose my-12 bg-white rounded-3xl p-8 border border-[#E8A0A8]/30 shadow-[0_4px_20px_rgba(232,160,168,0.1)] text-center space-y-4">
