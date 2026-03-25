@@ -75,6 +75,17 @@ export default function BlogPost() {
             The moment you give birth, society often begins whispering (or shouting) about "bouncing back." It's no wonder that one of the most common questions new mothers ask is exactly when and how they can safely begin losing weight. This pressure is uniquely intense, yet it fundamentally conflicts with the profound physiological healing your body requires in the fourth trimester, particularly if you are also responsible for producing total nourishment for an entirely new human being.
           </p>
 
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What Happens to Your Body During Breastfeeding?</h2>
+          <p>
+            Breastfeeding is more than just a feeding method; it's a complex physiological process that fundamentally alters your internal environment. At the center of this transformation are two primary hormones: prolactin and oxytocin. Prolactin, often referred to as the "mothering hormone," is responsible for milk synthesis. However, it also has a significant impact on your metabolism. For many women, high levels of prolactin signal the body to prioritize fat storage, acting as an evolutionary insurance policy to ensure that milk can be produced even if food becomes scarce.
+          </p>
+          <p>
+            Oxytocin, the "love hormone," facilitates the let-down reflex and promotes uterine contraction, but it also influences your appetite and emotional state. This hormonal interplay is why the experience of weight loss while breastfeeding and nursing is so varied. You may have a friend who seems to return to her pre-pregnancy size within weeks, while you find that your body stubbornly holds onto every ounce. It is essential to recognize that both of these experiences are entirely normal and healthy. Your body is not "failing" if it isn't shedding weight quickly; it is simply prioritizing the metabolic demands of lactation and the preservation of energy for your baby.
+          </p>
+          <p>
+            Each woman's metabolic response to breastfeeding is as unique as her DNA. Factors such as genetics, baseline activity levels, sleep quality (which is often low for new parents), and even your baby's feeding frequency all play a role. Some bodies are more sensitive to the metabolic drain of milk production and tap into fat stores readily, while others respond to the high energy demand by increasing hunger cues to maintain a steady state. Understanding that your body's primary objective is the survival and growth of your infant can help reframe your perspective from one of restriction to one of appreciation for the incredible work your system is performing daily.
+          </p>
+
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What happens to your body in the first 12 weeks postpartum</h2>
           <p>
             Before even considering intentional weight loss, it's vital to unpack what your body has just achieved. During the first six to twelve weeks postpartum, your uterus is laboriously shrinking back to its pre-pregnancy size (involution). You are shedding excess blood and fluid volume built up over nine months. If you endured a cesarean section or vaginal tearing, your body is directing immense energy towards cellular repair and wound healing. 
@@ -82,6 +93,43 @@ export default function BlogPost() {
           <p>
             Attempting to force weight loss during this acute recovery window through severe caloric restriction actively starves the cellular healing process. It strips you of the energy required to recover from childbirth trauma while simultaneously managing profound sleep deprivation. Healing requires calories; it requires dense, comprehensive nutrition.
           </p>
+
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">The Role of Macronutrients While Nursing</h2>
+          <p>
+            When you do reach a point where you feel ready to focus on your nutrition, it’s helpful to think in terms of "additive nutrition" rather than subtraction. Instead of asking what you should cut out, ask what you can add to better support your health and your milk supply. This starts with understanding the role of the three primary macronutrients: protein, fats, and carbohydrates.
+          </p>
+          <p>
+            Protein is the building block of repair. After the physical trauma of childbirth, your tissues need amino acids to rebuild and recover. For breastfeeding mothers, protein requirements are significantly higher than for the general population. Aiming for at least 70 to 80 grams of high-quality protein daily is a realistic and beneficial goal. This not only supports your own muscle maintenance and cellular repair but also ensures that the protein content of your breast milk remains consistent, supporting your baby's rapid growth and brain development.
+          </p>
+          <p>
+            Healthy fats are another critical piece of the puzzle. The fat content of your breast milk—which provides concentrated energy for your baby—is directly influenced by the types of fats you consume. Incorporating monounsaturated and polyunsaturated fats, such as those found in avocados, olive oil, walnuts, and fatty fish, provides essential fatty acids like DHA, which are vital for your baby’s neurological and visual development. Furthermore, fats are highly satiating, helping you feel full and satisfied between meals, which is a key component of preventing the "hangry" episodes that often lead to over-consumption of less nutritious snacks.
+          </p>
+          <p>
+            Finally, we have complex carbohydrates. While "low carb" diets are often touted for quick weight loss, they are generally not recommended for nursing mothers. Your brain and your milk-producing cells run on glucose. Complex carbohydrates—like sweet potatoes, brown rice, quinoa, and oats—provide a steady, sustained release of energy rather than the quick spikes and crashes associated with refined sugars. These foods also provide the fiber necessary for digestive health, which can be particularly important in the postpartum weeks.
+          </p>
+
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">Foods That Support Both Weight Loss and Milk Supply</h2>
+          <p>Choosing foods that fulfill a dual purpose—supporting lactation while promoting a healthy weight—is one of the most effective strategies for the postpartum period. Here are several powerhouse foods to include in your daily rotation:</p>
+          <ul className="space-y-4 my-6">
+            <li>
+              <strong className="text-[#3D2C2C]">Oats:</strong> A classic galactagogue, oats are rich in iron and fiber, providing a slow-release energy source that helps stabilize blood sugar and support a healthy milk supply.
+            </li>
+            <li>
+              <strong className="text-[#3D2C2C]">Salmon:</strong> Excellent for its high Omega-3 fatty acid (DHA) content, salmon supports your baby’s brain development while providing lean protein that keeps you feeling full longer.
+            </li>
+            <li>
+              <strong className="text-[#3D2C2C]">Eggs:</strong> One of the most nutrient-dense foods on the planet, eggs provide high-quality protein and choline, which is essential for both your recovery and your baby's cognitive health.
+            </li>
+            <li>
+              <strong className="text-[#3D2C2C]">Leafy Greens:</strong> Spinach, kale, and Swiss chard are packed with calcium, iron, and Vitamin K, providing essential micronutrients without adding excessive calories.
+            </li>
+            <li>
+              <strong className="text-[#3D2C2C]">Greek Yogurt:</strong> This is a double-header, offering a significant punch of protein for satiety along with probiotics that support your digestive health and immune system.
+            </li>
+            <li>
+              <strong className="text-[#3D2C2C]">Nuts and Seeds:</strong> Almonds, chia seeds, and flaxseeds are rich in minerals and healthy fats, making them the perfect snack for maintaining energy levels between busy feeding sessions.
+            </li>
+          </ul>
 
           <div className="ad-inline my-8 bg-slate-100 p-4 rounded text-center text-sm text-slate-400 font-label border border-dashed border-slate-300">
             Advertisement Placeholder
@@ -118,6 +166,34 @@ export default function BlogPost() {
           <p>
             Drink to thirst, and then drink a little more, as hydration is heavily tied to both milk production and metabolic function. Incorporate gentle, restorative movement like walking and deep core breathing before progressing to high-intensity workouts. Most importantly, practice radical self-compassion. The body that grew, birthed, and is feeding your baby is a marvel of biology, not a project to be endlessly fixed.
           </p>
+
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-8 my-8">
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">Can I do intermittent fasting while breastfeeding?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                While intermittent fasting can be effective for some, it is generally advised to be very cautious while nursing. Long windows without food can lead to a drop in milk supply for many mothers and may cause blood sugar fluctuations that leave you feeling lightheaded and exhausted during a period when your energy demands are already at their peak.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">Is it normal to gain weight while breastfeeding?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                Yes, it is surprisingly common. The high levels of prolactin can increase your appetite significantly, and the sleep deprivation common in the first year often elevates cortisol, which can lead to weight gain or difficulty losing weight. Be gentle with yourself; your body is working under extraordinary circumstances.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">What supplements help with postpartum weight loss?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                There is no "magic pill" for postpartum weight loss, and many over-the-counter weight loss supplements are not safe for breastfeeding. Focus instead on a high-quality postnatal multivitamin and potentially a daily Omega-3 supplement to ensure you and your baby are getting the foundational nutrients you need.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
+              <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">How long does it take to lose the baby weight?</h4>
+              <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
+                It’s helpful to remember the old adage: "Nine months on, nine months off." For many, it can take a full year or more for their body to return to a baseline state, particularly if they are exclusively nursing. Your timeline is unique, and reaching a "goal weight" is far less important than how you feel and the quality of your recovery.
+              </p>
+            </div>
+          </div>
 
           {/* CTA Box */}
           <div className="not-prose my-12 bg-white rounded-3xl p-8 border border-[#E8A0A8]/30 shadow-[0_4px_20px_rgba(232,160,168,0.1)] text-center space-y-4">
