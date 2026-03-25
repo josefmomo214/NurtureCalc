@@ -12,8 +12,34 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPost() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Understanding Your Baby's Growth Chart",
+    "author": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "url": "https://nurturecalc.com/author/nurturecalc-team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "url": "https://nurturecalc.com"
+    },
+    "datePublished": "2026-03-25",
+    "description": "Percentiles can be confusing. Break down what WHO growth charts actually mean and why your baby's individual curve matters more than the number.",
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       
       <main className="flex-1 max-w-3xl mx-auto w-full py-16 px-6">

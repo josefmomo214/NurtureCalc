@@ -12,8 +12,34 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPost() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How Many Extra Calories Do You Need When Breastfeeding?",
+    "author": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "url": "https://nurturecalc.com/author/nurturecalc-team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "url": "https://nurturecalc.com"
+    },
+    "datePublished": "2026-03-25",
+    "description": "Producing milk is hard work. Ensure you are properly fuelling your body by understanding exactly how many extra calories your body burns each day.",
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       
       <main className="flex-1 max-w-3xl mx-auto w-full py-16 px-6">

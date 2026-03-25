@@ -12,8 +12,34 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPost() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Is it Safe to Lose Weight While Breastfeeding?",
+    "author": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "url": "https://nurturecalc.com/author/nurturecalc-team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "url": "https://nurturecalc.com"
+    },
+    "datePublished": "2026-03-25",
+    "description": "Losing weight while breastfeeding requires a delicate balance. Find out the science behind protecting your milk supply while shedding pregnancy weight safely.",
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       
       <main className="flex-1 max-w-3xl mx-auto w-full py-16 px-6">

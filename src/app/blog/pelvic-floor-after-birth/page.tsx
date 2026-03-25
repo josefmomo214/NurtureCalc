@@ -12,8 +12,34 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPost() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What is the Pelvic Floor and Why Does it Matter After Birth?",
+    "author": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "url": "https://nurturecalc.com/author/nurturecalc-team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "url": "https://nurturecalc.com"
+    },
+    "datePublished": "2026-03-25",
+    "description": "The pelvic floor endures massive strain during pregnancy. Learn how to identify symptoms of dysfunction and steps you can take to heal effectively.",
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       
       <main className="flex-1 max-w-3xl mx-auto w-full py-16 px-6">
