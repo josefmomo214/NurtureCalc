@@ -40,6 +40,32 @@ export default function ExerciseTimeline() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When can I start exercising after giving birth?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Most mothers can begin gentle activity such as walking within days of a vaginal birth. More structured exercise is generally recommended after the 6-week postnatal check, and later for C-section deliveries." }
+              },
+              {
+                "@type": "Question",
+                "name": "How long should I wait to run after a C-section?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Most guidelines recommend waiting at least 12 weeks after a C-section before returning to running, and only after rebuilding core and pelvic floor strength progressively." }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I do sit-ups or crunches after giving birth?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Traditional sit-ups and crunches are not recommended in early postpartum recovery as they can worsen diastasis recti. Focus on diaphragmatic breathing and gentle core reconnection first." }
+              }
+            ]
+          })
+        }}
+      />
       <Header />
       
       <main className="flex-1 flex flex-col md:flex-row max-w-7xl mx-auto w-full py-12 px-6 gap-12">

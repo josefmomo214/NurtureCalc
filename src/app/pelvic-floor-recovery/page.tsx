@@ -75,6 +75,32 @@ export default function PelvicFloorRecovery() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does pelvic floor recovery take after birth?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Pelvic floor recovery varies widely. Many mothers see significant improvement within 3 to 6 months with consistent exercises, but some symptoms may take longer and benefit from physiotherapy." }
+              },
+              {
+                "@type": "Question",
+                "name": "Is it normal to leak urine after having a baby?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Stress urinary incontinence is very common after birth, affecting up to 1 in 3 mothers. It is not something you simply have to accept — pelvic floor exercises and physiotherapy are highly effective." }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need to do pelvic floor exercises after a C-section?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. Nine months of pregnancy places significant load on the pelvic floor regardless of delivery method. C-section mothers benefit just as much from pelvic floor rehabilitation." }
+              }
+            ]
+          })
+        }}
+      />
       <Header />
       
       <main className="flex-1 flex flex-col md:flex-row max-w-7xl mx-auto w-full py-12 px-6 gap-12">

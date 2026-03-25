@@ -59,6 +59,32 @@ export default function SafeWeightLoss() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much weight can I safely lose per week while breastfeeding?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Most healthcare providers recommend no more than 0.5kg (1lb) per week while breastfeeding, to protect your milk supply and energy levels." }
+              },
+              {
+                "@type": "Question",
+                "name": "When can I start trying to lose weight after having a baby?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Medical guidelines recommend waiting at least 6 to 8 weeks postpartum before consciously restricting calories, to allow time to heal and establish milk supply." }
+              },
+              {
+                "@type": "Question",
+                "name": "Does breastfeeding help you lose weight?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Breastfeeding burns an extra 300 to 500 calories per day, which can support gradual weight loss. However, increased appetite during lactation means results vary between mothers." }
+              }
+            ]
+          })
+        }}
+      />
       <Header />
       
       <main className="flex-1 flex flex-col md:flex-row max-w-7xl mx-auto w-full py-12 px-6 gap-12">

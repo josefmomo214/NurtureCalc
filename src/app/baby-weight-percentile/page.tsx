@@ -61,6 +61,32 @@ export default function BabyWeightPercentile() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a healthy weight percentile for a baby?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Any percentile between the 3rd and 97th is considered within the normal range. What matters most is that your baby follows a consistent growth curve over time, not the specific percentile number." }
+              },
+              {
+                "@type": "Question",
+                "name": "Which growth chart should I use for my baby?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The WHO growth charts are recommended for all babies up to age 2. They are based on children raised under optimal conditions including breastfeeding, and are used by most paediatricians worldwide." }
+              },
+              {
+                "@type": "Question",
+                "name": "When should I be concerned about my baby's weight?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Speak to your paediatrician if your baby drops across two or more major percentile lines, consistently measures below the 3rd percentile, or shows a sudden plateau in weight gain." }
+              }
+            ]
+          })
+        }}
+      />
       <Header />
       
       <main className="flex-1 flex flex-col md:flex-row max-w-7xl mx-auto w-full py-12 px-6 gap-12">
