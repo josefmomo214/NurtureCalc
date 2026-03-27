@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    title: "Postpartum Nutrition: What to Eat to Heal, Recover and Thrive",
+    excerpt: "A complete postpartum nutrition guide covering the key nutrients new mothers need for healing, breastfeeding and sustained energy in the fourth trimester.",
+    slug: "postpartum-nutrition-guide",
+    category: "Nutrition",
+    readTime: "15 min read",
+  },
+  {
     title: "How Long Does It Take to Lose the Baby Weight? (An Honest Answer)",
     excerpt: "Most mothers wonder how long postpartum weight loss really takes. An honest, science-based answer with realistic timelines for breastfeeding and non-breastfeeding mothers.",
     slug: "how-long-to-lose-baby-weight",
