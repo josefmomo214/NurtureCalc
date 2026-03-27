@@ -3,63 +3,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Metadata } from 'next';
+import { blogPosts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
   title: 'Postpartum Health Blog — Science-Based Advice | NurtureCalc',
   description: 'Science-based articles on postpartum recovery, breastfeeding nutrition, safe exercise and pelvic floor health. Written for new mothers, grounded in medical guidelines.',
 };
-
-const blogPosts = [
-  {
-    title: "Postpartum Nutrition: What to Eat to Heal, Recover and Thrive",
-    excerpt: "A complete postpartum nutrition guide covering the key nutrients new mothers need for healing, breastfeeding and sustained energy in the fourth trimester.",
-    slug: "postpartum-nutrition-guide",
-    category: "Nutrition",
-    readTime: "15 min read",
-  },
-  {
-    title: "How Long Does It Take to Lose the Baby Weight? (An Honest Answer)",
-    excerpt: "Most mothers wonder how long postpartum weight loss really takes. An honest, science-based answer with realistic timelines for breastfeeding and non-breastfeeding mothers.",
-    slug: "how-long-to-lose-baby-weight",
-    category: "Recovery",
-    readTime: "12 min read",
-  },
-  {
-    title: "Is it Safe to Lose Weight While Breastfeeding?",
-    excerpt: "Find out whether it's safe to lose weight while breastfeeding, how quickly you can lose weight postpartum, and what affects your milk supply.",
-    slug: "safe-weight-loss-breastfeeding",
-    category: "Nutrition",
-    readTime: "5 min read",
-  },
-  {
-    title: "How Many Extra Calories Do You Need When Breastfeeding?",
-    excerpt: "Breastfeeding burns hundreds of extra calories a day. Learn how many calories you actually need, what affects your intake, and how to eat well for you and your baby.",
-    slug: "breastfeeding-calorie-needs",
-    category: "Nutrition",
-    readTime: "4 min read",
-  },
-  {
-    title: "A Gentle Guide to Returning to Exercise After Birth",
-    excerpt: "When is it safe to exercise after giving birth? Learn the evidence-based timeline for returning to exercise after a vaginal birth or C-section.",
-    slug: "returning-to-exercise-after-birth",
-    category: "Fitness",
-    readTime: "6 min read",
-  },
-  {
-    title: "What is the Pelvic Floor and Why Does it Matter After Birth?",
-    excerpt: "Learn what the pelvic floor is, how birth affects it, and what you can do to support your recovery. Includes signs of pelvic floor dysfunction to watch for.",
-    slug: "pelvic-floor-after-birth",
-    category: "Recovery",
-    readTime: "5 min read",
-  },
-  {
-    title: "Understanding Your Baby's Growth Chart",
-    excerpt: "Growth charts can feel confusing and worrying. Learn what percentiles actually mean, what WHO growth standards are, and when to talk to your doctor.",
-    slug: "understanding-baby-growth-chart",
-    category: "Baby Health",
-    readTime: "5 min read",
-  },
-];
 
 export default function BlogIndex() {
   return (
