@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    title: "How Long Does It Take to Lose the Baby Weight? (An Honest Answer)",
+    excerpt: "Most mothers wonder how long postpartum weight loss really takes. An honest, science-based answer with realistic timelines for breastfeeding and non-breastfeeding mothers.",
+    slug: "how-long-to-lose-baby-weight",
+    category: "Recovery",
+    readTime: "12 min read",
+  },
+  {
     title: "Is it Safe to Lose Weight While Breastfeeding?",
     excerpt: "Find out whether it's safe to lose weight while breastfeeding, how quickly you can lose weight postpartum, and what affects your milk supply.",
     slug: "safe-weight-loss-breastfeeding",
