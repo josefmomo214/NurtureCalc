@@ -1,44 +1,40 @@
+import { Metadata } from 'next';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { Button } from "@/components/Button";
 
 export const metadata: Metadata = {
-  title: 'Understanding Your Baby\'s Growth Chart — NurtureCalc',
-  description: 'Growth charts can feel confusing and worrying. Learn what percentiles actually mean, what WHO growth standards are, and when to talk to your doctor.',
-  alternates: {
-    canonical: 'https://www.nurturecalc.com/blog/understanding-baby-growth-chart',
-  },
+  title: 'Understanding Your Baby\'s Growth Chart & Percentiles | NurtureCalc',
+  description: 'A comprehensive guide for parents on how to read WHO growth charts, what percentiles really mean, and when to be concerned about your baby\'s weight.',
 };
 
-export default function BlogPost() {
-  const jsonLd = {
+export default function GrowthChartGuide() {
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Understanding Your Baby's Growth Chart",
+    "headline": "Understanding Your Baby's Growth Chart: A Parent's Guide",
+    "description": "Explaining how baby weight percentiles work and why consistently following a curve is more important than the specific number.",
     "author": {
       "@type": "Organization",
-      "name": "NurtureCalc",
-      "url": "https://nurturecalc.com/author/nurturecalc-team"
+      "name": "NurtureCalc"
     },
     "publisher": {
       "@type": "Organization",
       "name": "NurtureCalc",
-      "url": "https://nurturecalc.com"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.nurturecalc.com/logo.png"
+      }
     },
-    "datePublished": "2026-03-25",
-    "description": "Percentiles can be confusing. Break down what WHO growth charts actually mean and why your baby's individual curve matters more than the number.",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    }
+    "datePublished": "2024-03-20"
   };
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <Header />
       
@@ -51,14 +47,11 @@ export default function BlogPost() {
                 <span className="bg-[#F9E4E8] text-[#D58A92] px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase font-label">Baby Health</span>
               </div>
               <div className="space-y-1">
-                <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
+                <span className="text-sm font-label font-bold tracking-wide text-[#3D2C2C]">
                   NurtureCalc Team
-                </Link>
+                </span>
                 <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase">
-                  Fact-checked against published medical guidelines —{" "}
-                  <Link href="/author/nurturecalc-team#sources" className="underline hover:text-[#E8A0A8]">
-                    see our sources
-                  </Link>
+                  Fact-checked against published medical guidelines
                 </p>
                 <span className="block text-xs text-[#3D2C2C]/50 font-label tracking-wide">5 min read</span>
               </div>

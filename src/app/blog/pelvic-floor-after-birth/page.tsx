@@ -6,9 +6,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'What is the Pelvic Floor and Why Does it Matter After Birth? — NurtureCalc',
   description: 'Learn what the pelvic floor is, how birth affects it, and what you can do to support your recovery. Includes signs of pelvic floor dysfunction to watch for.',
-  alternates: {
-    canonical: 'https://www.nurturecalc.com/blog/pelvic-floor-after-birth',
-  },
 };
 
 export default function BlogPost() {
@@ -16,6 +13,7 @@ export default function BlogPost() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "What is the Pelvic Floor and Why Does it Matter After Birth?",
+    "description": "The pelvic floor endures massive strain during pregnancy. Learn how to identify symptoms of dysfunction and steps you can take to heal effectively.",
     "author": {
       "@type": "Organization",
       "name": "NurtureCalc",
@@ -24,14 +22,13 @@ export default function BlogPost() {
     "publisher": {
       "@type": "Organization",
       "name": "NurtureCalc",
-      "url": "https://nurturecalc.com"
+      "url": "https://nurturecalc.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nurturecalc.com/logo.png"
+      }
     },
-    "datePublished": "2026-03-25",
-    "description": "The pelvic floor endures massive strain during pregnancy. Learn how to identify symptoms of dysfunction and steps you can take to heal effectively.",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    }
+    "datePublished": "2026-03-25"
   };
 
   return (

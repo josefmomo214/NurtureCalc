@@ -6,9 +6,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'How Many Extra Calories Do You Need When Breastfeeding? — NurtureCalc',
   description: 'Breastfeeding burns hundreds of extra calories a day. Learn how many calories you actually need, what affects your intake, and how to eat well for you and your baby.',
-  alternates: {
-    canonical: 'https://www.nurturecalc.com/blog/breastfeeding-calorie-needs',
-  },
 };
 
 export default function BlogPost() {
@@ -16,6 +13,7 @@ export default function BlogPost() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "How Many Extra Calories Do You Need When Breastfeeding?",
+    "description": "Producing milk is hard work. Ensure you are properly fuelling your body by understanding exactly how many extra calories your body burns each day.",
     "author": {
       "@type": "Organization",
       "name": "NurtureCalc",
@@ -24,14 +22,13 @@ export default function BlogPost() {
     "publisher": {
       "@type": "Organization",
       "name": "NurtureCalc",
-      "url": "https://nurturecalc.com"
+      "url": "https://nurturecalc.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nurturecalc.com/logo.png"
+      }
     },
-    "datePublished": "2026-03-25",
-    "description": "Producing milk is hard work. Ensure you are properly fuelling your body by understanding exactly how many extra calories your body burns each day.",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    }
+    "datePublished": "2026-03-25"
   };
 
   return (

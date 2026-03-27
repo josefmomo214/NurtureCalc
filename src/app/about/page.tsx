@@ -6,14 +6,26 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About NurtureCalc — Our Mission & How Our Tools Work',
   description: 'Learn how NurtureCalc\'s free postpartum calculators are built, what medical guidelines they use, and the team behind them.',
-  alternates: {
-    canonical: 'https://www.nurturecalc.com/about',
-  },
 };
 
 export default function AboutPage() {
+  const aboutJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "NurtureCalc",
+      "description": "Free, science-based tools made with care for new mothers.",
+      "url": "https://www.nurturecalc.com"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+      />
       <Header />
       
       <main className="flex-1 max-w-4xl mx-auto w-full py-16 px-6">

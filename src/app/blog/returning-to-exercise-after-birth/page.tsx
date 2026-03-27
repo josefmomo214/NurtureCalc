@@ -6,9 +6,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'A Gentle Guide to Returning to Exercise After Birth — NurtureCalc',
   description: 'When is it safe to exercise after giving birth? Learn the evidence-based timeline for returning to exercise after a vaginal birth or C-section.',
-  alternates: {
-    canonical: 'https://www.nurturecalc.com/blog/returning-to-exercise-after-birth',
-  },
 };
 
 export default function BlogPost() {
@@ -16,6 +13,7 @@ export default function BlogPost() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "A Gentle Guide to Returning to Exercise After Birth",
+    "description": "Whether you had a vaginal delivery or a C-section, returning to fitness shouldn't be rushed. Follow our structured timeline to safely rebuild strength.",
     "author": {
       "@type": "Organization",
       "name": "NurtureCalc",
@@ -24,14 +22,13 @@ export default function BlogPost() {
     "publisher": {
       "@type": "Organization",
       "name": "NurtureCalc",
-      "url": "https://nurturecalc.com"
+      "url": "https://nurturecalc.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nurturecalc.com/logo.png"
+      }
     },
-    "datePublished": "2026-03-25",
-    "description": "Whether you had a vaginal delivery or a C-section, returning to fitness shouldn't be rushed. Follow our structured timeline to safely rebuild strength.",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    }
+    "datePublished": "2026-03-25"
   };
 
   return (

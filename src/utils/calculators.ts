@@ -11,29 +11,18 @@ export function calculateSafeWeightLoss(weeks: number, isBreastfeeding: boolean)
   }
 }
 
-// 2. Breastfeeding Calorie Needs Estimator
-export function calculateCalorieNeeds(age: number, weightKg: number, heightCm: number, activityLevel: string, dailyFeeds: string) {
+// 2. Breastfeeding Calorie Needs Estimator (TDEE)
+export function calculateTDEE(weightKg: number, heightCm: number, age: number, activityLevel: number, feedingStatus: string) {
   // Mifflin-St Jeor for women
   const bmr = (10 * weightKg) + (6.25 * heightCm) - (5 * age) - 161;
   
-  let multiplier = 1.2;
-  switch (activityLevel) {
-    case 'light': multiplier = 1.375; break;
-    case 'moderate': multiplier = 1.55; break;
-    case 'active': multiplier = 1.725; break;
-  }
-  
-  const baseTDEE = Math.round(bmr * multiplier);
+  const baseTDEE = bmr * activityLevel;
 
   let bonus = 0;
-  switch (dailyFeeds) {
-    case '1-3': bonus = 300; break;
-    case '4-6': bonus = 400; break;
-    case '7-9': bonus = 500; break;
-    case '10+': bonus = 600; break;
-  }
+  if (feedingStatus === 'exclusive') bonus = 500;
+  if (feedingStatus === 'partial') bonus = 300;
 
-  return { base: baseTDEE, bonus, total: baseTDEE + bonus };
+  return baseTDEE + bonus;
 }
 
 // 3. Exercise Timeline

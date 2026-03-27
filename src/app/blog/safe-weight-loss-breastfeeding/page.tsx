@@ -6,9 +6,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Is it Safe to Lose Weight While Breastfeeding? — NurtureCalc',
   description: 'Find out whether it\'s safe to lose weight while breastfeeding, how quickly you can lose weight postpartum, and what affects your milk supply.',
-  alternates: {
-    canonical: 'https://www.nurturecalc.com/blog/safe-weight-loss-breastfeeding',
-  },
 };
 
 export default function BlogPost() {
@@ -16,6 +13,7 @@ export default function BlogPost() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Is it Safe to Lose Weight While Breastfeeding?",
+    "description": "Losing weight while breastfeeding requires a delicate balance. Find out the science behind protecting your milk supply while shedding pregnancy weight safely.",
     "author": {
       "@type": "Organization",
       "name": "NurtureCalc",
@@ -24,14 +22,13 @@ export default function BlogPost() {
     "publisher": {
       "@type": "Organization",
       "name": "NurtureCalc",
-      "url": "https://nurturecalc.com"
+      "url": "https://nurturecalc.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nurturecalc.com/logo.png"
+      }
     },
     "datePublished": "2026-03-25",
-    "description": "Losing weight while breastfeeding requires a delicate balance. Find out the science behind protecting your milk supply while shedding pregnancy weight safely.",
-    "medicalAudience": {
-      "@type": "MedicalAudience",
-      "audienceType": "Patient"
-    }
   };
 
   return (
