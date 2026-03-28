@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "c-section-recovery-timeline",
+    title: "C-Section Recovery: A Realistic Week-by-Week Guide",
+    excerpt: "Recovering from a C-section takes time and patience. This week-by-week guide covers what to expect from discharge through to 12 weeks and beyond.",
+    category: "Recovery",
+    readTime: "10 min read",
+    publishedAt: "2026-03-28",
+  },
+  {
     slug: "postpartum-nutrition-guide",
     title: "Postpartum Nutrition: What to Eat to Heal, Recover and Thrive",
     excerpt: "A complete postpartum nutrition guide covering the key nutrients new mothers need for healing, breastfeeding and sustained energy in the fourth trimester.",
