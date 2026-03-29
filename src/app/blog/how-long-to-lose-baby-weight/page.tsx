@@ -5,6 +5,9 @@ import { Metadata } from 'next';
 import { babyWeightContent } from "./content";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/how-long-to-lose-baby-weight',
+  },
   title: "How Long Does It Take to Lose the Baby Weight? (An Honest Answer) | NurtureCalc",
   description: "Most mothers wonder how long postpartum weight loss really takes. An honest, science-based answer with realistic timelines for breastfeeding and non-breastfeeding mothers.",
 };

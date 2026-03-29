@@ -5,6 +5,9 @@ import Link from "next/link";
 import { Button } from "@/components/Button";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/understanding-baby-growth-chart',
+  },
   title: 'Understanding Your Baby\'s Growth Chart & Percentiles | NurtureCalc',
   description: 'A comprehensive guide for parents on how to read WHO growth charts, what percentiles really mean, and when to be concerned about your baby\'s weight.',
 };

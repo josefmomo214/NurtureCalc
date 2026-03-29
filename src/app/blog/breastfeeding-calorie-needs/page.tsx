@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/breastfeeding-calorie-needs',
+  },
   title: 'How Many Extra Calories Do You Need When Breastfeeding? — NurtureCalc',
   description: 'Breastfeeding burns hundreds of extra calories a day. Learn how many calories you actually need, what affects your intake, and how to eat well for you and your baby.',
 };

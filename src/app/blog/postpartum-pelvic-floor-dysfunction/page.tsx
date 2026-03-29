@@ -5,6 +5,9 @@ import { Metadata } from 'next';
 import { pelvicFloorDysfunctionContent } from "./content";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/postpartum-pelvic-floor-dysfunction',
+  },
   title: "Signs of Postpartum Pelvic Floor Dysfunction — And What To Do | NurtureCalc",
   description: "Leaking, heaviness, pain — these are signs of postpartum pelvic floor dysfunction. Learn to recognise them early and what steps to take to heal.",
 };

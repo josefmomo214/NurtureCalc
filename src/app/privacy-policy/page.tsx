@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy — NurtureCalc',
   description: 'NurtureCalc privacy policy. Learn how we handle data, how Google AdSense uses cookies on this site, and how to manage your ad preferences.',
   alternates: {
-    canonical: 'https://www.nurturecalc.com/privacy-policy',
+    canonical: '/privacy-policy',
   },
 };
 

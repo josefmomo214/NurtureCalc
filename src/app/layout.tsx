@@ -33,8 +33,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  metadataBase: new URL("https://nurturecalc.com"),
   alternates: {
-    canonical: "https://www.nurturecalc.com/",
+    canonical: "/",
   }
 };
 

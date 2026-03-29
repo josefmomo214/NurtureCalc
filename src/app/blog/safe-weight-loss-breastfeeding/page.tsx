@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/safe-weight-loss-breastfeeding',
+  },
   title: 'Is it Safe to Lose Weight While Breastfeeding? — NurtureCalc',
   description: 'Find out whether it\'s safe to lose weight while breastfeeding, how quickly you can lose weight postpartum, and what affects your milk supply.',
 };

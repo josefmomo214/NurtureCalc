@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/returning-to-exercise-after-birth',
+  },
   title: 'A Gentle Guide to Returning to Exercise After Birth — NurtureCalc',
   description: 'When is it safe to exercise after giving birth? Learn the evidence-based timeline for returning to exercise after a vaginal birth or C-section.',
 };

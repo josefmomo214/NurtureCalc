@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   description: "Free, science-based postpartum calculators. Safe weight loss, breastfeeding calorie needs, exercise timelines, pelvic floor recovery & baby growth charts. No sign-up required.",
   keywords: "postpartum calculator, breastfeeding calories, return to exercise after birth, pelvic floor recovery, baby weight percentile",
   alternates: {
-    canonical: "https://www.nurturecalc.com/",
-  }
+    canonical: "/",
+  },
 };
 
 export default function Home() {

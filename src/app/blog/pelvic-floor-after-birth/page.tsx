@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/pelvic-floor-after-birth',
+  },
   title: 'What is the Pelvic Floor and Why Does it Matter After Birth? — NurtureCalc',
   description: 'Learn what the pelvic floor is, how birth affects it, and what you can do to support your recovery. Includes signs of pelvic floor dysfunction to watch for.',
 };

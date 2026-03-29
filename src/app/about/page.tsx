@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/about',
+  },
   title: "About NurtureCalc — Our Mission & How Our Tools Work",
   description: "Learn how NurtureCalc's free postpartum calculators are built, what medical guidelines they use, and the team behind them.",
 };

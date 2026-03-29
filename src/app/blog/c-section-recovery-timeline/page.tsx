@@ -5,6 +5,9 @@ import { Metadata } from 'next';
 import { cSectionRecoveryContent } from "./content";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/c-section-recovery-timeline',
+  },
   title: "C-Section Recovery: A Realistic Week-by-Week Guide | NurtureCalc",
   description: "Recovering from a C-section takes time and patience. This week-by-week guide covers what to expect from discharge through to 12 weeks and beyond.",
 };

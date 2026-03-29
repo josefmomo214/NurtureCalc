@@ -14,6 +14,7 @@ export default function Footer() {
           <nav className="flex flex-wrap justify-center gap-8 md:gap-12">
             {[
               { label: "Privacy Policy", href: "/privacy-policy" },
+              { label: "Affiliate Disclosure", href: "/affiliate-disclosure" },
               { label: "About", href: "/about" },
               { label: "NurtureCalc Team", href: "/author/nurturecalc-team" },
               { label: "Contact", href: "/contact" }

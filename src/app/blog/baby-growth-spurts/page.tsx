@@ -5,6 +5,9 @@ import { Metadata } from 'next';
 import { babyGrowthSpurtsContent } from "./content";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/baby-growth-spurts',
+  },
   title: "Baby Growth Spurts: What They Are, When They Happen and How to Survive Them | NurtureCalc",
   description: "Baby growth spurts can feel sudden and overwhelming. Learn the typical timeline, signs to look for, and how to support your baby through each one.",
 };

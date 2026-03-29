@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Contact NurtureCalc — We\'re Here to Listen',
   description: 'Have a question or feedback about our postpartum calculators? Get in touch with the NurtureCalc team.',
   alternates: {
-    canonical: 'https://www.nurturecalc.com/contact',
+    canonical: '/contact',
   },
 };
 

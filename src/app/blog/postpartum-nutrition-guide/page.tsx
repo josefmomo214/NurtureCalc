@@ -5,6 +5,9 @@ import { Metadata } from 'next';
 import { nutritionGuideContent } from "./content";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/postpartum-nutrition-guide',
+  },
   title: "Postpartum Nutrition: What to Eat to Heal, Recover and Thrive | NurtureCalc",
   description: "A complete postpartum nutrition guide covering the key nutrients new mothers need for healing, breastfeeding and sustained energy in the fourth trimester.",
 };
