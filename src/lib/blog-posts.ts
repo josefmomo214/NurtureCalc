@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "baby-growth-spurts",
+    title: "Baby Growth Spurts: What They Are, When They Happen and How to Survive Them",
+    excerpt: "Baby growth spurts can feel sudden and overwhelming. Learn the typical timeline, signs to look for, and how to support your baby through each one.",
+    category: "Baby Health",
+    readTime: "5 min read",
+    publishedAt: "2026-03-28",
+  },
+  {
     slug: "postpartum-pelvic-floor-dysfunction",
     title: "Signs of Postpartum Pelvic Floor Dysfunction — And What To Do About Them",
     excerpt: "Leaking, heaviness, pain — these are signs of postpartum pelvic floor dysfunction. Learn to recognise them early and what steps to take to heal.",
