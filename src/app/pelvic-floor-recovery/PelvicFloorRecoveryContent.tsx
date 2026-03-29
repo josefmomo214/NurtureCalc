@@ -49,12 +49,21 @@ const questions = [
 
 export default function PelvicFloorRecoveryContent() {
   const [currentStep, setCurrentStep] = useState(0);
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState<number | null>(null);
   const [scores, setScores] = useState<number[]>([]);
   const [result, setResult] = useState<{ stage: string; message: string } | null>(null);
 
-  const handleSelectOption = (score: number) => {
+  const handleSelectOption = (index: number) => {
+    setSelectedOptionIndex(index);
+  };
+
+  const handleNext = () => {
+    if (selectedOptionIndex === null) return;
+
+    const score = questions[currentStep].options[selectedOptionIndex].score;
     const newScores = [...scores, score];
     setScores(newScores);
+    setSelectedOptionIndex(null);
 
     if (currentStep < questions.length - 1) {
       setCurrentStep(currentStep + 1);
@@ -66,6 +75,7 @@ export default function PelvicFloorRecoveryContent() {
 
   const handleReset = () => {
     setCurrentStep(0);
+    setSelectedOptionIndex(null);
     setScores([]);
     setResult(null);
   };
@@ -101,7 +111,6 @@ export default function PelvicFloorRecoveryContent() {
                   <div className="space-y-2">
                     <div className="flex justify-between font-label text-xs font-bold text-[#3D2C2C]/50 uppercase tracking-widest">
                       <span>Question {currentStep + 1} of {questions.length}</span>
-                      <span>{Math.round(progressPercentage)}%</span>
                     </div>
                     <div className="w-full h-1 bg-[#F9E4E8] rounded-full overflow-hidden">
                       <div 
@@ -121,14 +130,30 @@ export default function PelvicFloorRecoveryContent() {
                       {questions[currentStep].options.map((option, idx) => (
                         <button
                           key={idx}
-                          onClick={() => handleSelectOption(option.score)}
-                          className="text-left p-6 rounded-xl border border-[#E8A0A8]/20 bg-[#FFFDF9] hover:bg-[#F9E4E8] hover:border-[#E8A0A8] transition-all group"
+                          onClick={() => handleSelectOption(idx)}
+                          className={`text-left p-6 rounded-xl border transition-all group ${
+                            selectedOptionIndex === idx 
+                              ? 'bg-[#E8A0A8]/10 border-[#E8A0A8]' 
+                              : 'bg-[#FFFDF9] border-[#E8A0A8]/20 hover:bg-[#F9E4E8] hover:border-[#E8A0A8]'
+                          }`}
                         >
-                          <span className="font-label text-sm font-bold text-[#3D2C2C] group-hover:text-[#E8A0A8] transition-colors">
+                          <span className={`font-label text-sm font-bold transition-colors ${
+                            selectedOptionIndex === idx ? 'text-[#E8A0A8]' : 'text-[#3D2C2C] group-hover:text-[#E8A0A8]'
+                          }`}>
                             {option.text}
                           </span>
                         </button>
                       ))}
+                    </div>
+
+                    <div className="pt-4 flex justify-end">
+                      <Button 
+                        onClick={handleNext} 
+                        disabled={selectedOptionIndex === null}
+                        className="bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8"
+                      >
+                        {currentStep === questions.length - 1 ? 'See Results' : 'Next Question'}
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -157,7 +182,7 @@ export default function PelvicFloorRecoveryContent() {
         </div>
 
         {/* Global Desktop Ad Sidebar */}
-        <aside className="hidden md:block w-72 shrink-0">
+        <aside className="hidden">
           <div className="ad-sidebar sticky top-32 w-full h-[600px] bg-slate-100 rounded-xl border border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-label text-sm">
             Ad Placeholder
           </div>
@@ -185,7 +210,7 @@ export default function PelvicFloorRecoveryContent() {
       </main>
 
       {/* Global Mobile Ad */}
-      <div className="md:hidden px-6 py-8 border-t border-[#E8A0A8]/10">
+      <div className="hidden">
         <div className="ad-sidebar w-full h-48 bg-slate-100 rounded-xl border border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-label text-sm">
           Ad Placeholder
         </div>
