@@ -34,3 +34,5 @@ jobs:
           local-dir: ./out/
           server-dir: /public_html/
           dangerous-clean-slate: false
+          # Ensure .htaccess and other dotfiles from the out/ folder are uploaded
+          # SamKirkland/FTP-Deploy-Action handles dotfiles by default when they exist in local-dir.
