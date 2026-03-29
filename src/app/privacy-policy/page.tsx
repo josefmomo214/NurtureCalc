@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
               Privacy <span className="text-[#E8A0A8] italic">Policy</span>
             </h1>
             <p className="font-label text-xs font-bold text-[#3D2C2C]/50 uppercase tracking-widest">
-              Last updated: March 2026
+              Last updated: 29 March 2026
             </p>
           </header>
 
@@ -60,9 +60,54 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section className="space-y-4">
+              <h2 className="text-2xl font-serif text-[#3D2C2C]">Advertising</h2>
+              <p>
+                NurtureCalc uses Google AdSense to display advertisements on some pages. Google AdSense uses cookies and web beacons to serve ads based on your prior visits to this website and other websites on the internet.
+              </p>
+              <p>
+                Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to NurtureCalc and/or other sites on the internet.
+              </p>
+              <p>
+                You may opt out of personalised advertising by visiting <a href="http://www.aboutads.info" className="text-[#E8A0A8] hover:underline transition-colors" target="_blank" rel="noopener noreferrer">www.aboutads.info</a> or <a href="https://www.google.com/settings/ads" className="text-[#E8A0A8] hover:underline transition-colors" target="_blank" rel="noopener noreferrer">www.google.com/settings/ads</a>.
+              </p>
+              <p>
+                For more information on how Google uses data when you use our site, visit: <a href="https://google.com/policies/privacy/partners" className="text-[#E8A0A8] hover:underline transition-colors" target="_blank" rel="noopener noreferrer">google.com/policies/privacy/partners</a>
+              </p>
+            </section>
+
+            <section className="space-y-4">
+              <h2 className="text-2xl font-serif text-[#3D2C2C]">Third Party Services</h2>
+              <p>NurtureCalc uses the following third party services:</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-[#E8A0A8]">
+                <li>Google AdSense — for displaying advertisements</li>
+                <li>Google Analytics — for understanding how visitors use the site</li>
+                <li>Google Search Console — for monitoring search performance</li>
+              </ul>
+              <p>
+                Each of these services has their own privacy policy governing how they use your data. We encourage you to review their respective privacy policies.
+              </p>
+            </section>
+
+            <section className="space-y-4">
               <h2 className="text-2xl font-serif text-[#3D2C2C]">How to opt out of personalized ads</h2>
               <p>
                 Users may opt out of personalized advertising by visiting Google's <a href="https://myadcenter.google.com/" className="text-[#E8A0A8] hover:underline transition-colors" target="_blank" rel="noopener noreferrer">Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="http://www.aboutads.info/choices/" className="text-[#E8A0A8] hover:underline transition-colors" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>.
+              </p>
+            </section>
+
+            <section className="space-y-4">
+              <h2 className="text-2xl font-serif text-[#3D2C2C]">Your Rights</h2>
+              <p>Depending on your location you may have the right to:</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-[#E8A0A8]">
+                <li>Access the personal data we hold about you</li>
+                <li>Request correction of inaccurate data</li>
+                <li>Request deletion of your data</li>
+                <li>Object to processing of your data</li>
+                <li>Request restriction of processing</li>
+                <li>Data portability</li>
+              </ul>
+              <p>
+                To exercise any of these rights please contact us at <a href="mailto:hello@nurturecalc.com" className="text-[#E8A0A8] hover:underline font-medium">hello@nurturecalc.com</a>
               </p>
             </section>
 
