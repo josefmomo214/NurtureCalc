@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "postpartum-pelvic-floor-dysfunction",
+    title: "Signs of Postpartum Pelvic Floor Dysfunction — And What To Do About Them",
+    excerpt: "Leaking, heaviness, pain — these are signs of postpartum pelvic floor dysfunction. Learn to recognise them early and what steps to take to heal.",
+    category: "Recovery",
+    readTime: "10 min read",
+    publishedAt: "2026-03-28",
+  },
+  {
     slug: "c-section-recovery-timeline",
     title: "C-Section Recovery: A Realistic Week-by-Week Guide",
     excerpt: "Recovering from a C-section takes time and patience. This week-by-week guide covers what to expect from discharge through to 12 weeks and beyond.",
