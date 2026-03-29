@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/exercise-timeline',
   },
+  openGraph: {
+    title: 'Postpartum Exercise Timeline Calculator | NurtureCalc',
+    description: 'Get a personalised exercise return timeline based on your delivery type and symptoms. Safe, science-backed guidance for returning to fitness after birth.',
+    url: 'https://nurturecalc.com/exercise-timeline',
+    type: 'website',
+  },
 };
 
 export default function ExerciseTimeline() {

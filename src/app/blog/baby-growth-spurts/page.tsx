@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   },
   title: "Baby Growth Spurts: What They Are, When They Happen and How to Survive Them | NurtureCalc",
   description: "Baby growth spurts can feel sudden and overwhelming. Learn the typical timeline, signs to look for, and how to support your baby through each one.",
+  openGraph: {
+    title: "Baby Growth Spurts: What They Are, When They Happen and How to Survive Them | NurtureCalc",
+    description: "Learn the typical timeline and signs of baby growth spurts, and how to support your baby.",
+    url: 'https://nurturecalc.com/blog/baby-growth-spurts',
+    type: 'article',
+    publishedTime: '2026-03-28T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function BlogPost() {

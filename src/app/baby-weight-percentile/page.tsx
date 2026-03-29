@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/baby-weight-percentile',
   },
+  openGraph: {
+    title: 'Baby Weight Percentile Calculator (WHO Charts) | NurtureCalc',
+    description: 'Instantly check your baby\'s weight against WHO growth charts. Free, no sign-up required.',
+    url: 'https://nurturecalc.com/baby-weight-percentile',
+    type: 'website',
+  },
 };
 
 export default function BabyWeightPercentile() {

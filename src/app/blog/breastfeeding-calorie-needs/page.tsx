@@ -4,11 +4,19 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  title: 'How Many Extra Calories Do You Need When Breastfeeding? — NurtureCalc',
+  description: 'Breastfeeding burns hundreds of extra calories a day. Learn how many calories you actually need and what affects your intake.',
   alternates: {
     canonical: '/blog/breastfeeding-calorie-needs',
   },
-  title: 'How Many Extra Calories Do You Need When Breastfeeding? — NurtureCalc',
-  description: 'Breastfeeding burns hundreds of extra calories a day. Learn how many calories you actually need, what affects your intake, and how to eat well for you and your baby.',
+  openGraph: {
+    title: 'How Many Extra Calories Do You Need When Breastfeeding? — NurtureCalc',
+    description: 'Breastfeeding burns hundreds of extra calories a day. Learn how many calories you actually need.',
+    url: 'https://nurturecalc.com/blog/breastfeeding-calorie-needs',
+    type: 'article',
+    publishedTime: '2026-03-20T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function BlogPost() {

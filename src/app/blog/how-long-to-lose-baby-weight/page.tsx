@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   },
   title: "How Long Does It Take to Lose the Baby Weight? (An Honest Answer) | NurtureCalc",
   description: "Most mothers wonder how long postpartum weight loss really takes. An honest, science-based answer with realistic timelines for breastfeeding and non-breastfeeding mothers.",
+  openGraph: {
+    title: "How Long Does It Take to Lose the Baby Weight? (An Honest Answer) | NurtureCalc",
+    description: "An honest, science-based answer with realistic timelines for breastfeeding and non-breastfeeding mothers.",
+    url: 'https://nurturecalc.com/blog/how-long-to-lose-baby-weight',
+    type: 'article',
+    publishedTime: '2026-03-27T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function BlogPost() {

@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/safe-weight-loss',
   },
+  openGraph: {
+    title: 'Safe Postpartum Weight Loss Calculator | NurtureCalc',
+    description: 'Find your safe weekly weight loss rate while breastfeeding. Our free calculator accounts for your weeks postpartum and feeding status.',
+    url: 'https://nurturecalc.com/safe-weight-loss',
+    type: 'website',
+  },
 };
 
 export default function SafeWeightLoss() {

@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   },
   title: "C-Section Recovery: A Realistic Week-by-Week Guide | NurtureCalc",
   description: "Recovering from a C-section takes time and patience. This week-by-week guide covers what to expect from discharge through to 12 weeks and beyond.",
+  openGraph: {
+    title: "C-Section Recovery: A Realistic Week-by-Week Guide | NurtureCalc",
+    description: "A realistic week-by-week guide to C-section recovery, from discharge to 12 weeks.",
+    url: 'https://nurturecalc.com/blog/c-section-recovery-timeline',
+    type: 'article',
+    publishedTime: '2026-03-28T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function BlogPost() {

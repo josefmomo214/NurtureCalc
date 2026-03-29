@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/pelvic-floor-recovery',
   },
+  openGraph: {
+    title: 'Postpartum Pelvic Floor Recovery Estimator | NurtureCalc',
+    description: 'Take our gentle pelvic floor quiz designed for new mothers. Understand where you are in your healing journey.',
+    url: 'https://nurturecalc.com/pelvic-floor-recovery',
+    type: 'website',
+  },
 };
 
 export default function PelvicFloorRecovery() {

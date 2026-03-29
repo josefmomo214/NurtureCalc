@@ -6,10 +6,18 @@ import { Button } from "@/components/Button";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/blog/understanding-baby-growth-chart',
+    canonical: 'https://nurturecalc.com/blog/understanding-baby-growth-chart',
   },
-  title: 'Understanding Your Baby\'s Growth Chart & Percentiles | NurtureCalc',
-  description: 'A comprehensive guide for parents on how to read WHO growth charts, what percentiles really mean, and when to be concerned about your baby\'s weight.',
+  title: 'Understanding Your Baby\'s Growth Chart — NurtureCalc',
+  description: 'Growth charts can feel confusing. Learn what percentiles actually mean, what WHO standards are, and when to talk to your doctor.',
+  openGraph: {
+    title: 'Understanding Your Baby\'s Growth Chart — NurtureCalc',
+    description: 'Learn what growth percentiles actually mean and how to read your baby\'s chart.',
+    url: 'https://nurturecalc.com/blog/understanding-baby-growth-chart',
+    type: 'article',
+    publishedTime: '2026-03-05T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function GrowthChartGuide() {

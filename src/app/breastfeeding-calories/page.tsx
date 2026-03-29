@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/breastfeeding-calories',
   },
+  openGraph: {
+    title: 'Breastfeeding Calorie Calculator — How Much Do You Need? | NurtureCalc',
+    description: 'Discover exactly how many extra calories your body needs while breastfeeding. Personalised to your weight, height, and activity level.',
+    url: 'https://nurturecalc.com/breastfeeding-calories',
+    type: 'website',
+  },
 };
 
 export default function BreastfeedingCalories() {

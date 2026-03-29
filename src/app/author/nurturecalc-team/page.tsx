@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/author/nurturecalc-team',
   },
+  openGraph: {
+    title: 'About NurtureCalc — Our Mission & How Our Tools Work',
+    description: 'Learn how NurtureCalc\'s free postpartum calculators are built, what medical guidelines they use, and the team behind them.',
+    url: 'https://nurturecalc.com/author/nurturecalc-team',
+    type: 'website',
+  },
 };
 
 export default function AuthorPage() {

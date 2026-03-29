@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/privacy-policy',
   },
+  openGraph: {
+    title: 'Privacy Policy — NurtureCalc',
+    description: 'NurtureCalc privacy policy. Learn how we handle data and manage your preferences.',
+    url: 'https://nurturecalc.com/privacy-policy',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicyPage() {

@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   description: "NurtureCalc's affiliate disclosure — how we handle affiliate links and our commitment to honest recommendations.",
   alternates: {
     canonical: "/affiliate-disclosure",
-  }
+  },
+  openGraph: {
+    title: "Affiliate Disclosure | NurtureCalc",
+    description: "NurtureCalc's affiliate disclosure — how we handle affiliate links and our commitment to honest recommendations.",
+    url: 'https://nurturecalc.com/affiliate-disclosure',
+    type: 'website',
+  },
 };
 
 export default function AffiliateDisclosurePage() {

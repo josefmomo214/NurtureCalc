@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   },
   title: "About NurtureCalc — Our Mission & How Our Tools Work",
   description: "Learn how NurtureCalc's free postpartum calculators are built, what medical guidelines they use, and the team behind them.",
+  openGraph: {
+    title: "About NurtureCalc — Our Mission & How Our Tools Work",
+    description: "Learn how NurtureCalc's free postpartum calculators are built, what medical guidelines they use, and the team behind them.",
+    url: 'https://nurturecalc.com/about',
+    type: 'website',
+  },
 };
 
 export default function AboutPage() {

@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   },
   title: 'Is it Safe to Lose Weight While Breastfeeding? — NurtureCalc',
   description: 'Find out whether it\'s safe to lose weight while breastfeeding, how quickly you can lose weight postpartum, and what affects your milk supply.',
+  openGraph: {
+    title: 'Is it Safe to Lose Weight While Breastfeeding? — NurtureCalc',
+    description: 'Find out whether it\'s safe to lose weight while breastfeeding and how to protect your milk supply.',
+    url: 'https://nurturecalc.com/blog/safe-weight-loss-breastfeeding',
+    type: 'article',
+    publishedTime: '2026-03-25T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function BlogPost() {

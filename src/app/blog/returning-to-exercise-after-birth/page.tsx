@@ -5,10 +5,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/blog/returning-to-exercise-after-birth',
+    canonical: 'https://nurturecalc.com/blog/returning-to-exercise-after-birth',
   },
   title: 'A Gentle Guide to Returning to Exercise After Birth — NurtureCalc',
-  description: 'When is it safe to exercise after giving birth? Learn the evidence-based timeline for returning to exercise after a vaginal birth or C-section.',
+  description: 'Learn the evidence-based timeline for returning to exercise after a vaginal birth or C-section. Safe, gentle progress for new mothers.',
+  openGraph: {
+    title: 'A Gentle Guide to Returning to Exercise After Birth — NurtureCalc',
+    description: 'Learn the evidence-based timeline for returning to exercise after birth.',
+    url: 'https://nurturecalc.com/blog/returning-to-exercise-after-birth',
+    type: 'article',
+    publishedTime: '2026-03-15T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function BlogPost() {

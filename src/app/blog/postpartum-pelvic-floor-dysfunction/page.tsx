@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   },
   title: "Signs of Postpartum Pelvic Floor Dysfunction — And What To Do | NurtureCalc",
   description: "Leaking, heaviness, pain — these are signs of postpartum pelvic floor dysfunction. Learn to recognise them early and what steps to take to heal.",
+  openGraph: {
+    title: "Signs of Postpartum Pelvic Floor Dysfunction — And What To Do | NurtureCalc",
+    description: "Learn to recognise signs of pelvic floor dysfunction and how to start the healing process.",
+    url: 'https://nurturecalc.com/blog/postpartum-pelvic-floor-dysfunction',
+    type: 'article',
+    publishedTime: '2026-03-28T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function BlogPost() {

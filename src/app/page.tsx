@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  openGraph: {
+    title: "Free Postpartum Health Calculators for New Mothers | NurtureCalc",
+    description: "Free, science-based postpartum calculators. Safe weight loss, breastfeeding calorie needs, exercise timelines, pelvic floor recovery & baby growth charts. No sign-up required.",
+    url: 'https://nurturecalc.com/',
+    type: 'website',
+  },
 };
 
 export default function Home() {

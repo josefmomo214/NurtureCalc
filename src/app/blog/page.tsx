@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   },
   title: 'Postpartum Health Blog — Science-Based Advice | NurtureCalc',
   description: 'Science-based articles on postpartum recovery, breastfeeding nutrition, safe exercise and pelvic floor health. Written for new mothers, grounded in medical guidelines.',
+  openGraph: {
+    title: 'Postpartum Health Blog — Science-Based Advice | NurtureCalc',
+    description: 'Science-based articles on postpartum recovery, breastfeeding nutrition, safe exercise and pelvic floor health.',
+    url: 'https://nurturecalc.com/blog',
+    type: 'website',
+  },
 };
 
 export default function BlogIndex() {

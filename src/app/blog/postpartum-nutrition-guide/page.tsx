@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   },
   title: "Postpartum Nutrition: What to Eat to Heal, Recover and Thrive | NurtureCalc",
   description: "A complete postpartum nutrition guide covering the key nutrients new mothers need for healing, breastfeeding and sustained energy in the fourth trimester.",
+  openGraph: {
+    title: "Postpartum Nutrition: What to Eat to Heal, Recover and Thrive | NurtureCalc",
+    description: "A complete postpartum nutrition guide covering key nutrients for healing and breastfeeding.",
+    url: 'https://nurturecalc.com/blog/postpartum-nutrition-guide',
+    type: 'article',
+    publishedTime: '2026-03-27T00:00:00Z',
+    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+  },
 };
 
 export default function BlogPost() {

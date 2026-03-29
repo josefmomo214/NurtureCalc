@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/contact',
   },
+  openGraph: {
+    title: 'Contact NurtureCalc — We\'re Here to Listen',
+    description: 'Have a question or feedback about our postpartum calculators? Get in touch with the NurtureCalc team.',
+    url: 'https://nurturecalc.com/contact',
+    type: 'website',
+  },
 };
 
 export default function ContactPage() {
