@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'postpartum-hair-loss',
+    title: 'Postpartum Hair Loss: Why It Happens and When It Stops',
+    excerpt: 'Losing handfuls of hair after birth is normal but alarming. Learn exactly why postpartum hair loss happens, when it peaks, and when it stops completely.',
+    category: 'Recovery',
+    readTime: '12 min read',
+    publishedAt: '2026-03-31',
+  },
+  {
     slug: "baby-growth-spurts",
     title: "Baby Growth Spurts: What They Are, When They Happen and How to Survive Them",
     excerpt: "Baby growth spurts can feel sudden and overwhelming. Learn the typical timeline, signs to look for, and how to support your baby through each one.",
