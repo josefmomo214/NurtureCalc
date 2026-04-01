@@ -8,3 +8,5 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+// Force build and cleanup verification
+// Force build and cleanup verification
