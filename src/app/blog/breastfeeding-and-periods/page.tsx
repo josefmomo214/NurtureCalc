@@ -109,18 +109,18 @@ export default function BlogPost() {
 
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.whyDelay.title}</h2>
-            <p>{c.whyDelay.p1}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.whyDelay.p1 }} />
             <p>{c.whyDelay.p2}</p>
             <p>{c.whyDelay.p3}</p>
           </section>
 
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.scenarios.exclusive.title}</h2>
-            <p>{c.scenarios.exclusive.p1}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.scenarios.exclusive.p1 }} />
             <p>{c.scenarios.exclusive.p2}</p>
             
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-12 mb-8">{c.scenarios.mixed.title}</h2>
-            <p>{c.scenarios.mixed.p1}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.scenarios.mixed.p1 }} />
             <p>{c.scenarios.mixed.p2}</p>
           </section>
 
@@ -128,13 +128,13 @@ export default function BlogPost() {
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.pregnancy.title}</h2>
             <p>{c.pregnancy.p1}</p>
             <p>{c.pregnancy.p2}</p>
-            <p>{c.pregnancy.p3}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.pregnancy.p3 }} />
           </section>
 
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.firstPeriod.title}</h2>
             <p>{c.firstPeriod.p1}</p>
-            <p>{c.firstPeriod.p2}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.firstPeriod.p2 }} />
             <p>{c.firstPeriod.p3}</p>
           </section>
 
@@ -147,7 +147,7 @@ export default function BlogPost() {
 
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.stillNursing.title}</h2>
-            <p>{c.stillNursing.p1}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.stillNursing.p1 }} />
             <p>{c.stillNursing.p2}</p>
             <p>{c.stillNursing.p3}</p>
           </section>
