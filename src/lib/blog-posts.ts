@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'breastfeeding-and-periods',
+    title: 'Breastfeeding and Periods: When Does Your Cycle Return?',
+    excerpt: 'Wondering when your period will return after birth? Whether you are breastfeeding or not, here is exactly what to expect and why everyone\'s timeline is different.',
+    category: 'Recovery',
+    readTime: '5 min read',
+    publishedAt: '2026-04-01',
+  },
+  {
     slug: 'postpartum-hair-loss',
     title: 'Postpartum Hair Loss: Why It Happens and When It Stops',
     excerpt: 'Losing handfuls of hair after birth is normal but alarming. Learn exactly why postpartum hair loss happens, when it peaks, and when it stops completely.',
