@@ -62,6 +62,33 @@ h1, h2, h3, h4, .font-serif {
   text-transform: uppercase;
 }
 
+/* Styled Blog Links */
+.prose a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+  font-weight: 500;
+}
+
+.prose a:hover {
+  text-decoration-thickness: 2px;
+  opacity: 0.8;
+}
+
+/* External Link Icon ↗ */
+/* Logic: All links starting with http that do NOT contain nurturecalc.com */
+.prose a[href^="http"]:not([href*="nurturecalc.com"])::after {
+  content: " ↗";
+  font-size: 0.85em;
+  vertical-align: top;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+
 /* Glassmorphism Classes */
 .glass {
   background: rgba(255, 248, 247, 0.8);
