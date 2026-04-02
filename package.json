@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "NurtureCalc - Postpartum Health Calculators",
   "private": true,
-  "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "node server.js",
+    "start": "next start",
     "lint": "eslint"
   },
   "engines": {
