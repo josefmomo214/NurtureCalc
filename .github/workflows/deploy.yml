@@ -1,4 +1,4 @@
-name: Deploy NurtureCalc to Hostinger
+name: CI - Build Verification for NurtureCalc
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build-verification:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,50 +32,3 @@ jobs:
             exit 1
           fi
           echo "Build verified - out/_next exists"
-
-      - name: Create Production Server Script
-        run: |
-          mkdir -p ./deploy_server
-          cat <<EOF > ./deploy_server/server.js
-          const express = require('express')
-          const path = require('path')
-          const fs = require('fs')
-          const app = express()
-          const STATIC_DIR = path.join(__dirname, '../public_html')
-          app.use((req, res, next) => {
-            const urlPath = req.path.endsWith('/') ? req.path : req.path + '/'
-            const indexPath = path.join(STATIC_DIR, urlPath, 'index.html')
-            if (fs.existsSync(indexPath)) { return res.sendFile(indexPath) }
-            const directPath = path.join(STATIC_DIR, req.path)
-            if (fs.existsSync(directPath) && fs.statSync(directPath).isFile()) { return res.sendFile(directPath) }
-            next()
-          })
-          app.use(express.static(STATIC_DIR))
-          const port = process.env.PORT || 3000
-          app.listen(port, () => console.log('Server running on port ' + port))
-          EOF
-
-      - name: Deploy to Hostinger via FTP (Static Assets)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/
-          server-dir: /public_html/
-          dangerous-clean-slate: true
-          # General exclusions for the static directory sync
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-
-      - name: Deploy Server Script to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./deploy_server/
-          server-dir: /domains/nurturecalc.com/nodejs/
-          dangerous-clean-slate: false # Do not delete other files in nodejs folder

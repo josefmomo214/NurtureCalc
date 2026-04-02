@@ -1,0 +1,7 @@
+{
+  "framework": "nextjs",
+  "static": true,
+  "directory": "out",
+  "node_version": "20",
+  "build_command": "npm run build"
+}
