@@ -25,20 +25,13 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Deploy to Hostinger via FTP (Static Assets)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/
-          server-dir: /public_html/
-          dangerous-clean-slate: true
-          # General exclusions for the static directory sync
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+      - name: Verify build output
+        run: |
+          if [ ! -d "./out/_next" ]; then
+            echo "Build failed - out/_next directory not found"
+            exit 1
+          fi
+          echo "Build verified - out/_next exists"
 
       - name: Create Production Server Script
         run: |
@@ -61,6 +54,21 @@ jobs:
           const port = process.env.PORT || 3000
           app.listen(port, () => console.log('Server running on port ' + port))
           EOF
+
+      - name: Deploy to Hostinger via FTP (Static Assets)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./out/
+          server-dir: /public_html/
+          dangerous-clean-slate: true
+          # General exclusions for the static directory sync
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
 
       - name: Deploy Server Script to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
