@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'diastasis-recti',
+    title: 'Diastasis Recti: What It Is, How to Check for It and How to Heal It',
+    excerpt: 'Diastasis recti affects up to 60% of pregnant women. Learn what it actually is, how to check yourself at home, what makes it worse, and how to genuinely heal it.',
+    category: 'Recovery',
+    readTime: '15 min read',
+    publishedAt: '2026-04-01',
+  },
+  {
     slug: 'breastfeeding-and-periods',
     title: 'Breastfeeding and Periods: When Does Your Cycle Return?',
     excerpt: 'Wondering when your period will return after birth? Whether you are breastfeeding or not, here is exactly what to expect and why everyone\'s timeline is different.',
