@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && cp -r out/. ../public_html/",
+    "build": "next build && cp -r out/. /home/u212839088/domains/nurturecalc.com/public_html/ && echo 'Files copied successfully'",
     "start": "node server.js",
     "lint": "eslint"
   },

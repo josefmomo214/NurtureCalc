@@ -4,6 +4,8 @@ const fs = require('fs')
 const app = express()
 
 const STATIC_DIR = '/home/u212839088/domains/nurturecalc.com/public_html'
+console.log('STATIC_DIR exists:', fs.existsSync(STATIC_DIR))
+console.log('index.html exists:', fs.existsSync(path.join(STATIC_DIR, 'index.html')))
 
 app.use((req, res, next) => {
   const urlPath = req.path.endsWith('/') ? req.path : req.path + '/'
