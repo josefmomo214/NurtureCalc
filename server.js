@@ -15,14 +15,17 @@ if (!fs.existsSync(STATIC_DIR)) {
       PATH: `/opt/alt/alt-nodejs22/root/usr/bin:${process.env.PATH}`,
       NODE_ENV: 'production'
     }
-    execSync(`${npmPath} run build`, {
-      stdio: 'inherit',
+    const result = execSync(`${npmPath} run build 2>&1`, {
       cwd: __dirname,
-      env
+      env,
+      encoding: 'utf8',
+      maxBuffer: 10 * 1024 * 1024
     })
+    console.log('Build output:', result)
     console.log('Build complete!')
   } catch (e) {
     console.error('Build failed:', e.message)
+    console.error('Full output:', e.stdout)
   }
 }
 
