@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "cp -r out /home/u212839088/domains/nurturecalc.com/public_html_new || true",
     "start": "node server.js"
   },
   "engines": {
