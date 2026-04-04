@@ -9,26 +9,20 @@ const STATIC_DIR = path.join(__dirname, 'out')
 if (!fs.existsSync(STATIC_DIR)) {
   console.log('Building Next.js...')
   try {
-    // Find npm path
-    const npmPath = execSync('which npm || find /usr -name npm 2>/dev/null | head -1 || find /opt -name npm 2>/dev/null | head -1').toString().trim()
-    console.log('npm found at:', npmPath)
-    const nodePath = process.execPath
-    console.log('node path:', nodePath)
-    const nodeDir = path.dirname(nodePath)
+    const npmPath = '/opt/alt/alt-nodejs22/root/usr/bin/npm'
     const env = {
       ...process.env,
-      NODE_ENV: 'production',
-      PATH: `${nodeDir}:${process.env.PATH}`
+      PATH: `/opt/alt/alt-nodejs22/root/usr/bin:${process.env.PATH}`,
+      NODE_ENV: 'production'
     }
     execSync(`${npmPath} run build`, {
-      stdio: 'pipe',
+      stdio: 'inherit',
       cwd: __dirname,
       env
     })
     console.log('Build complete!')
   } catch (e) {
     console.error('Build failed:', e.message)
-    console.error('stderr:', e.stderr?.toString())
   }
 }
 
