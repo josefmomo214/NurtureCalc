@@ -6,19 +6,28 @@ const app = express()
 
 const STATIC_DIR = path.join(__dirname, 'out')
 
-// Build if out/ doesn't exist
 if (!fs.existsSync(STATIC_DIR)) {
   console.log('Building Next.js...')
   try {
-    execSync('npm run build', { 
-      stdio: 'pipe', 
+    // Find npm path
+    const npmPath = execSync('which npm || find /usr -name npm 2>/dev/null | head -1 || find /opt -name npm 2>/dev/null | head -1').toString().trim()
+    console.log('npm found at:', npmPath)
+    const nodePath = process.execPath
+    console.log('node path:', nodePath)
+    const nodeDir = path.dirname(nodePath)
+    const env = {
+      ...process.env,
+      NODE_ENV: 'production',
+      PATH: `${nodeDir}:${process.env.PATH}`
+    }
+    execSync(`${npmPath} run build`, {
+      stdio: 'pipe',
       cwd: __dirname,
-      env: { ...process.env, NODE_ENV: 'production' }
+      env
     })
-    console.log('Build complete')
+    console.log('Build complete!')
   } catch (e) {
     console.error('Build failed:', e.message)
-    console.error('stdout:', e.stdout?.toString())
     console.error('stderr:', e.stderr?.toString())
   }
 }
