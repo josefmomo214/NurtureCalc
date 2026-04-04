@@ -36,6 +36,23 @@ if (!fs.existsSync(STATIC_DIR)) {
   }
 }
 
+// Fix static directory references on startup
+const correctHome = path.join(__dirname, 'out', 'index.html')
+const deployedHome = path.join(STATIC_DIR, 'index.html')
+if (fs.existsSync(correctHome)) {
+  fs.copyFileSync(correctHome, deployedHome)
+  console.log('Homepage fixed from out/index.html')
+}
+
+// Explicitly serve homepage
+app.get('/', (req, res) => {
+  const homePage = path.join(STATIC_DIR, 'index.html')
+  if (fs.existsSync(homePage)) {
+    return res.sendFile(homePage)
+  }
+  res.status(404).send('Homepage not found')
+})
+
 app.use((req, res, next) => {
   const urlPath = req.path.endsWith('/') ? req.path : req.path + '/'
   const indexPath = path.join(STATIC_DIR, urlPath, 'index.html')
