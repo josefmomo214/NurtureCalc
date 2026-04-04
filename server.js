@@ -15,6 +15,13 @@ if (!fs.existsSync(STATIC_DIR)) {
       PATH: `/opt/alt/alt-nodejs22/root/usr/bin:${process.env.PATH}`,
       NODE_ENV: 'production'
     }
+    // Fix permissions on node_modules/.bin
+    try {
+      execSync(`chmod -R +x ${path.join(__dirname, 'node_modules/.bin')}`, { env })
+      console.log('Permissions fixed')
+    } catch (e) {
+      console.log('chmod failed:', e.message)
+    }
     const result = execSync(`${npmPath} run build 2>&1`, {
       cwd: __dirname,
       env,
