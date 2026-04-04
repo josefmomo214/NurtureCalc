@@ -6,9 +6,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && cp -r out/. ../public_html/",
     "start": "node server.js",
-    "postbuild": "ls -la && ls -la out/ 2>/dev/null || echo 'No out/ folder found'",
     "lint": "eslint"
   },
   "engines": {
