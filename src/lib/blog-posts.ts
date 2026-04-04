@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'postpartum-depression-vs-baby-blues',
+    title: 'Postpartum Depression vs Baby Blues: How to Tell the Difference',
+    excerpt: 'Feeling overwhelmed after birth is normal — but how do you know when it is more than baby blues? Learn the real differences, the warning signs, and when to ask for help.',
+    category: 'Recovery',
+    readTime: '12 min read',
+    publishedAt: '2026-04-04',
+  },
+  {
     slug: 'diastasis-recti',
     title: 'Diastasis Recti: What It Is, How to Check for It and How to Heal It',
     excerpt: 'Diastasis recti affects up to 60% of pregnant women. Learn what it actually is, how to check yourself at home, what makes it worse, and how to genuinely heal it.',
