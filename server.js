@@ -10,10 +10,16 @@ const STATIC_DIR = path.join(__dirname, 'out')
 if (!fs.existsSync(STATIC_DIR)) {
   console.log('Building Next.js...')
   try {
-    execSync('npm run build', { stdio: 'inherit', cwd: __dirname })
+    execSync('npm run build', { 
+      stdio: 'pipe', 
+      cwd: __dirname,
+      env: { ...process.env, NODE_ENV: 'production' }
+    })
     console.log('Build complete')
   } catch (e) {
     console.error('Build failed:', e.message)
+    console.error('stdout:', e.stdout?.toString())
+    console.error('stderr:', e.stderr?.toString())
   }
 }
 
