@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'when-to-stop-breastfeeding',
+    title: 'When to Stop Breastfeeding: A Gentle, Judgement-Free Guide to Weaning',
+    excerpt: 'There is no single right time to stop breastfeeding. This honest, gentle guide covers every weaning option — from baby-led to mother-led — and how to make the transition easier.',
+    category: 'Nutrition',
+    readTime: '12 min read',
+    publishedAt: '2026-04-05',
+  },
+  {
     slug: 'postpartum-depression-vs-baby-blues',
     title: 'Postpartum Depression vs Baby Blues: How to Tell the Difference',
     excerpt: 'Feeling overwhelmed after birth is normal — but how do you know when it is more than baby blues? Learn the real differences, the warning signs, and when to ask for help.',
