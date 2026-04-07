@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'newborn-sleep-schedule',
+    title: 'Newborn Sleep Schedule: What to Really Expect in the First 3 Months',
+    excerpt: 'Newborn sleep is chaotic, exhausting and completely normal. Here is an honest, month-by-month guide to what to expect — and how to survive it with your sanity intact.',
+    category: 'Baby Health',
+    readTime: '12 min read',
+    publishedAt: '2026-04-06',
+  },
+  {
     slug: 'when-to-stop-breastfeeding',
     title: 'When to Stop Breastfeeding: A Gentle, Judgement-Free Guide to Weaning',
     excerpt: 'There is no single right time to stop breastfeeding. This honest, gentle guide covers every weaning option — from baby-led to mother-led — and how to make the transition easier.',
