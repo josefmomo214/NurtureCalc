@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'postpartum-body-changes',
+    title: 'Postpartum Body Changes Nobody Warns You About',
+    excerpt: 'From night sweats to loose joints, the postpartum body goes through changes nobody prepares you for. Here is the honest guide to what is happening and why it is all normal.',
+    category: 'Recovery',
+    readTime: '9 min read',
+    publishedAt: '2026-04-07',
+  },
+  {
     slug: 'newborn-sleep-schedule',
     title: 'Newborn Sleep Schedule: What to Really Expect in the First 3 Months',
     excerpt: 'Newborn sleep is chaotic, exhausting and completely normal. Here is an honest, month-by-month guide to what to expect — and how to survive it with your sanity intact.',
