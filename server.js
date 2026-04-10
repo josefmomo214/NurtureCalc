@@ -4,6 +4,15 @@ const fs = require('fs')
 const { execSync } = require('child_process')
 const app = express()
 
+// Redirect www to non-www
+app.use((req, res, next) => {
+  if (req.headers.host && req.headers.host.startsWith('www.')) {
+    const newHost = req.headers.host.replace(/^www\./, '');
+    return res.redirect(301, `https://${newHost}${req.originalUrl}`);
+  }
+  next();
+});
+
 const STATIC_DIR = path.join(__dirname, 'out')
 
 if (!fs.existsSync(STATIC_DIR)) {
