@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/c-section-recovery-timeline',
   },
-  title: "C-Section Recovery: A Realistic Week-by-Week Guide | NurtureCalc",
-  description: "Recovering from a C-section takes time and patience. This week-by-week guide covers what to expect from discharge through to 12 weeks and beyond.",
+  title: "C-Section Recovery: What to Expect Week by Week | NurtureCalc",
+  description: "A realistic week-by-week guide to C-section recovery — what to expect from discharge through 12 weeks, what to avoid, and when most women feel like themselves again.",
   openGraph: {
-    title: "C-Section Recovery: A Realistic Week-by-Week Guide | NurtureCalc",
-    description: "A realistic week-by-week guide to C-section recovery, from discharge to 12 weeks.",
+    title: "C-Section Recovery: What to Expect Week by Week | NurtureCalc",
+    description: "A realistic week-by-week guide to C-section recovery — what to expect from discharge through 12 weeks, what to avoid, and when most women feel like themselves again.",
     url: 'https://nurturecalc.com/blog/c-section-recovery-timeline',
     type: 'article',
     publishedTime: '2026-03-28T00:00:00Z',
@@ -85,7 +85,7 @@ export default function BlogPost() {
                 <span className="text-xs text-[#3D2C2C]/50 font-label tracking-wide uppercase">{c.header.readTime}</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-serif text-[#3D2C2C] leading-tight mb-6">
-                C-Section Recovery: A <span className="text-[#E8A0A8] italic">{c.header.subtitle}</span>
+                C-Section Recovery: What to Expect Week by Week
               </h1>
               <div className="flex flex-col items-center gap-2">
                 <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
