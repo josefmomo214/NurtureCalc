@@ -7,6 +7,9 @@
   RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
+  # Specific Page Redirects (SEO Fix)
+  RewriteRule ^calorie-needs/?$ /breastfeeding-calories/ [R=301,L]
+  RewriteRule ^baby-weight/?$ /baby-weight-percentile/ [R=301,L]
 
   # 1. Ensure assets in _next/ are served directly without redirection
   # This fixes the "no styling" issue by ensuring CSS/JS are loaded correctly

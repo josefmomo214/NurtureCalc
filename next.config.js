@@ -5,20 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  async redirects() {
-    return [
-      {
-        source: '/calorie-needs',
-        destination: '/breastfeeding-calories/',
-        permanent: true,
-      },
-      {
-        source: '/baby-weight',
-        destination: '/baby-weight-percentile/',
-        permanent: true,
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;

@@ -15,6 +15,18 @@ app.use((req, res, next) => {
   next();
 });
 
+// Specific Page Redirects (SEO Fix)
+app.use((req, res, next) => {
+  const path = req.path.replace(/\/$/, ''); // Remove trailing slash for matching
+  if (path === '/calorie-needs') {
+    return res.redirect(301, '/breastfeeding-calories/');
+  }
+  if (path === '/baby-weight') {
+    return res.redirect(301, '/baby-weight-percentile/');
+  }
+  next();
+});
+
 const STATIC_DIR = path.join(__dirname, 'out')
 
 if (!fs.existsSync(STATIC_DIR)) {
