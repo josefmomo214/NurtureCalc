@@ -1,6 +1,10 @@
 Options -MultiViews
 RewriteEngine On
 
+# SEO 301 redirects
+RewriteRule ^calorie-needs/?$ /breastfeeding-calories/ [R=301,L]
+RewriteRule ^baby-weight/?$ /baby-weight-percentile/ [R=301,L]
+
 # Serve existing static files and directories directly
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
