@@ -4,11 +4,13 @@ const fs = require('fs')
 const { execSync } = require('child_process')
 const app = express()
 
+app.set('trust proxy', true);
+
 // Redirect www to non-www
 app.use((req, res, next) => {
-  if (req.headers.host && req.headers.host.startsWith('www.')) {
-    const newHost = req.headers.host.replace(/^www\./, '');
-    return res.redirect(301, `https://${newHost}${req.originalUrl}`);
+  const host = req.hostname;
+  if (host === 'www.nurturecalc.com' || (req.headers.host && req.headers.host.startsWith('www.'))) {
+    return res.redirect(301, `https://nurturecalc.com${req.originalUrl}`);
   }
   next();
 });
