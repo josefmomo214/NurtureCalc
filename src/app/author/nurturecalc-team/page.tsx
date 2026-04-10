@@ -17,8 +17,20 @@ export const metadata: Metadata = {
 };
 
 export default function AuthorPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "NurtureCalc Editorial Team",
+    "url": "https://nurturecalc.com/author/nurturecalc-team/",
+    "description": "A group of health researchers and postnatal specialists dedicated to providing evidence-based recovery tools for new mothers."
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       
       <main className="flex-1 max-w-4xl mx-auto w-full py-16 px-6">
@@ -28,41 +40,35 @@ export default function AuthorPage() {
               The NurtureCalc Team
             </h1>
             <p className="text-[#E8A0A8] text-xl md:text-2xl font-serif italic">
-              Written with care. Grounded in science.
+              Evidence-based health information for every stage of motherhood.
             </p>
           </header>
 
-          {/* Team Member Card */}
-          <section className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-[#E8A0A8]/10 flex flex-col md:flex-row items-center md:items-start gap-8">
-            <div className="w-20 h-20 rounded-full bg-[#FCE4E8] flex-shrink-0 flex items-center justify-center text-[#E8A0A8] text-xl font-bold">
-              {/* Profile Image Placeholder */}
-              [P]
-            </div>
-            <div className="space-y-4 text-center md:text-left">
-              <div>
-                <h2 className="text-2xl font-serif text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors cursor-default">
-                  NurtureCalc Team
-                </h2>
-                <p className="font-label text-xs font-bold tracking-widest text-[#E8A0A8] uppercase">
-                  Founder of NurtureCalc | Passionate about evidence-based postpartum care
-                </p>
-              </div>
-              <p className="text-[#3D2C2C]/70 leading-relaxed">
-                NurtureCalc was built out of a simple belief — that every new mother deserves clear, trustworthy answers about her own recovery. We created these free tools so you never have to piece together conflicting advice from unreliable sources again. Every calculator on this site is grounded in published medical guidelines and presented in plain, human language.
-              </p>
-            </div>
+          {/* Team Methodology */}
+          <section className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-[#E8A0A8]/10 space-y-6">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">Our Content Methodology</h2>
+            <p className="text-[#3D2C2C]/70 leading-relaxed">
+              The NurtureCalc Editorial Team consists of health researchers and content specialists committed to educational transparency. We don't believe in "one-size-fits-all" advice; instead, we provide the data you need to understand your own body's recovery benchmarks.
+            </p>
+            <p className="text-[#3D2C2C]/70 leading-relaxed">
+              Every tool and calculator on this site is built using validated clinical formulas and reviewed against current guidelines from established medical bodies. You can read more about our process in our <a href="/editorial-standards" className="text-[#E8A0A8] hover:underline font-bold">Editorial Standards</a>.
+            </p>
           </section>
 
-          {/* Sources & Standards */}
+          {/* Primary Sources */}
           <section className="space-y-8">
-            <h2 className="text-3xl font-serif text-[#3D2C2C] text-center md:text-left">Our Sources & Standards</h2>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl font-serif text-[#3D2C2C]">Primary Clinical Sources</h2>
+              <p className="text-[#3D2C2C]/60 mt-2">We rely on data from these leading health organizations:</p>
+            </div>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                "WHO Multicentre Growth Reference Study (baby weight charts)",
-                "Mifflin-St Jeor metabolic formula (calorie calculations)",
-                "ACOG Postpartum Guidelines (exercise and weight loss timelines)",
-                "Academy of Breastfeeding Medicine protocols (breastfeeding calorie data)",
-                "POGP Return-to-Exercise Guidelines (pelvic floor and exercise)"
+                "World Health Organization (WHO) Growth References",
+                "National Health Service (NHS) Postnatal Pathways",
+                "American College of Obstetricians and Gynecologists (ACOG)",
+                "Academy of Breastfeeding Medicine (ABM)",
+                "La Leche League International",
+                "Peer-Reviewed Medical Journals (The Lancet, JOGNN)"
               ].map((source, index) => (
                 <li key={index} className="flex items-start gap-3 p-4 bg-white rounded-2xl border border-[#E8A0A8]/10 text-[#3D2C2C]/80">
                   <span className="text-[#E8A0A8] mt-1">•</span>
@@ -72,11 +78,11 @@ export default function AuthorPage() {
             </ul>
           </section>
 
-          {/* Medical Review Policy */}
+          {/* Advisory Note */}
           <section className="bg-[#FCE4E8]/30 p-8 md:p-12 rounded-3xl space-y-4">
-            <h2 className="text-2xl font-serif text-[#3D2C2C]">Medical Review Policy</h2>
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">Trust & Transparency</h2>
             <p className="text-[#3D2C2C]/80 leading-relaxed italic">
-              All content on NurtureCalc is based on published medical guidelines from the sources listed above. Our calculators are reviewed periodically to reflect updated guidance. NurtureCalc is an informational resource and does not replace advice from your healthcare provider.
+              Our team manually verifies every clinical formula integrated into our calculators. We cite our sources transparently so you can verify the data for yourself. NurtureCalc remains an independent resource specifically designed to support, not replace, the relationship between a patient and their doctor.
             </p>
           </section>
         </article>

@@ -15,6 +15,7 @@ export default function Footer() {
             {[
               { label: "Privacy Policy", href: "/privacy-policy" },
               { label: "Affiliate Disclosure", href: "/affiliate-disclosure" },
+              { label: "Editorial Standards", href: "/editorial-standards" },
               { label: "About", href: "/about" },
               { label: "NurtureCalc Team", href: "/author/nurturecalc-team" },
               { label: "Contact", href: "/contact" }

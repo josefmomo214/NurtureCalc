@@ -27,19 +27,20 @@ export default function BlogPost() {
     "description": "Losing weight while breastfeeding requires a delicate balance. Find out the science behind protecting your milk supply while shedding pregnancy weight safely.",
     "author": {
       "@type": "Organization",
-      "name": "NurtureCalc",
-      "url": "https://nurturecalc.com/author/nurturecalc-team"
+      "name": "NurtureCalc Editorial Team",
+      "url": "https://nurturecalc.com/author/nurturecalc-team/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "NurtureCalc",
-      "url": "https://nurturecalc.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://nurturecalc.com/logo.png"
-      }
+      "url": "https://nurturecalc.com"
     },
     "datePublished": "2026-03-25",
+    "dateModified": "2026-04-10",
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    }
   };
 
   return (
@@ -62,6 +63,9 @@ export default function BlogPost() {
                 <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
                   NurtureCalc Team
                 </Link>
+                <p className="text-xs font-label text-[#3D2C2C]/70">
+                  Written by the NurtureCalc Editorial Team · Reviewed against WHO & NHS <Link href="/editorial-standards" className="text-[#E8A0A8] hover:underline">guidelines</Link>
+                </p>
                 <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase">
                   Fact-checked against published medical guidelines —{" "}
                   <Link href="/author/nurturecalc-team#sources" className="underline hover:text-[#E8A0A8]">

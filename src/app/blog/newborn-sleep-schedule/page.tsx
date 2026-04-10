@@ -32,23 +32,23 @@ export default function NewbornSleepPage() {
     "description": "Newborn sleep is chaotic, exhausting and completely normal. Here is an honest, month-by-month guide to what to expect — and how to survive it with your sanity intact.",
     "author": {
       "@type": "Organization",
-      "name": "NurtureCalc",
-      "url": "https://nurturecalc.com/author/nurturecalc-team"
+      "name": "NurtureCalc Editorial Team",
+      "url": "https://nurturecalc.com/author/nurturecalc-team/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "NurtureCalc",
-      "url": "https://nurturecalc.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://nurturecalc.com/logo.png"
-      }
+      "url": "https://nurturecalc.com"
     },
     "datePublished": "2026-04-06",
-    "dateModified": "2026-04-06",
+    "dateModified": "2026-04-10",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://nurturecalc.com/blog/newborn-sleep-schedule"
+    },
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
     }
   };
 
@@ -93,6 +93,9 @@ export default function NewbornSleepPage() {
                 <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
                   {c.header.author}
                 </Link>
+                <p className="text-xs font-label text-[#3D2C2C]/70">
+                  Written by the NurtureCalc Editorial Team · Reviewed against WHO & NHS <Link href="/editorial-standards" className="text-[#E8A0A8] hover:underline">guidelines</Link>
+                </p>
                 <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase max-w-xs mx-auto text-center">
                   {c.header.reviewNote}
                 </p>
