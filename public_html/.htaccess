@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^calorie-needs/?$ /breastfeeding-calories/ [R=301,L]
+RewriteRule ^baby-weight/?$ /baby-weight-percentile/ [R=301,L]
