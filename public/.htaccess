@@ -1,6 +1,10 @@
 Options -MultiViews
 RewriteEngine On
 
+# Force non-www
+RewriteCond %{HTTP_HOST} ^www\.nurturecalc\.com [NC]
+RewriteRule ^(.*)$ https://nurturecalc.com/$1 [R=301,L]
+
 # SEO 301 redirects
 RewriteRule ^calorie-needs/?$ /breastfeeding-calories/ [R=301,L]
 RewriteRule ^baby-weight/?$ /baby-weight-percentile/ [R=301,L]
