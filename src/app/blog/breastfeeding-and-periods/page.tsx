@@ -85,7 +85,7 @@ export default function BlogPost() {
                 <span className="text-xs text-[#3D2C2C]/50 font-label tracking-wide uppercase">{c.header.readTime}</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-serif text-[#3D2C2C] leading-tight mb-6">
-                Breastfeeding and Periods: <span className="text-[#E8A0A8] italic">{c.header.subtitle}</span>
+                Breastfeeding and Periods: When Will Your Cycle Return?
               </h1>
               <div className="flex flex-col items-center gap-2">
                 <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
