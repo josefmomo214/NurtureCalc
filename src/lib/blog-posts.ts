@@ -82,11 +82,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "c-section-recovery-timeline",
-    title: "C-Section Recovery: A Realistic Week-by-Week Guide",
-    excerpt: "Recovering from a C-section takes time and patience. This week-by-week guide covers what to expect from discharge through to 12 weeks and beyond.",
+    title: "C-Section Recovery: What to Expect Week by Week",
+    excerpt: "A realistic week-by-week guide to C-section recovery — from hospital discharge through 12 weeks. What to expect, what to avoid, and when most women feel like themselves again.",
     category: "Recovery",
-    readTime: "10 min read",
-    publishedAt: "2026-03-28",
+    readTime: "25 min read",
+    publishedAt: "2026-03-15",
   },
   {
     slug: "postpartum-nutrition-guide",
