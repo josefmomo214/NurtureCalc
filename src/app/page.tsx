@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     url: 'https://nurturecalc.com/',
     type: 'website',
   },
+  other: {
+    "p:domain_verify": "PINTEREST_VERIFICATION_CODE_HERE",
+  },
 };
 
 export default function Home() {
