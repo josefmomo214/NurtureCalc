@@ -72,7 +72,7 @@ export const mainContent = [
   },
   {
     type: "paragraph",
-    html: "You might also notice new perineal scar tissue sensitivity if you had a vaginal delivery. Your pelvic floor muscles have been stretched and strained, meaning they might feel weak, tight, or even numb. Understanding your <a href=\"/blog/pelvic-floor-after-birth\" class=\"text-[#E8A0A8] hover:underline\">pelvic floor recovery</a> is deeply empowering here."
+    html: "You might also notice new perineal scar tissue sensitivity if you had a vaginal delivery. Your pelvic floor muscles have been stretched and strained, meaning they might feel weak, tight, or even numb. Understanding your <a href=\"/blog/pelvic-floor-after-birth/\" class=\"text-[#E8A0A8] hover:underline\">pelvic floor recovery</a> is deeply empowering here."
   },
   {
     type: "paragraph",
@@ -80,7 +80,7 @@ export const mainContent = [
   },
   {
     type: "paragraph",
-    html: "Finally, the natural <a href=\"/blog/postpartum-body-changes\" class=\"text-[#E8A0A8] hover:underline\">postpartum body changes</a> mean you might feel like you are living in a stranger's skin. Softness, stretch marks, and a different shape can shift how you want to be touched. All of these physical realities require deep patience."
+    html: "Finally, the natural <a href=\"/blog/postpartum-body-changes/\" class=\"text-[#E8A0A8] hover:underline\">postpartum body changes</a> mean you might feel like you are living in a stranger's skin. Softness, stretch marks, and a different shape can shift how you want to be touched. All of these physical realities require deep patience."
   },
   {
     type: "h2",
@@ -92,7 +92,7 @@ export const mainContent = [
   },
   {
     type: "paragraph",
-    html: "The causes are incredibly varied. You might struggle with rigid scar tissue from tearing. Vaginismus, triggered by pelvic floor muscle tension guarding against pain, can make penetration feel like hitting a physical wall. If this sounds like your experience, exploring <a href=\"/blog/postpartum-pelvic-floor-dysfunction\" class=\"text-[#E8A0A8] hover:underline\">pelvic floor dysfunction</a> can provide real clarity."
+    html: "The causes are incredibly varied. You might struggle with rigid scar tissue from tearing. Vaginismus, triggered by pelvic floor muscle tension guarding against pain, can make penetration feel like hitting a physical wall. If this sounds like your experience, exploring <a href=\"/blog/postpartum-pelvic-floor-dysfunction/\" class=\"text-[#E8A0A8] hover:underline\">pelvic floor dysfunction</a> can provide real clarity."
   },
   {
     type: "paragraph",
@@ -124,7 +124,7 @@ export const mainContent = [
   },
   {
     type: "paragraph",
-    html: "Complete exhaustion naturally suppresses libido. Sleep is a core biological need, and your brain will always prioritize rest over sex when you are depleted. Furthermore, broader <a href=\"/blog/postpartum-depression-vs-baby-blues\" class=\"text-[#E8A0A8] hover:underline\">postpartum mood changes</a> heavily impact desire."
+    html: "Complete exhaustion naturally suppresses libido. Sleep is a core biological need, and your brain will always prioritize rest over sex when you are depleted. Furthermore, broader <a href=\"/blog/postpartum-depression-vs-baby-blues/\" class=\"text-[#E8A0A8] hover:underline\">postpartum mood changes</a> heavily impact desire."
   },
   {
     type: "paragraph",
@@ -160,7 +160,7 @@ export const mainContent = [
   },
   {
     type: "paragraph",
-    html: "We repeat: breastfeeding is not reliable contraception. While the lactational amenorrhea method (LAM) exists, it requires incredibly strict, exclusive feeding conditions that are easily broken. You need a solid backup plan and to actively track <a href=\"/blog/breastfeeding-and-periods\" class=\"text-[#E8A0A8] hover:underline\">when your period returns</a>."
+    html: "We repeat: breastfeeding is not reliable contraception. While the lactational amenorrhea method (LAM) exists, it requires incredibly strict, exclusive feeding conditions that are easily broken. You need a solid backup plan and to actively track <a href=\"/blog/breastfeeding-and-periods/\" class=\"text-[#E8A0A8] hover:underline\">when your period returns</a>."
   },
   {
     type: "paragraph",
@@ -176,7 +176,7 @@ export const mainContent = [
   },
   {
     type: "paragraph",
-    html: "A C-section is major abdominal surgery, and your healing goes far deeper than the visible scar. The internal layers take significantly longer to regain tensile strength. Your <a href=\"/blog/c-section-recovery-timeline\" class=\"text-[#E8A0A8] hover:underline\">C-section recovery</a> is a slow, steady process."
+    html: "A C-section is major abdominal surgery, and your healing goes far deeper than the visible scar. The internal layers take significantly longer to regain tensile strength. Your <a href=\"/blog/c-section-recovery-timeline/\" class=\"text-[#E8A0A8] hover:underline\">C-section recovery</a> is a slow, steady process."
   },
   {
     type: "paragraph",
@@ -208,7 +208,7 @@ export const mainContent = [
   },
   {
     type: "paragraph",
-    html: "Pelvic floor physiotherapy remains the gold standard, first-line treatment for lingering pain here. It is also wise to utilize our <a href=\"/pelvic-floor-recovery\" class=\"text-[#E8A0A8] hover:underline\">pelvic floor estimator</a> to understand your specific healing phase."
+    html: "Pelvic floor physiotherapy remains the gold standard, first-line treatment for lingering pain here. It is also wise to utilize our <a href=\"/pelvic-floor-recovery/\" class=\"text-[#E8A0A8] hover:underline\">pelvic floor estimator</a> to understand your specific healing phase."
   },
   {
     type: "h2",
@@ -258,7 +258,7 @@ export const faqs = [
 export const ctaData = {
   text: "Pelvic floor health plays a huge role in postpartum sexual wellbeing. Take our free gentle Pelvic Floor Recovery Estimator to understand where you are in your healing journey.",
   linkText: "Take our Pelvic Floor Recovery Estimator →",
-  linkUrl: "/pelvic-floor-recovery"
+  linkUrl: "/pelvic-floor-recovery/"
 };
 
 export const sourcesList = [
@@ -271,12 +271,12 @@ export const sourcesList = [
 export const relatedLinks = [
   {
     title: "What is the Pelvic Floor and Why Does it Matter After Birth?",
-    url: "/blog/pelvic-floor-after-birth",
+    url: "/blog/pelvic-floor-after-birth/",
     category: "Recovery"
   },
   {
     title: "Postpartum Body Changes Nobody Warns You About",
-    url: "/blog/postpartum-body-changes",
+    url: "/blog/postpartum-body-changes/",
     category: "Recovery"
   }
 ];
