@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'postpartum-sex',
+    title: 'Postpartum Sex: What to Expect When You Feel Ready',
+    excerpt: 'Nobody gives you an honest guide to sex after having a baby. From physical changes to emotional readiness, here is everything you need to know — without the awkwardness.',
+    category: 'Recovery',
+    readTime: '8 min read',
+    publishedAt: '2026-04-08',
+  },
+  {
     slug: 'postpartum-body-changes',
     title: 'Postpartum Body Changes Nobody Warns You About',
     excerpt: 'From night sweats to loose joints, the postpartum body goes through changes nobody prepares you for. Here is the honest guide to what is happening and why it is all normal.',
