@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   other: {
-    "p:domain_verify": "PINTEREST_VERIFICATION_CODE_HERE",
+    'p:domain_verify': '5d2451dd5084122edf83c5f4b9260b2e',
   },
 };
 
