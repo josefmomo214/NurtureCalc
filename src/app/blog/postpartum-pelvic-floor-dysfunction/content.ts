@@ -116,7 +116,7 @@ export const pelvicFloorDysfunctionContent = {
   ],
   cta: {
     text: "Take our free gentle Pelvic Floor Recovery Estimator to understand where you are in your healing journey.",
-    link: "/pelvic-floor"
+    link: "/pelvic-floor-recovery"
   },
   sources: "Pelvic, Obstetric and Gynaecological Physiotherapy (POGP) guidelines. International Continence Society. Bø K et al. Evidence-Based Physical Therapy for the Pelvic Floor, 2nd edition.",
   related: [
