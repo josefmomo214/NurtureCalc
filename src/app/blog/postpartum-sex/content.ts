@@ -1,3 +1,8 @@
+
+export const calloutBox = {
+  title: "The short answer:",
+  content: "Most healthcare providers recommend waiting at least six weeks before having sex after birth — enough time for the uterus to heal and bleeding to stop. But medical clearance is not the same as emotional readiness. Many women need three to six months, or longer. There is no right timeline. You decide when you are ready."
+};
 export const metadata = {
   title: "Postpartum Sex: What to Expect When You Feel Ready | NurtureCalc",
   description: "Nobody gives you an honest guide to sex after having a baby. From physical changes to emotional readiness, here is everything you need to know — without the awkwardness.",
@@ -229,24 +234,24 @@ export const mainContent = [
 
 export const faqs = [
   {
-    question: "Is it normal to have no interest in sex after having a baby?",
-    answer: "Absolutely. Most women experience a dramatic drop in libido postpartum due to exhaustion, physical healing, the mental load of motherhood, and the \"touched-out\" feeling from constant baby contact. Your desire will generally return slowly as you get more sleep and your hormones stabilize."
+    question: "When can you have sex after giving birth?",
+    answer: "Most providers recommend waiting at least six weeks after birth, which allows the uterus to heal and any perineal tears or incisions to close. However, this is a minimum medical guideline, not a deadline. Many women need three to six months or longer before feeling ready, and that is entirely normal."
   },
   {
-    question: "How long after birth can you have sex?",
-    answer: "Medically, doctors usually advise waiting until your six-week check to ensure initial healing is complete. However, the true timeline depends entirely on when you feel emotionally and physically ready, which could be months later."
+    question: "Is it normal for sex to hurt after having a baby?",
+    answer: "Yes, pain during sex — known as dyspareunia — is extremely common postpartum. It is caused by low oestrogen levels (especially when breastfeeding), scar tissue from tearing, and pelvic floor muscle tension. Using a water-based lubricant generously is essential. If pain persists, pelvic floor physiotherapy is highly effective."
   },
   {
-    question: "Why does sex hurt after having a baby?",
-    answer: "Pain is very common and can be caused by sensitive scar tissue from tearing, severe vaginal dryness due to plummeting oestrogen, or pelvic floor muscle tension. Always use a generous amount of lubricant and stop if something feels too sharp or burning."
+    question: "Why do I not want sex after having a baby?",
+    answer: "Loss of libido after birth is one of the most common postpartum experiences. It is caused by exhaustion, hormonal shifts, the \"touched-out\" feeling from constant physical contact with a baby, and the enormous identity shift of new motherhood. It does not mean something is wrong with you or your relationship."
   },
   {
-    question: "Will sex feel different after birth?",
-    answer: "Yes, it often feels entirely different initially. Your tissues are recovering, your hormones are suppressed, and the pelvic floor has undergone immense trauma. Over time, and with proper pelvic floor care, most women find entirely new, comfortable ways to enjoy intimacy."
+    question: "How long does vaginal dryness last after birth?",
+    answer: "Postpartum vaginal dryness is caused by low oestrogen and is especially pronounced during breastfeeding. It typically improves once your cycle returns or when you wean, but can last the entire duration of breastfeeding. A good water-based lubricant manages it in the short term."
   },
   {
-    question: "Can I get pregnant again straight after having a baby?",
-    answer: "Yes. You can ovulate quickly after birth, sometimes before you even have your first postpartum period. Because breastfeeding is not an ironclad contraceptive, use a reliable method like condoms or a pop pill immediately if avoiding pregnancy."
+    question: "Can breastfeeding affect your sex drive?",
+    answer: "Yes. Breastfeeding keeps oestrogen levels low and prolactin levels high, both of which suppress libido. It also causes vaginal dryness that can make sex uncomfortable. This is a temporary hormonal state, not a permanent change, and typically resolves once feeding frequency reduces or weaning begins."
   }
 ];
 

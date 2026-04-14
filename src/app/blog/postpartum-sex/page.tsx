@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Metadata } from 'next';
-import { metadata as pageMetadata, articleHeader, mainContent, faqs, ctaData, sourcesList, relatedLinks } from './content';
+import { metadata as pageMetadata, articleHeader, mainContent, faqs, ctaData, sourcesList, relatedLinks , calloutBox } from './content';
 
 export const metadata: Metadata = {
   title: pageMetadata.title,
@@ -44,11 +44,28 @@ export default function BlogPost() {
     }
   };
 
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
       
@@ -83,13 +100,28 @@ export default function BlogPost() {
 
           <div className="article-body space-y-6">
             {mainContent.map((section, index) => {
-              if (section.type === "h2") {
-                return <h2 key={index} className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4" dangerouslySetInnerHTML={{ __html: section.html }} />
+              const isFirstH2 = section.type === "h2" && index === mainContent.findIndex(s => s.type === "h2");
+              
+              const sectionElement = section.type === "h2" 
+                ? <h2 key={index} className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4" dangerouslySetInnerHTML={{ __html: section.html }} />
+                : section.type === "h3" 
+                  ? <h3 key={index} className="text-xl font-serif text-[#3D2C2C] mt-8 mb-4" dangerouslySetInnerHTML={{ __html: section.html }} />
+                  : <p key={index} dangerouslySetInnerHTML={{ __html: section.html }} />;
+
+              if (isFirstH2) {
+                return (
+                  <div key={`container-${index}`}>
+                    <div className="bg-[#F9E4E8]/30 rounded-3xl p-10 my-10 border border-[#E8A0A8]/20">
+                      <h3 className="text-3xl font-serif text-[#3D2C2C] mb-8">{calloutBox.title}</h3>
+                      <p className="text-[#3D2C2C]/80 leading-relaxed font-semibold">
+                        {calloutBox.content}
+                      </p>
+                    </div>
+                    {sectionElement}
+                  </div>
+                );
               }
-              if (section.type === "h3") {
-                return <h3 key={index} className="text-xl font-serif text-[#3D2C2C] mt-8 mb-4" dangerouslySetInnerHTML={{ __html: section.html }} />
-              }
-              return <p key={index} dangerouslySetInnerHTML={{ __html: section.html }} />
+              return sectionElement;
             })}
           </div>
 
