@@ -38,6 +38,9 @@ export const metadata: Metadata = {
       }
     ],
   },
+  other: {
+    'linkedin:company': 'nurturecalc',
+  },
   twitter: {
     card: 'summary_large_image',
     images: ['/og-image.jpg'],
