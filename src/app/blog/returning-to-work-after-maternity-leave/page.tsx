@@ -9,10 +9,10 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: '/blog/returning-to-work-after-maternity-leave',
     },
-    title: "Returning to Work After Maternity Leave: A Practical Guide for New Mothers | NurtureCalc",
+    title: "Returning to Work After Maternity Leave: What to Expect | NurtureCalc",
     description: "Going back to work after having a baby is one of the hardest transitions a mother faces. This honest, practical guide covers everything from breastfeeding at work to managing mum guilt.",
     openGraph: {
-      title: "Returning to Work After Maternity Leave: A Practical Guide for New Mothers | NurtureCalc",
+      title: "Returning to Work After Maternity Leave: What to Expect | NurtureCalc",
       description: "Going back to work after having a baby is one of the hardest transitions a mother faces. This honest, practical guide covers everything from breastfeeding at work to managing mum guilt.",
       url: 'https://nurturecalc.com/blog/returning-to-work-after-maternity-leave',
       type: 'article',
@@ -108,11 +108,18 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.intro.p3 }} />
           </section>
 
+          <div className="bg-[#F9E4E8]/30 rounded-3xl p-10 my-20">
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mb-8">{c.featuredSnippet.title}</h2>
+            <p>{c.featuredSnippet.content}</p>
+          </div>
+
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.emotionalReality.title}</h2>
             <p dangerouslySetInnerHTML={{ __html: c.emotionalReality.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.emotionalReality.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.emotionalReality.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.emotionalReality.p4 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.emotionalReality.p5 }} />
           </section>
 
           <section>
@@ -120,6 +127,8 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.preparing.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.preparing.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.preparing.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.preparing.p4 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.preparing.p5 }} />
           </section>
 
           <section>
@@ -127,6 +136,8 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.breastfeeding.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.breastfeeding.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.breastfeeding.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.breastfeeding.p4 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.breastfeeding.p5 }} />
           </section>
 
           <section>
@@ -134,6 +145,8 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.logistics.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.logistics.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.logistics.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.logistics.p4 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.logistics.p5 }} />
           </section>
 
           <section>
@@ -141,6 +154,8 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.sleepDeprivation.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.sleepDeprivation.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.sleepDeprivation.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.sleepDeprivation.p4 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.sleepDeprivation.p5 }} />
           </section>
 
           <section>
@@ -148,6 +163,8 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.rights.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.rights.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.rights.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.rights.p4 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.rights.p5 }} />
           </section>
 
           <section>
@@ -155,6 +172,7 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.guilt.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.guilt.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.guilt.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.guilt.p4 }} />
           </section>
 
           <section>
@@ -162,6 +180,8 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.selfCare.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.selfCare.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.selfCare.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.selfCare.p4 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.selfCare.p5 }} />
           </section>
 
           <section>
@@ -169,6 +189,8 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.harderThanExpected.p1 }} />
             <p dangerouslySetInnerHTML={{ __html: c.harderThanExpected.p2 }} />
             <p dangerouslySetInnerHTML={{ __html: c.harderThanExpected.p3 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.harderThanExpected.p4 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.harderThanExpected.p5 }} />
           </section>
 
           <section className="bg-[#FFFDF9] border border-[#E8A0A8]/20 rounded-3xl p-10 my-20 not-prose">
@@ -184,17 +206,15 @@ export default function BlogPost() {
             </div>
           </section>
 
-          <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-8 my-20">
-            <div className="bg-white rounded-3xl p-10 border border-[#E8A0A8]/30 shadow-sm text-center space-y-4 md:col-span-2 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-serif text-[#3D2C2C]">Need support?</h3>
-              <p className="text-[#3D2C2C]/70">{c.cta.text}</p>
-              <Link 
-                href={c.cta.link}
-                className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-xs font-bold transition-all mt-4"
-              >
-                {c.cta.button}
-              </Link>
-            </div>
+          <div className="bg-[#E8A0A8]/10 border-2 border-[#E8A0A8]/20 rounded-[3rem] p-12 my-20 not-prose text-center space-y-8 shadow-sm">
+            <h3 className="text-3xl font-serif text-[#3D2C2C] leading-tight">{c.cta.headline}</h3>
+            <p className="text-lg text-[#3D2C2C]/70 max-w-2xl mx-auto leading-relaxed">{c.cta.body}</p>
+            <Link 
+              href={c.cta.link}
+              className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-10 py-4 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-[#E8A0A8]/20"
+            >
+              {c.cta.button}
+            </Link>
           </div>
 
           <footer className="not-prose border-t border-[#E8A0A8]/20 pt-16">
