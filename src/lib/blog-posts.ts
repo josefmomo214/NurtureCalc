@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'returning-to-work-after-maternity-leave',
+    title: 'Returning to Work After Maternity Leave: A Practical Guide for New Mothers',
+    excerpt: 'Going back to work after having a baby is one of the hardest transitions a mother faces. This honest, practical guide covers everything from breastfeeding at work to managing mum guilt.',
+    category: 'Recovery',
+    readTime: '8 min read',
+    publishedAt: '2026-04-09',
+  },
+  {
     slug: 'postpartum-sex',
     title: 'Postpartum Sex: What to Expect When You Feel Ready',
     excerpt: 'Nobody gives you an honest guide to sex after having a baby. From physical changes to emotional readiness, here is everything you need to know — without the awkwardness.',
