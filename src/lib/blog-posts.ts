@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'postpartum-fitness',
+    title: 'Postpartum Fitness: How to Rebuild Strength Safely After Birth',
+    excerpt: 'Rebuilding fitness after having a baby is not about bouncing back — it is about building forward. Here is the honest, science-based guide to postpartum strength.',
+    category: 'Fitness',
+    readTime: '9 min read',
+    publishedAt: '2026-04-10',
+  },
+  {
     slug: 'returning-to-work-after-maternity-leave',
     title: 'Returning to Work After Maternity Leave: A Practical Guide for New Mothers',
     excerpt: 'Going back to work after having a baby is one of the hardest transitions a mother faces. This honest, practical guide covers everything from breastfeeding at work to managing mum guilt.',
