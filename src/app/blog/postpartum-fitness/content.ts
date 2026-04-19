@@ -13,6 +13,11 @@ export const postpartumFitnessContent = {
     p3: "Postpartum fitness is not about shrinking, bouncing back, or erasing evidence of pregnancy. It is about rebuilding a body that works — one that can carry a heavy toddler up the stairs without back pain, run for a bus without leaking, and feel genuinely strong in its own skin. That is a completely different goal. And it deserves a completely different approach.",
   },
 
+  featuredSnippet: {
+    title: "The short answer:",
+    content: "Most healthcare providers recommend starting gentle movement — walking and breathing exercises — within days of birth. Structured fitness begins at 6 weeks for vaginal births and 8–12 weeks after a C-section. High-impact exercise like running should wait until at least 12 weeks, and only after rebuilding your deep core and pelvic floor foundation first.",
+  },
+
   whyDifferent: {
     title: "Why Postpartum Fitness Is Different From Regular Fitness",
     p1: "The fitness industry was built around people who have not recently grown and delivered a baby. Most workout plans assume a nervous system that is not running on broken sleep, joints that are stable, and a core and pelvic floor that are operating at full capacity. After birth, none of those things are true. The <a href='/blog/postpartum-body-changes/' class='text-[#E8A0A8] hover:underline'>hormonal changes after birth</a> alone — especially the hormone relaxin — mean your ligaments and joints are significantly more vulnerable than they were before pregnancy.",
@@ -117,6 +122,9 @@ export const postpartumFitnessContent = {
     p1: "Here is what nobody talks about enough: if you are exercising, breastfeeding, and severely undereating, you are working against yourself at every level. Your body cannot repair muscle tissue, regulate hormones, or sustain milk supply without adequate fuel. The guidance around <a href='/blog/postpartum-nutrition-guide/' class='text-[#E8A0A8] hover:underline'>postpartum nutrition</a> is clear — this is not the time to restrict.",
     p2: "Protein is the priority for muscle repair: aim for at least 1.6 to 2 grams per kilogram of bodyweight per day. Carbohydrates are not the enemy; they are the primary fuel for exercise and milk production. Hydration is easy to forget when you are busy and exhausted, but even mild dehydration measurably impairs strength, recovery, and mood.",
     p3: "The most common mistake is returning to exercise before eating enough to support both the exercise and the recovery. Feeling permanently depleted, experiencing excessive hair loss, and struggling with poor recovery are often signs of underfuelling, not overtraining. Eat more than you think you need to, especially in the early months.",
+    p4: "Breastfeeding mothers who are also exercising have significantly higher calorie needs than non-breastfeeding mothers — and higher than most people realise. Breastfeeding alone burns an additional 300 to 500 calories per day. Add regular exercise on top and you are looking at a total daily requirement that can be 600 to 800 calories above your pre-pregnancy baseline. Undereating in this context does not just slow your recovery — it actively kills milk supply. Understanding your actual <a href='/blog/breastfeeding-calorie-needs/' class='text-[#E8A0A8] hover:underline'>breastfeeding calorie needs</a> is the foundation of fuelling this phase correctly.",
+    p5: "Protein timing matters more than most people appreciate. Consuming protein within 30 to 60 minutes after a workout provides your muscles with the amino acids they need to begin repair while the window of adaptation is open. You do not need a protein shake — a couple of eggs on toast, Greek yoghurt with fruit, a portion of lentil soup, or some lean meat with rice all work perfectly. The key is consistency, not perfection.",
+    p6: "Hydration deserves its own paragraph because breastfeeding mothers are losing fluid through two channels at once: sweat during exercise and milk production throughout the day. That makes your hydration needs during and after exercise meaningfully higher than they were before pregnancy. A useful rule: drink enough that your urine stays pale yellow. If it is dark after a workout, you are behind. Your <a href='/blog/postpartum-nutrition-guide/' class='text-[#E8A0A8] hover:underline'>postpartum nutrition guide</a> can help you build the full picture of what your body needs right now.",
   },
 
   restIsTraining: {
@@ -152,6 +160,8 @@ export const postpartumFitnessContent = {
       },
     ],
     p2: "If any of these occur, step back and consult a women's health physiotherapist. A referral through the <a href='https://www.chartered.physio' target='_blank' rel='noopener noreferrer' class='text-[#E8A0A8] hover:underline'>Chartered Society of Physiotherapy</a> can connect you with a specialist who works specifically with postnatal bodies. These symptoms are information. They are not failures.",
+    p3: "There is also an important distinction worth making between muscle soreness and genuine warning signs. The pleasant ache in your glutes a day after squats — that is normal adaptation. It is your body signalling that it worked. What is not normal is sharp or persistent joint pain, heaviness or pressure in the pelvis that worsens as the day goes on, or a return of bright red lochia after a session. These are not soreness. They are your body asking you to stop, reassess, and seek guidance before continuing.",
+    p4: "And this is where it gets interesting: one of the biggest barriers to sensible postpartum recovery is not physical — it is psychological. Social media is saturated with six-week transformation posts, fitness influencers in crop tops two months after birth, and the quietly toxic message that returning quickly to a pre-baby body is a measure of discipline, love, or good mothering. It is none of those things. Those posts do not show you the pelvic floor dysfunction being managed off-camera, the physio appointments, or the years of slower work that often follow a rushed return. The comparison trap is not just unhelpful — it is actively harmful to postpartum recovery. Your timeline is yours, and the only metric that matters is how your body feels.",
   },
 
   faqSection: {
@@ -196,6 +206,13 @@ export const postpartumFitnessContent = {
       button: "Open the Pelvic Floor Estimator →",
     },
   ],
+
+  ctaBox: {
+    headline: "Get Your Personal Exercise Timeline",
+    body: "Every postpartum body is different. Our Return-to-Exercise Timeline Tool gives you a personalised week-by-week guide based on your delivery type and how your recovery is going.",
+    buttonText: "Open the Timeline Tool →",
+    buttonHref: "/exercise-timeline/",
+  },
 
   sources: [
     "POGP — Returning to Running Postnatal Guidelines (Groom T, Donnelly G, Brockwell E).",

@@ -9,11 +9,11 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: "/blog/postpartum-fitness/",
     },
-    title: "Postpartum Fitness: How to Rebuild Strength Safely After Birth | NurtureCalc",
+    title: "Postpartum Fitness: Safe Strength Rebuilding After Birth | NurtureCalc",
     description:
       "Rebuilding fitness after having a baby is not about bouncing back — it is about building forward. Here is the honest, science-based guide to postpartum strength that nobody gives you.",
     openGraph: {
-      title: "Postpartum Fitness: How to Rebuild Strength Safely After Birth | NurtureCalc",
+      title: "Postpartum Fitness: Safe Strength Rebuilding After Birth | NurtureCalc",
       description:
         "Rebuilding fitness after having a baby is not about bouncing back — it is about building forward. Here is the honest, science-based guide to postpartum strength that nobody gives you.",
       url: "https://nurturecalc.com/blog/postpartum-fitness",
@@ -118,6 +118,12 @@ export default function BlogPost() {
             </p>
             <p>{c.intro.p3}</p>
           </section>
+
+          {/* Featured Snippet */}
+          <div className="bg-[#F9E4E8]/30 rounded-3xl p-10 my-20 not-prose">
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mb-8">{c.featuredSnippet.title}</h2>
+            <p className="text-[#3D2C2C]/80 leading-relaxed">{c.featuredSnippet.content}</p>
+          </div>
 
           {/* Why Postpartum Fitness Is Different */}
           <section>
@@ -253,6 +259,9 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.nutrition.p1 }} />
             <p>{c.nutrition.p2}</p>
             <p>{c.nutrition.p3}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.nutrition.p4 }} />
+            <p>{c.nutrition.p5}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.nutrition.p6 }} />
           </section>
 
           {/* Rest Is Training */}
@@ -287,6 +296,8 @@ export default function BlogPost() {
             </ul>
 
             <p dangerouslySetInnerHTML={{ __html: c.tooMuchTooSoon.p2 }} />
+            <p>{c.tooMuchTooSoon.p3}</p>
+            <p>{c.tooMuchTooSoon.p4}</p>
           </section>
 
           {/* FAQ */}
@@ -304,6 +315,18 @@ export default function BlogPost() {
               ))}
             </div>
           </section>
+
+          {/* Closing CTA */}
+          <div className="bg-[#E8A0A8]/10 border-2 border-[#E8A0A8]/20 rounded-[3rem] p-12 my-20 not-prose text-center space-y-8 shadow-sm">
+            <h3 className="text-3xl font-serif text-[#3D2C2C] leading-tight">{c.ctaBox.headline}</h3>
+            <p className="text-lg text-[#3D2C2C]/70 max-w-2xl mx-auto leading-relaxed">{c.ctaBox.body}</p>
+            <Link
+              href={c.ctaBox.buttonHref}
+              className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-10 py-4 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-[#E8A0A8]/20"
+            >
+              {c.ctaBox.buttonText}
+            </Link>
+          </div>
 
           {/* CTAs */}
           <div className="not-prose space-y-6 my-20">
