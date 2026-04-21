@@ -9,10 +9,10 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: '/blog/postpartum-meal-prep',
     },
-    title: "Postpartum Meal Prep: How to Eat Well When You Have No Time | NurtureCalc",
+    title: "Postpartum Meal Prep: Eating Well After Birth | NurtureCalc",
     description: "Eating well after having a baby feels impossible when you can barely make a cup of tea. This practical, realistic guide to postpartum meal prep will change that — one batch cook at a time.",
     openGraph: {
-      title: "Postpartum Meal Prep: How to Eat Well When You Have No Time | NurtureCalc",
+      title: "Postpartum Meal Prep: Eating Well After Birth | NurtureCalc",
       description: "Eating well after having a baby feels impossible when you can barely make a cup of tea. This practical, realistic guide to postpartum meal prep will change that — one batch cook at a time.",
       url: 'https://nurturecalc.com/blog/postpartum-meal-prep',
       type: 'article',
@@ -109,7 +109,7 @@ export default function BlogPost() {
           </section>
 
           <div className="bg-[#F9E4E8]/30 rounded-3xl p-10 my-20 not-prose">
-            <h2 className="text-3xl font-serif text-[#3D2C2C] mb-8">{c.featuredSnippet.title}</h2>
+            <p className="text-xs font-label font-bold tracking-widest uppercase text-[#E8A0A8] mb-4">{c.featuredSnippet.title}</p>
             <p className="text-[#3D2C2C]/80 leading-relaxed">{c.featuredSnippet.content}</p>
           </div>
 
@@ -175,6 +175,8 @@ export default function BlogPost() {
             <p>{c.freezerMeals.p2}</p>
             <p>{c.freezerMeals.p3}</p>
             <p>{c.freezerMeals.p4}</p>
+            <p>{c.freezerMeals.p5}</p>
+            <p>{c.freezerMeals.p6}</p>
           </section>
 
           <section>
@@ -183,6 +185,8 @@ export default function BlogPost() {
             <p dangerouslySetInnerHTML={{ __html: c.recoverySnacks.p2 }} />
             <p>{c.recoverySnacks.p3}</p>
             <p>{c.recoverySnacks.p4}</p>
+            <p>{c.recoverySnacks.p5}</p>
+            <p>{c.recoverySnacks.p6}</p>
           </section>
 
           <section>
@@ -221,6 +225,17 @@ export default function BlogPost() {
               ))}
             </div>
           </section>
+
+          <div className="bg-[#E8A0A8]/10 border-2 border-[#E8A0A8]/20 rounded-[3rem] p-12 my-20 not-prose text-center space-y-8 shadow-sm">
+            <h3 className="text-3xl font-serif text-[#3D2C2C] leading-tight">{c.ctaBox2.headline}</h3>
+            <p className="text-lg text-[#3D2C2C]/70 max-w-2xl mx-auto leading-relaxed">{c.ctaBox2.body}</p>
+            <Link
+              href={c.ctaBox2.buttonHref}
+              className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-10 py-4 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-[#E8A0A8]/20"
+            >
+              {c.ctaBox2.buttonText}
+            </Link>
+          </div>
 
           <div className="bg-[#E8A0A8]/10 border-2 border-[#E8A0A8]/20 rounded-[3rem] p-12 my-20 not-prose text-center space-y-8 shadow-sm">
             <h3 className="text-3xl font-serif text-[#3D2C2C] leading-tight">{c.cta.headline}</h3>
