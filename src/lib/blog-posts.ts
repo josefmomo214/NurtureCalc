@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'postpartum-meal-prep',
+    title: 'Postpartum Meal Prep: How to Eat Well When You Have No Time',
+    excerpt: 'Eating well after having a baby feels impossible when you can barely make a cup of tea. This practical guide to postpartum meal prep will change that — one batch cook at a time.',
+    category: 'Nutrition',
+    readTime: '8 min read',
+    publishedAt: '2026-04-11',
+  },
+  {
     slug: 'postpartum-fitness',
     title: 'Postpartum Fitness: How to Rebuild Strength Safely After Birth',
     excerpt: 'Rebuilding fitness after having a baby is not about bouncing back — it is about building forward. Here is the honest, science-based guide to postpartum strength.',
