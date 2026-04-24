@@ -78,7 +78,7 @@ export const howToIncreaseMilkSupplyContent = {
     p1: "Fenugreek is the most widely used supplement for milk supply and has the largest evidence base — though the quality of that evidence is modest. Several randomised trials show increased milk volume, but studies are small and methodologies vary. Fenugreek can cause maple syrup-scented sweat and urine, digestive upset, and in rare cases hypoglycaemia. Some mothers report that it actually reduced their supply. It is not the simple fix it is often marketed as.",
     p2: "Blessed thistle is frequently combined with fenugreek in commercial lactation supplements. There is very limited independent evidence for it as a standalone galactagogue, but it is considered safe and well-tolerated. Moringa has more recent emerging evidence: a 2017 randomised trial found increased milk production on days three and five postpartum, and it has a good general nutritional profile and tolerability.",
     p3: "Domperidone is a prescription medication — not a supplement — that works by increasing prolactin levels. It is used off-label for low milk supply in several countries and has more robust evidence than any over-the-counter supplement. It requires medical supervision due to potential cardiac side effects and should only be considered when other methods have not been sufficient.",
-    p4: "The consistent advice from the Academy of Breastfeeding Medicine: always consult a lactation consultant or your GP before starting any supplement for milk supply. Supplements are not a substitute for addressing latch, feeding frequency, or the underlying causes of low supply — and taking them without addressing those factors is unlikely to produce lasting results.",
+    p4: "The consistent advice from the Academy of Breastfeeding Medicine: always consult a lactation consultant or your GP before starting any supplement for milk supply. Supplements are not a substitute for addressing latch, feeding frequency, or the underlying causes of low supply — and taking them without addressing those factors is unlikely to produce lasting results. Rest, adequate nutrition, and gentle <a href='/blog/postpartum-fitness/' class='text-[#E8A0A8] hover:underline'>postpartum fitness</a> to manage stress form a stronger foundation than any supplement.",
   },
 
   returningToWork: {
@@ -92,8 +92,8 @@ export const howToIncreaseMilkSupplyContent = {
   reducesSupply: {
     title: "What Reduces Milk Supply — Things to Avoid",
     p1: "Long gaps between feeds or pumping sessions are the most common supply-reducing factor. Going more than four to five hours without milk removal — particularly in the early weeks — sends a signal that supply should decrease. Night feeds are especially important: prolactin levels are highest between 2am and 6am, making overnight milk removal disproportionately important for overall supply.",
-    p2: "Certain medications can suppress supply, including combined hormonal contraceptives containing oestrogen, antihistamines, decongestants (particularly pseudoephedrine), and some antidepressants at higher doses. If you are concerned about a medication's effect on supply, speak with your prescribing doctor or pharmacist — there are often breastfeeding-compatible alternatives available.",
-    p3: "Excessive alcohol reliably reduces milk output: even one to two drinks can decrease production by approximately 20% in the hours after consumption. Severe calorie restriction is another underappreciated factor — cutting intake significantly below what your body needs to sustain breastfeeding will reduce supply over time, even if it does not stop it entirely. High and sustained stress without adequate support and rest also blunts oxytocin release and can gradually reduce supply.",
+    p2: "Certain medications can suppress supply, including combined <a href='/blog/postpartum-sex/' class='text-[#E8A0A8] hover:underline'>hormonal contraceptives</a> containing oestrogen, antihistamines, decongestants (particularly pseudoephedrine), and some antidepressants at higher doses. If you are concerned about a medication's effect on supply, speak with your prescribing doctor or pharmacist — there are often breastfeeding-compatible alternatives available.",
+    p3: "Excessive alcohol reliably reduces milk output: even one to two drinks can decrease production by approximately 20% in the hours after consumption. Severe calorie restriction is another underappreciated factor — <a href='/blog/safe-weight-loss-breastfeeding/' class='text-[#E8A0A8] hover:underline'>cutting intake significantly</a> below what your body needs to sustain breastfeeding will reduce supply over time, even if it does not stop it entirely. High and sustained stress without adequate support and rest also blunts oxytocin release and can gradually reduce supply.",
   },
 
   lactationConsultant: {
@@ -136,8 +136,8 @@ export const howToIncreaseMilkSupplyContent = {
   ],
 
   cta: {
-    headline: "One of the most overlooked causes of supply issues is simply not eating enough.",
-    body: "Find out exactly how many calories your body needs right now with our free Breastfeeding Calorie Calculator — based on your weight, activity level, and how much you're nursing.",
+    headline: "Know Exactly How Much to Eat While Breastfeeding",
+    body: "Underfuelling is one of the most overlooked causes of low milk supply. Our Breastfeeding Calorie Needs Estimator tells you exactly how many calories your body needs — based on your weight, activity, and how much you're nursing.",
     link: "/breastfeeding-calories/",
     button: "Calculate My Calorie Needs →",
   },

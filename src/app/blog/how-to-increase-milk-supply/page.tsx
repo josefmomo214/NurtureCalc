@@ -9,10 +9,10 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: '/blog/how-to-increase-milk-supply',
     },
-    title: "How to Increase Milk Supply: What Actually Works (and What Doesn't) | NurtureCalc",
+    title: "How to Increase Milk Supply: Evidence-Based Methods | NurtureCalc",
     description: "Worried your milk supply is dropping? This evidence-based guide covers every proven method to increase breast milk production — from feeding techniques to foods, supplements and pumping strategies.",
     openGraph: {
-      title: "How to Increase Milk Supply: What Actually Works (and What Doesn't) | NurtureCalc",
+      title: "How to Increase Milk Supply: Evidence-Based Methods | NurtureCalc",
       description: "Worried your milk supply is dropping? This evidence-based guide covers every proven method to increase breast milk production — from feeding techniques to foods, supplements and pumping strategies.",
       url: 'https://nurturecalc.com/blog/how-to-increase-milk-supply',
       type: 'article',
@@ -28,7 +28,7 @@ export default function BlogPost() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": c.header.title,
+    "headline": "How to Increase Milk Supply: Evidence-Based Methods",
     "description": "Worried your milk supply is dropping? This evidence-based guide covers every proven method to increase breast milk production — from feeding techniques to foods, supplements and pumping strategies.",
     "author": {
       "@type": "Organization",
@@ -40,8 +40,8 @@ export default function BlogPost() {
       "name": "NurtureCalc",
       "url": "https://nurturecalc.com"
     },
-    "datePublished": "2026-04-12",
-    "dateModified": "2026-04-12",
+    "datePublished": "2026-03-31",
+    "dateModified": "2026-04-24",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://nurturecalc.com/blog/how-to-increase-milk-supply"
@@ -173,7 +173,7 @@ export default function BlogPost() {
             <p>{c.supplements.p1}</p>
             <p>{c.supplements.p2}</p>
             <p>{c.supplements.p3}</p>
-            <p>{c.supplements.p4}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.supplements.p4 }} />
           </section>
 
           <section>
@@ -187,8 +187,8 @@ export default function BlogPost() {
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.reducesSupply.title}</h2>
             <p>{c.reducesSupply.p1}</p>
-            <p>{c.reducesSupply.p2}</p>
-            <p>{c.reducesSupply.p3}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.reducesSupply.p2 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.reducesSupply.p3 }} />
           </section>
 
           <section>
