@@ -9,10 +9,10 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: '/blog/how-to-increase-milk-supply',
     },
-    title: "How to Increase Milk Supply: Evidence-Based Methods | NurtureCalc",
+    title: "How to Increase Milk Supply: What Works | NurtureCalc",
     description: "Worried your milk supply is dropping? This evidence-based guide covers every proven method to increase breast milk production — from feeding techniques to foods, supplements and pumping strategies.",
     openGraph: {
-      title: "How to Increase Milk Supply: Evidence-Based Methods | NurtureCalc",
+      title: "How to Increase Milk Supply: What Works | NurtureCalc",
       description: "Worried your milk supply is dropping? This evidence-based guide covers every proven method to increase breast milk production — from feeding techniques to foods, supplements and pumping strategies.",
       url: 'https://nurturecalc.com/blog/how-to-increase-milk-supply',
       type: 'article',
@@ -28,7 +28,7 @@ export default function BlogPost() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "How to Increase Milk Supply: Evidence-Based Methods",
+    "headline": "How to Increase Milk Supply: What Works",
     "description": "Worried your milk supply is dropping? This evidence-based guide covers every proven method to increase breast milk production — from feeding techniques to foods, supplements and pumping strategies.",
     "author": {
       "@type": "Organization",
