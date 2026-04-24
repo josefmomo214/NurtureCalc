@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'how-to-increase-milk-supply',
+    title: "How to Increase Milk Supply: What Actually Works (and What Doesn't)",
+    excerpt: 'Worried your milk supply is dropping? This evidence-based guide covers every proven method to increase breast milk production — from feeding techniques to foods and pumping strategies.',
+    category: 'Nutrition',
+    readTime: '9 min read',
+    publishedAt: '2026-04-12',
+  },
+  {
     slug: 'postpartum-meal-prep',
     title: 'Postpartum Meal Prep: How to Eat Well When You Have No Time',
     excerpt: 'Eating well after having a baby feels impossible when you can barely make a cup of tea. This practical guide to postpartum meal prep will change that — one batch cook at a time.',
