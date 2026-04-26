@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: '3-months-postpartum',
+    title: '3 Months Postpartum: What to Expect for Your Body, Baby and Mind',
+    excerpt: 'Three months postpartum is a turning point — but it does not always feel like one. Here is an honest guide to what is normal at 3 months for your body, your baby and your mental health.',
+    category: 'Recovery',
+    readTime: '9 min read',
+    publishedAt: '2026-04-13',
+  },
+  {
     slug: 'how-to-increase-milk-supply',
     title: "How to Increase Milk Supply: What Actually Works (and What Doesn't)",
     excerpt: 'Worried your milk supply is dropping? This evidence-based guide covers every proven method to increase breast milk production — from feeding techniques to foods and pumping strategies.',
