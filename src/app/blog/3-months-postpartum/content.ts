@@ -20,7 +20,7 @@ export const threeMonthsPostpartumContent = {
 
   bodyAtThreeMonths: {
     title: "Your Body at 3 Months Postpartum",
-    p1: "The good news first: by 3 months postpartum, your uterus is fully back to its pre-pregnancy size. Lochia — the postpartum bleeding — has been gone for weeks. If you had a C-section, the external scar is well on its way to healing, though internal tissue continues to repair for up to a year. The <a href='https://www.nhs.uk/conditions/baby/support-for-parents/your-body-after-the-birth/' target='_blank' rel='noopener noreferrer' class='text-[#E8A0A8] hover:underline'>NHS guidance on your body after birth</a> gives a clear overview of what the physical recovery timeline actually looks like.",
+    p1: "The good news first: by 3 months postpartum, your uterus is fully back to its pre-pregnancy size. Lochia — the postpartum bleeding — has been gone for weeks. If you had a <a href='/blog/c-section-recovery-timeline/' class='text-[#E8A0A8] hover:underline'>C-section</a>, the external scar is well on its way to healing, though internal tissue continues to repair for up to a year. The <a href='https://www.nhs.uk/conditions/baby/support-for-parents/your-body-after-the-birth/' target='_blank' rel='noopener noreferrer' class='text-[#E8A0A8] hover:underline'>NHS guidance on your body after birth</a> gives a clear overview of what the physical recovery timeline actually looks like.",
     p2: "But the 3 months postpartum body is not a finished product, and that is worth saying plainly. <a href='/blog/diastasis-recti/' class='text-[#E8A0A8] hover:underline'>Diastasis recti</a> — the separation of the abdominal muscles that happens during pregnancy — may still be present and can affect how your core feels and functions. Your pelvic floor is still rebuilding. Relaxin, the hormone that loosened your joints for birth, remains elevated if you are breastfeeding, which means joints feel less stable for longer than most people expect.",
     p3: "The full picture of <a href='/blog/postpartum-body-changes/' class='text-[#E8A0A8] hover:underline'>postpartum body changes</a> is rarely discussed honestly. Your centre of gravity has shifted. Your posture has changed from months of pregnancy and then from the physical demands of feeding, carrying, and rarely sleeping in a proper position. These things do not resolve in 90 days.",
     p4: "None of this is failure. This is a body that grew and delivered a human being less than 100 days ago. The expectation that it should look or feel normal by now is one of the more damaging myths in postpartum culture.",
@@ -43,7 +43,7 @@ export const threeMonthsPostpartumContent = {
 
   hormones: {
     title: "Your Hormones at 3 Months",
-    p1: "At three months postpartum, oestrogen is still significantly lower than it was before pregnancy — particularly if you are breastfeeding, where prolactin actively suppresses it. Low oestrogen contributes to vaginal dryness, lower libido, skin changes, and mood instability. This is not a personal failing. This is your endocrine system doing exactly what it is supposed to do in the postpartum period.",
+    p1: "At three months postpartum, oestrogen is still significantly lower than it was before pregnancy — particularly if you are breastfeeding, where prolactin actively suppresses it. Low oestrogen contributes to vaginal dryness, <a href='/blog/postpartum-sex/' class='text-[#E8A0A8] hover:underline'>lower libido</a>, skin changes, and mood instability. This is not a personal failing. This is your endocrine system doing exactly what it is supposed to do in the postpartum period.",
     p2: "Prolactin, the hormone that drives milk production, remains elevated as long as you are breastfeeding. It has a mild calming effect but also suppresses the return of ovulation and contributes to low libido. If your sex drive has not returned by three months, this is almost always why — and it is completely normal.",
     p3: "Mood unpredictability at this stage is often hormonal and very real. Crying at an advert, snapping at your partner, feeling simultaneously fine and not fine — this is the biology of three months postpartum. That said, there is a line between hormonal fluctuation and something that needs more support, and it is worth knowing where that line is.",
   },
@@ -88,7 +88,7 @@ export const threeMonthsPostpartumContent = {
   relationship: {
     title: "Your Relationship at 3 Months",
     p1: "The strain on partnerships at three months postpartum is significant and widely underprepared for. Sleep deprivation degrades communication, empathy, and patience in everyone it touches. The division of labour — who does what, who wakes, who recovers, who gets time to themselves — becomes a source of tension that compounds across weeks.",
-    p2: "Physical intimacy has often not resumed by three months, and even when it has, it may not feel the same as it did before. Low oestrogen, physical recovery, a changed relationship with your body, and the logistics of exhaustion all contribute. This is normal. It does not mean the relationship is broken — it means it is in a period of significant renegotiation.",
+    p2: "<a href='/blog/postpartum-sex/' class='text-[#E8A0A8] hover:underline'>Physical intimacy</a> has often not resumed by three months, and even when it has, it may not feel the same as it did before. Low oestrogen, physical recovery, a changed relationship with your body, and the logistics of exhaustion all contribute. This is normal. It does not mean the relationship is broken — it means it is in a period of significant renegotiation.",
     p3: "The single most effective thing at this stage: keep short, direct conversations going rather than letting resentment build in silence. Not necessarily deep relationship processing — neither of you has the bandwidth for that right now. Just enough contact to stay connected and flag when something needs to be addressed.",
   },
 
@@ -102,7 +102,7 @@ export const threeMonthsPostpartumContent = {
       },
       {
         priority: "Nutrition",
-        detail: "Eating enough, regularly. Not perfectly — regularly. A body running on insufficient fuel cannot recover, regulate mood, produce milk, or cope with the demands of a three-month-old. If meal prep feels impossible, simplify rather than restrict.",
+        detail: "Eating enough, regularly. Not perfectly — regularly. A body running on insufficient fuel cannot recover, regulate mood, produce milk, or cope with the demands of a three-month-old. If <a href='/blog/postpartum-meal-prep/' class='text-[#E8A0A8] hover:underline'>meal prep</a> feels impossible, simplify rather than restrict.",
       },
       {
         priority: "Gentle movement",
@@ -153,8 +153,8 @@ export const threeMonthsPostpartumContent = {
   ],
 
   cta1: {
-    headline: "Wondering about postpartum weight loss at 3 months?",
-    body: "Our free Safe Weight Loss Calculator gives you a personalised weekly target that protects your milk supply and supports your postpartum recovery.",
+    headline: "Wondering About Weight Loss at 3 Months?",
+    body: "Our Safe Weight Loss Calculator gives you a personalised weekly target that protects your milk supply and supports your postpartum recovery — no restriction required.",
     link: "/safe-weight-loss/",
     button: "Calculate My Safe Rate →",
   },
@@ -167,8 +167,8 @@ export const threeMonthsPostpartumContent = {
   },
 
   cta3: {
-    headline: "Make sure you are eating enough to support your recovery.",
-    body: "Our free Breastfeeding Calorie Calculator gives you a personalised daily target based on your weight, activity level, and how much you are nursing.",
+    headline: "Make Sure You Are Eating Enough",
+    body: "A body running on insufficient fuel cannot recover, regulate mood, or produce milk. Our Breastfeeding Calorie Calculator gives you a personalised daily target based on your weight, activity level, and how much you are nursing.",
     link: "/breastfeeding-calories/",
     button: "Calculate My Calorie Needs →",
   },

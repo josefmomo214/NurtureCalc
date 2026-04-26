@@ -9,10 +9,10 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: '/blog/3-months-postpartum',
     },
-    title: "3 Months Postpartum: What to Expect for Your Body, Baby and Mind | NurtureCalc",
+    title: "3 Months Postpartum: What to Expect | NurtureCalc",
     description: "Three months postpartum is a turning point — but it does not always feel like one. Here is an honest guide to what is normal at 3 months for your body, your baby and your mental health.",
     openGraph: {
-      title: "3 Months Postpartum: What to Expect for Your Body, Baby and Mind | NurtureCalc",
+      title: "3 Months Postpartum: What to Expect | NurtureCalc",
       description: "Three months postpartum is a turning point — but it does not always feel like one. Here is an honest guide to what is normal at 3 months for your body, your baby and your mental health.",
       url: 'https://nurturecalc.com/blog/3-months-postpartum',
       type: 'article',
@@ -40,7 +40,7 @@ export default function BlogPost() {
       "name": "NurtureCalc",
       "url": "https://nurturecalc.com"
     },
-    "datePublished": "2026-04-13",
+    "datePublished": "2026-03-31",
     "dateModified": "2026-04-26",
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -138,7 +138,7 @@ export default function BlogPost() {
 
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.hormones.title}</h2>
-            <p>{c.hormones.p1}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.hormones.p1 }} />
             <p>{c.hormones.p2}</p>
             <p>{c.hormones.p3}</p>
           </section>
@@ -194,7 +194,7 @@ export default function BlogPost() {
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.relationship.title}</h2>
             <p>{c.relationship.p1}</p>
-            <p>{c.relationship.p2}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.relationship.p2 }} />
             <p>{c.relationship.p3}</p>
           </section>
 
@@ -209,7 +209,7 @@ export default function BlogPost() {
                   </div>
                   <div>
                     <p className="font-serif text-[#3D2C2C] font-semibold mb-1">{item.priority}</p>
-                    <p className="text-sm text-[#3D2C2C]/70 leading-relaxed">{item.detail}</p>
+                    <p className="text-sm text-[#3D2C2C]/70 leading-relaxed" dangerouslySetInnerHTML={{ __html: item.detail }} />
                   </div>
                 </div>
               ))}
