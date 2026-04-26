@@ -28,7 +28,7 @@ export default function BlogPost() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "3 Months Postpartum: What to Expect for Your Body, Baby and Mind",
+    "headline": "3 Months Postpartum: What to Expect",
     "description": "Three months postpartum is a turning point — but it does not always feel like one. Here is an honest guide to what is normal at 3 months for your body, your baby and your mental health.",
     "author": {
       "@type": "Organization",

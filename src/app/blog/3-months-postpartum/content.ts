@@ -2,7 +2,7 @@ export const threeMonthsPostpartumContent = {
   header: {
     category: "Recovery",
     readTime: "9 min read",
-    title: "3 Months Postpartum: What to Expect for Your Body, Baby and Mind",
+    title: "3 Months Postpartum: What to Expect",
     author: "NurtureCalc Editorial Team",
     reviewNote: "Reviewed against NHS and ACOG guidelines",
   },
