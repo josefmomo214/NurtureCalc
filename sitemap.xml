@@ -45,4 +45,10 @@
     <url>
         <loc>https://www.nurturecalc.com/blog/understanding-baby-growth-chart</loc>
     </url>
+    <url>
+        <loc>https://nurturecalc.com/blog/postpartum-anxiety/</loc>
+        <lastmod>2026-04-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
