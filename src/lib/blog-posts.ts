@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'postpartum-anxiety',
+    title: 'Postpartum Anxiety: What It Is, What It Feels Like, and How to Get Help',
+    excerpt: 'Postpartum anxiety affects up to 1 in 5 new mothers — and is often missed. Learn the symptoms, what makes it different from depression, and how to get effective help.',
+    category: 'Recovery',
+    readTime: '12 min read',
+    publishedAt: '2026-04-28',
+  },
+  {
     slug: '3-months-postpartum',
     title: '3 Months Postpartum: What to Expect',
     excerpt: 'Three months postpartum is a turning point — but it does not always feel like one. Here is an honest guide to what is normal at 3 months for your body, your baby and your mental health.',
