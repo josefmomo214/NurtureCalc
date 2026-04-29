@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: '6-weeks-postpartum',
+    title: '6 Weeks Postpartum: What to Expect, What Gets Checked, and What\'s Still Healing',
+    excerpt: 'Six weeks postpartum is a milestone — but not a finish line. Here\'s what\'s actually happening in your body, what the six-week check covers, and what\'s still healing.',
+    category: 'Recovery',
+    readTime: '12 min read',
+    publishedAt: '2026-04-28',
+  },
+  {
     slug: 'postpartum-anxiety',
     title: 'Postpartum Anxiety: What It Is, What It Feels Like, and How to Get Help',
     excerpt: 'Postpartum anxiety affects up to 1 in 5 new mothers — and is often missed. Learn the symptoms, what makes it different from depression, and how to get effective help.',
