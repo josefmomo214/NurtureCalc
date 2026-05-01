@@ -103,6 +103,10 @@ export default function BlogPost() {
             </div>
           </header>
 
+          <div className="not-prose my-12 rounded-3xl overflow-hidden">
+            <img src="/images/how-to-increase-milk-supply-hero.webp" alt="Mother breastfeeding her newborn baby at home" width={800} height={450} className="w-full object-cover" />
+          </div>
+
           <section>
             <p>{c.intro.p1}</p>
             <p>{c.intro.p2}</p>
