@@ -100,6 +100,11 @@ export default function BlogPost() {
             </div>
           </header>
 
+           <div className="not-prose my-12 rounded-3xl overflow-hidden">
+            <img src="/images/postpartum-anxiety-hero.webp" alt="Mother sitting awake at night watching over her newborn baby" width={800} height={450} className="w-full object-cover" />
+          </div>
+
+
           <section>
             <p>{c.intro.p1}</p>
             <p>{c.intro.p2}</p>
