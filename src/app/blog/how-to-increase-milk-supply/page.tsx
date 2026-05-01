@@ -76,9 +76,6 @@ export default function BlogPost() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
-          <div className="not-prose my-12 rounded-3xl overflow-hidden">
-            <img src="/images/how-to-increase-milk-supply-hero.webp" alt="Mother breastfeeding her newborn baby at home" width={800} height={450} className="w-full object-cover" />
-          </div>
 
       <main className="flex-1 max-w-4xl mx-auto w-full py-16 px-6">
         <article className="prose prose-rose lg:prose-xl max-w-none text-[#3D2C2C]/80 font-sans leading-relaxed">
