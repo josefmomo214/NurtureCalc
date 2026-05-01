@@ -106,6 +106,9 @@ export default function BlogPost() {
             <p>{c.intro.p3}</p>
           </section>
 
+          <div className="not-prose my-12 rounded-3xl overflow-hidden">
+            <img src="/images/6-weeks-postpartum-hero.webp" alt="Mother holding newborn baby at six weeks postpartum recovery" width={800} height={450} className="w-full object-cover" />
+          </div>
           <div className="bg-[#F9E4E8]/30 rounded-3xl p-10 my-20 not-prose">
             <p className="text-xs font-label font-bold tracking-widest uppercase text-[#E8A0A8] mb-4">{c.featuredSnippet.title}</p>
             <p className="text-[#3D2C2C]/80 leading-relaxed">{c.featuredSnippet.content}</p>
