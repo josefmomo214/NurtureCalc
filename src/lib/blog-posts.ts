@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'can-postpartum-last-for-years',
+    title: 'Can Postpartum Last for Years? The Honest Answer Nobody Gives You',
+    excerpt: "Can postpartum really last for years? The honest answer is yes — for some women. Here's what prolonged postpartum looks like, why it happens, and what actually helps.",
+    category: 'Recovery',
+    readTime: '14 min read',
+    publishedAt: '2026-05-02',
+  },
+  {
     slug: '6-weeks-postpartum',
     title: '6 Weeks Postpartum: What to Expect, What Gets Checked, and What\'s Still Healing',
     excerpt: 'Six weeks postpartum is a milestone — but not a finish line. Here\'s what\'s actually happening in your body, what the six-week check covers, and what\'s still healing.',
