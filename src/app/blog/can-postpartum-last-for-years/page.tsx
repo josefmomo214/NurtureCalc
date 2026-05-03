@@ -100,6 +100,10 @@ export default function BlogPost() {
             </div>
           </header>
 
+          <div className="not-prose my-12 rounded-3xl overflow-hidden">
+            <img src="/images/can-postpartum-last-for-years-hero.webp" alt="Woman sitting alone at kitchen table in morning light reflecting on postpartum recovery" width={800} height={450} className="w-full object-cover" />
+          </div>
+
           <section>
             <p>{c.intro.p1}</p>
             <p>{c.intro.p2}</p>
