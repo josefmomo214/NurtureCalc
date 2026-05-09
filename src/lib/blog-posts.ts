@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'breastfeeding-postpartum',
+    title: "Breastfeeding Postpartum: What to Expect, What's Normal, and How to Protect Your Body",
+    excerpt: "Everything you need to know about breastfeeding postpartum — from the first latch to weaning. What to expect, what's normal, and how to protect your body while nursing.",
+    category: 'Nutrition',
+    readTime: '16 min read',
+    publishedAt: '2026-05-02',
+  },
+  {
     slug: 'can-postpartum-last-for-years',
     title: 'Can Postpartum Last for Years? The Honest Answer Nobody Gives You',
     excerpt: "Can postpartum really last for years? The honest answer is yes — for some women. Here's what prolonged postpartum looks like, why it happens, and what actually helps.",
