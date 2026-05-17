@@ -181,12 +181,6 @@ export default function PelvicFloorRecoveryContent() {
           </div>
         </div>
 
-        {/* Global Desktop Ad Sidebar */}
-        <aside className="hidden">
-          <div className="ad-sidebar sticky top-32 w-full h-[600px] bg-slate-100 rounded-xl border border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-label text-sm">
-            Ad Placeholder
-          </div>
-        </aside>
 
         <section className="mt-16 max-w-3xl space-y-6 text-[#3D2C2C]/80 leading-relaxed text-lg pb-12">
           <h2 className="text-2xl font-serif text-[#3D2C2C]">Understanding Pelvic Floor Recovery</h2>
@@ -209,12 +203,6 @@ export default function PelvicFloorRecoveryContent() {
 
       </main>
 
-      {/* Global Mobile Ad */}
-      <div className="hidden">
-        <div className="ad-sidebar w-full h-48 bg-slate-100 rounded-xl border border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-label text-sm">
-          Ad Placeholder
-        </div>
-      </div>
 
       <Footer />
     </div>

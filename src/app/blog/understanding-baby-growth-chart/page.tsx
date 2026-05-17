@@ -115,10 +115,6 @@ export default function GrowthChartGuide() {
             If your baby boy is in the 25th percentile for weight, it means that out of 100 healthy baby boys of the same age, he weighs more than 24 of them, and 75 of them weigh more than him. It is absolutely vital to understand that the 50th percentile is <i>not</i> an "A+" or a required goal. It is merely the mathematical median. A baby born in the 15th percentile can be just as perfectly healthy and perfectly fed as a baby in the 85th percentile. 
           </p>
 
-          <div className="ad-inline my-8 bg-slate-100 p-4 rounded text-center text-sm text-slate-400 font-label border border-dashed border-slate-300">
-            Advertisement Placeholder
-          </div>
-
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What are WHO growth standards and why do they matter?</h2>
           <p>
             Not all growth charts are created equal. In the past, many pediatric charts were based entirely on locally formula-fed infants, who tend to gain weight at a slightly heavier and faster rate in the first year. 

@@ -182,21 +182,9 @@ export default function BreastfeedingCaloriesContent() {
           </section>
         </div>
 
-        {/* Global Desktop Ad Sidebar */}
-        <aside className="hidden md:block w-72 shrink-0">
-          <div className="ad-sidebar sticky top-32 w-full h-[600px] bg-slate-100 rounded-xl border border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-label text-sm">
-            Ad Placeholder
-          </div>
-        </aside>
 
       </main>
 
-      {/* Global Mobile Ad */}
-      <div className="md:hidden px-6 py-8 border-t border-[#E8A0A8]/10">
-        <div className="ad-sidebar w-full h-48 bg-slate-100 rounded-xl border border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-label text-sm">
-          Ad Placeholder
-        </div>
-      </div>
 
       <Footer />
     </div>

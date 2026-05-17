@@ -143,10 +143,6 @@ export default function BlogPost() {
             </li>
           </ul>
 
-          <div className="ad-inline my-8 bg-slate-100 p-4 rounded text-center text-sm text-slate-400 font-label border border-dashed border-slate-300">
-            Advertisement Placeholder
-          </div>
-
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How breastfeeding affects your calorie needs and weight loss</h2>
           <p>
             Breastfeeding is a metabolic marathon. Producing milk demands a staggering amount of energy. On average, a mother exclusively breastfeeding a newborn requires an additional 500 to 600 calories per day on top of her baseline needs. 

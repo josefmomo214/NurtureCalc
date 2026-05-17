@@ -158,10 +158,6 @@ export default function BlogPost() {
             During delivery—whether vaginal or cesarean—these tissues underwent extreme trauma. Furthermore, your body remains flooded with relaxin, a hormone that loosens ligaments to allow the pelvis to open for birth. Relaxin can stay in your system for up to six months postpartum (and longer if you are breastfeeding), leaving your joints highly unstable and prone to injury if loaded incorrectly.
           </p>
 
-          <div className="ad-inline my-8 bg-slate-100 p-4 rounded text-center text-sm text-slate-400 font-label border border-dashed border-slate-300">
-            Advertisement Placeholder
-          </div>
-
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">The evidence-based timeline for vaginal birth recovery</h2>
           <p>
             A six-week clearance from your doctor simply means your cervix has closed and immediate bleeding has resolved; it does <i>not</i> mean your connective tissues have regained tensile strength. 

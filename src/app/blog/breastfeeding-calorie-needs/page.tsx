@@ -127,10 +127,6 @@ export default function BlogPost() {
             When you breastfeed, your body effectively goes into overdrive. Producing human milk is one of the most energetically expensive things a body can do, consuming more metabolic energy than maintaining the pregnancy itself. Your body must draw upon your dietary intake and fat stores to synthesize complex sugars, lipids, proteins, and immune-boosting antibodies out of thin air to meet your baby's rapid growth needs.
           </p>
 
-          <div className="ad-inline my-8 bg-slate-100 p-4 rounded text-center text-sm text-slate-400 font-label border border-dashed border-slate-300">
-            Advertisement Placeholder
-          </div>
-
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">The science behind breastfeeding calorie needs</h2>
           <p>
             The foundation of understanding your caloric needs lies in your Basal Metabolic Rate (BMR)—the energy your body uses just to stay alive at rest. Dietitians frequently use the Mifflin-St Jeor equation to calculate this baseline. We then account for your physical activity level to determine your Total Daily Energy Expenditure (TDEE).

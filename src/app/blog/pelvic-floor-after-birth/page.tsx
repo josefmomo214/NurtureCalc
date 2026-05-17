@@ -137,10 +137,6 @@ export default function BlogPost() {
             These muscles have three critical jobs: they support your pelvic organs (bladder, uterus, and bowel) against gravity; they control your sphincter muscles to prevent you from leaking urine, gas, or feces; and they play a vital role in sexual sensation and function. They also form the foundation of your "deep core," working continually with your diaphragm to manage the pressure inside your abdomen every time you cough, lift, laugh, or jump.
           </p>
 
-          <div className="ad-inline my-8 bg-slate-100 p-4 rounded text-center text-sm text-slate-400 font-label border border-dashed border-slate-300">
-            Advertisement Placeholder
-          </div>
-
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How pregnancy and birth affect the pelvic floor</h2>
           <p>
             Pregnancy alone applies immense downward pressure on this muscular hammock for nine long months. The increasing weight of the baby, combined with the relaxing effect of pregnancy hormones, stretches the pelvic tissues deeply. 
