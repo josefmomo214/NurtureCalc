@@ -54,6 +54,9 @@ export default function Footer() {
           <p className="font-label text-xs font-bold tracking-widest opacity-60 uppercase">
             © 2026 NurtureCalc.com — made with care for new mothers
           </p>
+          <p className="font-label text-[10px] font-bold tracking-widest opacity-40 uppercase mt-2">
+            NurtureCalc provides general health information only. Content is not a substitute for professional medical advice. Always consult a qualified healthcare provider.
+          </p>
         </div>
       </div>
     </footer>

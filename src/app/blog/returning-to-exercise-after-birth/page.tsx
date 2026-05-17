@@ -281,6 +281,11 @@ export default function BlogPost() {
             </p>
           </div>
 
+          <div className="bg-[#F5F5F0] border border-[#E0E0D8] rounded-3xl p-8 my-12 not-prose">
+            <p className="text-xs font-label font-bold tracking-widest uppercase text-[#3D2C2C]/50 mb-3">Medical Disclaimer</p>
+            <p className="text-sm text-[#3D2C2C]/70 leading-relaxed">This article is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. The information provided is based on published guidelines from recognised health authorities including the NHS, WHO, and ACOG. Always consult a qualified healthcare professional before making decisions about your health or treatment. If you are experiencing a medical emergency, contact your local emergency services immediately.</p>
+          </div>
+
           {/* Sources */}
           <div className="mt-12 pt-8 border-t border-[#E8A0A8]/10">
             <p className="text-[10px] text-[#3D2C2C]/40 leading-relaxed uppercase tracking-wider font-label">
