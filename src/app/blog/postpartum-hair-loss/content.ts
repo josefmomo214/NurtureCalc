@@ -4,7 +4,9 @@ export const postpartumHairLossContent = {
     readTime: "12 min read",
     title: "Postpartum Hair Loss: Why It Happens and When It Stops",
     subtitle: "Everything You Need to Know About the 'Shower Shock'",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by Maternal Health Experts — Grounded in evidence-based research."
   },
   intro: {
@@ -77,7 +79,11 @@ export const postpartumHairLossContent = {
     text: "What you eat postpartum affects your hair health too. Read our complete Postpartum Nutrition Guide for the key nutrients your body needs right now.",
     link: "/blog/postpartum-nutrition-guide"
   },
-  sources: "American Academy of Dermatology — Hair loss in new mothers. NHS — Hair loss. Journal of Clinical and Diagnostic Research — Telogen Effluvium.",
+  sources: [
+    "American Academy of Dermatology — Hair loss in new mothers",
+    "NHS — Hair loss",
+    "Journal of Clinical and Diagnostic Research — Telogen Effluvium",
+  ],
   related: [
     { title: "Postpartum Nutrition: What to Eat to Heal, Recover and Thrive", slug: "postpartum-nutrition-guide", category: "Nutrition" },
     { title: "Is it Safe to Lose Weight While Breastfeeding?", slug: "safe-weight-loss-breastfeeding", category: "Nutrition" }

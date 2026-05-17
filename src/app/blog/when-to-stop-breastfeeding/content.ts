@@ -4,7 +4,9 @@ export const weaningGuideContent = {
     readTime: "12 min read",
     title: "When to Stop Breastfeeding: A Gentle, Judgement-Free Guide to Weaning",
     subtitle: "A Gentle, Judgement-Free Guide to Weaning",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by NurtureCalc Health Experts — Practical, evidence-based guidance for your weaning journey."
   },
   intro: {

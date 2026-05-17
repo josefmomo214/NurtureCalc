@@ -3,7 +3,9 @@ export const postpartumAnxietyContent = {
     category: "Recovery",
     readTime: "12 min read",
     title: "Postpartum Anxiety: What It Is, What It Feels Like, and How to Get Help",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "28 April 2026",
+    updatedDate: "28 April 2026",
     reviewNote: "Reviewed against NHS and NICE guidelines on perinatal mental health",
   },
 

@@ -3,7 +3,9 @@ export const sixWeeksPostpartumContent = {
     category: "Recovery",
     readTime: "12 min read",
     title: "6 Weeks Postpartum: What to Expect, What Gets Checked, and What's Still Healing",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "28 April 2026",
+    updatedDate: "29 April 2026",
     reviewNote: "Reviewed against ACOG and NHS postnatal care guidelines",
   },
 

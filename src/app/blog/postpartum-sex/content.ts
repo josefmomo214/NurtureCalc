@@ -12,7 +12,9 @@ export const articleHeader = {
   title: "Postpartum Sex: What to Expect When You Feel Ready",
   subtitle: "Nobody gives you an honest guide to sex after having a baby. From physical changes to emotional readiness, here is everything you need to know — without the awkwardness.",
   category: "Recovery",
-  author: "NurtureCalc Team",
+  author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "11 April 2026",
   readTime: "8 min read",
   publishedAt: "2026-04-08",
 };

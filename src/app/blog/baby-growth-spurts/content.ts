@@ -4,7 +4,9 @@ export const babyGrowthSpurtsContent = {
     readTime: "8 min read",
     title: "Baby Growth Spurts: What They Are, When They Happen and How to Survive Them",
     subtitle: "When They Happen and How to Survive Them",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by Pediatric Nurses and IBCLCs — Grounded in global child health standards."
   },
   intro: {
@@ -103,7 +105,11 @@ export const babyGrowthSpurtsContent = {
     text: "Track your baby's growth against WHO standards with our free Baby Weight Percentile Calculator.",
     link: "/baby-weight"
   },
-  sources: "World Health Organization — Child Growth Standards. American Academy of Pediatrics — Bright Futures Guidelines. Academy of Breastfeeding Medicine.",
+  sources: [
+    "World Health Organization — Child Growth Standards",
+    "American Academy of Pediatrics — Bright Futures Guidelines",
+    "Academy of Breastfeeding Medicine",
+  ],
   related: [
     { title: "Understanding Your Baby's Growth Chart", slug: "understanding-baby-growth-chart", category: "Baby Health" },
     { title: "How Many Extra Calories Do You Need When Breastfeeding?", slug: "breastfeeding-calorie-needs", category: "Nutrition" }

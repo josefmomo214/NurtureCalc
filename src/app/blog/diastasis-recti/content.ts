@@ -4,7 +4,9 @@ export const diastasisRectiContent = {
     readTime: "15 min read",
     title: "Diastasis Recti: What It Is, How to Check for It and How to Heal It",
     subtitle: "A Guide to Restoring Your Core from the Inside Out",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by Women's Health Physiotherapy Experts — Grounded in ACOG and POGP guidelines."
   },
   intro: {
@@ -100,7 +102,11 @@ export const diastasisRectiContent = {
     text: "Ready to start moving again safely? Read our gentle guide to returning to exercise after birth — with timelines for both vaginal and C-section deliveries.",
     link: "/blog/returning-to-exercise-after-birth/"
   },
-  sources: "Lee DG et al. Diastasis Rectus Abdominis: A Clinical Guide. POGP Guidelines on Diastasis Recti. Mota P et al. Diastasis recti abdominis in pregnancy and postpartum. Journal of Orthopaedic & Sports Physical Therapy, 2015.",
+  sources: [
+    "Lee DG et al. Diastasis Rectus Abdominis: A Clinical Guide",
+    "POGP Guidelines on Diastasis Recti",
+    "Mota P et al. Diastasis recti abdominis in pregnancy and postpartum. Journal of Orthopaedic & Sports Physical Therapy, 2015",
+  ],
   related: [
     { title: "What is the Pelvic Floor and Why Does it Matter After Birth?", slug: "pelvic-floor-after-birth", category: "Recovery" },
     { title: "A Gentle Guide to Returning to Exercise After Birth", slug: "returning-to-exercise-after-birth", category: "Fitness" }

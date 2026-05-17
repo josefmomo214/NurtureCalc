@@ -4,7 +4,9 @@ export const periodsGuideContent = {
     readTime: "12 min read",
     title: "Breastfeeding and Periods: When Will Your Cycle Return?",
     subtitle: "When Will Your Cycle Return?",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by NurtureCalc Health Experts — Grounded in evidence-based maternal health."
   },
   intro: {
@@ -91,7 +93,12 @@ export const periodsGuideContent = {
     link: "/breastfeeding-calories",
     button: "Open the Calculator →"
   },
-  sources: "World Health Organization — Infant and young child feeding. The Lancet — Lactational amenorrhea. NHS — Your body after birth. American College of Obstetricians and Gynecologists — Postpartum contraception.",
+  sources: [
+    "World Health Organization — Infant and young child feeding",
+    "The Lancet — Lactational amenorrhea",
+    "NHS — Your body after birth",
+    "American College of Obstetricians and Gynecologists — Postpartum contraception",
+  ],
   related: [
     {
       category: "Nutrition",

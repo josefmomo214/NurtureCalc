@@ -3,7 +3,9 @@ export const postpartumMealPrepContent = {
     category: "Nutrition",
     readTime: "8 min read",
     title: "Postpartum Meal Prep: How to Eat Well When You Have No Time",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "29 April 2026",
     reviewNote: "Reviewed against NHS and BDA guidelines",
   },
 

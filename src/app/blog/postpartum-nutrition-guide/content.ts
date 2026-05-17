@@ -4,7 +4,9 @@ export const nutritionGuideContent = {
     readTime: "15 min read",
     title: "Postpartum Nutrition: What to Eat to Heal, Recover and Thrive",
     subtitle: "Heal, Recover and Thrive",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by NurtureCalc Dietitians — Grounded in evidence-based maternal health."
   },
   intro: {
@@ -91,5 +93,9 @@ export const nutritionGuideContent = {
       a: "Restrictive dieting is best avoided for the first 8 weeks. Once your supply is established, a moderate approach that focuses on whole foods can help you lose weight safely without impacting your energy or milk volume."
     }
   ],
-  sources: "Academy of Nutrition and Dietetics: Nutrition during Lactation. Academy of Breastfeeding Medicine Clinical Protocol #29. NHS — Vitamins and nutrition in pregnancy and after birth."
+  sources: [
+    "Academy of Nutrition and Dietetics — Nutrition during Lactation",
+    "Academy of Breastfeeding Medicine Clinical Protocol #29",
+    "NHS — Vitamins and nutrition in pregnancy and after birth",
+  ],
 };

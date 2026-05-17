@@ -3,7 +3,9 @@ export const howToIncreaseMilkSupplyContent = {
     category: "Nutrition",
     readTime: "9 min read",
     title: "How to Increase Milk Supply: What Actually Works (and What Doesn't)",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "29 April 2026",
     reviewNote: "Reviewed against Academy of Breastfeeding Medicine guidelines",
   },
 

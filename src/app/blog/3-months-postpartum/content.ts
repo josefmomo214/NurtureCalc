@@ -3,7 +3,9 @@ export const threeMonthsPostpartumContent = {
     category: "Recovery",
     readTime: "9 min read",
     title: "3 Months Postpartum: What to Expect",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "13 April 2026",
+    updatedDate: "26 April 2026",
     reviewNote: "Reviewed against NHS and ACOG guidelines",
   },
 

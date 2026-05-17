@@ -3,7 +3,9 @@ export const cSectionRecoveryContent = {
     category: "Recovery",
     readTime: "25 min read",
     title: "C-Section Recovery: What to Expect Week by Week",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "15 March 2026",
+    updatedDate: "11 April 2026",
     reviewNote: "Evidence-based guide aligned with ACOG, NHS, and RCOG clinical standards for postpartum recovery."
   },
   opening: {
@@ -141,7 +143,12 @@ export const cSectionRecoveryContent = {
     buttonText: "Get My Exercise Timeline →",
     buttonHref: "/exercise-timeline/"
   },
-  sources: "American College of Obstetricians and Gynecologists (ACOG) — Cesarean Birth. NHS — Caesarean section recovery. Royal College of Obstetricians and Gynaecologists — Recovery after Caesarean section. Journal of Midwifery & Women's Health — Postoperative recovery.",
+  sources: [
+    "American College of Obstetricians and Gynecologists (ACOG) — Cesarean Birth",
+    "NHS — Caesarean section recovery",
+    "Royal College of Obstetricians and Gynaecologists — Recovery after Caesarean section",
+    "Journal of Midwifery & Women's Health — Postoperative recovery",
+  ],
   related: [
     {
       slug: "returning-to-exercise-after-birth",

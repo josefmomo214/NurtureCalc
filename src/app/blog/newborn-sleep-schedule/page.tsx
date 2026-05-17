@@ -96,9 +96,6 @@ export default function NewbornSleepPage() {
                 <p className="text-xs font-label text-[#3D2C2C]/70">
                   Written by the NurtureCalc Editorial Team · Reviewed against WHO & NHS <Link href="/editorial-standards" className="text-[#E8A0A8] hover:underline">guidelines</Link>
                 </p>
-                <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase max-w-xs mx-auto text-center">
-                  {c.header.reviewNote}
-                </p>
               </div>
             </div>
           </header>

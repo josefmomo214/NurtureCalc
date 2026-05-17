@@ -3,7 +3,9 @@ export const canPostpartumLastForYearsContent = {
     category: "Recovery",
     readTime: "14 min read",
     title: "Can Postpartum Last for Years? The Honest Answer Nobody Gives You",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "2 May 2026",
+    updatedDate: "2 May 2026",
     reviewNote: "Reviewed against NHS and ACOG guidelines on postpartum care",
   },
 

@@ -62,13 +62,13 @@ export default function GrowthChartGuide() {
               </div>
               <div className="space-y-1">
                 <span className="text-sm font-label font-bold tracking-wide text-[#3D2C2C]">
-                  NurtureCalc Team
+                  Olivia-P · NurtureCalc Team
                 </span>
                 <p className="text-xs font-label text-[#3D2C2C]/70">
-                  Written by the NurtureCalc Editorial Team · Reviewed against WHO & NHS <Link href="/editorial-standards" className="text-[#E8A0A8] hover:underline">guidelines</Link>
+                  Written by Olivia-P, NurtureCalc Team
                 </p>
-                <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase">
-                  Fact-checked against published medical guidelines
+                <p className="text-[11px] font-label text-[#3D2C2C]/50 tracking-wide uppercase mt-1">
+                  Published 31 March 2026 · Updated 10 April 2026
                 </p>
                 <span className="block text-xs text-[#3D2C2C]/50 font-label tracking-wide">5 min read</span>
               </div>
@@ -258,12 +258,10 @@ export default function GrowthChartGuide() {
             </p>
           </div>
 
-          {/* Sources */}
-          <div className="mt-12 pt-8 border-t border-[#E8A0A8]/10">
-            <p className="text-[10px] text-[#3D2C2C]/40 leading-relaxed uppercase tracking-wider font-label">
-              Sources: WHO Multicentre Growth Reference Study Group (2006). WHO Child Growth Standards. Geneva: World Health Organization. American Academy of Pediatrics Bright Futures Guidelines.
-            </p>
-          </div>
+          <div className="border-t border-[#E8A0A8]/20 pt-8 mt-8 not-prose">
+              <p className="text-sm font-label font-bold tracking-wider text-[#3D2C2C]/60 uppercase mb-3">Sources &amp; References</p>
+              <p className="text-sm text-[#3D2C2C]/60 leading-relaxed">WHO Multicentre Growth Reference Study Group (2006). WHO Child Growth Standards. Geneva: World Health Organization. American Academy of Pediatrics Bright Futures Guidelines.</p>
+            </div>
 
         </article>
 

@@ -4,7 +4,9 @@ export const postpartumBodyChangesContent = {
     readTime: "9 min read",
     title: "Postpartum Body Changes Nobody Warns You About",
     subtitle: "The Honest Guide to What Is Happening and Why It's All Normal",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by Maternal Health Experts — Grounded in evidence-based research."
   },
   s1: {
@@ -104,7 +106,12 @@ export const postpartumBodyChangesContent = {
     cta2: "If you are thinking about postpartum weight loss, our free calculator will give you a safe, personalised weekly target that protects your milk supply.",
     cta2Link: "/safe-weight-loss"
   },
-  sources: "NHS — Your body after birth. ACOG — Postpartum Care Guidelines. Royal College of Obstetricians and Gynaecologists. American Thyroid Association — Postpartum Thyroiditis.",
+  sources: [
+    "NHS — Your body after birth",
+    "ACOG — Postpartum Care Guidelines",
+    "Royal College of Obstetricians and Gynaecologists",
+    "American Thyroid Association — Postpartum Thyroiditis",
+  ],
   related: [
     { title: "Diastasis Recti: What It Is, How to Check for It and How to Heal It", slug: "diastasis-recti", category: "Recovery" },
     { title: "Postpartum Hair Loss: Why It Happens and When It Stops", slug: "postpartum-hair-loss", category: "Recovery" }

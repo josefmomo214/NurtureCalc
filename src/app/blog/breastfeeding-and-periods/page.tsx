@@ -92,10 +92,10 @@ export default function BlogPost() {
                   {c.header.author}
                 </Link>
                 <p className="text-xs font-label text-[#3D2C2C]/70">
-                  Written by the NurtureCalc Editorial Team · Reviewed against WHO & NHS <Link href="/editorial-standards" className="text-[#E8A0A8] hover:underline">guidelines</Link>
+                  Written by Olivia-P, NurtureCalc Team
                 </p>
-                <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase max-w-xs mx-auto text-center">
-                  {c.header.reviewNote}
+                <p className="text-[11px] font-label text-[#3D2C2C]/50 tracking-wide uppercase mt-1">
+                  Published {c.header.publishedDate} · Updated {c.header.updatedDate}
                 </p>
               </div>
             </div>
@@ -232,10 +232,16 @@ export default function BlogPost() {
           </div>
 
           <footer className="not-prose border-t border-[#E8A0A8]/20 pt-16">
-            <div className="mb-16">
-              <p className="text-[10px] text-[#3D2C2C]/40 leading-relaxed uppercase tracking-wider font-label max-w-2xl">
-                Sources: {c.sources}
-              </p>
+            <div className="border-t border-[#E8A0A8]/20 pt-8 mt-8">
+              <p className="text-sm font-label font-bold tracking-wider text-[#3D2C2C]/60 uppercase mb-4">Sources &amp; References</p>
+              <ul className="space-y-2">
+                {c.sources.map((source, i) => (
+                  <li key={i} className="text-sm text-[#3D2C2C]/60 leading-relaxed flex gap-2">
+                    <span className="text-[#E8A0A8] font-bold shrink-0">—</span>
+                    <span>{source}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <h3 className="text-2xl font-serif text-[#3D2C2C] mb-8 uppercase tracking-tight">You might also like</h3>

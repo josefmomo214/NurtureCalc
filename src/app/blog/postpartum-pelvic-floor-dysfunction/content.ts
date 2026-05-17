@@ -4,7 +4,9 @@ export const pelvicFloorDysfunctionContent = {
     readTime: "10 min read",
     title: "Signs of Postpartum Pelvic Floor Dysfunction — And What To Do About Them",
     subtitle: "What To Do About Them",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed byPelvic Health Physiotherapists — Grounded in evidence-based maternal health."
   },
   intro: {
@@ -118,7 +120,11 @@ export const pelvicFloorDysfunctionContent = {
     text: "Take our free gentle Pelvic Floor Recovery Estimator to understand where you are in your healing journey.",
     link: "/pelvic-floor-recovery"
   },
-  sources: "Pelvic, Obstetric and Gynaecological Physiotherapy (POGP) guidelines. International Continence Society. Bø K et al. Evidence-Based Physical Therapy for the Pelvic Floor, 2nd edition.",
+  sources: [
+    "Pelvic, Obstetric and Gynaecological Physiotherapy (POGP) guidelines",
+    "International Continence Society",
+    "Bø K et al. Evidence-Based Physical Therapy for the Pelvic Floor, 2nd edition",
+  ],
   related: [
     { title: "What is the Pelvic Floor and Why Does it Matter After Birth?", slug: "pelvic-floor-after-birth", category: "Recovery" },
     { title: "A Gentle Guide to Returning to Exercise After Birth", slug: "returning-to-exercise-after-birth", category: "Fitness" }

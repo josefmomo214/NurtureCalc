@@ -4,7 +4,9 @@ export const babyWeightContent = {
     readTime: "12 min read",
     title: "How Long Does It Take to Lose the Baby Weight?",
     subtitle: "(An Honest Answer)",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Scientifically reviewed against medical guidelines from ACOG and ABM."
   },
   intro: {
@@ -93,5 +95,8 @@ export const babyWeightContent = {
       a: "Don't worry about the scale itself, but watch for symptoms. If you feel extreme fatigue, have zero weight change despite effort, or experience rapid unexplained loss, see your GP for a thyroid and blood panel."
     }
   ],
-  sources: "American College of Obstetricians and Gynecologists (ACOG) Postpartum Toolkit. Academy of Breastfeeding Medicine Clinical Protocol #29: Iron Deficiency across the Lifespan."
+  sources: [
+    "American College of Obstetricians and Gynecologists (ACOG) Postpartum Toolkit",
+    "Academy of Breastfeeding Medicine Clinical Protocol #29: Iron Deficiency across the Lifespan",
+  ],
 };

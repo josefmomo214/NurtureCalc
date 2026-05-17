@@ -4,7 +4,9 @@ export const newbornSleepContent = {
     readTime: "12 min read",
     title: "Newborn Sleep Schedule: What to Really Expect in the First 3 Months",
     subtitle: "The honest truth about the fourth trimester haze",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by Infant Sleep Specialists — Based on NHS, Lullaby Trust, and AAP safe sleep guidelines."
   },
   intro: {

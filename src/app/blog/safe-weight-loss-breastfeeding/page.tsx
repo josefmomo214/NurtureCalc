@@ -61,16 +61,13 @@ export default function BlogPost() {
               </div>
               <div className="space-y-1">
                 <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
-                  NurtureCalc Team
+                  Olivia-P · NurtureCalc Team
                 </Link>
                 <p className="text-xs font-label text-[#3D2C2C]/70">
-                  Written by the NurtureCalc Editorial Team · Reviewed against WHO & NHS <Link href="/editorial-standards" className="text-[#E8A0A8] hover:underline">guidelines</Link>
+                  Written by Olivia-P, NurtureCalc Team
                 </p>
-                <p className="text-[10px] text-[#3D2C2C]/50 font-label tracking-wide uppercase">
-                  Fact-checked against published medical guidelines —{" "}
-                  <Link href="/author/nurturecalc-team#sources" className="underline hover:text-[#E8A0A8]">
-                    see our sources
-                  </Link>
+                <p className="text-[11px] font-label text-[#3D2C2C]/50 tracking-wide uppercase mt-1">
+                  Published 31 March 2026 · Updated 10 April 2026
                 </p>
                 <span className="block text-xs text-[#3D2C2C]/50 font-label tracking-wide">5 min read</span>
               </div>
@@ -227,12 +224,10 @@ export default function BlogPost() {
             </p>
           </div>
 
-          {/* Sources */}
-          <div className="mt-12 pt-8 border-t border-[#E8A0A8]/10">
-            <p className="text-[10px] text-[#3D2C2C]/40 leading-relaxed uppercase tracking-wider font-label">
-              Sources: American College of Obstetricians and Gynecologists (ACOG) — Breastfeeding Your Baby (2022). Academy of Breastfeeding Medicine Clinical Protocol #29.
-            </p>
-          </div>
+          <div className="border-t border-[#E8A0A8]/20 pt-8 mt-8 not-prose">
+              <p className="text-sm font-label font-bold tracking-wider text-[#3D2C2C]/60 uppercase mb-3">Sources &amp; References</p>
+              <p className="text-sm text-[#3D2C2C]/60 leading-relaxed">American College of Obstetricians and Gynecologists (ACOG) — Breastfeeding Your Baby (2022). Academy of Breastfeeding Medicine Clinical Protocol #29.</p>
+            </div>
 
         </article>
 

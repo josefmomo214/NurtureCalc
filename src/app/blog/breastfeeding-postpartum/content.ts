@@ -3,7 +3,9 @@ export const breastfeedingPostpartumContent = {
     category: "Nutrition",
     readTime: "16 min read",
     title: "Breastfeeding Postpartum: What to Expect, What's Normal, and How to Protect Your Body",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "2 May 2026",
+    updatedDate: "2 May 2026",
     reviewNote: "Reviewed against NHS and WHO breastfeeding guidelines",
   },
 

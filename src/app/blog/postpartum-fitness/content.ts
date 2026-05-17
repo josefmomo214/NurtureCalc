@@ -3,7 +3,9 @@ export const postpartumFitnessContent = {
     category: "Fitness",
     readTime: "9 min read",
     title: "Postpartum Fitness: How to Rebuild Strength Safely After Birth",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "29 April 2026",
     reviewNote: "Reviewed against POGP and ACOG guidelines",
   },
 

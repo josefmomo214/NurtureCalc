@@ -4,7 +4,9 @@ export const ppdContent = {
     readTime: "12 min read",
     title: "Postpartum Depression vs Baby Blues: How to Tell the Difference",
     subtitle: "Understanding your feelings in the fourth trimester",
-    author: "BY THE NURTURECALC TEAM",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "10 April 2026",
     reviewNote: "Reviewed by Maternal Mental Health Experts — Grounded in NHS and Mind UK guidelines."
   },
   intro: {

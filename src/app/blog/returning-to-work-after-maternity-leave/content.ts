@@ -4,7 +4,9 @@ export const returnToWorkContent = {
     readTime: "8 min read",
     title: "Returning to Work After Maternity Leave: A Practical Guide for New Mothers",
     subtitle: "A Practical Guide for New Mothers",
-    author: "NurtureCalc Editorial Team",
+    author: "Olivia-P · NurtureCalc Team",
+    publishedDate: "31 March 2026",
+    updatedDate: "29 April 2026",
     reviewNote: "Reviewed against ACAS and NHS guidelines",
   },
 
