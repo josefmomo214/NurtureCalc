@@ -7,14 +7,14 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Free Postpartum Health Calculators for New Mothers | NurtureCalc",
-  description: "Free, science-based postpartum calculators. Safe weight loss, breastfeeding calorie needs, exercise timelines, pelvic floor recovery & baby growth charts. No sign-up required.",
+  description: "Free science-based postpartum calculators for new mothers. Safe weight loss, breastfeeding calories, exercise timelines, pelvic floor recovery & baby growth charts.",
   keywords: "postpartum calculator, breastfeeding calories, return to exercise after birth, pelvic floor recovery, baby weight percentile",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Free Postpartum Health Calculators for New Mothers | NurtureCalc",
-    description: "Free, science-based postpartum calculators. Safe weight loss, breastfeeding calorie needs, exercise timelines, pelvic floor recovery & baby growth charts. No sign-up required.",
+    description: "Free science-based postpartum calculators for new mothers. Safe weight loss, breastfeeding calories, exercise timelines, pelvic floor recovery & baby growth charts.",
     url: 'https://nurturecalc.com/',
     type: 'website',
   },
@@ -36,6 +36,24 @@ export default function Home() {
             "url": "https://nurturecalc.com",
             "description": "Free postpartum health calculators for new mothers.",
             "inLanguage": "en",
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "NurtureCalc",
+            "url": "https://nurturecalc.com",
+            "description": "Free science-based postpartum health calculators for new mothers.",
+            "logo": "https://nurturecalc.com/og-image.jpg",
+            "sameAs": [
+              "https://www.facebook.com/profile.php?id=61573471182996",
+              "https://www.pinterest.com/NurtureCalc/",
+              "https://www.linkedin.com/company/nurturecalc/"
+            ]
           }),
         }}
       />

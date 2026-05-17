@@ -3,7 +3,7 @@ import BabyWeightPercentileContent from './BabyWeightPercentileContent';
 
 export const metadata: Metadata = {
   title: 'Baby Weight Percentile Calculator (WHO Charts) | NurtureCalc',
-  description: 'Instantly check your baby\'s weight against WHO growth charts. Free, no sign-up required. Works for boys and girls from 0 to 52 weeks.',
+  description: "Calculate your baby's weight percentile using WHO growth charts. Track growth from birth to 24 months and understand what the numbers mean.",
   alternates: {
     canonical: '/baby-weight-percentile',
   },
@@ -38,11 +38,26 @@ export default function BabyWeightPercentile() {
     ]
   };
 
+  const webAppJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Baby Weight Percentile Calculator",
+    "description": "Calculate your baby's weight percentile using WHO growth charts. Works for newborns through 24 months.",
+    "url": "https://nurturecalc.com/baby-weight-percentile/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
       />
       <BabyWeightPercentileContent />
     </>

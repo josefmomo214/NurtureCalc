@@ -38,11 +38,26 @@ export default function PelvicFloorRecovery() {
     ]
   };
 
+  const webAppJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Postpartum Pelvic Floor Recovery Estimator",
+    "description": "Estimate your postpartum pelvic floor recovery timeline and get personalised guidance based on your birth type and symptoms.",
+    "url": "https://nurturecalc.com/pelvic-floor-recovery/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
       />
       <PelvicFloorRecoveryContent />
     </>

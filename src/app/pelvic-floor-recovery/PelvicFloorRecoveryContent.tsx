@@ -203,6 +203,23 @@ export default function PelvicFloorRecoveryContent() {
 
       </main>
 
+      <section className="max-w-5xl mx-auto w-full px-6 py-12 border-t border-[#E8A0A8]/10">
+        <h2 className="text-2xl font-serif text-[#3D2C2C] mb-8">Related Guides</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Link href="/blog/pelvic-floor-after-birth/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8]/30 hover:shadow-lg transition-all duration-300">
+            <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Recovery</span>
+            <p className="font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug transition-colors">What is the Pelvic Floor and Why Does it Matter After Birth?</p>
+          </Link>
+          <Link href="/blog/postpartum-pelvic-floor-dysfunction/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8]/30 hover:shadow-lg transition-all duration-300">
+            <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Recovery</span>
+            <p className="font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug transition-colors">Signs of Postpartum Pelvic Floor Dysfunction — And What To Do About Them</p>
+          </Link>
+          <Link href="/blog/diastasis-recti/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8]/30 hover:shadow-lg transition-all duration-300">
+            <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Recovery</span>
+            <p className="font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug transition-colors">Diastasis Recti: What It Is, How to Check for It and How to Heal It</p>
+          </Link>
+        </div>
+      </section>
 
       <Footer />
     </div>

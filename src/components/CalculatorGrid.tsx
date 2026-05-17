@@ -57,6 +57,7 @@ export default function CalculatorGrid() {
   return (
     <section id="calculators" className="py-24 px-6 md:px-12 bg-[#FFFDF9]">
       <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-serif text-[#3D2C2C] text-center mb-12">Postpartum Health Calculators</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {calculators.map((calc) => (
             <div 

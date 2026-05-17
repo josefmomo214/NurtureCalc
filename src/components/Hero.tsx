@@ -19,7 +19,7 @@ export default function Hero() {
 
       <div className="max-w-4xl mx-auto relative z-10 text-center space-y-10">
         <h1 className="text-5xl md:text-8xl font-serif text-[#3D2C2C] leading-[0.9] tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-700">
-          Your gentle guide to postpartum recovery
+          Free Postpartum Calculators for New Mothers
         </h1>
         
         <p className="text-xl md:text-2xl text-[#3D2C2C]/70 leading-relaxed max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-700">

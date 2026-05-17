@@ -2,13 +2,13 @@ import { Metadata } from 'next';
 import BreastfeedingCaloriesContent from './BreastfeedingCaloriesContent';
 
 export const metadata: Metadata = {
-  title: 'Breastfeeding Calorie Calculator — How Much Do You Need? | NurtureCalc',
-  description: 'Discover exactly how many extra calories your body needs while breastfeeding. Personalised to your weight, height, activity level and feeding method. Free, no sign-up required.',
+  title: 'Breastfeeding Calorie Calculator | NurtureCalc',
+  description: 'Calculate how many extra calories you need while breastfeeding based on your weight, activity level, and nursing frequency. Free, no sign-up required.',
   alternates: {
     canonical: '/breastfeeding-calories',
   },
   openGraph: {
-    title: 'Breastfeeding Calorie Calculator — How Much Do You Need? | NurtureCalc',
+    title: 'Breastfeeding Calorie Calculator | NurtureCalc',
     description: 'Discover exactly how many extra calories your body needs while breastfeeding. Personalised to your weight, height, and activity level.',
     url: 'https://nurturecalc.com/breastfeeding-calories',
     type: 'website',
@@ -38,11 +38,30 @@ export default function BreastfeedingCalories() {
     ]
   };
 
+  const webAppJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Breastfeeding Calorie Calculator",
+    "description": "Calculate how many extra calories you need while breastfeeding based on your weight, activity level, and nursing frequency.",
+    "url": "https://nurturecalc.com/breastfeeding-calories/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
       />
       <BreastfeedingCaloriesContent />
     </>

@@ -38,11 +38,26 @@ export default function ExerciseTimeline() {
     ]
   };
 
+  const webAppJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Postpartum Exercise Timeline Calculator",
+    "description": "Get a personalised week-by-week exercise timeline for returning to fitness after birth based on your delivery type and recovery.",
+    "url": "https://nurturecalc.com/exercise-timeline/",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
       />
       <ExerciseTimelineContent />
     </>
