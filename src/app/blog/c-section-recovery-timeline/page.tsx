@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/c-section-recovery-timeline',
   },
-  title: "C-Section Recovery: What to Expect Week by Week | NurtureCalc",
+  title: "C-Section Recovery Timeline: What to Expect Week by Week | NurtureCalc",
   description: "A realistic week-by-week guide to C-section recovery — from hospital discharge through 12 weeks. What to expect, what to avoid, and when most women feel like themselves again.",
   openGraph: {
-    title: "C-Section Recovery: What to Expect Week by Week | NurtureCalc",
+    title: "C-Section Recovery Timeline: What to Expect Week by Week | NurtureCalc",
     description: "A realistic week-by-week guide to C-section recovery — from hospital discharge through 12 weeks. What to expect, what to avoid, and when most women feel like themselves again.",
     url: 'https://nurturecalc.com/blog/c-section-recovery-timeline/',
     type: 'article',
@@ -26,7 +26,7 @@ export default function BlogPost() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "C-Section Recovery: What to Expect Week by Week",
+    "headline": "C-Section Recovery Timeline: What to Expect Week by Week",
     "description": "A realistic week-by-week guide to C-section recovery — from hospital discharge through 12 weeks. What to expect, what to avoid, and when most women feel like themselves again.",
     "author": {
       "@type": "Organization",
@@ -152,7 +152,7 @@ export default function BlogPost() {
                 <span className="text-xs text-[#3D2C2C]/50 font-label tracking-wide uppercase">{c.header.readTime}</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-serif text-[#3D2C2C] leading-tight mb-6">
-                C-Section Recovery: What to Expect Week by Week
+                C-Section Recovery Timeline: What to Expect Week by Week
               </h1>
               <div className="flex flex-col items-center gap-2">
                 <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
@@ -167,6 +167,10 @@ export default function BlogPost() {
               </div>
             </div>
           </header>
+
+          <p className="text-lg text-[#3D2C2C] font-semibold leading-relaxed bg-[#F9E4E8]/40 rounded-2xl px-6 py-5 not-prose mb-8">
+            {c.definition}
+          </p>
 
           <section>
             <p>{c.opening.p1}</p>
@@ -196,6 +200,12 @@ export default function BlogPost() {
               </table>
             </div>
           </div>
+
+          <section>
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.howLong.title}</h2>
+            <p>{renderText(c.howLong.p1)}</p>
+            <p>{renderText(c.howLong.p2)}</p>
+          </section>
 
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-8">{c.hospitalStay.title}</h2>

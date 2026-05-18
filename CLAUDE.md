@@ -30,11 +30,15 @@ There is no test suite. Lint with `npx eslint .` (ESLint 9 flat config in `eslin
 
 ### Calculator Pattern
 
-Each calculator lives at `src/app/<name>/`. Interactive state lives in a `<Name>Content.tsx` client component (marked `"use client"`); the route's `page.tsx` is a server component that owns `Metadata` and wraps the client component. Unit conversions are handled in components via the `useUnit()` hook from `UnitContext`.
+Each calculator lives at `src/app/<name>/`. Interactive state lives in a `<Name>Content.tsx` client component (marked `"use client"`); the route's `page.tsx` is a server component that owns `Metadata` and wraps the client component. Unit conversions are handled in components via the `useUnitSystem()` hook from `UnitContext`.
 
 ### Blog Pattern
 
-Blog article routes are under `src/app/blog/<slug>/`. All posts are authored as static TSX files. The registry in `src/lib/blog-posts.ts` drives the blog index listing — add the metadata object there when creating a new post.
+Blog article routes are under `src/app/blog/<slug>/`. Each post has:
+- `content.ts` — a typed TS object holding all text, FAQs, related posts, sources, and CTA copy (keeps page.tsx clean).
+- `page.tsx` — a server component using `generateMetadata()` (not a static `metadata` export) plus inline Article and FAQPage JSON-LD structured data.
+
+The registry in `src/lib/blog-posts.ts` drives the blog index listing — add the metadata object there when creating a new post.
 
 ## Design System
 
@@ -47,6 +51,8 @@ Full spec is in `DESIGN.md`. Key rules:
 
 ## SEO Conventions
 
-- Every page exports a `Metadata` object with `title`, `description`, `alternates.canonical`, and `openGraph`.
-- Internal links must include a trailing slash (e.g. `/blog/`).
+- Calculator pages export a static `Metadata` object; blog pages use `generateMetadata()`.
+- Every page includes `title`, `description`, `alternates.canonical`, and `openGraph`.
+- **Canonical URLs have no trailing slash** (e.g. `canonical: '/blog/some-post'`). The Express server redirects any trailing-slash URL to the non-slash version (301).
+- **`<Link>` hrefs use a trailing slash** (e.g. `href="/blog/some-post/"`) so Next.js resolves the static export correctly before the server redirect fires.
 - Structured data is injected as `<script type="application/ld+json">` inline in page components, not via a helper.
