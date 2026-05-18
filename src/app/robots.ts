@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.nurturecalc.com/sitemap.xml',
+    sitemap: 'https://nurturecalc.com/sitemap.xml',
   };
 }

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Breastfeeding and Periods: When Will Your Cycle Return? | NurtureCalc",
     description: "Wondering when your period will return while breastfeeding? Learn exactly how prolactin delays your cycle, what your first period will feel like, and when to see a doctor.",
-    url: 'https://nurturecalc.com/blog/breastfeeding-and-periods/',
+    url: 'https://nurturecalc.com/blog/breastfeeding-and-periods',
     type: 'article',
     publishedTime: '2026-03-31T00:00:00Z',
     authors: ['https://nurturecalc.com/author/nurturecalc-team'],
@@ -42,7 +42,7 @@ export default function BlogPost() {
     "dateModified": "2026-04-10",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://nurturecalc.com/blog/breastfeeding-and-periods/"
+      "@id": "https://nurturecalc.com/blog/breastfeeding-and-periods"
     },
     "medicalAudience": {
       "@type": "MedicalAudience",

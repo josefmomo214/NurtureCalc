@@ -24,8 +24,8 @@ export default function AboutPage() {
     "mainEntity": {
       "@type": "Organization",
       "name": "NurtureCalc",
-      "url": "https://www.nurturecalc.com",
-      "logo": "https://www.nurturecalc.com/logo.png",
+      "url": "https://nurturecalc.com",
+      "logo": "https://nurturecalc.com/logo.png",
       "description": "Free, science-based postpartum health tools for new mothers.",
     }
   };
