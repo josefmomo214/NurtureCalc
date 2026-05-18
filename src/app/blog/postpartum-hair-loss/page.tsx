@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/postpartum-hair-loss',
   },
-  title: "Postpartum Hair Loss: Why It Happens and When It Stops | NurtureCalc",
-  description: "Losing handfuls of hair after birth is normal but alarming. Learn exactly why postpartum hair loss happens, when it peaks, and when it stops completely.",
+  title: "When Does Postpartum Hair Loss Start and Stop? | NurtureCalc",
+  description: "Most women lose hair between 2–5 months after birth, with shedding stopping by month 6–12. Find out what's normal, when to worry, and what actually helps.",
   openGraph: {
-    title: "Postpartum Hair Loss: Why It Happens and When It Stops | NurtureCalc",
-    description: "Losing handfuls of hair after birth is normal but alarming. Learn exactly why postpartum hair loss happens, when it peaks, and when it stops completely.",
+    title: "When Does Postpartum Hair Loss Start and Stop? | NurtureCalc",
+    description: "Most women lose hair between 2–5 months after birth, with shedding stopping by month 6–12. Find out what's normal, when to worry, and what actually helps.",
     url: 'https://nurturecalc.com/blog/postpartum-hair-loss',
     type: 'article',
     publishedTime: '2026-03-31T00:00:00Z',

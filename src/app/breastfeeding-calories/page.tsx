@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import BreastfeedingCaloriesContent from './BreastfeedingCaloriesContent';
 
 export const metadata: Metadata = {
-  title: 'Breastfeeding Calorie Calculator | NurtureCalc',
-  description: 'Calculate how many extra calories you need while breastfeeding based on your weight, activity level, and nursing frequency. Free, no sign-up required.',
+  title: 'How Many Calories Do You Burn Breastfeeding? Free Calculator',
+  description: 'Find out exactly how many extra calories your body burns each day while breastfeeding. Enter your stats for a free personalised result — no sign-up needed.',
   alternates: {
     canonical: '/breastfeeding-calories',
   },
   openGraph: {
-    title: 'Breastfeeding Calorie Calculator | NurtureCalc',
-    description: 'Discover exactly how many extra calories your body needs while breastfeeding. Personalised to your weight, height, and activity level.',
+    title: 'How Many Calories Do You Burn Breastfeeding? Free Calculator',
+    description: 'Find out exactly how many extra calories your body burns each day while breastfeeding. Enter your stats for a free personalised result — no sign-up needed.',
     url: 'https://nurturecalc.com/breastfeeding-calories',
     type: 'website',
   },

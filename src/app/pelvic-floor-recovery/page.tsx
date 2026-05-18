@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import PelvicFloorRecoveryContent from './PelvicFloorRecoveryContent';
 
 export const metadata: Metadata = {
-  title: 'Postpartum Pelvic Floor Recovery Estimator | NurtureCalc',
-  description: 'Take our gentle pelvic floor quiz designed for new mothers. Understand where you are in your healing journey and what to focus on next. Free, no sign-up required.',
+  title: 'Pelvic Floor After Birth: Free Recovery Quiz | NurtureCalc',
+  description: 'Take our 2-minute pelvic floor quiz and find out where you are in your postpartum recovery. Get a personalised plan based on your birth type and symptoms.',
   alternates: {
     canonical: '/pelvic-floor-recovery',
   },
   openGraph: {
-    title: 'Postpartum Pelvic Floor Recovery Estimator | NurtureCalc',
-    description: 'Take our gentle pelvic floor quiz designed for new mothers. Understand where you are in your healing journey.',
+    title: 'Pelvic Floor After Birth: Free Recovery Quiz | NurtureCalc',
+    description: 'Take our 2-minute pelvic floor quiz and find out where you are in your postpartum recovery. Get a personalised plan based on your birth type and symptoms.',
     url: 'https://nurturecalc.com/pelvic-floor-recovery',
     type: 'website',
   },
