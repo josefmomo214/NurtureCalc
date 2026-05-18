@@ -2,13 +2,13 @@ export const postpartumHairLossContent = {
   header: {
     category: "Recovery",
     readTime: "12 min read",
-    title: "Postpartum Hair Loss: Why It Happens and When It Stops",
-    subtitle: "Everything You Need to Know About the 'Shower Shock'",
+    title: "Postpartum Hair Loss: When It Starts, When It Stops, and What's Normal",
     author: "Olivia-P · NurtureCalc Team",
     publishedDate: "31 March 2026",
     updatedDate: "10 April 2026",
     reviewNote: "Reviewed by Maternal Health Experts — Grounded in evidence-based research."
   },
+  definition: "Postpartum hair loss typically starts between 2 and 4 months after birth, peaks around months 3–4, and stops between 6 and 12 months postpartum. The condition — called telogen effluvium — affects most new mothers and resolves on its own. Hair usually returns to its pre-pregnancy thickness by your baby's first birthday.",
   intro: {
     quote: "You're standing in the shower, and suddenly, you realize you're holding a palm-sized clump of hair. Your heart drops. You think, 'Is this it? Am I going bald?' Let us stop you right there: You are okay, this is normal, and it is not permanent.",
     p1: "For many new mothers, the first major 'shock' of the postpartum period isn't the lack of sleep or the learning curve of breastfeeding—it's the sudden, dramatic loss of hair that seems to happen overnight. One day your hair feels thicker and more luscious than ever, and the next, you're finding strands on the baby’s clothes, your pillowcase, and in every corner of the house. It can feel deeply alarming, especially when you're already navigating the emotional and physical intensity of caring for a newborn.",
@@ -26,14 +26,15 @@ export const postpartumHairLossContent = {
     p2: "Typically, the shedding begins around 2 to 4 months after birth. Some mothers notice it as early as the eight-week mark, while for others, it might wait until month 6. This timing can be particularly frustrating because it often coincides with the moment you're finally starting to feel a bit more like yourself—perhaps you're sleeping slightly better or have found a rhythm with your baby—only to be met with another physical change. Rest assured, if you're hitting the three-month mark and noticing more hair in your brush, you are right on schedule."
   },
   whenPeaks: {
-    title: "When Does It Peak?",
+    title: "When Does Postpartum Hair Loss Peak?",
     p1: "The peak of postpartum hair loss usually occurs around month 3 or 4 postpartum. During this time, the shedding can feel quite intense. You might notice your ponytail feeling significantly thinner, or you might see your scalp more clearly around your hairline or part.",
     p2: "It's important to remember that 'intensity' is subjective and depends on how much hair you started with. If you had very thick hair during pregnancy, the shed might seem like a mountain of strands. If your hair was thinner, the loss might feel more noticeable on your scalp. Regardless of the volume, the peak is a sign that the 'hormonal reset' is in full swing. It is the peak of the mountain—which means you are about to start the descent toward more stable hair growth."
   },
   whenStops: {
-    title: "When Does It Stop?",
+    title: "When Does Postpartum Hair Loss Stop?",
     p1: "The good news is that for the vast majority of mothers, postpartum hair loss is a self-limiting condition. It will stop on its own without any medical intervention. Most women see the shedding taper off significantly by 6 to 9 months postpartum.",
-    p2: "By the time your baby is one year old, your hair should have returned to its normal, pre-pregnancy growth cycle. You might start to notice 'baby hairs'—short, fuzzy new growth along your hairline—which is a wonderful sign that the follicles have re-entered the growth phase. While it can take a bit longer for the overall *thickness* or length to fully recover (hair only grows about half an inch per month), your baby's first birthday is usually the milestone where most mothers feel their hair journey has stabilized."
+    p2: "By the time your baby is one year old, your hair should have returned to its normal, pre-pregnancy growth cycle. You might start to notice 'baby hairs'—short, fuzzy new growth along your hairline—which is a wonderful sign that the follicles have re-entered the growth phase. While it can take a bit longer for the overall *thickness* or length to fully recover (hair only grows about half an inch per month), your baby's first birthday is usually the milestone where most mothers feel their hair journey has stabilized.",
+    p3: "Individual timelines vary. Mothers still breastfeeding past six months may find the shedding lasts slightly longer, as prolactin keeps oestrogen levels suppressed and delays the full hormonal reset. Stress, poor sleep, and nutrient depletion — all common in the first year — can also slow how quickly new growth emerges. If you are past 12 months and shedding has not let up, the section below covers when it is worth speaking to your doctor."
   },
   breastfeedingMyth: {
     title: "Does Breastfeeding Make Hair Loss Worse?",
@@ -51,7 +52,7 @@ export const postpartumHairLossContent = {
     p7: "6. **A New Haircut**: Many new mothers opt for a 'mom chop' during this time. Shorter layers can hide thinning much better than long, heavy hair. A fresh cut can also remove split ends that make hair look less healthy."
   },
   whenSeeDoctor: {
-    title: "When Should You See a Doctor?",
+    title: "What's Normal vs. When to See a Doctor",
     p1: "While shedding is normal, there are times when hair loss might be a symptom of an underlying issue rather than 'just' postpartum hormones. We recommend speaking to your healthcare provider if you notice any of the following 'red flags':",
     p2: "• **Patchy Hair Loss**: If you see clear, round patches of baldness rather than a general, all-over thinning, this could be a sign of alopecia areata or another autoimmune condition.",
     p3: "• **Prolonged Shedding**: If your hair is still falling out at the same intense rate after your baby is 12 months old, it’s worth a check-up.",

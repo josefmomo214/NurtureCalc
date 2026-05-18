@@ -85,7 +85,7 @@ export default function BlogPost() {
                 <span className="text-xs text-[#3D2C2C]/50 font-label tracking-wide uppercase">{c.header.readTime}</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-serif text-[#3D2C2C] leading-tight mb-6">
-                Postpartum Hair Loss: <span className="text-[#E8A0A8] italic">{c.header.subtitle}</span>
+                {c.header.title}
               </h1>
               <div className="flex flex-col items-center gap-2">
                 <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
@@ -100,6 +100,10 @@ export default function BlogPost() {
               </div>
             </div>
           </header>
+
+          <p className="text-lg text-[#3D2C2C] font-semibold leading-relaxed bg-[#F9E4E8]/40 rounded-2xl px-6 py-5 not-prose mb-8">
+            {c.definition}
+          </p>
 
           <section>
             <p className="text-xl md:text-2xl font-serif italic text-[#3D2C2C] mb-12 leading-relaxed border-l-4 border-[#E8A0A8]/30 pl-8 py-2">
@@ -132,7 +136,14 @@ export default function BlogPost() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-serif text-[#3D2C2C] mt-10 mb-10">{c.whenStarts.title}</h2>
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mt-10 mb-10">{c.whenStops.title}</h2>
+            <p>{c.whenStops.p1}</p>
+            <p>{c.whenStops.p2}</p>
+            <p>{c.whenStops.p3} Hair loss is one of several surprising physical changes that happen after birth — for more on what is normal in this period, read our <Link href="/blog/postpartum-body-changes/" className="text-[#E8A0A8] hover:underline font-medium">guide to postpartum body changes</Link>.</p>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-10">{c.whenStarts.title}</h2>
             <p>{c.whenStarts.p1}</p>
             <p>{c.whenStarts.p2}</p>
           </section>
@@ -141,12 +152,6 @@ export default function BlogPost() {
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-10">{c.whenPeaks.title}</h2>
             <p>{c.whenPeaks.p1}</p>
             <p>{c.whenPeaks.p2}</p>
-          </section>
-
-          <section>
-            <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-10">{c.whenStops.title}</h2>
-            <p>{c.whenStops.p1}</p>
-            <p>{c.whenStops.p2}</p>
           </section>
 
           <section className="bg-[#F9E4E8]/30 rounded-3xl p-10 my-20">
