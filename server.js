@@ -15,14 +15,23 @@ app.use((req, res, next) => {
   next();
 });
 
+// Enforce no trailing slash on non-homepage URLs (301)
+app.use((req, res, next) => {
+  if (req.path !== '/' && req.path.endsWith('/')) {
+    const cleanPath = req.path.slice(0, -1);
+    const qs = req.originalUrl.replace(req.path, '');
+    return res.redirect(301, cleanPath + qs);
+  }
+  next();
+});
+
 // Specific Page Redirects (SEO Fix)
 app.use((req, res, next) => {
-  const path = req.path.replace(/\/$/, ''); // Remove trailing slash for matching
-  if (path === '/calorie-needs') {
-    return res.redirect(301, '/breastfeeding-calories/');
+  if (req.path === '/calorie-needs') {
+    return res.redirect(301, '/breastfeeding-calories');
   }
-  if (path === '/baby-weight') {
-    return res.redirect(301, '/baby-weight-percentile/');
+  if (req.path === '/baby-weight') {
+    return res.redirect(301, '/baby-weight-percentile');
   }
   next();
 });

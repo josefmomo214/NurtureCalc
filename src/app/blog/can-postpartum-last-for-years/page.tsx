@@ -7,7 +7,7 @@ import { canPostpartumLastForYearsContent } from "./content";
 export function generateMetadata(): Metadata {
   return {
     alternates: {
-      canonical: '/blog/can-postpartum-last-for-years/',
+      canonical: '/blog/can-postpartum-last-for-years',
     },
     title: "Can Postpartum Last for Years? The Honest Answer | NurtureCalc",
     description: "Can postpartum really last for years? The honest answer is yes — for some women. Here's what prolonged postpartum looks like, why it happens, and what actually helps.",

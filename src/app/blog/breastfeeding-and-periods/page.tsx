@@ -6,7 +6,7 @@ import { periodsGuideContent } from "./content";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/blog/breastfeeding-and-periods/',
+    canonical: '/blog/breastfeeding-and-periods',
   },
   title: "Breastfeeding and Periods: When Will Your Cycle Return? | NurtureCalc",
   description: "Wondering when your period will return while breastfeeding? Learn exactly how prolactin delays your cycle, what your first period will feel like, and when to see a doctor.",

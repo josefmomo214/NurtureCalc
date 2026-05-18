@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'What is the Pelvic Floor and Why Does it Matter After Birth? — NurtureCalc',
   description: 'Learn what the pelvic floor is, how birth affects it, and what you can do to support your recovery. Includes signs of pelvic floor dysfunction to watch for.',
   alternates: {
-    canonical: 'https://nurturecalc.com/blog/pelvic-floor-after-birth',
+    canonical: '/blog/pelvic-floor-after-birth',
   },
   openGraph: {
     title: 'What is the Pelvic Floor and Why Does it Matter After Birth? — NurtureCalc',

@@ -7,7 +7,7 @@ import { postpartumFitnessContent } from "./content";
 export function generateMetadata(): Metadata {
   return {
     alternates: {
-      canonical: "/blog/postpartum-fitness/",
+      canonical: "/blog/postpartum-fitness",
     },
     title: "Postpartum Fitness: Safe Strength Rebuilding After Birth | NurtureCalc",
     description:

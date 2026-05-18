@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://nurturecalc.com/blog/returning-to-exercise-after-birth',
+    canonical: '/blog/returning-to-exercise-after-birth',
   },
   title: 'A Gentle Guide to Returning to Exercise After Birth — NurtureCalc',
   description: 'Learn the evidence-based timeline for returning to exercise after a vaginal birth or C-section. Safe, gentle progress for new mothers.',

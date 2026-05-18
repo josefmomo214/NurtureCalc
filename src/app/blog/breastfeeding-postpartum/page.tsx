@@ -7,7 +7,7 @@ import { breastfeedingPostpartumContent } from "./content";
 export function generateMetadata(): Metadata {
   return {
     alternates: {
-      canonical: '/blog/breastfeeding-postpartum/',
+      canonical: '/blog/breastfeeding-postpartum',
     },
     title: "Breastfeeding Postpartum: The Complete Guide | NurtureCalc",
     description: "Everything you need to know about breastfeeding postpartum — from the first latch to weaning. What to expect, what's normal, and how to protect your body while nursing.",
