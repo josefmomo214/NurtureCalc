@@ -45,12 +45,21 @@ export default function BreastfeedingCalories() {
     "description": "Calculate how many extra calories you need while breastfeeding based on your weight, activity level, and nursing frequency.",
     "url": "https://nurturecalc.com/breastfeeding-calories/",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "All",
+    "operatingSystem": "Web",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
     }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nurturecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Breastfeeding Calorie Calculator", "item": "https://nurturecalc.com/breastfeeding-calories/" }
+    ]
   };
 
   return (
@@ -62,6 +71,10 @@ export default function BreastfeedingCalories() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <BreastfeedingCaloriesContent />
     </>

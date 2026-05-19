@@ -45,8 +45,17 @@ export default function ExerciseTimeline() {
     "description": "Get a personalised week-by-week exercise timeline for returning to fitness after birth based on your delivery type and recovery.",
     "url": "https://nurturecalc.com/exercise-timeline/",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "All",
+    "operatingSystem": "Web",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nurturecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Postpartum Exercise Timeline Calculator", "item": "https://nurturecalc.com/exercise-timeline/" }
+    ]
   };
 
   return (
@@ -58,6 +67,10 @@ export default function ExerciseTimeline() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ExerciseTimelineContent />
     </>

@@ -45,8 +45,17 @@ export default function PelvicFloorRecovery() {
     "description": "Estimate your postpartum pelvic floor recovery timeline and get personalised guidance based on your birth type and symptoms.",
     "url": "https://nurturecalc.com/pelvic-floor-recovery/",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "All",
+    "operatingSystem": "Web",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nurturecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Pelvic Floor Recovery Quiz", "item": "https://nurturecalc.com/pelvic-floor-recovery/" }
+    ]
   };
 
   return (
@@ -58,6 +67,10 @@ export default function PelvicFloorRecovery() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <PelvicFloorRecoveryContent />
     </>

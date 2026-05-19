@@ -45,8 +45,17 @@ export default function BabyWeightPercentile() {
     "description": "Calculate your baby's weight percentile using WHO growth charts. Works for newborns through 24 months.",
     "url": "https://nurturecalc.com/baby-weight-percentile/",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "All",
+    "operatingSystem": "Web",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nurturecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Baby Weight Percentile Calculator", "item": "https://nurturecalc.com/baby-weight-percentile/" }
+    ]
   };
 
   return (
@@ -58,6 +67,10 @@ export default function BabyWeightPercentile() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <BabyWeightPercentileContent />
     </>
