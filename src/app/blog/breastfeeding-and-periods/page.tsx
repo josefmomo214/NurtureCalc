@@ -102,12 +102,14 @@ export default function BlogPost() {
           </header>
 
           <section>
-            <p className="text-xl md:text-2xl font-serif italic text-[#3D2C2C] mb-12 leading-relaxed border-l-4 border-[#E8A0A8]/30 pl-8 py-2">
-              {c.intro.quote}
-            </p>
+            <p className="text-lg font-semibold text-[#3D2C2C] leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: c.intro.direct.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
             <p>{c.intro.p1}</p>
-            <p>{c.intro.p2}</p>
           </section>
+
+          <div className="not-prose bg-[#F9E4E8]/50 border-l-4 border-[#E8A0A8] rounded-r-2xl px-8 py-6 my-10">
+            <p className="text-xs font-label font-bold tracking-widest uppercase text-[#E8A0A8] mb-2">{c.lamDefinition.term}</p>
+            <p className="text-[#3D2C2C]/80 leading-relaxed">{c.lamDefinition.definition}</p>
+          </div>
 
           <section>
             <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-10">{c.whyDelay.title}</h2>
@@ -150,6 +152,13 @@ export default function BlogPost() {
 
             <p>{c.whenReturn.p1}</p>
             <p>{c.whenReturn.p2}</p>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-10">{c.lam.title}</h2>
+            <p>{c.lam.p1}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.lam.p2 }} />
+            <p dangerouslySetInnerHTML={{ __html: c.lam.p3 }} />
           </section>
 
           <section>
