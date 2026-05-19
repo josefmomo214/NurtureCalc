@@ -39,7 +39,7 @@ export default function BlogPost() {
       "url": "https://nurturecalc.com"
     },
     "datePublished": "2026-04-01",
-    "dateModified": "2026-04-10",
+    "dateModified": "2026-05-19",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://nurturecalc.com/blog/diastasis-recti"
@@ -102,11 +102,8 @@ export default function BlogPost() {
           </header>
 
           <section>
-            <p className="text-xl md:text-2xl font-serif italic text-[#3D2C2C] mb-12 leading-relaxed border-l-4 border-[#E8A0A8]/30 pl-8 py-2">
-              {c.intro.quote}
-            </p>
+            <p className="text-lg font-semibold text-[#3D2C2C] leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: c.intro.direct.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
             <p>{c.intro.p1}</p>
-            <p>{c.intro.p2}</p>
           </section>
 
           <section>
@@ -114,6 +111,13 @@ export default function BlogPost() {
             <p>{c.whatIsIt.p1}</p>
             <p>{c.whatIsIt.p2}</p>
             <p>{c.whatIsIt.p3}</p>
+          </section>
+
+          <section className="bg-[#F9E4E8]/40 border-l-4 border-[#E8A0A8] rounded-r-2xl px-8 py-8 my-10">
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mb-8">{c.canHealOnItsOwn.title}</h2>
+            <p>{c.canHealOnItsOwn.p1}</p>
+            <p>{c.canHealOnItsOwn.p2}</p>
+            <p>{c.canHealOnItsOwn.p3}</p>
           </section>
 
           <section className="bg-[#F9E4E8]/20 rounded-3xl p-10 my-20 border border-[#E8A0A8]/10">
