@@ -39,7 +39,7 @@ export default function BlogPost() {
       "url": "https://nurturecalc.com"
     },
     "datePublished": "2026-03-27",
-    "dateModified": "2026-04-10",
+    "dateModified": "2026-05-19",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://nurturecalc.com/blog/postpartum-nutrition-guide"
@@ -102,11 +102,26 @@ export default function BlogPost() {
           </header>
 
           <section>
-            <p className="text-xl md:text-2xl font-serif italic text-[#3D2C2C] mb-12 leading-relaxed border-l-4 border-[#E8A0A8]/30 pl-8 py-2">
-              {c.intro.quote}
-            </p>
+            <p className="text-lg font-semibold text-[#3D2C2C] leading-relaxed mb-6">{c.intro.direct}</p>
             <p>{c.intro.p1}</p>
-            <p>{c.intro.p2}</p>
+          </section>
+
+          <div className="not-prose bg-[#F9E4E8]/50 border-l-4 border-[#E8A0A8] rounded-r-2xl px-8 py-6 my-10">
+            <p className="text-xs font-label font-bold tracking-widest uppercase text-[#E8A0A8] mb-2">{c.definition.term}</p>
+            <p className="text-[#3D2C2C]/80 leading-relaxed">{c.definition.body}</p>
+          </div>
+
+          <section>
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-10">{c.nutrientGaps.title}</h2>
+            <p className="mb-10">{c.nutrientGaps.p1}</p>
+            <div className="space-y-8">
+              {c.nutrientGaps.items.map((item, idx) => (
+                <div key={idx} className="bg-[#F9E4E8]/20 rounded-2xl p-8 border-l-4 border-[#E8A0A8]/40">
+                  <h3 className="text-xl font-serif text-[#3D2C2C] mb-3">{item.title}</h3>
+                  <p dangerouslySetInnerHTML={{ __html: item.content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+                </div>
+              ))}
+            </div>
           </section>
 
           <section>
@@ -120,6 +135,25 @@ export default function BlogPost() {
                 </div>
               ))}
             </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mt-20 mb-6">{c.timeline.title}</h2>
+            <p className="mb-10">{c.timeline.intro}</p>
+            <div className="space-y-6 not-prose">
+              {c.timeline.stages.map((stage, idx) => (
+                <div key={idx} className="bg-white rounded-2xl p-8 border border-[#E8A0A8]/10 shadow-sm">
+                  <h3 className="font-serif text-[#3D2C2C] text-xl mb-4">{stage.period}</h3>
+                  <p className="text-[#3D2C2C]/80 leading-relaxed">{stage.content}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="bg-[#F9E4E8]/30 rounded-3xl p-10 my-16">
+            <h2 className="text-3xl font-serif text-[#3D2C2C] mb-8">{c.calorieNeeds.title}</h2>
+            <p dangerouslySetInnerHTML={{ __html: c.calorieNeeds.p1.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+            <p dangerouslySetInnerHTML={{ __html: c.calorieNeeds.p2 }} />
           </section>
 
           <section className="bg-white border border-[#E8A0A8]/10 rounded-3xl p-10 my-20 shadow-sm">

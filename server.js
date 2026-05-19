@@ -6,11 +6,13 @@ const app = express()
 
 app.set('trust proxy', true);
 
-// Redirect www to non-www
+// Redirect www to non-www, stripping trailing slash in the same hop
 app.use((req, res, next) => {
   const host = req.hostname;
   if (host === 'www.nurturecalc.com' || (req.headers.host && req.headers.host.startsWith('www.'))) {
-    return res.redirect(301, `https://nurturecalc.com${req.originalUrl}`);
+    let cleanUrl = req.originalUrl;
+    if (cleanUrl !== '/' && cleanUrl.endsWith('/')) cleanUrl = cleanUrl.slice(0, -1);
+    return res.redirect(301, `https://nurturecalc.com${cleanUrl}`);
   }
   next();
 });
