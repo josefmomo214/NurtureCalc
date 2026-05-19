@@ -37,10 +37,53 @@ export default function BlogPost() {
     },
     "datePublished": "2026-03-25",
     "dateModified": "2026-04-10",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://nurturecalc.com/blog/breastfeeding-calorie-needs"
+    },
     "medicalAudience": {
       "@type": "MedicalAudience",
       "audienceType": "Patient"
     }
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Should I track calories while breastfeeding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For most mothers, tracking every calorie is unnecessary and can add undue stress. Instead, focus on listening to your body's hunger cues and eating to satisfaction with nutrient-dense foods. Tracking can be helpful occasionally if you suspect you are significantly under-eating or if you have specific medical goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will eating more make me produce more milk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To an extent, yes — your body requires a baseline of energy to produce milk. If you are chronically under-eating, your supply will likely drop. However, once your caloric needs are met, eating extra calories does not necessarily result in extra milk; supply is primarily driven by your baby's demand and frequent removal of milk."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I follow a specific diet like keto or vegan while breastfeeding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is possible to maintain a vegan diet while nursing with careful planning to ensure adequate B12, iron, and protein. However, extremely restrictive diets like keto are generally not recommended, as your body requires a steady supply of carbohydrates to synthesize the lactose found in breast milk."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if my baby is getting enough milk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best indicators are your baby's weight gain and their diaper output. A baby who is getting enough milk should have 6 to 8 wet diapers in a 24-hour period and appear settled and content after most feeds. If you have concerns, always consult your pediatrician."
+        }
+      }
+    ]
   };
 
   return (
@@ -48,6 +91,10 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
       
