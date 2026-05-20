@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Metadata } from 'next';
+import { breastfeedingCalorieNeedsContent } from "./content";
 
 export const metadata: Metadata = {
   title: 'Breastfeeding Calorie Needs: CDC Guide + Calculator | NurtureCalc',
@@ -20,11 +21,13 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPost() {
+  const c = breastfeedingCalorieNeedsContent;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "How Many Calories Do You Need When Breastfeeding? CDC Guide and Calculator",
-    "description": "Producing milk is hard work. Ensure you are properly fuelling your body by understanding exactly how many extra calories your body burns each day.",
+    "headline": c.header.headline,
+    "description": c.header.description,
     "author": {
       "@type": "Organization",
       "name": "NurtureCalc Editorial Team",
@@ -35,8 +38,8 @@ export default function BlogPost() {
       "name": "NurtureCalc",
       "url": "https://nurturecalc.com"
     },
-    "datePublished": "2026-03-25",
-    "dateModified": "2026-04-10",
+    "datePublished": c.header.datePublished,
+    "dateModified": c.header.dateModified,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://nurturecalc.com/blog/breastfeeding-calorie-needs"
@@ -50,40 +53,14 @@ export default function BlogPost() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Should I track calories while breastfeeding?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For most mothers, tracking every calorie is unnecessary and can add undue stress. Instead, focus on listening to your body's hunger cues and eating to satisfaction with nutrient-dense foods. Tracking can be helpful occasionally if you suspect you are significantly under-eating or if you have specific medical goals."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will eating more make me produce more milk?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "To an extent, yes — your body requires a baseline of energy to produce milk. If you are chronically under-eating, your supply will likely drop. However, once your caloric needs are met, eating extra calories does not necessarily result in extra milk; supply is primarily driven by your baby's demand and frequent removal of milk."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I follow a specific diet like keto or vegan while breastfeeding?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It is possible to maintain a vegan diet while nursing with careful planning to ensure adequate B12, iron, and protein. However, extremely restrictive diets like keto are generally not recommended, as your body requires a steady supply of carbohydrates to synthesize the lactose found in breast milk."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I know if my baby is getting enough milk?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The best indicators are your baby's weight gain and their diaper output. A baby who is getting enough milk should have 6 to 8 wet diapers in a 24-hour period and appear settled and content after most feeds. If you have concerns, always consult your pediatrician."
-        }
+    "mainEntity": c.h2Faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
       }
-    ]
+    }))
   };
 
   return (
@@ -181,7 +158,7 @@ export default function BlogPost() {
             Understanding this progression can help you adjust your diet intuitively as your baby grows. Rather than feeling like you must maintain a high-calorie intake indefinitely, you can allow your appetite and your baby’s changing habits to guide your nutritional choices, ensuring you are neither under-fueling during peak production nor over-fueling as you move toward weaning.
           </p>
 
-          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What Affects Your Calorie Needs?</h2>
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What Affects Your Breastfeeding Calorie Needs?</h2>
           <p>
             It is a common misconception that the 500-calorie rule is static. The reality is that your caloric need fluctuates in direct proportion to how much milk your baby is consuming.
           </p>
@@ -189,7 +166,7 @@ export default function BlogPost() {
             A mother actively nursing a newborn 8 to 12 times a day requires maximum caloric support. However, as your baby grows, begins sleeping longer stretches, and starts experimenting with solid foods around six months of age, your milk production naturally tapers to match their slightly reduced dependence. As the frequency of daily nursing sessions falls to three or four times, that heavy +500 cal "nursing bonus" scales down proportionally to perhaps +200 or +300 calories.
           </p>
 
-          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How to Calculate Your Breastfeeding Calorie Needs</h2>
+          <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How Do You Calculate Your Breastfeeding Calorie Needs?</h2>
           <p>
             The CDC and WHO figures are useful starting points, but they are built on population averages. A sedentary new mother recovering from a C-section has very different baseline needs from an active mother who has returned to exercise at twelve weeks. The most accurate approach is to calculate your Total Daily Energy Expenditure (TDEE) — the calories your body specifically needs based on your weight, height, age, and activity level — and add your nursing bonus on top. Our Breastfeeding Calorie Needs Estimator does exactly this in under a minute.
           </p>
