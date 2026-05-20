@@ -42,7 +42,7 @@ export const postpartumHairLossContent = {
     p2: "Breastfeeding can, however, slightly shift the *timing* of the hair loss. It can delay the return of your menstrual cycle and keep certain hormones at different levels for longer, but it does not cause you to lose more hair than a non-breastfeeding mother. Both groups experience the same drop in oestrogen after birth. If you are breastfeeding and experiencing hair loss, please don't feel like you have to stop nursing to save your hair—the two are not causally linked in that way."
   },
   whatToDo: {
-    title: "What Can You Do About It?",
+    title: "What Can You Do About Postpartum Hair Loss?",
     p1: "While you can't stop the biological process of telogen effluvium once it's started, you can manage the impact and support your hair’s recovery with these practical, gentle tips:",
     p2: "1. **Be Gentle with Your Hair**: Avoid tight hairstyles like high ponytails or buns that put 'traction' or tension on the hair follicles. Stick to loose styles and use silk or satin scrunchies instead of traditional elastic bands.",
     p3: "2. **Ditch the Heat**: If possible, air-dry your hair and skip the flat iron or curling wand. Excessive heat can weaken the hair shaft, making it more prone to breakage, which will only add to the appearance of thinning.",
@@ -52,7 +52,7 @@ export const postpartumHairLossContent = {
     p7: "6. **A New Haircut**: Many new mothers opt for a 'mom chop' during this time. Shorter layers can hide thinning much better than long, heavy hair. A fresh cut can also remove split ends that make hair look less healthy."
   },
   whenSeeDoctor: {
-    title: "What's Normal vs. When to See a Doctor",
+    title: "When Should You See a Doctor About Postpartum Hair Loss?",
     p1: "While shedding is normal, there are times when hair loss might be a symptom of an underlying issue rather than 'just' postpartum hormones. We recommend speaking to your healthcare provider if you notice any of the following 'red flags':",
     p2: "• **Patchy Hair Loss**: If you see clear, round patches of baldness rather than a general, all-over thinning, this could be a sign of alopecia areata or another autoimmune condition.",
     p3: "• **Prolonged Shedding**: If your hair is still falling out at the same intense rate after your baby is 12 months old, it’s worth a check-up.",
