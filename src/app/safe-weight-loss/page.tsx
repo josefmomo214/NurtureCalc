@@ -45,8 +45,17 @@ export default function SafeWeightLoss() {
     "description": "Calculate a safe weekly weight loss rate after birth that protects your milk supply and supports postpartum recovery.",
     "url": "https://nurturecalc.com/safe-weight-loss/",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "All",
+    "operatingSystem": "Web",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nurturecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Safe Postpartum Weight Loss Calculator", "item": "https://nurturecalc.com/safe-weight-loss/" }
+    ]
   };
 
   return (
@@ -58,6 +67,10 @@ export default function SafeWeightLoss() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <SafeWeightLossContent />
     </>
