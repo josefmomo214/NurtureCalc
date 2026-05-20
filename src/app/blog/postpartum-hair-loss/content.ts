@@ -58,6 +58,36 @@ export const postpartumHairLossContent = {
     p3: "• **Prolonged Shedding**: If your hair is still falling out at the same intense rate after your baby is 12 months old, it’s worth a check-up.",
     p4: "• **Other Symptoms**: If hair loss is accompanied by extreme fatigue, sudden weight changes, skin changes, or feeling unusually cold, your doctor should check your thyroid levels or screen for anemia. Postpartum thyroiditis is a real condition that can also cause hair loss and deserves medical attention."
   },
+  h2Faqs: [
+    {
+      q: "Why Does Postpartum Hair Loss Happen?",
+      a: "After birth, oestrogen drops sharply, releasing hair held in the growth phase throughout pregnancy. All retained hair sheds simultaneously — a process called telogen effluvium that affects most new mothers."
+    },
+    {
+      q: "When Does Postpartum Hair Loss Start?",
+      a: "Shedding typically begins 2–4 months after birth. Some women notice it as early as eight weeks; others not until month six."
+    },
+    {
+      q: "When Does Postpartum Hair Loss Peak?",
+      a: "The peak usually occurs at months 3–4 postpartum. It marks the midpoint — after the peak, the growth cycle begins to reset and shedding tapers off."
+    },
+    {
+      q: "When Does Postpartum Hair Loss Stop?",
+      a: "For most mothers, shedding tapers off by 6–9 months postpartum. By the baby's first birthday, hair has usually returned to its pre-pregnancy growth cycle."
+    },
+    {
+      q: "Does Breastfeeding Make Hair Loss Worse?",
+      a: "No. Postpartum hair loss is hormonal and affects breastfeeding and non-breastfeeding mothers equally. Breastfeeding may shift the timing slightly but does not increase the amount shed."
+    },
+    {
+      q: "What Can You Do About Postpartum Hair Loss?",
+      a: "You cannot stop telogen effluvium once started. Support recovery by avoiding tight hairstyles, skipping heat styling, using a wide-tooth comb, and eating biotin-rich foods like eggs and nuts."
+    },
+    {
+      q: "When Should You See a Doctor About Postpartum Hair Loss?",
+      a: "See your doctor if shedding is still intense after 12 months, if you notice patchy bald spots, or if hair loss is accompanied by fatigue, weight changes, or feeling unusually cold."
+    }
+  ],
   faqs: [
     {
       q: "Will my hair go back to normal after postpartum hair loss?",
