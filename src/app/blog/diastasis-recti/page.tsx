@@ -53,12 +53,12 @@ export default function BlogPost() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": c.faqs.map(faq => ({
+    "mainEntity": c.h2Faqs.map(faq => ({
       "@type": "Question",
       "name": faq.q,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": faq.a.replace(/<[^>]*>?/gm, '') // Strip HTML tags for JSON-LD
+        "text": faq.a
       }
     }))
   };

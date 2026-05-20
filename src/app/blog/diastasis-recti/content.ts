@@ -32,7 +32,7 @@ export const diastasisRectiContent = {
     p3: "According to the <a href=\"https://www.acog.org\" target=\"_blank\" rel=\"noopener noreferrer\">American College of Obstetricians and Gynecologists (ACOG)</a>, core and pelvic floor health should be a central part of postpartum care. Yet, so many women are sent home with nothing more than a 'six-week okay' for exercise. That's why we're here. We want to bridge that gap between 'cleared for exercise' and 'knowing what is safe for your unique body.'"
   },
   howToCheck: {
-    title: "How to Check If You Have Diastasis Recti",
+    title: "How Do You Check for Diastasis Recti at Home?",
     p1: "Don't wait for your six-week check-up if you're curious; you can actually do a simple check yourself. This isn't a medical diagnosis, but it will give you a great 'baseline' for your recovery. It's best to wait until at least 2 or 3 weeks postpartum for this, as your tummy is still doing a lot of natural shrinking in those early days. Ready? Let's walk through it together.",
     p2: "First, lie on your back on a firm surface with your knees bent and your feet flat on the floor. Place one hand behind your head for support. Place the fingers of your other hand just above your belly button, pointing toward your toes. Now, slowly lift your head and shoulders off the floor as if you're starting a very small crunch. This is the moment you're looking for: feel for the edges of your abdominal muscles pressing against your fingers.",
     p3: "What most people don't tell you is that you need to check in three places: right at the belly button, two inches above it, and two inches below it. As you lift, how many fingers can you fit in the gap? Is it one, two, or three? But here's the kicker—don't just focus on the width. Press your fingers down gently. Does it feel firm, like the tip of your nose, or soft and squishy, like the webbed part of your hand between your thumb and forefinger? Shallow and firm is much better than narrow and deep. If your fingers sink deep into your belly, it means the connective tissue (linea alba) needs more work on its tension.",
@@ -45,13 +45,13 @@ export const diastasisRectiContent = {
     p3: "What most people don't tell you is that heavy lifting with breath-holding is also a major culprit. Whether it's a heavy barbell at the gym or just picking up a toddler and a car seat at the same time, if you hold your breath and 'brace,' you're creating a pressure cooker in your abdomen. Intense Pilates moves like 'The Hundred' can also be problematic in the early stages. The goal isn't to avoid movement forever, but to avoid movements that your body currently cannot 'manage' without bulging."
   },
   startHealing: {
-    title: "How to Start Healing: The Breathing Foundation",
+    title: "How Do You Start Healing Diastasis Recti?",
     p1: "What most people don't tell you is that the foundation of core healing isn't a 'move' at all—it's your breath. We call it 'connection breathing.' It sounds simple, but it is the secret sauce for <a href=\"/blog/returning-to-exercise-after-birth/\">returning to exercise after birth</a>. Your diaphragm and your pelvic floor are like two pistons that should move together. When you breathe in, they both drop; when you breathe out, they both lift.",
     p2: "To try this, sit comfortably and place your hands on your lower ribs. As you inhale through your nose, feel your ribs expand sideways and your pelvic floor relax. As you exhale through your mouth (like you're blowing through a straw), gently lift your pelvic floor and feel your deep tummy muscles (the transverse abdominis) draw in toward your spine. This isn't about 'sucking it in'; it's about a gentle, coordinated engagement.",
     p3: "Why starting here matters before any strengthening? Because if you can't coordinate your breath with your movement, you'll never be able to manage that intra-abdominal pressure we've been talking about. Think of this as the 're-wiring' phase. You're teaching your brain and your muscles how to talk to each other again after the massive disruption of pregnancy. Master this, and the rest of the exercises will actually work. (See our guide on <a href=\"/blog/returning-to-exercise-after-birth/\">returning to exercise after birth</a> for more context)."
   },
   exercisesHelp: {
-    title: "Exercises That Help Diastasis Recti Heal",
+    title: "Which Exercises Help Diastasis Recti Heal?",
     p1: "Once you've got the breathing down, you can start with gentle, deep-core movements. These exercises focus on the 'transverse abdominis' (your internal corset) and the 'multifidus' (the small muscles along your spine). These are the muscles that provide the 'tension' for that Linea Alba zip we mentioned earlier. You can find more of these in our <a href=\"/exercise-timeline/\">personalised exercise timeline</a>, but here are four great ones to start with.",
     p2: "First up: Heel Slides. Lie on your back with your knees bent. Perform your 'connection breath' exhale (lifting the pelvic floor and drawing in the tummy) and then slowly slide one heel away from you along the floor. The goal is to keep your back and pelvis perfectly still. If you feel your back arching or your tummy doming, don't slide your foot so far. This move teaches your core how to stabilise your pelvis while your legs move—essential for walking and carrying that heavy car seat!",
     p3: "Next: Modified Dead Bugs. Lying on your back, lift your legs into a 'tabletop' position (knees over hips). Again, use that exhale to engage your core before you move. Slowly lower one foot to tap the floor and bring it back up. Watch for coning! If you see a ridge appearing, go back to heel slides for a week. This move builds serious deep-core endurance without the pressure of a crunch.",
@@ -64,13 +64,13 @@ export const diastasisRectiContent = {
     p3: "If you've had a <a href=\"/blog/c-section-recovery-timeline/\">C-section recovery</a>, a physio is also invaluable for scar tissue massage and ensuring your deep layers are healing correctly. They have tools like real-time ultrasound where you can actually *see* your muscles working on a screen. It's incredibly empowering to see that 'lift' happening and know you're doing it right. Think of them as a personal trainer for your insides."
   },
   pelvicFloorConnection: {
-    title: "Diastasis Recti and Your Pelvic Floor — The Connection Nobody Talks About",
+    title: "How Does Diastasis Recti Affect the Pelvic Floor?",
     p1: "We see this a lot: women focusing entirely on their 'tummy gap' while ignoring what's happening 'downstairs.' But the deep core system—the diaphragm, the pelvic floor, the transverse abdominis, and the multifidus—all work together as a single unit. DR rarely exists in isolation. Because the pressure in your abdomen isn't being managed well at the front (due to the gap), it often ends up pushing down on your pelvic floor instead.",
     p2: "This is why many women with diastasis recti also experience <a href=\"/blog/postpartum-pelvic-floor-dysfunction/\">signs of pelvic floor dysfunction</a>, like leaking when they sneeze or a feeling of 'heaviness.' If you want to heal the front, you *must* address the bottom. If you're unsure where you stand, our <a href=\"/pelvic-floor-recovery/\">pelvic floor estimator</a> can give you a better idea of your current recovery status. Think of your core as a cylinder; you can't fix just one side of the cylinder and expect it to hold pressure.",
     p3: "Integrating <a href=\"/blog/pelvic-floor-after-birth/\">pelvic floor recovery after birth</a> into your DR routine is non-negotiable. Every 'core' exhale should start with a gentle pelvic floor lift. This 'bottom-up' engagement ensures that as your tummy muscles draw in, they aren't just squishing your organs down. It's about creating a supportive internal environment that allows the linea alba to finally rest and recover. It's all connected, and that's actually a good thing—it means you can heal multiple systems at once!"
   },
   whatAboutSurgery: {
-    title: "What About Surgery?",
+    title: "Is Surgery Necessary for Diastasis Recti?",
     p1: "What most people don't tell you is that surgery is sometimes a valid and necessary path. For some women, the connective tissue has lost so much integrity that exercise alone cannot restore the necessary tension. This is usually considered for severe cases (often called a 'tummy tuck' or abdominoplasty) where the gap is very wide and causing significant functional issues like chronic back pain or hernia.",
     p2: "However, and this is where it gets interesting, conservative rehab should *always* come first. Even if you eventually decide on surgery, having a strong deep core foundation will make your surgical recovery much faster and more successful. Most surgeons will recommend at least 12 months of dedicated physical therapy before considering an operation. Your body continues to produce healing collagen for a long time after birth, so give it that chance.",
     p3: "And remember, surgery fixes the *structure*, but it doesn't automatically fix the *function*. You still need to learn how to breathe and move in a way that manages pressure, or you could end up with issues elsewhere. If you're considering this path, have an honest conversation with a women's health physio first. They can help you determine if you've truly hit a plateau with exercise or if there's still progress to be made."
@@ -81,6 +81,48 @@ export const diastasisRectiContent = {
     p2: "The honest answer is that some degree of separation may always remain. And here's the kicker—that's perfectly fine! You can have a two-finger gap and still have a core that is strong, functional, and can handle running, jumping, and lifting. We need to redirect our focus from 'closing the gap' to 'restoring function.' Can you carry your baby without pain? Can you jump on a trampoline without leaking? If the answer is yes, then your core is doing its job, gap or no gap.",
     p3: "Be patient — you aren't fixing a broken body; you're supporting a healing one. What matters is the overall trend. Celebrate small wins like the first time you feel firmness across your midline during a glute bridge. That's your linea alba doing its job again."
   },
+  h2Faqs: [
+    {
+      q: "What Is Diastasis Recti?",
+      a: "Diastasis recti is an overstretching of the connective tissue between the abdominal muscles during pregnancy. The muscles are undamaged — they have moved apart as the tissue softened to accommodate the growing baby."
+    },
+    {
+      q: "Can Diastasis Recti Heal On Its Own?",
+      a: "Partially, yes. Natural narrowing occurs in the first 6–8 weeks as the uterus shrinks. Significant separation rarely resolves fully without targeted deep-core exercise to restore tissue tension."
+    },
+    {
+      q: "How Common Is Diastasis Recti?",
+      a: "Up to 60% of women have some degree of diastasis recti in the immediate postpartum period. Some research suggests nearly all women have some separation by the third trimester."
+    },
+    {
+      q: "How Do You Check for Diastasis Recti at Home?",
+      a: "Lie on your back with knees bent. Place fingers just above the belly button and do a small head lift. A gap of two or more finger-widths, especially if the tissue feels soft, suggests separation."
+    },
+    {
+      q: "How Do You Start Healing Diastasis Recti?",
+      a: "The foundation is diaphragmatic breathing. As you exhale, gently lift the pelvic floor and draw the deep abdominal muscles inward. This coordinates breath with core engagement before any strengthening begins."
+    },
+    {
+      q: "Which Exercises Help Diastasis Recti Heal?",
+      a: "Exercises targeting the transverse abdominis — heel slides, modified dead bugs, bird dogs, and glute bridges — rebuild deep core stability without excessive intra-abdominal pressure."
+    },
+    {
+      q: "When Should You See a Women's Health Physiotherapist?",
+      a: "See a physio if your gap is wider than 2–3 finger-widths after 12 weeks, if correct exercise shows no improvement after 3 months, or if you have any back, hip, or pelvic pain or heaviness."
+    },
+    {
+      q: "How Does Diastasis Recti Affect the Pelvic Floor?",
+      a: "The deep core works as one unit. A gap at the front shifts intra-abdominal pressure downward onto the pelvic floor, which is why leaking, heaviness, and DR so often appear together."
+    },
+    {
+      q: "Is Surgery Necessary for Diastasis Recti?",
+      a: "Surgery is considered only for severe cases where exercise has not restored functional core strength after at least 12 months of rehabilitation. Most women achieve meaningful recovery through deep-core exercise alone."
+    },
+    {
+      q: "How Long Does Diastasis Recti Take to Heal?",
+      a: "Functional healing typically takes 6 months to a year of consistent, correct exercise. Full recovery — measured by tissue tension and functional strength, not gap width alone — often takes closer to 12 months."
+    }
+  ],
   faqs: [
     {
       q: "Can diastasis recti heal on its own without exercise?",
