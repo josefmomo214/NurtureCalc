@@ -110,6 +110,12 @@ export const postpartumHairLossContent = {
     text: "What you eat postpartum affects your hair health too. Read our complete Postpartum Nutrition Guide for the key nutrients your body needs right now.",
     link: "/blog/postpartum-nutrition-guide"
   },
+  calculatorCta: {
+    headline: "Are you eating enough to support recovery?",
+    body: "Breastfeeding significantly increases your daily calorie needs — and under-eating can slow hair regrowth. Find your personalised daily calorie target.",
+    link: "/breastfeeding-calories/",
+    button: "Open Calorie Calculator →"
+  },
   sources: [
     "American Academy of Dermatology — Hair loss in new mothers",
     "NHS — Hair loss",

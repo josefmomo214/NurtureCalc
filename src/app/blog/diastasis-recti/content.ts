@@ -146,8 +146,16 @@ export const diastasisRectiContent = {
     }
   ],
   cta: {
-    text: "Ready to start moving again safely? Read our gentle guide to returning to exercise after birth — with timelines for both vaginal and C-section deliveries.",
-    link: "/blog/returning-to-exercise-after-birth/"
+    headline: "Ready to return to exercise safely?",
+    body: "Every diastasis recti recovery is different. Use the Return-to-Exercise Timeline tool to get a week-by-week guide based on your delivery and symptoms.",
+    link: "/exercise-timeline/",
+    button: "Get My Exercise Timeline →"
+  },
+  secondaryCta: {
+    headline: "Pelvic floor and core work together",
+    body: "Diastasis recti and pelvic floor dysfunction frequently occur together. Use the Pelvic Floor Recovery Estimator to assess your current stage and get targeted guidance.",
+    link: "/pelvic-floor-recovery/",
+    button: "Open Pelvic Floor Estimator →"
   },
   sources: [
     "Lee DG et al. Diastasis Rectus Abdominis: A Clinical Guide",

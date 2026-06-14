@@ -203,11 +203,24 @@ export default function BlogPost() {
             <div className="bg-[#E8A0A8] rounded-3xl p-12 text-center space-y-6 shadow-lg transform hover:scale-[1.01] transition-transform duration-300">
               <h3 className="text-3xl md:text-4xl font-serif text-white leading-tight">Nourish Your Regrowth</h3>
               <p className="text-white/90 text-lg max-w-2xl mx-auto">{c.cta.text}</p>
-              <Link 
+              <Link
                 href={c.cta.link}
                 className="inline-block bg-white text-[#E8A0A8] hover:bg-[#FFFDF9] px-10 py-4 rounded-full font-label uppercase tracking-widest text-sm font-bold shadow-xl transition-all"
               >
                 Read Nutrition Guide →
+              </Link>
+            </div>
+          </div>
+
+          <div className="not-prose mb-20">
+            <div className="bg-[#FFFDF9] rounded-3xl p-8 space-y-5 shadow-sm">
+              <h3 className="text-2xl font-serif text-[#3D2C2C] leading-snug">{c.calculatorCta.headline}</h3>
+              <p className="text-[#3D2C2C]/70 leading-relaxed">{c.calculatorCta.body}</p>
+              <Link
+                href={c.calculatorCta.link}
+                className="inline-block bg-gradient-to-r from-[#E8A0A8] to-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-sm font-bold shadow-md hover:shadow-lg transition-all"
+              >
+                {c.calculatorCta.button}
               </Link>
             </div>
           </div>
