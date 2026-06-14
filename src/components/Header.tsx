@@ -3,6 +3,13 @@
 import { useState } from "react";
 import Link from "next/link";
 
+const BLOG_CATEGORIES = [
+  { name: "Recovery", href: "/blog/recovery/" },
+  { name: "Nutrition", href: "/blog/nutrition/" },
+  { name: "Fitness", href: "/blog/fitness/" },
+  { name: "Baby Health", href: "/blog/baby-health/" },
+];
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +25,24 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 items-center text-sm font-label font-bold tracking-wider text-[#3D2C2C]">
           <Link href="/" className="hover:text-[#E8A0A8] transition-colors">HOME</Link>
           <Link href="/#calculators" className="hover:text-[#E8A0A8] transition-colors">CALCULATORS</Link>
-          <Link href="/blog" className="hover:text-[#E8A0A8] transition-colors">BLOG</Link>
+          <div className="relative group">
+            <Link href="/blog/" className="hover:text-[#E8A0A8] transition-colors">BLOG</Link>
+            <div className="absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:block group-focus-within:block z-10">
+              <div className="pt-2">
+                <div className="bg-[#FFFDF9] rounded-xl shadow-md py-2 min-w-[180px]">
+                  {BLOG_CATEGORIES.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="block px-5 py-2.5 font-label text-xs font-bold tracking-wider uppercase text-[#3D2C2C] hover:text-[#E8A0A8] hover:bg-[#F9E4E8] transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
           <Link href="/about" className="hover:text-[#E8A0A8] transition-colors">ABOUT</Link>
           <div className="flex items-center gap-4 ml-2 border-l border-[#E8A0A8]/30 pl-6">
             <a href="https://www.facebook.com/profile.php?id=61573471182996" target="_blank" rel="noopener noreferrer" className="text-[#E8A0A8] hover:text-[#D58A92] transition-colors" aria-label="Facebook">
@@ -40,7 +64,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile Hamburger Toggle */}
-        <button 
+        <button
           className="md:hidden text-[#3D2C2C]"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
@@ -61,11 +85,9 @@ export default function Header() {
             { name: "Exercise Timeline", href: "/exercise-timeline" },
             { name: "Pelvic Floor", href: "/pelvic-floor" },
             { name: "Baby Weight", href: "/baby-weight" },
-            { name: "Blog", href: "/blog" },
-            { name: "About", href: "/about" }
           ].map((link) => (
-            <Link 
-              key={link.name} 
+            <Link
+              key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
               className="font-label text-sm font-bold text-[#3D2C2C] px-2 py-2 hover:bg-[#F9E4E8] rounded transition-colors"
@@ -73,6 +95,32 @@ export default function Header() {
               {link.name}
             </Link>
           ))}
+          <Link
+            href="/blog/"
+            onClick={() => setIsOpen(false)}
+            className="font-label text-sm font-bold text-[#3D2C2C] px-2 py-2 hover:bg-[#F9E4E8] rounded transition-colors"
+          >
+            Blog
+          </Link>
+          <div className="flex flex-col gap-1 -mt-2 pl-4">
+            {BLOG_CATEGORIES.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="font-label text-xs font-bold text-[#E8A0A8] px-2 py-1.5 hover:bg-[#F9E4E8] rounded transition-colors tracking-wider uppercase"
+              >
+                ↳ {item.name}
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/about"
+            onClick={() => setIsOpen(false)}
+            className="font-label text-sm font-bold text-[#3D2C2C] px-2 py-2 hover:bg-[#F9E4E8] rounded transition-colors"
+          >
+            About
+          </Link>
           <div className="flex items-center gap-6 px-2 py-4 mt-2 border-t border-[#E8A0A8]/20">
             <a href="https://www.facebook.com/profile.php?id=61573471182996" target="_blank" rel="noopener noreferrer" className="text-[#E8A0A8] hover:text-[#D58A92] transition-colors" aria-label="Facebook">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

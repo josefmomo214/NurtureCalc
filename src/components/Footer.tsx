@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+const BLOG_CATEGORY_LINKS = [
+  { label: "Recovery", href: "/blog/recovery/" },
+  { label: "Nutrition", href: "/blog/nutrition/" },
+  { label: "Fitness", href: "/blog/fitness/" },
+  { label: "Baby Health", href: "/blog/baby-health/" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#3D2C2C] text-[#FFFDF9] py-16 px-6 md:px-12">
@@ -20,8 +27,8 @@ export default function Footer() {
               { label: "NurtureCalc Team", href: "/author/nurturecalc-team" },
               { label: "Contact", href: "/contact" }
             ].map((link) => (
-              <Link 
-                key={link.label} 
+              <Link
+                key={link.label}
                 href={link.href}
                 className="font-label text-xs font-bold tracking-widest uppercase hover:text-[#E8A0A8] transition-colors"
               >
@@ -30,6 +37,23 @@ export default function Footer() {
             ))}
           </nav>
         </div>
+
+        {/* Blog Topics */}
+        <nav className="flex flex-wrap justify-center md:justify-start items-center gap-x-6 gap-y-3">
+          <span className="font-label text-xs font-bold tracking-widest uppercase opacity-40">Blog:</span>
+          <Link href="/blog/" className="font-label text-xs font-bold tracking-widest uppercase hover:text-[#E8A0A8] transition-colors">
+            All Articles
+          </Link>
+          {BLOG_CATEGORY_LINKS.map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className="font-label text-xs font-bold tracking-widest uppercase hover:text-[#E8A0A8] transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
         {/* Social Icons */}
         <div className="flex justify-center md:justify-start gap-6 py-4">

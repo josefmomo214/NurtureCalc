@@ -138,6 +138,19 @@ export default function NutritionCategory() {
             → Browse all articles
           </Link>
         </div>
+
+        <div className="mt-8 pt-8 border-t border-[#E8A0A8]/20 text-center">
+          <p className="text-sm text-[#3D2C2C]/50 font-label tracking-wide uppercase mb-4">More from NurtureCalc</p>
+          <div className="flex flex-wrap justify-center items-center">
+            <Link href="/blog/recovery/" className="text-[#E8A0A8] hover:text-[#D58A92] font-label text-sm font-bold uppercase tracking-wider transition-colors">Recovery</Link>
+            <span className="mx-3 text-[#3D2C2C]/20"> | </span>
+            <span className="text-[#3D2C2C]/30 font-label text-sm font-bold uppercase tracking-wider cursor-default">Nutrition</span>
+            <span className="mx-3 text-[#3D2C2C]/20"> | </span>
+            <Link href="/blog/fitness/" className="text-[#E8A0A8] hover:text-[#D58A92] font-label text-sm font-bold uppercase tracking-wider transition-colors">Fitness</Link>
+            <span className="mx-3 text-[#3D2C2C]/20"> | </span>
+            <Link href="/blog/baby-health/" className="text-[#E8A0A8] hover:text-[#D58A92] font-label text-sm font-bold uppercase tracking-wider transition-colors">Baby Health</Link>
+          </div>
+        </div>
       </main>
 
       <Footer />

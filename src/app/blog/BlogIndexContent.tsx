@@ -8,6 +8,13 @@ import { blogPosts } from "@/lib/blog-posts";
 const CATEGORIES = ["All", "Recovery", "Nutrition", "Fitness", "Baby Health"] as const;
 type Category = typeof CATEGORIES[number];
 
+const CATEGORY_LINKS = [
+  { label: "Recovery Articles", href: "/blog/recovery/" },
+  { label: "Nutrition Articles", href: "/blog/nutrition/" },
+  { label: "Fitness Articles", href: "/blog/fitness/" },
+  { label: "Baby Health Articles", href: "/blog/baby-health/" },
+];
+
 export default function BlogIndexContent() {
   const [selected, setSelected] = useState<Category>("All");
 
@@ -17,7 +24,7 @@ export default function BlogIndexContent() {
 
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-3 mb-12">
+      <div className="flex flex-wrap justify-center gap-3">
         {CATEGORIES.map((cat) => (
           <button
             key={cat}
@@ -31,6 +38,21 @@ export default function BlogIndexContent() {
             {cat}
           </button>
         ))}
+      </div>
+
+      <div className="mt-4 flex flex-col items-center gap-3 mb-12">
+        <span className="text-xs text-[#3D2C2C]/50 font-label tracking-wide">Browse by topic:</span>
+        <div className="flex flex-wrap justify-center gap-3">
+          {CATEGORY_LINKS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="px-5 py-2 rounded-full text-xs font-bold tracking-wider uppercase font-label border border-[#E8A0A8] text-[#E8A0A8] bg-transparent hover:bg-[#F9E4E8] transition-all"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
