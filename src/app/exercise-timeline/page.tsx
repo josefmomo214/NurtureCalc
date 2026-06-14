@@ -22,18 +22,28 @@ export default function ExerciseTimeline() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "When can I start exercising again after a C-section?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Most doctors recommend waiting 6 to 8 weeks before starting anything beyond gentle walking, as your body needs time to heal from major abdominal surgery." }
+        "name": "When can I start exercising after a vaginal birth?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Gentle walking can begin within the first week if comfortable and complication-free. Structured exercise should wait until at least 6 weeks. High-impact activities like running should not begin before 12 weeks and only when symptom-free." }
       },
       {
         "@type": "Question",
-        "name": "Is it safe to run 6 weeks after giving birth?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Clinical guidelines generally recommend waiting 12 weeks before returning to high-impact activities like running, to allow the pelvic floor and core to regain sufficient strength." }
+        "name": "When can I start exercising after a C-section?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Short gentle walks are appropriate from around day 3-7 post-surgery. Low-impact exercise can begin at 8-10 weeks once the wound is healed. Running and high-impact training should wait until at least 12-16 weeks." }
       },
       {
         "@type": "Question",
-        "name": "What are red flags to stop exercising postpartum?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Stop exercising and see a professional if you experience leaking, pelvic heaviness, pain at the incision site, or a sudden increase in vaginal bleeding." }
+        "name": "Can I do sit-ups or crunches postpartum?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sit-ups and crunches are not recommended early postpartum. They increase intra-abdominal pressure that stresses the healing linea alba and can worsen diastasis recti. Start with breathing and stability exercises first." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to run while breastfeeding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, running while breastfeeding is safe once ready — typically no earlier than 12 weeks postpartum for a vaginal birth. Be aware that relaxin may still be elevated while breastfeeding, increasing joint laxity and injury risk." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if I am returning to exercise too soon?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The clearest signs are leaking urine, pelvic heaviness, pain at the incision site, abdominal doming during exertion, or return of bright red postpartum bleeding. Reduce intensity and see a pelvic floor physiotherapist." }
       }
     ]
   };
