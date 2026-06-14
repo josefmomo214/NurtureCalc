@@ -22,18 +22,28 @@ export default function PelvicFloorRecovery() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How long does pelvic floor recovery take after birth?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Pelvic floor recovery varies widely. Many mothers see significant improvement within 3 to 6 months with consistent exercises, but some symptoms may take longer and benefit from physiotherapy." }
+        "name": "How do I know if my pelvic floor is recovering well?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Signs of good recovery include no leaking during daily activities, no pelvic heaviness or pressure, comfortable return to intercourse when ready, and no pain during normal movement. A physiotherapist can give you a clear baseline assessment." }
       },
       {
         "@type": "Question",
         "name": "Is it normal to leak urine after having a baby?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Stress urinary incontinence is very common after birth, affecting up to 1 in 3 mothers. It is not something you simply have to accept — pelvic floor exercises and physiotherapy are highly effective." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Leaking is common but not something you must accept permanently. Stress incontinence affects many postpartum women but responds well to targeted rehabilitation. If leaking persists beyond 3 months, seek assessment from a pelvic floor physiotherapist." }
       },
       {
         "@type": "Question",
-        "name": "Do I need to do pelvic floor exercises after a C-section?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Nine months of pregnancy places significant load on the pelvic floor regardless of delivery method. C-section mothers benefit just as much from pelvic floor rehabilitation." }
+        "name": "When should I start Kegel exercises after birth?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Gentle pelvic floor activation can begin within the first few days after a vaginal birth, once pain has settled. After a C-section, most physiotherapists recommend starting around week 2-3, focusing on releasing and relaxing as much as contracting." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can pelvic floor problems resolve on their own without treatment?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Mild symptoms often improve in the first 3-6 months. However, moderate to severe symptoms such as prolapse, significant incontinence, or persistent pain rarely resolve completely without guided rehabilitation. Early intervention produces better outcomes." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a pelvic floor physiotherapist and do I need one?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A pelvic floor physiotherapist assesses and treats pelvic floor dysfunction using internal examinations to gauge muscle function. Most postpartum women benefit from at least one assessment, even without symptoms, to establish a rehabilitation baseline." }
       }
     ]
   };
