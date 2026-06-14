@@ -23,17 +23,27 @@ export default function BabyWeightPercentile() {
       {
         "@type": "Question",
         "name": "What is a healthy weight percentile for a baby?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Any percentile between the 3rd and 97th is generally considered within the normal range, provided the baby is meeting milestones and following their growth curve." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Any percentile from the 3rd to the 97th can be healthy for an individual baby. There is no single ideal percentile. What matters most is that your baby follows a consistent curve over time and is feeding well, producing adequate wet nappies, and meeting developmental milestones." }
       },
       {
         "@type": "Question",
-        "name": "Is the 50th percentile the 'ideal' weight?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No, the 50th percentile is simply the mathematical average. A baby in the 10th percentile can be just as healthy as a baby in the 90th percentile." }
+        "name": "My baby dropped from the 60th to the 30th percentile. Should I be worried?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A drop of this size warrants a conversation with your health visitor or paediatrician, but does not automatically indicate a problem. Some percentile movement in early months is normal as babies settle onto their natural growth curve." }
       },
       {
         "@type": "Question",
-        "name": "Why does my pediatrician use WHO growth charts?",
-        "acceptedAnswer": { "@type": "Answer", "text": "The World Health Organization (WHO) charts are the global standard for babies under two, as they reflect how healthy, breastfed babies grow under optimal conditions." }
+        "name": "Do breastfed babies weigh less than formula-fed babies?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Breastfed babies gain weight more quickly in the first 3 months then slightly more slowly from 3 to 6 months. The WHO charts are based on breastfed baby data. Older chart systems can make breastfed babies appear to grow too slowly after 3 months." }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I weigh my baby?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Health visitors typically recommend weighing no more than once a month after the first few weeks, once initial weight loss has been regained. Frequent weighing can increase parental anxiety without providing clinically useful additional information." }
+      },
+      {
+        "@type": "Question",
+        "name": "My baby was premature. How do I use this calculator?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For premature babies, use corrected age rather than actual age — subtract the number of weeks early from their current age. A 4-month-old born 8 weeks early should be plotted as a 2-month-old. Most clinicians use corrected age until age 2." }
       }
     ]
   };
