@@ -180,6 +180,145 @@ export default function SafeWeightLossContent() {
               Always remember that the numbers on the scale do not reflect your worth or your success as a mother. Sustainable changes, gentle movement, and prioritizing your mental health should always form the foundation of your postpartum wellness journey. Please consult with your registered dietitian, midwife, or doctor to create a plan that honors your unique physiological needs.
             </p>
           </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">What is a safe rate of postpartum weight loss?</h2>
+            <p className="text-[#3D2C2C]/80 leading-relaxed text-lg">
+              Clinical guidelines define safe postpartum weight loss as 0.25–0.5 kg (0.5–1 lb) per week for breastfeeding mothers, and up to 0.75 kg per week for non-breastfeeding mothers after the initial 6-week recovery period. Losing weight faster than this can deplete nutrient stores, reduce milk supply, and impair tissue healing. The postpartum body is recovering from a major physiological event regardless of delivery method. Weight loss should only be intentional after the 8–12 week mark for breastfeeding mothers and after 6 weeks for non-breastfeeding mothers.
+            </p>
+          </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">How the calculator works</h2>
+            <p className="text-[#3D2C2C]/80 leading-relaxed text-lg">
+              The calculator takes your current weight, weeks postpartum, and breastfeeding status as inputs. It applies the safe rate thresholds above — adjusted for your specific stage — and returns a maximum recommended weekly loss rate.
+            </p>
+            <p className="text-[#3D2C2C]/80 leading-relaxed text-lg">
+              It does not create a calorie deficit plan. For calorie guidance, see the{" "}
+              <Link href="/breastfeeding-calories/" className="text-[#E8A0A8] underline underline-offset-2 hover:text-[#D58A92] transition-colors">Breastfeeding Calorie Calculator</Link>.
+            </p>
+          </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">Safe weight loss rate by postpartum stage</h2>
+            <div className="overflow-x-auto rounded-2xl">
+              <table className="w-full text-sm text-[#3D2C2C] min-w-[480px]">
+                <thead>
+                  <tr className="bg-[#E8A0A8]/20">
+                    <th className="text-left px-5 py-3 font-label text-xs font-bold uppercase tracking-wider">Postpartum stage</th>
+                    <th className="text-left px-5 py-3 font-label text-xs font-bold uppercase tracking-wider">Breastfeeding</th>
+                    <th className="text-left px-5 py-3 font-label text-xs font-bold uppercase tracking-wider">Not breastfeeding</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-[#FFFDF9]">
+                    <td className="px-5 py-3 font-medium">0–6 weeks</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">Not recommended</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">Not recommended</td>
+                  </tr>
+                  <tr className="bg-[#F9E4E8]/50">
+                    <td className="px-5 py-3 font-medium">6–12 weeks</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">0–0.25 kg/week (body still establishing supply)</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">0–0.5 kg/week</td>
+                  </tr>
+                  <tr className="bg-[#FFFDF9]">
+                    <td className="px-5 py-3 font-medium">12–26 weeks</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">0.25–0.5 kg/week</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">0.5–0.75 kg/week</td>
+                  </tr>
+                  <tr className="bg-[#F9E4E8]/50">
+                    <td className="px-5 py-3 font-medium">6+ months</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">0.25–0.5 kg/week</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">Up to 0.75 kg/week</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">What affects how quickly you lose weight postpartum?</h2>
+            <ul className="space-y-5 text-[#3D2C2C]/80 leading-relaxed text-lg">
+              <li>
+                <strong className="text-[#3D2C2C]">Breastfeeding status</strong> — Prolactin suppresses fat metabolism as an evolutionary mechanism to protect milk supply. Exclusively breastfeeding mothers often lose weight more slowly in the first 3 months, then see faster loss as the baby's intake increases.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Sleep deprivation</strong> — Chronic sleep loss elevates cortisol, which promotes fat retention and increases hunger hormones. This is unavoidable in early newborn care, which is one reason aggressive calorie restriction backfires postpartum.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Delivery method</strong> — C-section recovery requires more energy for tissue repair in the first 6–8 weeks, making aggressive weight loss counterproductive and potentially harmful to healing.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Pre-pregnancy weight and gestational gain</strong> — Mothers who gained within recommended ranges typically return to their baseline more predictably than those who gained significantly above guidelines.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Thyroid function</strong> — Postpartum thyroiditis affects up to 10% of mothers and can cause unexpected weight changes in either direction. Persistent difficulty losing weight despite reasonable effort warrants a thyroid check.
+              </li>
+            </ul>
+          </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">When to talk to your doctor about postpartum weight</h2>
+            <p className="text-[#3D2C2C]/80 leading-relaxed text-lg">
+              Mention concerns to your doctor or midwife if you are losing more than 1 kg per week without trying, if your weight has not changed at all by 6 months postpartum despite reasonable effort, or if you are experiencing extreme fatigue, hair loss, or mood changes alongside unexpected weight shifts — these can indicate thyroid issues, anaemia, or nutritional deficiency. For broader guidance on eating well after birth, see our{" "}
+              <Link href="/blog/postpartum-nutrition-guide/" className="text-[#E8A0A8] underline underline-offset-2 hover:text-[#D58A92] transition-colors">postpartum nutrition guide</Link>.
+            </p>
+          </section>
+
+          <section className="max-w-3xl space-y-4 pb-12">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">Frequently asked questions</h2>
+            <div className="space-y-3">
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  How much weight do you lose immediately after giving birth?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  Most mothers lose 5–6 kg immediately after delivery — the baby's weight, placenta, and amniotic fluid. An additional 2–3 kg of fluid is typically lost in the first week through sweat and increased urination as the body sheds retained pregnancy water.
+                </div>
+              </details>
+
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  Is it normal not to lose weight while breastfeeding?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  Yes. Prolactin, the hormone that drives milk production, can cause the body to retain fat stores as a protective mechanism. Some mothers find weight loss stalls or slows significantly during exclusive breastfeeding and then accelerates naturally after introducing solids or weaning.
+                </div>
+              </details>
+
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  Why am I gaining weight postpartum instead of losing?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  Common causes include high cortisol from sleep deprivation, under-eating which slows metabolism, postpartum thyroiditis, and fluid retention. If unexplained weight gain persists beyond 3 months, discuss it with your doctor to rule out thyroid dysfunction.
+                </div>
+              </details>
+
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  Does breastfeeding help you lose weight?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  It can, but not immediately and not for everyone. Breastfeeding burns approximately 400–500 extra calories per day, but prolactin simultaneously promotes fat retention in many women. Most breastfeeding mothers see more noticeable weight loss after 3–6 months.
+                </div>
+              </details>
+
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  What is the fastest safe way to lose weight after having a baby?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  There is no shortcut that is both fast and safe in the postpartum period. The most effective approach is a moderate calorie reduction of 250–500 kcal below your TDEE after the 12-week mark, combined with gradual return to exercise. Dropping below 1,500 kcal/day is not recommended while breastfeeding.
+                </div>
+              </details>
+            </div>
+          </section>
         </div>
 
 

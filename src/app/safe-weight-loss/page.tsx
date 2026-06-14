@@ -22,18 +22,28 @@ export default function SafeWeightLoss() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How much weight can I safely lose per week while breastfeeding?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Most healthcare providers recommend no more than 0.5kg (1lb) per week while breastfeeding, to protect your milk supply and energy levels." }
+        "name": "How much weight do you lose immediately after giving birth?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most mothers lose 5–6 kg immediately after delivery — the baby's weight, placenta, and amniotic fluid. An additional 2–3 kg of fluid is typically lost in the first week through sweat and increased urination." }
       },
       {
         "@type": "Question",
-        "name": "When can I start trying to lose weight after having a baby?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Medical guidelines recommend waiting at least 6 to 8 weeks postpartum before consciously restricting calories, to allow time to heal and establish milk supply." }
+        "name": "Is it normal not to lose weight while breastfeeding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prolactin, the hormone that drives milk production, can cause the body to retain fat stores as a protective mechanism. Weight loss often stalls during exclusive breastfeeding and accelerates after introducing solids or weaning." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why am I gaining weight postpartum instead of losing?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Common causes include high cortisol from sleep deprivation, under-eating which slows metabolism, postpartum thyroiditis, and fluid retention. If unexplained weight gain persists beyond 3 months, discuss it with your doctor." }
       },
       {
         "@type": "Question",
         "name": "Does breastfeeding help you lose weight?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes, breastfeeding burns approximately 500 extra calories per day, which can assist with postpartum weight loss, provided you are eating a balanced diet." }
+        "acceptedAnswer": { "@type": "Answer", "text": "It can, but not immediately and not for everyone. Breastfeeding burns approximately 400–500 extra calories per day, but prolactin promotes fat retention in many women. Most mothers see more noticeable loss after 3–6 months." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the fastest safe way to lose weight after having a baby?",
+        "acceptedAnswer": { "@type": "Answer", "text": "There is no shortcut that is both fast and safe postpartum. A moderate calorie reduction of 250–500 kcal below your TDEE after 12 weeks, combined with gradual return to exercise, is the most effective approach." }
       }
     ]
   };
