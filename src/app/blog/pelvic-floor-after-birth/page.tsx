@@ -3,21 +3,25 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'What is the Pelvic Floor and Why Does it Matter After Birth? — NurtureCalc',
-  description: 'Learn what the pelvic floor is, how birth affects it, and what you can do to support your recovery. Includes signs of pelvic floor dysfunction to watch for.',
-  alternates: {
-    canonical: '/blog/pelvic-floor-after-birth',
-  },
-  openGraph: {
+export async function generateMetadata(): Promise<Metadata> {
+  return {
     title: 'What is the Pelvic Floor and Why Does it Matter After Birth? — NurtureCalc',
     description: 'Learn what the pelvic floor is, how birth affects it, and what you can do to support your recovery. Includes signs of pelvic floor dysfunction to watch for.',
-    url: 'https://nurturecalc.com/blog/pelvic-floor-after-birth',
-    type: 'article',
-    publishedTime: '2026-03-25T00:00:00Z',
-    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
-  },
-};
+    keywords: ['pelvic floor after birth', 'postpartum pelvic floor', 'pelvic floor exercises', 'pelvic floor recovery', 'postpartum recovery'],
+    alternates: {
+      canonical: '/blog/pelvic-floor-after-birth',
+    },
+    openGraph: {
+      title: 'What is the Pelvic Floor and Why Does it Matter After Birth? — NurtureCalc',
+      description: 'Learn what the pelvic floor is, how birth affects it, and what you can do to support your recovery. Includes signs of pelvic floor dysfunction to watch for.',
+      url: 'https://nurturecalc.com/blog/pelvic-floor-after-birth',
+      type: 'article',
+      publishedTime: '2026-03-25T00:00:00Z',
+      authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+    },
+    robots: { index: true, follow: true },
+  };
+}
 
 export default function BlogPost() {
   const jsonLd = {
@@ -43,17 +47,60 @@ export default function BlogPost() {
     }
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is leaking after birth normal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is common, but it is not normal. While your body needs time to heal in the early weeks, persistent leaking is a sign that the pelvic floor is struggling to manage pressure. The good news is that it is highly treatable with the right exercises and support."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does pelvic floor recovery take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every body is different, but most women see significant improvement within 3 to 6 months of consistent rehabilitation. For those with more significant tears or prolapse, the recovery journey can take 12 months or longer. Consistency is more important than speed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is diastasis recti and is it related to the pelvic floor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Diastasis recti is the separation of the abdominal muscles. Because the deep core and pelvic floor work together as a single unit, a gap in the abdominals often means the pelvic floor has to compensate for the lost stability. Healing one almost always involves working on the other."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I do pelvic floor exercises too much?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Like any other muscle, the pelvic floor can become over-fatigued. Over-exercising without proper relaxation can lead to a tight or hypertonic state, which is just as problematic as weakness. Quality and coordination are far more important than high repetitions."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
-      
+
       <main className="flex-1 max-w-3xl mx-auto w-full py-16 px-6">
         <article className="prose prose-rose lg:prose-lg max-w-none text-[#3D2C2C]/80 font-sans leading-relaxed">
-          
+
           <header className="mb-12 not-prose border-b border-[#E8A0A8]/20 pb-10 text-center">
             <div className="space-y-4 mb-6">
               <div className="flex items-center justify-center gap-3">
@@ -128,7 +175,7 @@ export default function BlogPost() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What is the pelvic floor and what does it do?</h2>
           <p>
-            Imagine a thick, muscular hammock stretching across the base of your pelvis, attaching from your tailbone at the back to your pubic bone at the front. This is your pelvic floor. 
+            Imagine a thick, muscular hammock stretching across the base of your pelvis, attaching from your tailbone at the back to your pubic bone at the front. This is your pelvic floor.
           </p>
           <p>
             These muscles have three critical jobs: they support your pelvic organs (bladder, uterus, and bowel) against gravity; they control your sphincter muscles to prevent you from leaking urine, gas, or feces; and they play a vital role in sexual sensation and function. They also form the foundation of your "deep core," working continually with your diaphragm to manage the pressure inside your abdomen every time you cough, lift, laugh, or jump.
@@ -136,7 +183,7 @@ export default function BlogPost() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How pregnancy and birth affect the pelvic floor</h2>
           <p>
-            Pregnancy alone applies immense downward pressure on this muscular hammock for nine long months. The increasing weight of the baby, combined with the relaxing effect of pregnancy hormones, stretches the pelvic tissues deeply. 
+            Pregnancy alone applies immense downward pressure on this muscular hammock for nine long months. The increasing weight of the baby, combined with the relaxing effect of pregnancy hormones, stretches the pelvic tissues deeply.
           </p>
           <p>
             If you give birth vaginally, those muscles must stretch up to three times their normal length to allow the baby's head to pass. Just like an overstretched rubber band, it takes time for the tissues to regain their tension. Even if you deliver via cesarean section, the nine months of pregnancy load and the severing of the abdominal fascia (which works synergistically with the pelvic floor) can still lead to significant pelvic floor weakness.
@@ -262,8 +309,8 @@ export default function BlogPost() {
           <div className="not-prose my-12 bg-white rounded-3xl p-8 border border-[#E8A0A8]/30 shadow-[0_4px_20px_rgba(232,160,168,0.1)] text-center space-y-4">
             <h3 className="text-xl font-serif text-[#3D2C2C]">Check your recovery stage</h3>
             <p className="text-[#3D2C2C]/70">Take our gentle diagnostic quiz to understand your current pelvic floor status.</p>
-            <Link 
-              href="/pelvic-floor-recovery"
+            <Link
+              href="/pelvic-floor-recovery/"
               className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all shadow-md hover:shadow-lg"
             >
               Take our Pelvic Floor Recovery Estimator →
@@ -288,11 +335,11 @@ export default function BlogPost() {
         <footer className="border-t border-[#E8A0A8]/20 pt-12">
           <h3 className="text-2xl font-serif text-[#3D2C2C] mb-8">You might also like...</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link href="/blog/returning-to-exercise-after-birth" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
+            <Link href="/blog/returning-to-exercise-after-birth/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
               <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Fitness</span>
               <h4 className="text-lg font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug">A Gentle Guide to Returning to Exercise After Birth</h4>
             </Link>
-            <Link href="/blog/safe-weight-loss-breastfeeding" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
+            <Link href="/blog/safe-weight-loss-breastfeeding/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
               <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Nutrition</span>
               <h4 className="text-lg font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug">Is it Safe to Lose Weight While Breastfeeding?</h4>
             </Link>

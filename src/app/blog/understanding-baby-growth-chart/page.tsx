@@ -2,23 +2,26 @@ import { Metadata } from 'next';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { Button } from "@/components/Button";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: '/blog/understanding-baby-growth-chart',
-  },
-  title: 'Understanding Your Baby\'s Growth Chart — NurtureCalc',
-  description: 'Growth charts can feel confusing. Learn what percentiles actually mean, what WHO standards are, and when to talk to your doctor.',
-  openGraph: {
+export async function generateMetadata(): Promise<Metadata> {
+  return {
     title: 'Understanding Your Baby\'s Growth Chart — NurtureCalc',
-    description: 'Learn what growth percentiles actually mean and how to read your baby\'s chart.',
-    url: 'https://nurturecalc.com/blog/understanding-baby-growth-chart',
-    type: 'article',
-    publishedTime: '2026-03-05T00:00:00Z',
-    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
-  },
-};
+    description: 'Growth charts can feel confusing. Learn what percentiles actually mean, what WHO standards are, and when to talk to your doctor.',
+    keywords: ['baby growth chart', 'baby weight percentile', 'WHO growth standards', 'baby percentile', 'understanding growth charts'],
+    alternates: {
+      canonical: '/blog/understanding-baby-growth-chart',
+    },
+    openGraph: {
+      title: 'Understanding Your Baby\'s Growth Chart — NurtureCalc',
+      description: 'Learn what growth percentiles actually mean and how to read your baby\'s chart.',
+      url: 'https://nurturecalc.com/blog/understanding-baby-growth-chart',
+      type: 'article',
+      publishedTime: '2026-03-05T00:00:00Z',
+      authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+    },
+    robots: { index: true, follow: true },
+  };
+}
 
 export default function GrowthChartGuide() {
   const articleJsonLd = {
@@ -36,12 +39,51 @@ export default function GrowthChartGuide() {
       "name": "NurtureCalc",
       "url": "https://nurturecalc.com"
     },
-    "datePublished": "2024-03-20",
+    "datePublished": "2026-03-31",
     "dateModified": "2026-04-10",
     "medicalAudience": {
       "@type": "MedicalAudience",
       "audienceType": "Patient"
     }
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "My baby jumped from the 25th to the 60th percentile — is that ok?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, absolutely. In the first few months, many babies are still finding their curve. Birth weight is often influenced by the environment in the womb, but over the first six months, a baby's true genetic potential takes over."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does breastfeeding vs formula feeding affect growth chart results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breastfed babies often gain weight more rapidly in the first 2-3 months and then slow down significantly. Formula-fed babies tend to gain weight at a more steady pace. The WHO charts are modeled on breastfed babies to account for this natural pattern."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a growth spurt and how will I know when my baby is having one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A growth spurt is a short period (2-3 days) of rapid growth. Signs include increased hunger, more frequent night wakings, and being slightly more fussy or sleepy than usual. You might notice they outgrow sleepers overnight!"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should my baby be weighed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For a healthy baby, weighing at standard well-baby checkups is perfectly sufficient. Weighing too often at home can lead to unnecessary anxiety, as weight varies naturally from day to day based on feeding and output."
+        }
+      }
+    ]
   };
 
   return (
@@ -50,11 +92,15 @@ export default function GrowthChartGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
-      
+
       <main className="flex-1 max-w-3xl mx-auto w-full py-16 px-6">
         <article className="prose prose-rose lg:prose-lg max-w-none text-[#3D2C2C]/80 font-sans leading-relaxed">
-          
+
           <header className="mb-12 not-prose border-b border-[#E8A0A8]/20 pb-10 text-center">
             <div className="space-y-4 mb-6">
               <div className="flex items-center justify-center gap-3">
@@ -109,15 +155,15 @@ export default function GrowthChartGuide() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What is a percentile and what does it actually mean?</h2>
           <p>
-            A percentile simply represents how your baby's measurements compare to a generalized sample of thousands of other babies of the exact same age and sex. 
+            A percentile simply represents how your baby's measurements compare to a generalized sample of thousands of other babies of the exact same age and sex.
           </p>
           <p>
-            If your baby boy is in the 25th percentile for weight, it means that out of 100 healthy baby boys of the same age, he weighs more than 24 of them, and 75 of them weigh more than him. It is absolutely vital to understand that the 50th percentile is <i>not</i> an "A+" or a required goal. It is merely the mathematical median. A baby born in the 15th percentile can be just as perfectly healthy and perfectly fed as a baby in the 85th percentile. 
+            If your baby boy is in the 25th percentile for weight, it means that out of 100 healthy baby boys of the same age, he weighs more than 24 of them, and 75 of them weigh more than him. It is absolutely vital to understand that the 50th percentile is <i>not</i> an "A+" or a required goal. It is merely the mathematical median. A baby born in the 15th percentile can be just as perfectly healthy and perfectly fed as a baby in the 85th percentile.
           </p>
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What are WHO growth standards and why do they matter?</h2>
           <p>
-            Not all growth charts are created equal. In the past, many pediatric charts were based entirely on locally formula-fed infants, who tend to gain weight at a slightly heavier and faster rate in the first year. 
+            Not all growth charts are created equal. In the past, many pediatric charts were based entirely on locally formula-fed infants, who tend to gain weight at a slightly heavier and faster rate in the first year.
           </p>
           <p>
             Today, leading health bodies universally utilize the World Health Organization (WHO) Child Growth Standards for children under two years old. The WHO charts are globally sourced and specifically modeled on infants who were exclusively breastfed for their first six months in optimal environments. They represent a global biological standard for how human babies <i>should</i> grow under ideal conditions, regardless of ethnicity or geography, creating a much more accurate baseline for modern parents.
@@ -128,7 +174,7 @@ export default function GrowthChartGuide() {
             Clinically, anywhere between the 2nd (or 5th) and the 98th (or 95th) percentile is classified as within the range of normal, provided the baby is meeting their expected milestones. The metric that doctors truly care about isn't the specific number your child lands on initially, but rather their <i>curve trend</i> over time.
           </p>
           <p>
-            Every baby is born with a genetic predisposition to a certain size. A healthy growth pattern is one that roughly follows its established curve. A baby who is born at the 10th percentile and stays beautifully along the 10th percentile month after month is thriving perfectly. 
+            Every baby is born with a genetic predisposition to a certain size. A healthy growth pattern is one that roughly follows its established curve. A baby who is born at the 10th percentile and stays beautifully along the 10th percentile month after month is thriving perfectly.
           </p>
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">When Should I Be Concerned About My Baby's Weight?</h2>
@@ -159,7 +205,7 @@ export default function GrowthChartGuide() {
               <div>
                 <h4 className="font-serif text-[#3D2C2C] mb-1">A Sudden Plateau</h4>
                 <p className="text-sm text-[#3D2C2C]/70 leading-relaxed italic">
-                  If a baby’s weight gain stops entirely (a flat line on the chart) for several consecutive weeks, it’s a signal to check in.
+                  If a baby's weight gain stops entirely (a flat line on the chart) for several consecutive weeks, it's a signal to check in.
                 </p>
               </div>
             </li>
@@ -211,7 +257,7 @@ export default function GrowthChartGuide() {
             <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
               <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">My baby jumped from the 25th to the 60th percentile — is that ok?</h4>
               <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
-                Yes, absolutely. In the first few months, many babies are still "finding their curve." Birth weight is often influenced by the environment in the womb, but over the first six months, a baby’s true genetic potential takes over.
+                Yes, absolutely. In the first few months, many babies are still "finding their curve." Birth weight is often influenced by the environment in the womb, but over the first six months, a baby's true genetic potential takes over.
               </p>
             </div>
             <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
@@ -243,8 +289,8 @@ export default function GrowthChartGuide() {
           <div className="not-prose my-12 bg-white rounded-3xl p-8 border border-[#E8A0A8]/30 shadow-[0_4px_20px_rgba(232,160,168,0.1)] text-center space-y-4">
             <h3 className="text-xl font-serif text-[#3D2C2C]">Check your baby's current track</h3>
             <p className="text-[#3D2C2C]/70">Easily find your baby's percentile using the global WHO growth standards.</p>
-            <Link 
-              href="/baby-weight-percentile"
+            <Link
+              href="/baby-weight-percentile/"
               className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all shadow-md hover:shadow-lg"
             >
               Use our Baby Weight Percentile Calculator →
@@ -269,11 +315,11 @@ export default function GrowthChartGuide() {
         <footer className="border-t border-[#E8A0A8]/20 pt-12">
           <h3 className="text-2xl font-serif text-[#3D2C2C] mb-8">You might also like...</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link href="/blog/breastfeeding-calorie-needs" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
+            <Link href="/blog/breastfeeding-calorie-needs/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
               <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Nutrition</span>
               <h4 className="text-lg font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug">How Many Extra Calories Do You Need When Breastfeeding?</h4>
             </Link>
-            <Link href="/blog/pelvic-floor-after-birth" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
+            <Link href="/blog/pelvic-floor-after-birth/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
               <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Recovery</span>
               <h4 className="text-lg font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug">What is the Pelvic Floor and Why Does it Matter After Birth?</h4>
             </Link>

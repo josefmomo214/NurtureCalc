@@ -3,21 +3,25 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: '/blog/returning-to-exercise-after-birth',
-  },
-  title: 'A Gentle Guide to Returning to Exercise After Birth — NurtureCalc',
-  description: 'Learn the evidence-based timeline for returning to exercise after a vaginal birth or C-section. Safe, gentle progress for new mothers.',
-  openGraph: {
+export async function generateMetadata(): Promise<Metadata> {
+  return {
     title: 'A Gentle Guide to Returning to Exercise After Birth — NurtureCalc',
-    description: 'Learn the evidence-based timeline for returning to exercise after birth.',
-    url: 'https://nurturecalc.com/blog/returning-to-exercise-after-birth',
-    type: 'article',
-    publishedTime: '2026-03-15T00:00:00Z',
-    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
-  },
-};
+    description: 'Learn the evidence-based timeline for returning to exercise after a vaginal birth or C-section. Safe, gentle progress for new mothers.',
+    keywords: ['returning to exercise after birth', 'postpartum exercise', 'exercise after c-section', 'postpartum fitness', 'exercise after vaginal birth'],
+    alternates: {
+      canonical: '/blog/returning-to-exercise-after-birth',
+    },
+    openGraph: {
+      title: 'A Gentle Guide to Returning to Exercise After Birth — NurtureCalc',
+      description: 'Learn the evidence-based timeline for returning to exercise after birth.',
+      url: 'https://nurturecalc.com/blog/returning-to-exercise-after-birth',
+      type: 'article',
+      publishedTime: '2026-03-15T00:00:00Z',
+      authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+    },
+    robots: { index: true, follow: true },
+  };
+}
 
 export default function BlogPost() {
   const jsonLd = {
@@ -43,24 +47,67 @@ export default function BlogPost() {
     }
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I exercise while breastfeeding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Exercise does not negatively impact milk supply or nutritional quality for the vast majority of women. It is helpful to nurse or pump before a workout to avoid discomfort, and stay well hydrated to support both sweat loss and milk production."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When can I start running again after birth?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Current clinical guidelines recommend waiting at least 12 weeks postpartum before running. Running is high-impact and places significant pressure on the pelvic floor. Pass a load test of hopping, jumping, and single-leg balancing before your first run."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is diastasis recti and how do I know if I have it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Diastasis recti is the thinning and widening of the connective tissue between your six-pack muscles. Check by lying on your back, knees bent, and lifting your head. A gap wider than two finger-widths or visible doming indicates some degree of separation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When can I return to high-impact sport or lifting heavy weights?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For most women, high-impact sports and heavy lifting should be slowly reintroduced between 4 and 6 months postpartum. This allows enough time for the pelvic floor to regain its reflexive strength and for ligament laxity from relaxin to begin stabilizing."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
-      
+
       <main className="flex-1 max-w-3xl mx-auto w-full py-16 px-6">
         <article className="prose prose-rose lg:prose-lg max-w-none text-[#3D2C2C]/80 font-sans leading-relaxed">
-          
+
           <header className="mb-12 not-prose border-b border-[#E8A0A8]/20 pb-10 text-center">
             <div className="space-y-4 mb-6">
               <div className="flex items-center justify-center gap-3">
                 <span className="bg-[#F9E4E8] text-[#D58A92] px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase font-label">Fitness</span>
               </div>
               <div className="space-y-1">
-                <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
+                <Link href="/author/nurturecalc-team/" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
                   Olivia-P · NurtureCalc Team
                 </Link>
                 <p className="text-xs font-label text-[#3D2C2C]/70">
@@ -157,7 +204,7 @@ export default function BlogPost() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">The evidence-based timeline for vaginal birth recovery</h2>
           <p>
-            A six-week clearance from your doctor simply means your cervix has closed and immediate bleeding has resolved; it does <i>not</i> mean your connective tissues have regained tensile strength. 
+            A six-week clearance from your doctor simply means your cervix has closed and immediate bleeding has resolved; it does <i>not</i> mean your connective tissues have regained tensile strength.
           </p>
           <p>
             Current clinical guidelines recommend zero high-impact exercise (running, jumping, heavy lifting) for the first 12 weeks. Instead, the first 6 weeks should focus intensely on rest, diaphragmatic breathing, and short, gentle walks. From weeks 6 to 12, the focus shifts to low-impact rebuilding: bodyweight squats, gentle core engagements, and restoring the mind-muscle connection with your pelvic floor.
@@ -228,7 +275,7 @@ export default function BlogPost() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">The best exercises to start with — and what to avoid</h2>
           <p>
-            Avoid crunches, sit-ups, heavy deadlifts, running, and jumping jacks in the early months. These create massive intra-abdominal pressure that your healing core cannot yet manage. 
+            Avoid crunches, sit-ups, heavy deadlifts, running, and jumping jacks in the early months. These create massive intra-abdominal pressure that your healing core cannot yet manage.
           </p>
           <p>
             Instead, start with 360-degree diaphragmatic breathing, pelvic tilts, glute bridges, and side-lying clam shells. These exercises safely reconstruct the deep core cylinder from the inside out.
@@ -267,11 +314,16 @@ export default function BlogPost() {
             </div>
           </div>
 
-          {/* Disclaimer */}
-          <div className="not-prose p-6 bg-[#F9E4E8]/50 rounded-xl mt-12 mb-16">
-            <p className="text-sm text-[#3D2C2C]/60 italic">
-              <strong>Disclaimer:</strong> Always get clearance from your doctor or midwife before returning to exercise after birth. Stop immediately if you feel pain or discomfort.
-            </p>
+          {/* CTA Box */}
+          <div className="not-prose my-12 bg-white rounded-3xl p-8 border border-[#E8A0A8]/30 shadow-[0_4px_20px_rgba(232,160,168,0.1)] text-center space-y-4">
+            <h3 className="text-xl font-serif text-[#3D2C2C]">Get your personalised exercise timeline</h3>
+            <p className="text-[#3D2C2C]/70">Every postpartum body is different. Use the Return-to-Exercise Timeline tool to get a week-by-week guide based on your delivery type and recovery symptoms.</p>
+            <Link
+              href="/exercise-timeline/"
+              className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all shadow-md hover:shadow-lg"
+            >
+              Open Exercise Timeline →
+            </Link>
           </div>
 
           <div className="bg-[#F5F5F0] border border-[#E0E0D8] rounded-3xl p-8 my-12 not-prose">
@@ -290,11 +342,11 @@ export default function BlogPost() {
         <footer className="border-t border-[#E8A0A8]/20 pt-12">
           <h3 className="text-2xl font-serif text-[#3D2C2C] mb-8">You might also like...</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link href="/blog/pelvic-floor-after-birth" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
+            <Link href="/blog/pelvic-floor-after-birth/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
               <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Recovery</span>
               <h4 className="text-lg font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug">What is the Pelvic Floor and Why Does it Matter After Birth?</h4>
             </Link>
-            <Link href="/blog/breastfeeding-calorie-needs" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
+            <Link href="/blog/breastfeeding-calorie-needs/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
               <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Nutrition</span>
               <h4 className="text-lg font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug">How Many Extra Calories Do You Need When Breastfeeding?</h4>
             </Link>

@@ -3,21 +3,25 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: '/blog/safe-weight-loss-breastfeeding',
-  },
-  title: 'Is it Safe to Lose Weight While Breastfeeding? — NurtureCalc',
-  description: 'Find out whether it\'s safe to lose weight while breastfeeding, how quickly you can lose weight postpartum, and what affects your milk supply.',
-  openGraph: {
+export async function generateMetadata(): Promise<Metadata> {
+  return {
     title: 'Is it Safe to Lose Weight While Breastfeeding? — NurtureCalc',
-    description: 'Find out whether it\'s safe to lose weight while breastfeeding and how to protect your milk supply.',
-    url: 'https://nurturecalc.com/blog/safe-weight-loss-breastfeeding',
-    type: 'article',
-    publishedTime: '2026-03-25T00:00:00Z',
-    authors: ['https://nurturecalc.com/author/nurturecalc-team'],
-  },
-};
+    description: 'Find out whether it\'s safe to lose weight while breastfeeding, how quickly you can lose weight postpartum, and what affects your milk supply.',
+    keywords: ['weight loss breastfeeding', 'safe weight loss postpartum', 'breastfeeding weight loss', 'postpartum weight loss', 'losing weight while nursing'],
+    alternates: {
+      canonical: '/blog/safe-weight-loss-breastfeeding',
+    },
+    openGraph: {
+      title: 'Is it Safe to Lose Weight While Breastfeeding? — NurtureCalc',
+      description: 'Find out whether it\'s safe to lose weight while breastfeeding and how to protect your milk supply.',
+      url: 'https://nurturecalc.com/blog/safe-weight-loss-breastfeeding',
+      type: 'article',
+      publishedTime: '2026-03-25T00:00:00Z',
+      authors: ['https://nurturecalc.com/author/nurturecalc-team'],
+    },
+    robots: { index: true, follow: true },
+  };
+}
 
 export default function BlogPost() {
   const jsonLd = {
@@ -43,24 +47,67 @@ export default function BlogPost() {
     }
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I do intermittent fasting while breastfeeding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Intermittent fasting is generally not recommended while nursing. Long windows without food can drop milk supply and cause blood sugar fluctuations that leave you lightheaded during a period when energy demands are already at their peak."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it normal to gain weight while breastfeeding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, it is surprisingly common. High prolactin levels increase appetite, and sleep deprivation elevates cortisol, which can lead to weight gain. Be gentle with yourself; your body is working under extraordinary circumstances."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What supplements help with postpartum weight loss?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no magic pill for postpartum weight loss, and many weight loss supplements are not safe for breastfeeding. Focus on a high-quality postnatal multivitamin and a daily Omega-3 supplement for foundational nutrition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to lose the baby weight?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It can take a full year or more to return to your pre-pregnancy baseline, particularly if exclusively nursing. Your timeline is unique, and reaching a goal weight is far less important than how you feel and the quality of your recovery."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFDF9]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
-      
+
       <main className="flex-1 max-w-3xl mx-auto w-full py-16 px-6">
         <article className="prose prose-rose lg:prose-lg max-w-none text-[#3D2C2C]/80 font-sans leading-relaxed">
-          
+
           <header className="mb-12 not-prose border-b border-[#E8A0A8]/20 pb-10 text-center">
             <div className="space-y-4 mb-6">
               <div className="flex items-center justify-center gap-3">
                 <span className="bg-[#F9E4E8] text-[#D58A92] px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase font-label">Nutrition</span>
               </div>
               <div className="space-y-1">
-                <Link href="/author/nurturecalc-team" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
+                <Link href="/author/nurturecalc-team/" className="text-sm font-label font-bold tracking-wide text-[#3D2C2C] hover:text-[#E8A0A8] transition-colors">
                   Olivia-P · NurtureCalc Team
                 </Link>
                 <p className="text-xs font-label text-[#3D2C2C]/70">
@@ -97,7 +144,7 @@ export default function BlogPost() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">What happens to your body in the first 12 weeks postpartum</h2>
           <p>
-            Before even considering intentional weight loss, it's vital to unpack what your body has just achieved. During the first six to twelve weeks postpartum, your uterus is laboriously shrinking back to its pre-pregnancy size (involution). You are shedding excess blood and fluid volume built up over nine months. If you endured a cesarean section or vaginal tearing, your body is directing immense energy towards cellular repair and wound healing. 
+            Before even considering intentional weight loss, it's vital to unpack what your body has just achieved. During the first six to twelve weeks postpartum, your uterus is laboriously shrinking back to its pre-pregnancy size (involution). You are shedding excess blood and fluid volume built up over nine months. If you endured a cesarean section or vaginal tearing, your body is directing immense energy towards cellular repair and wound healing.
           </p>
           <p>
             Attempting to force weight loss during this acute recovery window through severe caloric restriction actively starves the cellular healing process. It strips you of the energy required to recover from childbirth trauma while simultaneously managing profound sleep deprivation. Healing requires calories; it requires dense, comprehensive nutrition.
@@ -105,13 +152,13 @@ export default function BlogPost() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">The Role of Macronutrients While Nursing</h2>
           <p>
-            When you do reach a point where you feel ready to focus on your nutrition, it’s helpful to think in terms of "additive nutrition" rather than subtraction. Instead of asking what you should cut out, ask what you can add to better support your health and your milk supply. This starts with understanding the role of the three primary macronutrients: protein, fats, and carbohydrates.
+            When you do reach a point where you feel ready to focus on your nutrition, it's helpful to think in terms of "additive nutrition" rather than subtraction. Instead of asking what you should cut out, ask what you can add to better support your health and your milk supply. This starts with understanding the role of the three primary macronutrients: protein, fats, and carbohydrates.
           </p>
           <p>
             Protein is the building block of repair. After the physical trauma of childbirth, your tissues need amino acids to rebuild and recover. For breastfeeding mothers, protein requirements are significantly higher than for the general population. Aiming for at least 70 to 80 grams of high-quality protein daily is a realistic and beneficial goal. This not only supports your own muscle maintenance and cellular repair but also ensures that the protein content of your breast milk remains consistent, supporting your baby's rapid growth and brain development.
           </p>
           <p>
-            Healthy fats are another critical piece of the puzzle. The fat content of your breast milk—which provides concentrated energy for your baby—is directly influenced by the types of fats you consume. Incorporating monounsaturated and polyunsaturated fats, such as those found in avocados, olive oil, walnuts, and fatty fish, provides essential fatty acids like DHA, which are vital for your baby’s neurological and visual development. Furthermore, fats are highly satiating, helping you feel full and satisfied between meals, which is a key component of preventing the "hangry" episodes that often lead to over-consumption of less nutritious snacks.
+            Healthy fats are another critical piece of the puzzle. The fat content of your breast milk—which provides concentrated energy for your baby—is directly influenced by the types of fats you consume. Incorporating monounsaturated and polyunsaturated fats, such as those found in avocados, olive oil, walnuts, and fatty fish, provides essential fatty acids like DHA, which are vital for your baby's neurological and visual development. Furthermore, fats are highly satiating, helping you feel full and satisfied between meals, which is a key component of preventing the "hangry" episodes that often lead to over-consumption of less nutritious snacks.
           </p>
           <p>
             Finally, we have complex carbohydrates. While "low carb" diets are often touted for quick weight loss, they are generally not recommended for nursing mothers. Your brain and your milk-producing cells run on glucose. Complex carbohydrates—like sweet potatoes, brown rice, quinoa, and oats—provide a steady, sustained release of energy rather than the quick spikes and crashes associated with refined sugars. These foods also provide the fiber necessary for digestive health, which can be particularly important in the postpartum weeks.
@@ -124,7 +171,7 @@ export default function BlogPost() {
               <strong className="text-[#3D2C2C]">Oats:</strong> A classic galactagogue, oats are rich in iron and fiber, providing a slow-release energy source that helps stabilize blood sugar and support a healthy milk supply.
             </li>
             <li>
-              <strong className="text-[#3D2C2C]">Salmon:</strong> Excellent for its high Omega-3 fatty acid (DHA) content, salmon supports your baby’s brain development while providing lean protein that keeps you feeling full longer.
+              <strong className="text-[#3D2C2C]">Salmon:</strong> Excellent for its high Omega-3 fatty acid (DHA) content, salmon supports your baby's brain development while providing lean protein that keeps you feeling full longer.
             </li>
             <li>
               <strong className="text-[#3D2C2C]">Eggs:</strong> One of the most nutrient-dense foods on the planet, eggs provide high-quality protein and choline, which is essential for both your recovery and your baby's cognitive health.
@@ -142,7 +189,7 @@ export default function BlogPost() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">How breastfeeding affects your calorie needs and weight loss</h2>
           <p>
-            Breastfeeding is a metabolic marathon. Producing milk demands a staggering amount of energy. On average, a mother exclusively breastfeeding a newborn requires an additional 500 to 600 calories per day on top of her baseline needs. 
+            Breastfeeding is a metabolic marathon. Producing milk demands a staggering amount of energy. On average, a mother exclusively breastfeeding a newborn requires an additional 500 to 600 calories per day on top of her baseline needs.
           </p>
           <p>
             Because of this high energy demand, some women find that the pregnancy weight naturally "melts off" as their bodies tap into stored fat to fuel milk production. However, this is not a universal experience. For many women, the hormone prolactin—which is essential for milk synthesis—actually signals the body to stubbornly hold onto fat stores, an evolutionary adaptation designed to ensure you can continue feeding your baby even during a theoretical famine. If you are not seeing the scale drop while nursing, your biology is doing exactly what it was designed to do: protecting your baby's food source.
@@ -153,7 +200,7 @@ export default function BlogPost() {
             If you feel physically recovered, are past the initial six-week mark, and have established a robust, steady milk supply, you may consider gentle, intentional weight loss. However, the keyword must be <i>gentle</i>.
           </p>
           <p>
-            Clinical guidelines from the CDC and major pediatric associations suggest a maximum safe rate of weight loss of 0.25 to 0.5 kilograms (about 0.5 to 1 pound) per week for nursing mothers. Dropping weight any faster requires a severe caloric deficit that will almost certainly compromise your milk output. Furthermore, rapid weight loss triggers the release of toxins stored deeply within fat cells directly into your bloodstream, which can then cross into your breastmilk. 
+            Clinical guidelines from the CDC and major pediatric associations suggest a maximum safe rate of weight loss of 0.25 to 0.5 kilograms (about 0.5 to 1 pound) per week for nursing mothers. Dropping weight any faster requires a severe caloric deficit that will almost certainly compromise your milk output. Furthermore, rapid weight loss triggers the release of toxins stored deeply within fat cells directly into your bloodstream, which can then cross into your breastmilk.
           </p>
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">Signs you may be losing weight too quickly</h2>
@@ -166,7 +213,7 @@ export default function BlogPost() {
 
           <h2 className="text-2xl font-serif text-[#3D2C2C] mt-10 mb-4">Practical tips for gentle, sustainable postpartum weight loss</h2>
           <p>
-            Rather than focusing on restrictive diets or cutting entire food groups, shift your focus to the <i>quality</i> of your fuel. Prioritize nutrient density: complex carbohydrates like oats (which can actually help boost milk supply), healthy fats like avocados and walnuts, and robust sources of protein. 
+            Rather than focusing on restrictive diets or cutting entire food groups, shift your focus to the <i>quality</i> of your fuel. Prioritize nutrient density: complex carbohydrates like oats (which can actually help boost milk supply), healthy fats like avocados and walnuts, and robust sources of protein.
           </p>
           <p>
             Drink to thirst, and then drink a little more, as hydration is heavily tied to both milk production and metabolic function. Incorporate gentle, restorative movement like walking and deep core breathing before progressing to high-intensity workouts. Most importantly, practice radical self-compassion. The body that grew, birthed, and is feeding your baby is a marvel of biology, not a project to be endlessly fixed.
@@ -195,7 +242,7 @@ export default function BlogPost() {
             <div className="p-6 bg-white rounded-2xl border border-[#E8A0A8]/20 shadow-sm">
               <h4 className="text-lg font-serif text-[#3D2C2C] mb-3">How long does it take to lose the baby weight?</h4>
               <p className="text-sm leading-relaxed text-[#3D2C2C]/70">
-                It’s helpful to remember the old adage: "Nine months on, nine months off." For many, it can take a full year or more for their body to return to a baseline state, particularly if they are exclusively nursing. Your timeline is unique, and reaching a "goal weight" is far less important than how you feel and the quality of your recovery.
+                It's helpful to remember the old adage: "Nine months on, nine months off." For many, it can take a full year or more for their body to return to a baseline state, particularly if they are exclusively nursing. Your timeline is unique, and reaching a "goal weight" is far less important than how you feel and the quality of your recovery.
               </p>
             </div>
           </div>
@@ -209,19 +256,12 @@ export default function BlogPost() {
           <div className="not-prose my-12 bg-white rounded-3xl p-8 border border-[#E8A0A8]/30 shadow-[0_4px_20px_rgba(232,160,168,0.1)] text-center space-y-4">
             <h3 className="text-xl font-serif text-[#3D2C2C]">Ready to find your safe clinical baseline?</h3>
             <p className="text-[#3D2C2C]/70">Take the guesswork out of your postpartum recovery journey.</p>
-            <Link 
-              href="/safe-weight-loss"
+            <Link
+              href="/safe-weight-loss/"
               className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all shadow-md hover:shadow-lg"
             >
               Use our Safe Weight Loss Rate Calculator →
             </Link>
-          </div>
-
-          {/* Disclaimer */}
-          <div className="not-prose p-6 bg-[#F9E4E8]/50 rounded-xl mt-12 mb-16">
-            <p className="text-sm text-[#3D2C2C]/60 italic">
-              <strong>Disclaimer:</strong> Always speak to your doctor or midwife before making changes to your diet after birth. This article provides general educational information and is not a substitute for medical advice.
-            </p>
           </div>
 
           <div className="border-t border-[#E8A0A8]/20 pt-8 mt-8 not-prose">
@@ -235,11 +275,11 @@ export default function BlogPost() {
         <footer className="border-t border-[#E8A0A8]/20 pt-12">
           <h3 className="text-2xl font-serif text-[#3D2C2C] mb-8">You might also like...</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link href="/blog/breastfeeding-calorie-needs" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
+            <Link href="/blog/breastfeeding-calorie-needs/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
               <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Nutrition</span>
               <h4 className="text-lg font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug">How Many Extra Calories Do You Need When Breastfeeding?</h4>
             </Link>
-            <Link href="/blog/returning-to-exercise-after-birth" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
+            <Link href="/blog/returning-to-exercise-after-birth/" className="group block p-6 bg-white rounded-2xl border border-[#E8A0A8]/10 hover:border-[#E8A0A8] hover:shadow-md transition-all">
               <span className="text-xs text-[#E8A0A8] font-bold uppercase tracking-wider font-label block mb-2">Fitness</span>
               <h4 className="text-lg font-serif text-[#3D2C2C] group-hover:text-[#E8A0A8] leading-snug">A Gentle Guide to Returning to Exercise After Birth</h4>
             </Link>
