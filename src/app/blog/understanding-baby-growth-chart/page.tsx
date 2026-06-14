@@ -297,10 +297,10 @@ export default function GrowthChartGuide() {
             </Link>
           </div>
 
-          {/* Disclaimer */}
-          <div className="not-prose p-6 bg-[#F9E4E8]/50 rounded-xl mt-12 mb-16">
+          {/* Clinical note */}
+          <div className="not-prose mt-12 mb-16" style={{borderLeft: '3px solid #E8A0A8', background: '#FFFDF9', padding: '16px 20px', borderRadius: '8px'}}>
             <p className="text-sm text-[#3D2C2C]/60 italic">
-              <strong>Disclaimer:</strong> Growth charts are one tool among many. Always discuss your baby's growth with your paediatrician or health visitor. The information here does not replace professional medical observation.
+              <strong>Clinical note:</strong> Growth charts are one tool among many. Always discuss your baby's growth with your paediatrician or health visitor. The information here does not replace professional medical observation.
             </p>
           </div>
 

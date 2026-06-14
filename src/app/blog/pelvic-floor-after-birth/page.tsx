@@ -317,10 +317,10 @@ export default function BlogPost() {
             </Link>
           </div>
 
-          {/* Disclaimer */}
-          <div className="not-prose p-6 bg-[#F9E4E8]/50 rounded-xl mt-12 mb-16">
+          {/* Clinical note */}
+          <div className="not-prose mt-12 mb-16" style={{borderLeft: '3px solid #E8A0A8', background: '#FFFDF9', padding: '16px 20px', borderRadius: '8px'}}>
             <p className="text-sm text-[#3D2C2C]/60 italic">
-              <strong>Disclaimer:</strong> If you are experiencing pain, leaking, or prolapse symptoms, please seek support from a qualified pelvic floor physiotherapist.
+              <strong>Clinical note:</strong> If you are experiencing pain, leaking, or prolapse symptoms, please seek support from a qualified pelvic floor physiotherapist.
             </p>
           </div>
 

@@ -113,7 +113,7 @@ export const weaningGuideContent = {
   ],
   cta: {
     text: "As you wean, your calorie needs will shift. Use our free Breastfeeding Calorie Calculator to understand exactly how your nutritional needs are changing.",
-    link: "/breastfeeding-calories",
+    link: "/breastfeeding-calories/",
     button: "Calculate My Needs →"
   },
   sources: [
