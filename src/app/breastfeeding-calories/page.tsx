@@ -22,18 +22,28 @@ export default function BreastfeedingCalories() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How many extra calories do I need while breastfeeding?",
-        "acceptedAnswer": { "@type": "Answer", "text": "A mother exclusively breastfeeding typically needs an extra 450 to 500 calories per day to maintain her energy and milk supply." }
+        "name": "How many calories should I eat per day while breastfeeding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most breastfeeding mothers need 2,200–2,500 calories per day depending on size and activity level. Exclusively breastfeeding adds roughly 500 calories above pre-pregnancy maintenance. Use the calculator for a personalised figure." }
       },
       {
         "@type": "Question",
-        "name": "Can I eat less to lose weight while nursing?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It is generally recommended not to drop below 1,800 calories per day while breastfeeding, as this can cause a significant decrease in milk supply and leave you feeling exhausted." }
+        "name": "Can I diet while breastfeeding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A moderate calorie reduction is possible after breastfeeding is well established, usually around 8–12 weeks postpartum. Most guidelines recommend not going below 1,500 kcal per day. Aggressive dieting risks reducing milk supply." }
       },
       {
         "@type": "Question",
-        "name": "What are the best foods for breastfeeding nutrition?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Prioritize nutrient-dense foods like leafy greens, lean proteins, oats, avocados, and salmon, which provide essential fats for your baby's brain development." }
+        "name": "Does eating more actually increase milk supply?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Eating enough protects your supply but does not increase it beyond your baby's demand. Milk supply is driven primarily by how frequently the breast is emptied. Under-eating can reduce supply, but eating above your needs will not produce more milk." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to eat differently when pumping compared to direct nursing?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Calorie needs are similar whether you nurse directly or pump, provided your total milk output is equivalent. The key variable is your total daily milk production volume, not the method of delivery." }
+      },
+      {
+        "@type": "Question",
+        "name": "When do breastfeeding calorie needs decrease?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Calorie needs reduce gradually as your baby introduces solid foods around 6 months. By 12 months, if nursing less frequently, your extra calorie requirement may be closer to 200–300 kcal above baseline rather than 500." }
       }
     ]
   };

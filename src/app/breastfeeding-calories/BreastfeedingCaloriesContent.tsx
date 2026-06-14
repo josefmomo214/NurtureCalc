@@ -168,17 +168,162 @@ export default function BreastfeedingCaloriesContent() {
               )}
             </div>
           </div>
-          <section className="mt-16 max-w-3xl space-y-6 text-[#3D2C2C]/80 leading-relaxed text-lg pb-12">
-            <h2 className="text-2xl font-serif text-[#3D2C2C]">How Breastfeeding Affects Your Calorie Needs</h2>
-            <p>
-              Producing human milk is one of the most energetically expensive things a body can do. It’s often compared to running a daily marathon. On average, a woman exclusively breastfeeding a newborn requires an additional 500 calories per day on top of her baseline needs. 
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">How many extra calories does breastfeeding burn?</h2>
+            <p className="text-[#3D2C2C]/80 leading-relaxed text-lg">
+              Exclusive breastfeeding burns approximately 400&ndash;500 extra calories per day above your baseline metabolic needs &mdash; roughly equivalent to an hour of moderate exercise, every single day. This figure comes from the energy cost of producing roughly 750&ndash;800ml of breast milk, which requires about 70 calories per 100ml produced. The calculator uses the Mifflin-St Jeor equation to find your Basal Metabolic Rate, adjusts for your activity level to get your Total Daily Energy Expenditure (TDEE), then adds the appropriate nursing bonus on top. Partial or mixed feeding adds approximately 300 extra calories per day, since you are producing less total milk volume.
             </p>
-            <p>
-              Our calculator first determines your Basal Metabolic Rate (BMR) using the Mifflin-St Jeor equation—a clinically recognized standard—and then adjusts for your activity level to find your Total Daily Energy Expenditure (TDEE). If you are nursing, we add a specific "nursing bonus" (500 kcal for exclusive, 300 kcal for partial) to ensure you aren't under-fueling during this critical time.
+          </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">How the calculator works</h2>
+            <p className="text-[#3D2C2C]/80 leading-relaxed text-lg">
+              The calculator takes your age, weight, height, activity level, and nursing status as inputs. It applies the Mifflin-St Jeor formula to calculate your BMR, multiplies by your activity factor to get TDEE, and adds 500 kcal for exclusive breastfeeding or 300 kcal for partial breastfeeding.
             </p>
-            <p>
-              Remember that these numbers are estimates. Factors like sleep quality, stress levels, and individual metabolic efficiency all play a role in how many calories your body actually processes. Listen to your hunger cues; they are your body's primary way of signaling a need for more fuel to sustain both you and your baby. Always discuss your nutritional needs with your doctor or a registered dietitian.
+            <p className="text-[#3D2C2C]/80 leading-relaxed text-lg">
+              The result is your estimated total daily calorie need &mdash; not a weight loss target. To understand safe weight loss alongside breastfeeding, see the{" "}
+              <Link href="/safe-weight-loss/" className="text-[#E8A0A8] underline underline-offset-2 hover:text-[#D58A92] transition-colors">Safe Postpartum Weight Loss Calculator</Link>.
             </p>
+          </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">Breastfeeding calorie needs by nursing stage</h2>
+            <div className="overflow-x-auto rounded-2xl">
+              <table className="w-full text-sm text-[#3D2C2C] min-w-[480px]">
+                <thead>
+                  <tr className="bg-[#E8A0A8]/20">
+                    <th className="text-left px-5 py-3 font-label text-xs font-bold uppercase tracking-wider">Nursing stage</th>
+                    <th className="text-left px-5 py-3 font-label text-xs font-bold uppercase tracking-wider">Extra calories needed</th>
+                    <th className="text-left px-5 py-3 font-label text-xs font-bold uppercase tracking-wider">Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-[#FFFDF9]">
+                    <td className="px-5 py-3 font-medium">Exclusive (0&ndash;6 months)</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">+500 kcal/day</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">Highest demand period</td>
+                  </tr>
+                  <tr className="bg-[#F9E4E8]/50">
+                    <td className="px-5 py-3 font-medium">Exclusive (6&ndash;12 months)</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">+400&ndash;500 kcal/day</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">Baby begins solids, milk volume may decrease</td>
+                  </tr>
+                  <tr className="bg-[#FFFDF9]">
+                    <td className="px-5 py-3 font-medium">Partial / mixed feeding</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">+300 kcal/day</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">Estimate &mdash; varies by ratio of breast to formula</td>
+                  </tr>
+                  <tr className="bg-[#F9E4E8]/50">
+                    <td className="px-5 py-3 font-medium">Pumping only</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">+400&ndash;500 kcal/day</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">Similar to direct nursing if output is equivalent</td>
+                  </tr>
+                  <tr className="bg-[#FFFDF9]">
+                    <td className="px-5 py-3 font-medium">Weaning (reducing feeds)</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">+100&ndash;200 kcal/day</td>
+                    <td className="px-5 py-3 text-[#3D2C2C]/70">Taper gradually as feeds reduce</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">What happens if you don&apos;t eat enough while breastfeeding?</h2>
+            <ul className="space-y-5 text-[#3D2C2C]/80 leading-relaxed text-lg">
+              <li>
+                <strong className="text-[#3D2C2C]">Milk supply drops</strong> &mdash; Your body treats milk production as optional when calorie intake falls too low. Dropping below approximately 1,500 kcal/day is the threshold most commonly associated with supply reduction.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Extreme fatigue</strong> &mdash; Breastfeeding already draws on your energy reserves. A calorie deficit compounds postpartum fatigue significantly and impairs cognitive function, making newborn care harder.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Nutrient depletion</strong> &mdash; Your body will prioritise the nutritional content of your milk over your own stores. Calcium, iodine, and vitamin D are particularly vulnerable &mdash; your bones and thyroid pay the cost of under-eating.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Slower postpartum recovery</strong> &mdash; Tissue repair after birth requires protein and micronutrients. Restricting calories too early diverts resources away from healing and toward basic metabolic survival.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Mood and mental health impact</strong> &mdash; Calorie restriction affects serotonin and dopamine regulation. Combined with postpartum hormonal shifts and sleep deprivation, under-eating increases the risk of postpartum anxiety and depression.
+              </li>
+            </ul>
+          </section>
+
+          <section className="max-w-3xl space-y-4">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">Practical tips for hitting your calorie target</h2>
+            <ol className="space-y-5 text-[#3D2C2C]/80 leading-relaxed text-lg list-decimal list-outside pl-5">
+              <li>
+                <strong className="text-[#3D2C2C]">Eat to hunger, not to a number.</strong> Postpartum hunger cues are your body&apos;s most accurate signal. Use the calculator result as a reference floor, not a ceiling to avoid.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Prioritise calorie density over volume.</strong> Full-fat dairy, nuts, avocado, eggs, and oily fish deliver significant calories in small amounts &mdash; practical when you&apos;re eating one-handed.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Hydrate first.</strong> Dehydration is frequently mistaken for hunger postpartum. Drink a large glass of water at every feed, then eat if you are still hungry.
+              </li>
+              <li>
+                <strong className="text-[#3D2C2C]">Do not skip meals to compensate for snacks.</strong> Irregular eating patterns destabilise blood sugar, which worsens fatigue and mood swings &mdash; two things that are already difficult postpartum.
+              </li>
+            </ol>
+            <p className="text-[#3D2C2C]/80 leading-relaxed text-lg">
+              For broader guidance on eating well after birth, see our{" "}
+              <Link href="/blog/postpartum-nutrition-guide/" className="text-[#E8A0A8] underline underline-offset-2 hover:text-[#D58A92] transition-colors">postpartum nutrition guide</Link>.
+            </p>
+          </section>
+
+          <section className="max-w-3xl space-y-4 pb-12">
+            <h2 className="text-2xl font-serif text-[#3D2C2C]">Frequently asked questions</h2>
+            <div className="space-y-3">
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  How many calories should I eat per day while breastfeeding?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  Most breastfeeding mothers need 2,200&ndash;2,500 calories per day, depending on their size and activity level. Exclusively breastfeeding adds roughly 500 calories above your pre-pregnancy maintenance needs. Use the calculator above for a figure personalised to your body.
+                </div>
+              </details>
+
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  Can I diet while breastfeeding?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  A moderate calorie reduction is possible after breastfeeding is well established, usually around 8&ndash;12 weeks postpartum. Most guidelines recommend not going below 1,500 kcal per day while breastfeeding. Aggressive dieting before this point risks reducing milk supply and slowing recovery.
+                </div>
+              </details>
+
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  Does eating more actually increase milk supply?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  Eating enough protects your supply &mdash; it does not increase it beyond your baby&apos;s demand. Milk supply is driven primarily by how frequently the breast is emptied. Under-eating can reduce supply, but eating above your needs will not produce more milk than your baby requires.
+                </div>
+              </details>
+
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  Do I need to eat differently when pumping compared to direct nursing?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  Calorie needs are similar whether you nurse directly or pump, provided your total milk output is equivalent. The key variable is your total daily milk production volume, not the method of delivery.
+                </div>
+              </details>
+
+              <details className="bg-[#F9E4E8]/50 rounded-2xl overflow-hidden group">
+                <summary className="cursor-pointer px-6 py-4 font-serif text-[#3D2C2C] text-lg flex items-center justify-between select-none list-none [&::-webkit-details-marker]:hidden">
+                  When do breastfeeding calorie needs decrease?
+                  <span className="text-[#E8A0A8] ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180">▾</span>
+                </summary>
+                <div className="px-6 pb-5 text-[#3D2C2C]/80 leading-relaxed">
+                  Calorie needs begin to reduce gradually as your baby introduces solid foods around 6 months and draws less milk from you. By 12 months, if you are nursing less frequently, your extra calorie requirement may be closer to 200&ndash;300 kcal above baseline rather than 500.
+                </div>
+              </details>
+            </div>
           </section>
         </div>
 
