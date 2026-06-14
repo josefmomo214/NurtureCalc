@@ -103,16 +103,15 @@ Only 2 H2s are question-format. The others ("What the Research Says", "How Calor
 ## breastfeeding-calorie-needs Migration
 
 This post needs a `content.ts` created with the following fields:
-- `header` — metadata (title, author, dates, category, readTime)
-- `h2Faqs` — 2 entries above
-- `faqs` — the existing 4 Q&As from the hardcoded HTML FAQ section (unchanged, still rendered in HTML)
+- `header` — metadata (title, author, dates, category, readTime) used by the Article schema
+- `h2Faqs` — 2 entries above, used by the FAQPage schema
 
 `page.tsx` is updated to:
 1. Import from `./content`
-2. Build `articleJsonLd` from `content.ts` data (already present inline; just move the source)
+2. Build `articleJsonLd` from `content.header` data (currently hardcoded inline; move the values to content.ts)
 3. Build `faqJsonLd` from `c.h2Faqs`
 
-The page body JSX is not changed.
+The page body JSX — including the hardcoded HTML FAQ accordion — is not changed. The 4 Q&As remain as inline JSX; they do not move to `content.ts`.
 
 ## Google Compliance Rules
 

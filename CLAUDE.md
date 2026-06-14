@@ -35,8 +35,10 @@ Each calculator lives at `src/app/<name>/`. Interactive state lives in a `<Name>
 ### Blog Pattern
 
 Blog article routes are under `src/app/blog/<slug>/`. Each post has:
-- `content.ts` — a typed TS object holding all text, FAQs, related posts, sources, and CTA copy (keeps page.tsx clean).
-- `page.tsx` — a server component using `generateMetadata()` (not a static `metadata` export) plus inline Article and FAQPage JSON-LD structured data.
+- `content.ts` — a typed TS object with at minimum `header` (headline, description, datePublished, dateModified) and `h2Faqs` (question-format H2 headings used as FAQPage schema sources). May also hold `faqs`, `relatedPosts`, `sources`, and CTA copy.
+- `page.tsx` — a server component using `generateMetadata()` (the current preferred pattern) plus inline Article and FAQPage JSON-LD. Older posts use `export const metadata` — new posts should use `generateMetadata()`.
+
+The `h2Faqs` array feeds the FAQPage JSON-LD schema. Answers must be plain text only (no HTML/markdown/links) and under 300 characters to satisfy Google rich-result requirements. The HTML FAQ accordion sections in the page body pull from a separate `faqs` array in `content.ts` and are unchanged by this.
 
 The registry in `src/lib/blog-posts.ts` drives the blog index listing — add the metadata object there when creating a new post.
 
@@ -51,8 +53,19 @@ Full spec is in `DESIGN.md`. Key rules:
 
 ## SEO Conventions
 
-- Calculator pages export a static `Metadata` object; blog pages use `generateMetadata()`.
+- Calculator pages export a static `Metadata` object; blog pages use `generateMetadata()` (preferred) or `export const metadata`.
 - Every page includes `title`, `description`, `alternates.canonical`, and `openGraph`.
 - **Canonical URLs have no trailing slash** (e.g. `canonical: '/blog/some-post'`). The Express server redirects any trailing-slash URL to the non-slash version (301).
 - **`<Link>` hrefs use a trailing slash** (e.g. `href="/blog/some-post/"`) so Next.js resolves the static export correctly before the server redirect fires.
 - Structured data is injected as `<script type="application/ld+json">` inline in page components, not via a helper.
+- **Calculator pages** include three JSON-LD blocks: `FAQPage`, `WebApplication` (with `applicationCategory: "HealthApplication"`, `operatingSystem: "Web"`, free offer), and `BreadcrumbList`.
+- **Blog pages** include two JSON-LD blocks: `Article` (with `medicalAudience`) and `FAQPage` sourced from `c.h2Faqs`.
+
+## Design Notes
+
+- `font-label` is the Tailwind utility for Plus Jakarta Sans — use it for uppercase labels, metadata text, button text, and category chips.
+- Every blog post must include a medical disclaimer block. See any existing post for the standard copy and styling.
+
+## Docs
+
+Design decisions and SEO schema specs are recorded in `docs/superpowers/specs/`. Check there before re-deriving the intent behind patterns like `h2Faqs`.

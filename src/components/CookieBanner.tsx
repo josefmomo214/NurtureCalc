@@ -20,6 +20,11 @@ export default function CookieBanner() {
     setIsVisible(false);
   };
 
+  const handleDecline = () => {
+    localStorage.setItem("nurturecalc_cookie_consent", "declined");
+    setIsVisible(false);
+  };
+
   if (!isVisible) return null;
 
   return (
@@ -30,9 +35,15 @@ export default function CookieBanner() {
             We use cookies to personalise content and ads, and to analyse our traffic. By clicking Accept you consent to our use of cookies. Read our <Link href="/privacy-policy" className="underline hover:text-[#E8A0A8] transition-colors">Privacy Policy</Link> to learn more.
           </p>
         </div>
-        
-        <div className="flex items-center gap-4 shrink-0">
-          <Button 
+
+        <div className="flex items-center gap-3 shrink-0">
+          <button
+            onClick={handleDecline}
+            className="min-h-[48px] px-6 rounded-full border-2 border-[#E8A0A8] bg-[#F9E4E8] text-[#3D2C2C] font-medium text-sm whitespace-nowrap hover:bg-[#E8A0A8]/30 transition-colors"
+          >
+            Decline
+          </button>
+          <Button
             onClick={handleAccept}
             className="bg-[#E8A0A8] hover:bg-[#D58A92] text-white whitespace-nowrap"
           >
