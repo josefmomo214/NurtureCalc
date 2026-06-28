@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Noto_Serif, Be_Vietnam_Pro, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -63,7 +64,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body 
+      <head>
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3710437974251848"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body
         className={`${notoSerif.variable} ${beVietnamPro.variable} ${plusJakartaSans.variable} min-h-full flex flex-col antialiased`}
         suppressHydrationWarning={true}
       >
