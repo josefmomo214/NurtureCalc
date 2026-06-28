@@ -42,6 +42,15 @@ The `h2Faqs` array feeds the FAQPage JSON-LD schema. Answers must be plain text 
 
 The registry in `src/lib/blog-posts.ts` drives the blog index listing — add the metadata object there when creating a new post.
 
+### Programmatic SEO Pages ("Template B")
+
+Condition-specific landing pages (e.g. `safe-weight-loss-c-section`, `exercise-timeline-episiotomy`) are generated from a single shared template rather than hand-built per route:
+- `src/data/condition-pages.ts` — array of `ConditionPage` objects (one per slug) holding all copy: intro, key points, FAQs, related slugs, and the calculator it deep-links to.
+- `src/components/ConditionPageTemplate.tsx` — the shared rendering component used by every condition page.
+- Each route's `page.tsx` (e.g. `src/app/safe-weight-loss-c-section/page.tsx`) is a thin wrapper: it looks up its entry from `conditionPages` by `slug`, builds `generateMetadata()` + `FAQPage`/`BreadcrumbList` JSON-LD from that entry, and renders `<ConditionPageTemplate data={page} />`.
+
+To add a new condition page: append an entry to `conditionPages`, then create a route directory whose `page.tsx` follows the existing pattern (copy one of the files above and swap the slug).
+
 ## Design System
 
 Full spec is in `DESIGN.md`. Key rules:

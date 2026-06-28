@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   },
   other: {
     'linkedin:company': 'nurturecalc',
+    'msvalidate.01': '8FF4475B6E08FA0040FE6630EB9070D9',
   },
   twitter: {
     card: 'summary_large_image',
