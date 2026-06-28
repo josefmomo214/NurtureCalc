@@ -31,7 +31,7 @@ jobs:
           protocol: sftp
           server: ${{ secrets.FTP_HOST }}
           port: 65002
-          username: ${{ secrets.FTP_USER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASS }}
           local-dir: ./out/
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
