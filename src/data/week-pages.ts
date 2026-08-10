@@ -420,4 +420,406 @@ export const weekPages: WeekPage[] = [
     ],
     breadcrumbLabel: "Week 6 Postpartum",
   },
+  {
+    slug: "postpartum-week-7",
+    weekNumber: 7,
+    metaTitle: "7 Weeks Postpartum: What to Expect | Recovery Guide",
+    metaDescription:
+      "7 weeks postpartum — life after your checkup, easing back into light activity, and realistic expectations for energy and mood.",
+    h1: "7 Weeks Postpartum: What to Expect",
+    intro:
+      "With your six-week checkup behind you, week seven often feels like the start of a new phase — less defined by acute medical milestones and more by the slower work of rebuilding strength, stamina, and a sense of normalcy. It's common to feel pressure, internal or external, to be 'back' by now. The more useful frame is that you're at the beginning of a longer rebuilding phase, not the end of recovery.",
+    physicalRecovery: [
+      {
+        heading: "Light activity becomes appropriate",
+        body: "If you received clearance at your checkup and have no complications, gentle walking, light stretching, and pelvic floor-safe movement are generally appropriate now. This is not the same as returning to pre-pregnancy exercise intensity.",
+      },
+      {
+        heading: "Core awareness matters more now",
+        body: "If you haven't checked for diastasis recti (abdominal separation), now is a good time. Understanding your starting point prevents jumping into core exercises that could worsen an existing gap.",
+      },
+      {
+        heading: "C-section fascia is still early in healing",
+        body: "Even with a well-healed external scar, the fascia is only about 7 weeks into a 6–12 month healing process. This is why heavy lifting and high-impact exercise remain restricted regardless of how capable you feel.",
+      },
+      {
+        heading: "Hormone levels are shifting again",
+        body: "If not breastfeeding, oestrogen is returning toward baseline, which can affect mood, joint stability, and vaginal dryness. If breastfeeding, these changes are more gradual and tied to nursing frequency.",
+      },
+    ],
+    emotionalWellbeing:
+      "The gap between 'medically cleared' and 'feeling like yourself' can be genuinely disorienting at this stage. It's common to feel frustrated by a body that doesn't yet do what it used to, while also processing an identity shift that has nothing to do with physical recovery. Both are normal. If persistent low mood, anxiety, or intrusive thoughts are present, these don't need to wait for a future appointment — reach out to your provider now.",
+    whatsNormal: [
+      "Feeling capable of light activity but tiring quickly",
+      "Ongoing uncertainty about what's actually safe to do",
+      "Some vaginal dryness, especially if breastfeeding",
+      "Continued adjustment to sleep and routine",
+      "A mix of confidence and frustration about your body",
+      "Joint or ligament looseness, especially if breastfeeding (relaxin remains elevated)",
+    ],
+    warningSigns: [
+      "New or worsening pelvic pain, pressure, or heaviness",
+      "Any leaking of urine or stool",
+      "Pain during light activity that doesn't resolve with rest",
+      "Persistent low mood, anxiety, or difficulty bonding",
+      "Signs of infection anywhere: fever, redness, unusual discharge",
+      "Abdominal doming or coning during any movement",
+    ],
+    calculatorHighlight: {
+      calculatorName: "Return-to-Exercise Timeline Tool",
+      calculatorUrl: "/exercise-timeline/",
+      reason:
+        "Now that you're past your 6-week checkup, get a clear, phase-by-phase plan for rebuilding activity safely based on your specific delivery type.",
+    },
+    faqs: [
+      {
+        q: "Why do I still feel weak at 7 weeks postpartum even though I was cleared?",
+        a: "Medical clearance confirms you're free of acute complications, not that your strength and endurance have returned. Muscles, including the pelvic floor and core, take months of gradual rebuilding after the deconditioning of pregnancy and early postpartum recovery.",
+      },
+      {
+        q: "Can I check for diastasis recti myself?",
+        a: "A basic self-check involves lying on your back, knees bent, and feeling along your midline above and below your belly button while lifting your head slightly, checking for a gap and its depth. This gives a general sense, but a physical therapist can assess more precisely and guide appropriate exercises.",
+      },
+      {
+        q: "Is it normal to have vaginal dryness at 7 weeks postpartum?",
+        a: "Yes, especially if breastfeeding. Lower oestrogen levels during lactation commonly cause vaginal dryness, which can affect comfort during intimacy. This is a normal hormonal effect and improves as breastfeeding frequency decreases, and can be managed with lubricant in the meantime.",
+      },
+    ],
+    breadcrumbLabel: "Week 7 Postpartum",
+  },
+  {
+    slug: "postpartum-week-8",
+    weekNumber: 8,
+    metaTitle: "8 Weeks Postpartum: What to Expect | Recovery Guide",
+    metaDescription:
+      "8 weeks postpartum — pelvic floor progress, scar healing, breastfeeding rhythm, and honest expectations for how far along you should be.",
+    h1: "8 Weeks Postpartum: What to Expect",
+    intro:
+      "Two months in, many mothers start comparing themselves to a vague, often unrealistic idea of where they 'should' be. Actual recovery timelines vary enormously based on delivery type, complications, age, and overall health — there is no universal week-8 benchmark that applies to everyone. This week is a good point to focus on trends rather than comparisons: is your pain decreasing over time, is your energy trending upward, even if slowly.",
+    physicalRecovery: [
+      {
+        heading: "Scar tissue can now be massaged",
+        body: "If you had a C-section or significant perineal tearing, and the wound is fully closed with no scabbing, scar massage can typically begin around now. This helps prevent adhesions that can restrict movement and cause pain later.",
+      },
+      {
+        heading: "Pelvic floor rehabilitation should be active, not passive",
+        body: "If you haven't already sought a pelvic floor physiotherapy assessment, especially with any symptoms, 8 weeks is a reasonable point to actively pursue this rather than waiting to see if things improve on their own.",
+      },
+      {
+        heading: "Breastfeeding is typically well-established",
+        body: "Milk supply and feeding patterns are usually more predictable by now. If you're still struggling with supply, latch, or pain, ongoing support from a lactation consultant remains valuable — this doesn't have to resolve alone.",
+      },
+      {
+        heading: "Low-impact exercise may be appropriate",
+        body: "Swimming, once any wounds are fully healed, and stationary cycling are often reasonable low-impact options around this stage for mothers progressing well, though individual clearance always takes priority over general timelines.",
+      },
+    ],
+    emotionalWellbeing:
+      "By 8 weeks, the initial surge of support has usually faded significantly, and many mothers describe this stretch as quietly harder than the first weeks, precisely because the acute crisis energy has passed but full capacity hasn't returned. This mismatch between reduced support and ongoing significant needs is a common and under-discussed part of postpartum life. Naming it can help — both to yourself and to people around you who may assume you're 'through the hard part.'",
+    whatsNormal: [
+      "Uneven progress — some days feeling stronger, others not",
+      "Scar tissue that feels tight or numb",
+      "A more predictable but still demanding feeding routine",
+      "Reduced but present fatigue",
+      "Comparing your recovery to others' and feeling behind",
+      "Renewed interest in some pre-pregnancy activities, tempered by capacity",
+    ],
+    warningSigns: [
+      "Pelvic floor symptoms that haven't improved or are worsening",
+      "Persistent pain during light activity",
+      "Scar pain that is worsening rather than improving",
+      "Signs of postpartum depression or anxiety",
+      "Ongoing breastfeeding pain that hasn't resolved with support",
+      "Any new bleeding after it had stopped",
+    ],
+    calculatorHighlight: {
+      calculatorName: "Pelvic Floor Recovery Estimator",
+      calculatorUrl: "/pelvic-floor-recovery/",
+      reason:
+        "If you haven't checked in on your pelvic floor recovery stage yet, 8 weeks is a good point to get a clear picture and understand whether a specialist referral makes sense.",
+    },
+    faqs: [
+      {
+        q: "Is it normal to still have scar pain at 8 weeks postpartum?",
+        a: "Some tightness, numbness, or occasional discomfort at a C-section or perineal scar is common at this stage, and scar massage can help. Worsening pain, or pain that limits daily activity, should be discussed with your provider or a pelvic floor physiotherapist.",
+      },
+      {
+        q: "When should I see a pelvic floor physiotherapist?",
+        a: "If you have any leaking, heaviness, pain, or uncertainty about your pelvic floor function, seeking an assessment around 8 weeks — rather than waiting to see if symptoms resolve alone — generally leads to better outcomes. Many countries offer this on public healthcare; ask your provider about access.",
+      },
+      {
+        q: "Why do I feel like I'm not progressing at 8 weeks postpartum?",
+        a: "Recovery is rarely linear — plateaus and even temporary setbacks are common, often linked to activity level, sleep, and stress rather than a lack of actual healing. Focus on the broader trend over weeks rather than day-to-day comparisons, and raise any specific concerns with your provider.",
+      },
+    ],
+    breadcrumbLabel: "Week 8 Postpartum",
+  },
+  {
+    slug: "postpartum-week-9",
+    weekNumber: 9,
+    metaTitle: "9 Weeks Postpartum: What to Expect | Recovery Guide",
+    metaDescription:
+      "9 weeks postpartum — building activity gradually, breastfeeding calorie needs, and navigating the return of energy and routine.",
+    h1: "9 Weeks Postpartum: What to Expect",
+    intro:
+      "By nine weeks, many mothers are settling into a more established rhythm — not necessarily easier, but more predictable. This is often a good stretch to start thinking more intentionally about nutrition, gradual activity building, and longer-term wellbeing, rather than just getting through each day, if your circumstances allow for that shift in focus.",
+    physicalRecovery: [
+      {
+        heading: "Gradual activity progression",
+        body: "If you've been walking and doing gentle movement without symptoms, this is often an appropriate stage to slightly increase duration or introduce very light resistance work, provided you remain symptom-free — no leaking, heaviness, or pain.",
+      },
+      {
+        heading: "Core rehabilitation continues",
+        body: "If diastasis recti was identified earlier, targeted exercises — typically starting with deep core activation and progressing slowly — are appropriate now under guidance from a physical therapist or a well-designed postpartum program.",
+      },
+      {
+        heading: "Nutrition needs remain elevated if breastfeeding",
+        body: "Calorie and nutrient needs stay significantly above pre-pregnancy baseline while breastfeeding. It's easy to under-eat during this busy stretch, which can affect both energy and milk supply.",
+      },
+      {
+        heading: "Sleep patterns may be shifting",
+        body: "Some babies begin longer stretches of nighttime sleep around this age, which can meaningfully affect maternal energy levels, though every baby's pattern varies significantly.",
+      },
+    ],
+    emotionalWellbeing:
+      "As routines become more established, some mothers notice more mental space to reflect on the birth experience itself, which can bring up unprocessed emotions, even after a straightforward delivery. This is common and doesn't necessarily indicate a problem, but if thoughts about the birth are distressing, intrusive, or interfering with daily life, this can be a sign of postpartum PTSD or ongoing anxiety worth discussing with your provider.",
+    whatsNormal: [
+      "A more predictable, though still demanding, daily rhythm",
+      "Gradually increasing physical capacity",
+      "Renewed appetite changes as activity increases",
+      "Processing birth experience emotions, sometimes unexpectedly",
+      "Continued breastfeeding adjustments if applicable",
+      "Variable energy depending on baby's sleep patterns",
+    ],
+    warningSigns: [
+      "Symptoms (leaking, pain, heaviness) that appear with increased activity",
+      "Persistent under-eating or unintentional rapid weight loss",
+      "Distressing or intrusive thoughts about the birth",
+      "Any new physical symptom that concerns you",
+      "Signs of low milk supply if breastfeeding: reduced wet nappies, poor weight gain",
+      "Ongoing sleep issues beyond what's explained by newborn care",
+    ],
+    calculatorHighlight: {
+      calculatorName: "Breastfeeding Calorie Calculator",
+      calculatorUrl: "/breastfeeding-calories/",
+      reason:
+        "As routines settle, it's a good time to check whether you're actually eating enough to support both breastfeeding and your own energy needs.",
+    },
+    faqs: [
+      {
+        q: "How much activity is safe at 9 weeks postpartum?",
+        a: "If you're symptom-free with current activity, gradual increases in walking duration or introducing light resistance work is often appropriate, but this depends entirely on your individual recovery, delivery type, and any complications. When in doubt, check with your provider or a pelvic floor physiotherapist before progressing.",
+      },
+      {
+        q: "Is it normal to think about my birth experience more at 9 weeks?",
+        a: "Yes, as the initial intensity of newborn care settles slightly, some mothers find more mental space to process the birth, which can bring up emotions even after a straightforward delivery. This becomes a concern if thoughts are distressing, intrusive, or interfering with daily functioning — that warrants talking to your provider.",
+      },
+      {
+        q: "Why is my milk supply lower some days at 9 weeks?",
+        a: "Milk supply can fluctuate with stress, hydration, sleep, and calorie intake. Occasional fluctuation is normal; a sustained drop alongside reduced wet nappies or poor infant weight gain should be discussed with a lactation consultant or your doctor.",
+      },
+    ],
+    breadcrumbLabel: "Week 9 Postpartum",
+  },
+  {
+    slug: "postpartum-week-10",
+    weekNumber: 10,
+    metaTitle: "10 Weeks Postpartum: What to Expect | Recovery Guide",
+    metaDescription:
+      "10 weeks postpartum — return to work considerations, sustained recovery progress, and preparing for the 12-week comprehensive visit.",
+    h1: "10 Weeks Postpartum: What to Expect",
+    intro:
+      "Ten weeks often coincides with practical life decisions coming into focus — for many, the return to work is approaching, whether by choice or circumstance. This adds a layer of planning on top of ongoing physical and emotional recovery. It's a good week to be honest about what support you'll need, rather than assuming you should manage every transition independently.",
+    physicalRecovery: [
+      {
+        heading: "Return-to-work physical considerations",
+        body: "If returning to work soon, think through practical needs: pumping schedule and space if breastfeeding, physical demands of your role relative to your current capacity, and realistic expectations for the adjustment period.",
+      },
+      {
+        heading: "Continued strength building",
+        body: "If progressing well and symptom-free, this is often a stage where slightly more structured strength work becomes appropriate, always guided by your specific recovery rather than a generic timeline.",
+      },
+      {
+        heading: "Pumping and milk supply logistics",
+        body: "If you'll be pumping at work, establishing a pumping routine now — rather than waiting until your first day back — helps identify and address supply or logistics issues with less pressure.",
+      },
+      {
+        heading: "Ongoing pelvic floor and core work",
+        body: "Consistency matters more than intensity at this stage. Regular, appropriate pelvic floor and core exercises continue to build function gradually.",
+      },
+    ],
+    emotionalWellbeing:
+      "Anticipating a return to work — or any major routine change — can bring up complicated feelings: guilt, relief, anxiety, or grief, sometimes all at once. These reactions are common and don't indicate you're making the wrong choice; they reflect a genuinely significant transition. If anxiety about returning to work feels overwhelming rather than just uncomfortable, it's worth discussing with your provider or a therapist.",
+    whatsNormal: [
+      "Mixed emotions about upcoming transitions",
+      "Increasing physical capacity, with some day-to-day variability",
+      "Practical logistics planning taking up mental space",
+      "Continued breastfeeding or pumping adjustments",
+      "A sense of moving into a new, more established phase",
+      "Some anxiety about work-life balance ahead",
+    ],
+    warningSigns: [
+      "Overwhelming anxiety about returning to work that feels unmanageable",
+      "Any physical symptom that hasn't improved over recent weeks",
+      "Milk supply concerns as you consider pumping logistics",
+      "Persistent sadness or difficulty finding enjoyment in things",
+      "Physical pain that limits your ability to plan for work demands",
+      "Sleep issues significantly beyond typical newborn-related disruption",
+    ],
+    calculatorHighlight: {
+      calculatorName: "Breastfeeding Calorie Calculator",
+      calculatorUrl: "/breastfeeding-calories/",
+      reason:
+        "If you're planning to continue breastfeeding or pumping after returning to work, understanding your calorie needs helps you maintain supply through the transition.",
+    },
+    faqs: [
+      {
+        q: "How do I prepare to pump at work?",
+        a: "Establish your pumping routine before your first day back, know your workplace's pumping space and break policies, and build a small frozen milk reserve if possible. Many countries have legal protections for pumping breaks and space — it's worth knowing your rights in advance.",
+      },
+      {
+        q: "Is it normal to feel anxious about returning to work at 10 weeks?",
+        a: "Yes, this is an extremely common reaction to a major transition, regardless of how you feel about your job itself. If the anxiety feels overwhelming or is affecting your ability to function, talking to your provider or a therapist can help you navigate it.",
+      },
+      {
+        q: "Will my milk supply drop when I go back to work?",
+        a: "It can, particularly if pumping is less effective than direct nursing or if stress and schedule changes affect your routine. Establishing a consistent pumping schedule and staying well hydrated and nourished helps protect supply during the transition.",
+      },
+    ],
+    breadcrumbLabel: "Week 10 Postpartum",
+  },
+  {
+    slug: "postpartum-week-11",
+    weekNumber: 11,
+    metaTitle: "11 Weeks Postpartum: What to Expect | Recovery Guide",
+    metaDescription:
+      "11 weeks postpartum — nearing the 12-week mark, continued physical progress, and what long-term recovery still looks like ahead.",
+    h1: "11 Weeks Postpartum: What to Expect",
+    intro:
+      "As you approach the twelve-week mark — the outer boundary of ACOG's recommended comprehensive postpartum visit window — it's worth taking stock. Not to rush recovery, but to notice genuine progress that can be hard to see day to day, and to identify anything that still needs attention before your care plan potentially shifts to a lower-frequency follow-up rhythm.",
+    physicalRecovery: [
+      {
+        heading: "Taking stock of recovery so far",
+        body: "Compare how you feel now to four or eight weeks ago rather than to a pre-pregnancy baseline. Most mothers find meaningful, if uneven, progress across bleeding resolution, incision healing, energy, and strength when viewed over this longer window.",
+      },
+      {
+        heading: "Identifying unresolved issues",
+        body: "If you still have pelvic floor symptoms, persistent pain, unresolved mood concerns, or breastfeeding difficulties, this is an important week to actively seek support rather than assuming these will resolve with more time alone.",
+      },
+      {
+        heading: "Building toward more structured activity",
+        body: "For mothers progressing well, this stage often supports a return to more varied exercise — provided pelvic floor function is solid and any core issues are being appropriately addressed.",
+      },
+      {
+        heading: "Longer-term breastfeeding considerations",
+        body: "If continuing to breastfeed long-term, this is a natural point to think about sustainable routines, rather than the intensive early establishment phase, and to revisit your nutritional needs accordingly.",
+      },
+    ],
+    emotionalWellbeing:
+      "Approaching the three-month mark can bring a mix of pride in how far you've come and frustration about what still feels unresolved. Both can coexist. If you've been managing mood symptoms independently and they haven't meaningfully improved by now, this is a good time to seek support rather than waiting further — postpartum depression and anxiety can persist well beyond the early months without treatment, and improve significantly with it.",
+    whatsNormal: [
+      "Noticeable cumulative progress alongside lingering issues",
+      "A mix of confidence and ongoing uncertainty",
+      "Continued fatigue, though usually more manageable",
+      "Renewed focus on longer-term routines and goals",
+      "Variable feelings about the pace of recovery",
+      "Physical capacity that's meaningfully improved from early weeks",
+    ],
+    warningSigns: [
+      "Pelvic floor or core symptoms that haven't improved with appropriate exercise",
+      "Persistent mood symptoms that haven't been addressed",
+      "Ongoing pain of any kind that limits daily function",
+      "Breastfeeding difficulties that haven't resolved with support",
+      "Any symptom you've been putting off mentioning to your provider",
+      "A sense that something isn't right, even without a specific symptom",
+    ],
+    calculatorHighlight: {
+      calculatorName: "Return-to-Exercise Timeline Tool",
+      calculatorUrl: "/exercise-timeline/",
+      reason:
+        "Approaching 12 weeks is a natural checkpoint to reassess where you are in your return-to-exercise progression and what phase comes next.",
+    },
+    faqs: [
+      {
+        q: "What should I have accomplished by 11 weeks postpartum?",
+        a: "There's no universal checklist — progress varies enormously by individual circumstances, delivery type, and complications. A more useful marker is whether you're seeing improvement over recent weeks, even if slow, and whether specific symptoms are being actively addressed rather than just endured.",
+      },
+      {
+        q: "Is it too late to get help for postpartum depression at 11 weeks?",
+        a: "No. Postpartum depression and anxiety can be effectively treated regardless of when you seek help, whether that's weeks or months after birth. There is no expiration window on getting support, and earlier treatment does tend to lead to faster improvement.",
+      },
+      {
+        q: "Should I still be resting a lot at 11 weeks postpartum?",
+        a: "Most mothers have more capacity by this stage than in the early weeks, but full energy restoration, especially while breastfeeding and managing disrupted sleep, often takes longer. Listening to your body's signals remains more useful than a fixed expectation.",
+      },
+    ],
+    breadcrumbLabel: "Week 11 Postpartum",
+  },
+  {
+    slug: "postpartum-week-12",
+    weekNumber: 12,
+    metaTitle: "12 Weeks Postpartum: What to Expect | Recovery Guide",
+    metaDescription:
+      "12 weeks postpartum — the fourth trimester milestone, comprehensive checkup guidance, and an honest look at what recovery still involves beyond this point.",
+    h1: "12 Weeks Postpartum: What to Expect",
+    intro:
+      "Twelve weeks marks the end of what's commonly called the 'fourth trimester' and the outer boundary of ACOG's recommended window for a comprehensive postpartum visit. It's a meaningful milestone, but not a finish line. Pelvic floor and core strength, hormonal rebalancing, and emotional adjustment often continue well beyond this point — this week is a good moment to shift from acute recovery mode into a longer-term view of ongoing health.",
+    physicalRecovery: [
+      {
+        heading: "The comprehensive postpartum visit",
+        body: "ACOG recommends this visit occur no later than 12 weeks postpartum, covering physical recovery, mood, sleep, feeding, contraception, chronic condition management, and future pregnancy planning if relevant. If you haven't had this visit yet, prioritise scheduling it now.",
+      },
+      {
+        heading: "Where fascia and pelvic floor healing actually stand",
+        body: "If you had a C-section, the fascia is roughly a quarter of the way through its full 6–12 month healing timeline. Pelvic floor and core strength, for most mothers, continue improving for 6 months to a year with appropriate rehabilitation.",
+      },
+      {
+        heading: "A realistic view of 'recovered'",
+        body: "Many mothers feel largely recovered by 12 weeks, especially with an uncomplicated birth and good support. Others, particularly after complications, C-section, or significant pelvic floor issues, are still in active recovery — both are entirely normal, and neither reflects anything about how well you're doing.",
+      },
+      {
+        heading: "Long-term health beyond the fourth trimester",
+        body: "This is a reasonable point to think about longer-term wellbeing: sustainable exercise routines, nutrition that supports your actual life rather than the acute postpartum period, and ongoing mental health support if needed.",
+      },
+    ],
+    emotionalWellbeing:
+      "The 'fourth trimester' framework, useful as it is, can create pressure to feel resolved by 12 weeks specifically. There is no biological switch that flips at this point — healing and adjustment continue on their own timeline for each person. If you're not where you expected to be, that's information worth sharing with your provider, not a personal failing. If you are feeling well, that's equally valid and doesn't require justification either.",
+    whatsNormal: [
+      "A wide range of how 'recovered' you feel, all of it valid",
+      "Ongoing pelvic floor or core work continuing for months yet",
+      "Ongoing breastfeeding, if applicable, well into an established rhythm",
+      "Continued emotional adjustment to your new normal",
+      "A mix of relief and uncertainty about what comes next",
+      "Physical capacity that's substantially improved but perhaps not fully back to baseline",
+    ],
+    warningSigns: [
+      "Any symptom you've been managing alone without improvement",
+      "Persistent mood symptoms that haven't been assessed",
+      "Pelvic floor symptoms — leaking, heaviness, pain — that haven't resolved",
+      "Not having had a comprehensive postpartum visit yet",
+      "Physical pain that's limiting your daily life",
+      "A sense that something isn't right, even without being able to name it specifically",
+    ],
+    calculatorHighlight: {
+      calculatorName: "Safe Postpartum Weight Loss Calculator",
+      calculatorUrl: "/safe-weight-loss/",
+      reason:
+        "By 12 weeks, many mothers are cleared to think about weight loss more intentionally. Find a safe, personalised rate that supports both your goals and ongoing recovery.",
+    },
+    faqs: [
+      {
+        q: "What happens at the 12-week comprehensive postpartum visit?",
+        a: "This visit typically covers a full physical recovery check, mood and mental health screening, sleep and feeding review, contraception planning, management of any chronic conditions, and discussion of future pregnancy plans if relevant. It's more thorough than the earlier 6-week check.",
+      },
+      {
+        q: "Should I feel fully recovered by 12 weeks postpartum?",
+        a: "Not necessarily. While many mothers feel substantially recovered by this point, pelvic floor and core strength, hormonal rebalancing, and emotional adjustment commonly continue for 6 months to a year. Feeling not fully recovered at 12 weeks is common and not a cause for concern on its own.",
+      },
+      {
+        q: "Is it normal to still be building strength at 12 weeks postpartum?",
+        a: "Yes. Full recovery of pelvic floor and core function typically takes 6 months to a year with appropriate rehabilitation, particularly after a C-section or significant pelvic floor symptoms. Twelve weeks is a meaningful checkpoint, not an endpoint.",
+      },
+    ],
+    breadcrumbLabel: "Week 12 Postpartum",
+  },
 ];
