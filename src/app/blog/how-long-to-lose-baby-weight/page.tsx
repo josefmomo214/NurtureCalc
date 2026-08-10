@@ -189,6 +189,21 @@ export default function BlogPost() {
             </div>
           </section>
 
+          <div className="not-prose my-16 bg-[#F9E4E8] rounded-2xl p-6 space-y-3">
+            <span className="font-label text-xs font-bold text-[#E8A0A8] uppercase tracking-widest">{c.freeGuide.label}</span>
+            <h3 className="text-2xl font-serif text-[#3D2C2C]">{c.freeGuide.heading}</h3>
+            <p className="text-[#3D2C2C]/80 leading-relaxed">{c.freeGuide.body}</p>
+            <div className="pt-2">
+              <a
+                href={c.freeGuide.href}
+                download
+                className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all shadow-md"
+              >
+                {c.freeGuide.cta}
+              </a>
+            </div>
+          </div>
+
           <div className="not-prose my-16 bg-white rounded-3xl p-10 border border-[#E8A0A8]/30 shadow-[0_10px_40px_rgba(232,160,168,0.12)] text-center space-y-6">
             <h3 className="text-2xl md:text-3xl font-serif text-[#3D2C2C]">Find your safe path forward</h3>
             <p className="text-lg text-[#3D2C2C]/70 max-w-xl mx-auto">

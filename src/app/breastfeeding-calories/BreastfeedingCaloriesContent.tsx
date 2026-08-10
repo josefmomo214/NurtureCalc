@@ -325,6 +325,23 @@ export default function BreastfeedingCaloriesContent() {
               </details>
             </div>
           </section>
+
+          <section className="max-w-3xl bg-[#F9E4E8] rounded-2xl p-6 space-y-3">
+            <span className="font-label text-xs font-bold text-[#E8A0A8] uppercase tracking-widest">Free Printable Guide</span>
+            <h3 className="text-2xl font-serif text-[#3D2C2C]">The Breastfeeding Weight Loss Truth</h3>
+            <p className="text-[#3D2C2C]/80 leading-relaxed">
+              Get the 4-page printable guide — the safe weight loss rate by stage, real breastfeeding calorie needs, and the signs you&apos;re eating enough, all in one place.
+            </p>
+            <div className="pt-2">
+              <a
+                href="/guides/breastfeeding-weight-loss-truth.pdf"
+                download
+                className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all shadow-md"
+              >
+                Download Free PDF →
+              </a>
+            </div>
+          </section>
         </div>
 
 

@@ -247,6 +247,21 @@ export default function BlogPost() {
             </div>
           </div>
 
+          <div className="not-prose my-12 bg-[#F9E4E8] rounded-2xl p-6 space-y-3">
+            <span className="font-label text-xs font-bold text-[#E8A0A8] uppercase tracking-widest">{c.freeGuide.label}</span>
+            <h3 className="text-2xl font-serif text-[#3D2C2C]">{c.freeGuide.heading}</h3>
+            <p className="text-[#3D2C2C]/80 leading-relaxed">{c.freeGuide.body}</p>
+            <div className="pt-2">
+              <a
+                href={c.freeGuide.href}
+                download
+                className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-8 py-3 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all shadow-md"
+              >
+                {c.freeGuide.cta}
+              </a>
+            </div>
+          </div>
+
           <div className="bg-[#F5F5F0] border border-[#E0E0D8] rounded-3xl p-8 my-12 not-prose">
             <p className="text-xs font-label font-bold tracking-widest uppercase text-[#3D2C2C]/50 mb-3">Medical Disclaimer</p>
             <p className="text-sm text-[#3D2C2C]/70 leading-relaxed">This article is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. The information provided is based on published guidelines from recognised health authorities including the NHS, WHO, and ACOG. Always consult a qualified healthcare professional before making decisions about your health or treatment. If you are experiencing a medical emergency, contact your local emergency services immediately.</p>

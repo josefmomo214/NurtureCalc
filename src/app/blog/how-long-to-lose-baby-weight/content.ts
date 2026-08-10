@@ -99,4 +99,11 @@ export const babyWeightContent = {
     "American College of Obstetricians and Gynecologists (ACOG) Postpartum Toolkit",
     "Academy of Breastfeeding Medicine Clinical Protocol #29: Iron Deficiency across the Lifespan",
   ],
+  freeGuide: {
+    label: "FREE PRINTABLE GUIDE",
+    heading: "The Breastfeeding Weight Loss Truth",
+    body: "Get the 4-page printable guide — the safe weight loss rate by stage, real breastfeeding calorie needs, and the signs you're eating enough, all in one place.",
+    cta: "Download Free PDF →",
+    href: "/guides/breastfeeding-weight-loss-truth.pdf"
+  },
 };

@@ -14,5 +14,12 @@ export const breastfeedingCalorieNeedsContent = {
       q: "How Do You Calculate Your Breastfeeding Calorie Needs?",
       a: "Calculate your TDEE based on your weight, height, age, and activity level, then add 450–500 extra calories for exclusive breastfeeding, or 300 extra calories once mixed feeding begins."
     }
-  ]
+  ],
+  freeGuide: {
+    label: "FREE PRINTABLE GUIDE",
+    heading: "The Breastfeeding Weight Loss Truth",
+    body: "Get the 4-page printable guide — the safe weight loss rate by stage, real breastfeeding calorie needs, and the signs you're eating enough, all in one place.",
+    cta: "Download Free PDF →",
+    href: "/guides/breastfeeding-weight-loss-truth.pdf"
+  }
 };
