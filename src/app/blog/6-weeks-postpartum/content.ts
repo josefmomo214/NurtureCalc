@@ -136,7 +136,7 @@ export const sixWeeksPostpartumContent = {
         detail: "Six weeks is a milestone, not a finish line. Give yourself the full year that your body physiologically needs. The body that grew a human being has earned more than six weeks of grace.",
       },
     ],
-    p2: "Everything else — the house, the weight, the fitness, the social life — will come back in its own time. The single most useful thing you can do in the weeks after your six-week check is resist the pressure to rush any of it.",
+    p2: "Everything else — the house, the weight, the fitness, the social life — will come back in its own time. The single most useful thing you can do in the weeks after your six-week check is resist the pressure to rush any of it. For a broader look at this stage, see our full <a href='/postpartum-week-6/' class='text-[#E8A0A8] hover:underline'>Week 6 postpartum guide</a>.",
   },
 
   whenToReturn: {

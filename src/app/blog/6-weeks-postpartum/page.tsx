@@ -237,7 +237,7 @@ export default function BlogPost() {
                 </div>
               ))}
             </div>
-            <p>{c.whatToFocus.p2}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.whatToFocus.p2 }} />
           </section>
 
           <section>

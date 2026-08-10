@@ -3,7 +3,9 @@ import Hero from "@/components/Hero";
 import CalculatorGrid from "@/components/CalculatorGrid";
 import TrustBar from "@/components/TrustBar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 import { Metadata } from "next";
+import { weekPages } from "@/data/week-pages";
 
 export const metadata: Metadata = {
   title: "Free Postpartum Health Calculators for New Mothers | NurtureCalc",
@@ -102,6 +104,44 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <CalculatorGrid />
+
+        <section className="bg-[#FFFDF9] py-24 px-6 md:px-12">
+          <div className="max-w-5xl mx-auto text-center space-y-10">
+            <div className="space-y-5 max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-serif text-[#3D2C2C]">Where Are You in Your Recovery?</h2>
+              <p className="text-base md:text-lg text-[#3D2C2C]/80 leading-relaxed">
+                Every week postpartum brings different physical and emotional changes. Explore our week-by-week guide to know what&apos;s normal, what to expect next, and when to reach out for support.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+              {[1, 4, 8, 12].map((weekNumber) => {
+                const week = weekPages.find((wp) => wp.weekNumber === weekNumber)!;
+                return (
+                  <Link
+                    key={week.slug}
+                    href={`/${week.slug}/`}
+                    className="block bg-[#F9E4E8] rounded-2xl p-6 shadow-[0_10px_40px_rgba(232,160,168,0.15)] hover:shadow-[0_10px_40px_rgba(232,160,168,0.3)] hover:translate-y-[-4px] transition-all duration-300"
+                  >
+                    <span className="font-label uppercase tracking-wider text-xs text-[#E8A0A8] font-bold block mb-2">
+                      Week {week.weekNumber}
+                    </span>
+                    <span className="font-serif text-lg text-[#3D2C2C] leading-snug block">
+                      {week.h1}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+
+            <Link
+              href="/postpartum-week-by-week/"
+              className="inline-block bg-[#E8A0A8] hover:bg-[#D58A92] text-white px-10 py-4 rounded-full font-label uppercase tracking-widest text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-[#E8A0A8]/20"
+            >
+              Browse all weeks →
+            </Link>
+          </div>
+        </section>
 
         <section className="bg-[#F9E4E8] py-24 px-6 md:px-12">
           <div className="max-w-3xl mx-auto space-y-16">

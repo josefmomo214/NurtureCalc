@@ -25,6 +25,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 items-center text-sm font-label font-bold tracking-wider text-[#3D2C2C]">
           <Link href="/" className="hover:text-[#E8A0A8] transition-colors">HOME</Link>
           <Link href="/#calculators" className="hover:text-[#E8A0A8] transition-colors">CALCULATORS</Link>
+          <Link href="/postpartum-week-by-week/" className="hover:text-[#E8A0A8] transition-colors">WEEK BY WEEK</Link>
           <div className="relative group">
             <Link href="/blog/" className="hover:text-[#E8A0A8] transition-colors">BLOG</Link>
             <div className="absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:block group-focus-within:block z-10">
@@ -85,6 +86,7 @@ export default function Header() {
             { name: "Exercise Timeline", href: "/exercise-timeline" },
             { name: "Pelvic Floor", href: "/pelvic-floor" },
             { name: "Baby Weight", href: "/baby-weight" },
+            { name: "Week by Week", href: "/postpartum-week-by-week/" },
           ].map((link) => (
             <Link
               key={link.name}

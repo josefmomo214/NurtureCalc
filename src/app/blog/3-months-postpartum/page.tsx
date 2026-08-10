@@ -222,7 +222,7 @@ export default function BlogPost() {
                 </div>
               ))}
             </div>
-            <p>{c.whatToFocus.p2}</p>
+            <p dangerouslySetInnerHTML={{ __html: c.whatToFocus.p2 }} />
           </section>
 
           <section className="bg-[#FFFDF9] border border-[#E8A0A8]/20 rounded-3xl p-10 my-20 not-prose">

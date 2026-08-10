@@ -119,7 +119,7 @@ export const threeMonthsPostpartumContent = {
         detail: "One thing that is yours alone — not the baby's, not the household's. A conversation, an unrushed shower, fifteen minutes with a book. It does not have to be much. It has to happen.",
       },
     ],
-    p2: "Everything else — the house, the body, the relationship, the return to work — can wait a little longer. Not forever. Just a little longer.",
+    p2: "Everything else — the house, the body, the relationship, the return to work — can wait a little longer. Not forever. Just a little longer. For the week-by-week version of this same milestone, see our <a href='/postpartum-week-12/' class='text-[#E8A0A8] hover:underline'>Week 12 postpartum guide</a>.",
   },
 
   faqSection: {
