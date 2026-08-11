@@ -26,6 +26,7 @@ export default function Header() {
           <Link href="/" className="hover:text-[#E8A0A8] transition-colors">HOME</Link>
           <Link href="/#calculators" className="hover:text-[#E8A0A8] transition-colors">CALCULATORS</Link>
           <Link href="/postpartum-week-by-week/" className="hover:text-[#E8A0A8] transition-colors">WEEK BY WEEK</Link>
+          <Link href="/guides/" className="hover:text-[#E8A0A8] transition-colors">GUIDES</Link>
           <div className="relative group">
             <Link href="/blog/" className="hover:text-[#E8A0A8] transition-colors">BLOG</Link>
             <div className="absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:block group-focus-within:block z-10">
@@ -87,6 +88,7 @@ export default function Header() {
             { name: "Pelvic Floor", href: "/pelvic-floor" },
             { name: "Baby Weight", href: "/baby-weight" },
             { name: "Week by Week", href: "/postpartum-week-by-week/" },
+            { name: "Guides", href: "/guides/" },
           ].map((link) => (
             <Link
               key={link.name}

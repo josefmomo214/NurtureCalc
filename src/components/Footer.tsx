@@ -47,6 +47,9 @@ export default function Footer() {
           <Link href="/postpartum-week-by-week/" className="font-label text-xs font-bold tracking-widest uppercase hover:text-[#E8A0A8] transition-colors">
             Week by Week
           </Link>
+          <Link href="/guides/" className="font-label text-xs font-bold tracking-widest uppercase hover:text-[#E8A0A8] transition-colors">
+            Guides
+          </Link>
           {BLOG_CATEGORY_LINKS.map((item) => (
             <Link
               key={item.label}
