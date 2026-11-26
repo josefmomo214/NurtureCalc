@@ -59,33 +59,41 @@ export default function CalculatorGrid() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-[#3D2C2C] text-center mb-12">Postpartum Health Calculators</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {calculators.map((calc) => (
-            <div 
-              key={calc.name} 
-              className="bg-[#FFFDF9] rounded-2xl p-8 shadow-[0_10px_40px_rgba(232,160,168,0.15)] flex flex-col justify-between group hover:translate-y-[-4px] transition-all duration-300 border border-[#E8A0A8]/10"
-            >
-              <div className="space-y-6">
-                <div className="text-[#E8A0A8] bg-[#F9E4E8] w-14 h-14 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  {calc.icon}
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-serif text-[#3D2C2C] leading-tight">
-                    {calc.name}
-                  </h3>
-                  <p className="text-[#3D2C2C]/70 leading-relaxed text-sm">
-                    {calc.description}
-                  </p>
-                </div>
-              </div>
-              
-              <Link 
-                href={calc.href}
-                className="mt-8 inline-flex items-center text-[#E8A0A8] font-label font-bold text-sm tracking-widest hover:gap-3 transition-all uppercase"
+          {calculators.map((calc) => {
+            const isUnavailable = calc.name.includes("Baby Weight Percentile");
+            return (
+              <div 
+                key={calc.name} 
+                className="bg-[#FFFDF9] rounded-2xl p-8 shadow-[0_10px_40px_rgba(232,160,168,0.15)] flex flex-col justify-between group hover:translate-y-[-4px] transition-all duration-300 border border-[#E8A0A8]/10 relative overflow-hidden"
               >
-                Open Calculator <span className="text-xl ml-2">→</span>
-              </Link>
-            </div>
-          ))}
+                {isUnavailable && (
+                  <div className="absolute top-4 right-4 bg-amber-100 text-amber-800 text-[10px] font-label font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                    Temporarily Unavailable
+                  </div>
+                )}
+                <div className="space-y-6">
+                  <div className="text-[#E8A0A8] bg-[#F9E4E8] w-14 h-14 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    {calc.icon}
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-2xl font-serif text-[#3D2C2C] leading-tight">
+                      {calc.name}
+                    </h3>
+                    <p className="text-[#3D2C2C]/70 leading-relaxed text-sm">
+                      {calc.description}
+                    </p>
+                  </div>
+                </div>
+                
+                <Link 
+                  href={calc.href}
+                  className="mt-8 inline-flex items-center text-[#E8A0A8] font-label font-bold text-sm tracking-widest hover:gap-3 transition-all uppercase"
+                >
+                  {isUnavailable ? "View Info & Guidelines →" : "Open Calculator →"}
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

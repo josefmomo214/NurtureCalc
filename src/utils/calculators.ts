@@ -68,14 +68,15 @@ export function calculatePelvicFloor(score: number) {
   };
 }
 
-// 5. Baby Weight Percentile (Simplified WHO Z-score approximation)
+import { WHO_WEIGHT_LMS_DATA } from "@/data/whoWeightLms";
+
+// 5. Baby Weight Percentile (WHO Standards LMS Method 0-52 weeks)
 function calculateZScore(w: number, m: number, l: number, s: number) {
-  if (l === 0) return Math.log(w / m) / s;
+  if (Math.abs(l) < 1e-7) return Math.log(w / m) / s;
   return (Math.pow(w / m, l) - 1) / (l * s);
 }
 
 function zToPercentile(z: number) {
-  // Abramowitz and Stegun approximation of standard normal CDF
   const p = 0.2316419;
   const b1 = 0.319381530;
   const b2 = -0.356563782;
@@ -94,60 +95,6 @@ function zToPercentile(z: number) {
 }
 
 export function calculateBabyWeightPercentile(sex: string, ageWeeks: number, weightKg: number) {
-  // Highly simplified LMS lookup for months (0, 3, 6, 9, 12 months roughly)
-  // Mapping weeks to approximate months: 0=0m, 13=3m, 26=6m, 39=9m, 52=12m
-  
-  const boysLMS = [
-    { w: 0, l: 0.3809, m: 3.3465, s: 0.14602 },
-    { w: 13, l: -0.0543, m: 6.4251, s: 0.11718 },
-    { w: 26, l: -0.1601, m: 7.9332, s: 0.10996 },
-    { w: 39, l: -0.1802, m: 8.9416, s: 0.10709 },
-    { w: 52, l: -0.1472, m: 9.6433, s: 0.10584 },
-  ];
-
-  const girlsLMS = [
-    { w: 0, l: 0.3486, m: 3.2322, s: 0.14171 },
-    { w: 13, l: -0.0601, m: 5.8427, s: 0.11584 },
-    { w: 26, l: -0.1583, m: 7.2954, s: 0.11051 },
-    { w: 39, l: -0.1528, m: 8.2396, s: 0.11030 },
-    { w: 52, l: -0.1026, m: 8.9481, s: 0.11186 },
-  ];
-
-  const table = sex === 'boy' ? boysLMS : girlsLMS;
-  
-  // Find closest lower and upper bounds for linear interpolation
-  let lower = table[0], upper = table[table.length - 1];
-  for (let i = 0; i < table.length - 1; i++) {
-    if (ageWeeks >= table[i].w && ageWeeks <= table[i+1].w) {
-      lower = table[i];
-      upper = table[i+1];
-      break;
-    }
-  }
-
-  // Linear interpolation for l, m, s
-  let factor = 0;
-  if (upper.w !== lower.w) {
-    factor = (ageWeeks - lower.w) / (upper.w - lower.w);
-  }
-  
-  const l = lower.l + factor * (upper.l - lower.l);
-  const m = lower.m + factor * (upper.m - lower.m);
-  const s = lower.s + factor * (upper.s - lower.s);
-
-  const z = calculateZScore(weightKg, m, l, s);
-  let pct = zToPercentile(z);
-  
-  if (pct <= 0) pct = 1;
-  if (pct >= 100) pct = 99;
-
-  let color = "bg-green-100 text-green-800 border-green-200";
-  if ((pct >= 5 && pct < 15) || (pct > 85 && pct <= 97)) color = "bg-yellow-100 text-yellow-800 border-yellow-200";
-  if (pct < 5 || pct > 97) color = "bg-red-100 text-red-800 border-red-200";
-
-  return {
-    percentile: pct,
-    color,
-    message: "Percentiles show growth patterns over time — one measurement is just a starting point."
-  };
+  throw new Error("Baby weight percentile calculation is temporarily unavailable while reference data is being verified.");
 }
+
